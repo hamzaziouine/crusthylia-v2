@@ -1,0 +1,1132 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO Meta — /qui-sommes-nous -->
+  <title>Qui Sommes-Nous — Crusthy'lia Boulangerie Marrakech</title>
+  <meta name="description" content="Découvrez l'histoire de Crusthy'lia, boulangerie-pâtisserie artisanale fondée à Targa, Marrakech. Notre passion pour l'authenticité, la qualité et le goût. Rencontrez notre équipe.">
+  <meta name="keywords" content="histoire Crusthy'lia, à propos boulangerie Marrakech, équipe pâtisserie Marrakech, fondateurs Crusthy'lia, boulangerie artisanale Targa, valeurs café Marrakech, qui sommes nous Crusthy'lia, artisan boulanger Marrakech">
+  <meta name="geo.region" content="MA-04">
+  <meta name="geo.placename" content="Marrakech">
+  <meta name="geo.position" content="31.6295;-8.0029">
+  <meta name="ICBM" content="31.6295, -8.0029">
+  <link rel="alternate" hreflang="fr-MA" href="https://crusthylia.com/qui-sommes-nous">
+  <link rel="alternate" hreflang="en" href="https://crusthylia.com/en/about-us">
+  <link rel="canonical" href="https://crusthylia.com/qui-sommes-nous">
+  <meta property="og:title" content="Qui Sommes-Nous — Crusthy'lia Boulangerie Marrakech">
+  <meta property="og:description" content="L'histoire de Crusthy'lia, boulangerie-pâtisserie artisanale à Targa, Marrakech. Notre passion pour l'authenticité et la qualité.">
+  <meta property="og:url" content="https://crusthylia.com/qui-sommes-nous">
+  <meta property="og:image" content="https://crusthylia.com/images/og-about.jpg">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Crusthy'lia">
+  <meta property="og:locale" content="fr_MA">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Qui Sommes-Nous — Crusthy'lia Boulangerie Marrakech">
+  <meta name="twitter:description" content="L'histoire de Crusthy'lia, boulangerie-pâtisserie artisanale à Targa, Marrakech.">
+  <meta name="twitter:image" content="https://crusthylia.com/images/og-about.jpg">
+
+  <!-- JSON-LD: BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://crusthylia.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Notre Histoire", "item": "https://crusthylia.com/qui-sommes-nous" }
+    ]
+  }
+  </script>
+
+  <!-- JSON-LD: LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["LocalBusiness", "FoodEstablishment"],
+    "name": "Crusthy'lia",
+    "url": "https://crusthylia.com",
+    "telephone": "+212764745159",
+    "email": "contact@crusthylia.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "890 Lotissement Nakhil 2, Targa",
+      "addressLocality": "Marrakech",
+      "postalCode": "40000",
+      "addressCountry": "MA"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 31.6295,
+      "longitude": -8.0029
+    },
+    "openingHours": "Mo-Su 07:00-00:00",
+    "image": "https://crusthylia.com/images/og-about.jpg"
+  }
+  </script>
+
+  <!-- CDN Libraries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/SplitText.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&family=Cairo:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/animations.css">
+
+  <style>
+    /* ── Reset & Base ──────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--font-body);
+      font-size: var(--text-base);
+      color: var(--color-text);
+      background: var(--color-cream);
+      line-height: var(--leading-normal);
+      overflow-x: hidden;
+    }
+    body.rtl { direction: rtl; font-family: var(--font-arabic); }
+    img { max-width: 100%; display: block; }
+    a { color: inherit; text-decoration: none; }
+
+    /* ── Skip Link ─────────────────────────────────────── */
+    .skip-link {
+      position: absolute;
+      top: -100%;
+      left: var(--space-4);
+      background: var(--color-brown);
+      color: var(--color-cream);
+      padding: var(--space-3) var(--space-6);
+      border-radius: var(--radius-md);
+      font-size: var(--text-sm);
+      font-weight: 500;
+      z-index: 10000;
+      transition: top 0.2s;
+    }
+    .skip-link:focus { top: var(--space-4); }
+
+    /* ── Loader ────────────────────────────────────────── */
+    .loader {
+      position: fixed;
+      inset: 0;
+      background: var(--color-brown-dark);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 9000;
+      transition: opacity 0.5s ease, visibility 0.5s ease;
+    }
+    .loader.loaded { opacity: 0; visibility: hidden; }
+    .loader-logo {
+      font-family: var(--font-display);
+      font-size: var(--text-3xl);
+      color: var(--color-gold);
+      letter-spacing: var(--tracking-wide);
+      opacity: 0;
+      animation: loaderFadeIn 0.5s ease 0.2s forwards;
+    }
+    @keyframes loaderFadeIn { to { opacity: 1; } }
+
+    /* ── Cursor ────────────────────────────────────────── */
+    .cursor {
+      width: 32px; height: 32px;
+      border: 1.5px solid var(--color-gold);
+      border-radius: 50%;
+      position: fixed;
+      pointer-events: none;
+      z-index: 9999;
+      transform: translate(-50%, -50%);
+      transition: background 0.2s, border-color 0.2s;
+      mix-blend-mode: multiply;
+    }
+    .cursor-dot {
+      width: 6px; height: 6px;
+      background: var(--color-brown);
+      border-radius: 50%;
+      position: fixed;
+      pointer-events: none;
+      z-index: 9999;
+      transform: translate(-50%, -50%);
+    }
+    @media (hover: none) { .cursor, .cursor-dot { display: none; } }
+
+    /* ── Container ─────────────────────────────────────── */
+    .container {
+      max-width: var(--container-max);
+      margin: 0 auto;
+      padding: 0 var(--container-pad);
+    }
+
+    /* ── Navigation ────────────────────────────────────── */
+    .nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 500;
+      transition: background 0.4s ease, backdrop-filter 0.4s ease;
+    }
+    .nav.scrolled {
+      background: rgba(253,248,240,0.92);
+      backdrop-filter: blur(20px);
+      box-shadow: var(--shadow-sm);
+    }
+    .nav-container {
+      max-width: var(--container-max);
+      margin: 0 auto;
+      padding: 0 var(--container-pad);
+      height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--space-8);
+    }
+    .nav-logo {
+      font-family: var(--font-display);
+      font-size: var(--text-2xl);
+      font-weight: 500;
+      color: var(--color-brown-dark);
+      letter-spacing: -0.01em;
+      flex-shrink: 0;
+    }
+    .logo-apostrophe { color: var(--color-gold); }
+    .nav-links {
+      display: flex;
+      list-style: none;
+      gap: var(--space-8);
+      align-items: center;
+    }
+    .nav-links a {
+      font-size: var(--text-sm);
+      font-weight: 500;
+      letter-spacing: var(--tracking-wide);
+      text-transform: uppercase;
+      color: var(--color-text-muted);
+      transition: color 0.2s;
+      position: relative;
+      padding-bottom: 2px;
+    }
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: -2px; left: 0;
+      width: 100%; height: 2px;
+      background: var(--color-gold);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.3s ease;
+    }
+    .nav-links a:hover, .nav-links a[aria-current="page"] { color: var(--color-brown); }
+    .nav-links a:hover::after, .nav-links a[aria-current="page"]::after { transform: scaleX(1); }
+    .nav-actions { display: flex; align-items: center; gap: var(--space-6); }
+    .lang-switcher { display: flex; align-items: center; gap: 2px; }
+    .lang-btn {
+      font-family: var(--font-body);
+      font-size: var(--text-xs);
+      letter-spacing: var(--tracking-wider);
+      text-transform: uppercase;
+      color: var(--color-text-muted);
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 4px 6px;
+      transition: color 0.2s;
+    }
+    .lang-btn.active, .lang-btn:hover { color: var(--color-brown); }
+    .lang-divider { color: var(--color-border); font-size: 10px; }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-2);
+      border-radius: var(--radius-full);
+      font-family: var(--font-body);
+      font-size: var(--text-sm);
+      font-weight: 500;
+      letter-spacing: var(--tracking-wide);
+      text-transform: uppercase;
+      text-decoration: none;
+      border: 2px solid transparent;
+      cursor: pointer;
+      transition: background 0.3s, color 0.3s, border-color 0.3s, transform 0.2s;
+    }
+    .btn-primary {
+      background: var(--color-brown);
+      color: var(--color-cream);
+      padding: 14px 28px;
+    }
+    .btn-primary:hover {
+      background: transparent;
+      color: var(--color-brown);
+      border-color: var(--color-brown);
+    }
+    .btn-secondary {
+      background: transparent;
+      color: var(--color-brown);
+      border-color: var(--color-brown);
+      padding: 14px 28px;
+    }
+    .btn-secondary:hover {
+      background: var(--color-brown);
+      color: var(--color-cream);
+    }
+    .btn-sm { padding: 10px 20px; font-size: var(--text-xs); }
+    .nav-hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: var(--space-2);
+    }
+    .nav-hamburger span {
+      display: block;
+      width: 24px; height: 2px;
+      background: var(--color-brown-dark);
+      transition: transform 0.3s, opacity 0.3s;
+    }
+    .nav-mobile-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: var(--color-brown-dark);
+      z-index: 490;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: var(--space-8);
+      padding: var(--space-16);
+    }
+    .nav-mobile-overlay.open { display: flex; }
+    .nav-mobile-links { list-style: none; text-align: center; display: flex; flex-direction: column; gap: var(--space-6); }
+    .nav-mobile-links a {
+      font-family: var(--font-display);
+      font-size: var(--text-3xl);
+      color: var(--color-cream);
+      letter-spacing: var(--tracking-tight);
+      transition: color 0.2s;
+    }
+    .nav-mobile-links a:hover { color: var(--color-gold); }
+    .nav-mobile-lang { display: flex; gap: var(--space-2); color: var(--color-text-light); }
+    @media (max-width: 900px) {
+      .nav-links { display: none; }
+      .nav-hamburger { display: flex; }
+    }
+
+    /* ── Eyebrow / Gold Line ───────────────────────────── */
+    .eyebrow {
+      display: block;
+      font-family: var(--font-body);
+      font-size: var(--text-xs);
+      font-weight: 500;
+      letter-spacing: var(--tracking-wider);
+      text-transform: uppercase;
+      color: var(--color-gold);
+      margin-bottom: var(--space-3);
+    }
+    .gold-line {
+      width: 48px; height: 2px;
+      background: var(--color-gold);
+      margin: var(--space-6) 0;
+    }
+
+    /* ── Page Hero ─────────────────────────────────────── */
+    .page-hero {
+      padding-top: 140px;
+      padding-bottom: var(--space-24);
+      background: var(--color-brown-dark);
+      position: relative;
+      overflow: hidden;
+    }
+    .page-hero::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+      pointer-events: none;
+      opacity: 0.04;
+      z-index: 1;
+    }
+    .page-hero-content { position: relative; z-index: 2; }
+    .breadcrumb {
+      display: flex;
+      align-items: center;
+      gap: var(--space-2);
+      margin-bottom: var(--space-8);
+      font-size: var(--text-sm);
+      color: var(--color-text-light);
+    }
+    .breadcrumb a { color: var(--color-gold-light); transition: color 0.2s; }
+    .breadcrumb a:hover { color: var(--color-gold); }
+    .breadcrumb-sep { color: var(--color-text-light); opacity: 0.5; }
+    .page-hero h1 {
+      font-family: var(--font-display);
+      font-size: clamp(var(--text-4xl), 6vw, var(--text-6xl));
+      font-weight: 400;
+      line-height: var(--leading-tight);
+      letter-spacing: var(--tracking-tight);
+      color: var(--color-cream);
+      max-width: 800px;
+      margin-bottom: var(--space-6);
+    }
+    .page-hero h1 em { font-style: italic; color: var(--color-gold-light); }
+    .page-hero-sub {
+      font-size: var(--text-lg);
+      color: rgba(253,248,240,0.7);
+      max-width: 560px;
+      line-height: var(--leading-normal);
+    }
+
+    /* ── Hero Image ────────────────────────────────────── */
+    .hero-image-wrap {
+      position: relative;
+      overflow: hidden;
+      border-radius: var(--radius-xl);
+      margin-top: var(--space-16);
+      aspect-ratio: 16/7;
+    }
+    .img-slot {
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, var(--color-beige-dark), var(--color-brown-light));
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      position: relative;
+    }
+    .img-slot img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .img-slot.img-missing::after {
+      content: attr(data-slot);
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-body);
+      font-size: var(--text-sm);
+      color: rgba(255,255,255,0.6);
+      letter-spacing: var(--tracking-wider);
+      text-transform: uppercase;
+    }
+
+    /* Image hover */
+    .image-hover-wrap { overflow: hidden; border-radius: var(--radius-lg); }
+    .image-hover-wrap img {
+      transition: transform 0.8s cubic-bezier(0.25,0.46,0.45,0.94);
+      will-change: transform;
+    }
+    .image-hover-wrap:hover img { transform: scale(1.06); }
+
+    /* ── Content Sections ──────────────────────────────── */
+    .section { padding: var(--space-24) 0; }
+    .section-beige { background: var(--color-beige); }
+    .section-dark { background: var(--color-brown-dark); color: var(--color-cream); }
+
+    .section-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-16);
+      align-items: center;
+    }
+    .section-inner.reverse { direction: rtl; }
+    .section-inner.reverse > * { direction: ltr; }
+
+    .section h2 {
+      font-family: var(--font-display);
+      font-size: clamp(var(--text-3xl), 4vw, var(--text-5xl));
+      font-weight: 400;
+      line-height: var(--leading-snug);
+      letter-spacing: var(--tracking-tight);
+      color: var(--color-brown-dark);
+      margin-bottom: var(--space-6);
+    }
+    .section-dark h2 { color: var(--color-gold-light); }
+    .section h2 em { font-style: italic; color: var(--color-brown); }
+    .section p {
+      font-size: var(--text-base);
+      line-height: var(--leading-normal);
+      color: var(--color-text-muted);
+      margin-bottom: var(--space-4);
+    }
+    .section-dark p { color: rgba(253,248,240,0.75); }
+    .section p:last-child { margin-bottom: 0; }
+    .section a.inline-link {
+      color: var(--color-brown);
+      border-bottom: 1px solid var(--color-gold);
+      transition: color 0.2s, border-color 0.2s;
+    }
+    .section a.inline-link:hover { color: var(--color-gold); border-color: var(--color-brown); }
+
+    .section-image {
+      position: relative;
+      aspect-ratio: 4/5;
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+    }
+    .section-image .img-slot { height: 100%; }
+
+    /* Single-column sections */
+    .section-single { max-width: 860px; margin: 0 auto; }
+    .section-single h2 { text-align: center; }
+    .section-single .gold-line { margin-left: auto; margin-right: auto; }
+
+    /* ── Highlight Box ─────────────────────────────────── */
+    .highlight-box {
+      background: var(--color-beige-dark);
+      border-left: 3px solid var(--color-gold);
+      padding: var(--space-6) var(--space-8);
+      border-radius: 0 var(--radius-md) var(--radius-md) 0;
+      margin: var(--space-8) 0;
+    }
+    .highlight-box p { color: var(--color-text); font-style: italic; margin: 0; }
+
+    /* ── CTA Band ──────────────────────────────────────── */
+    .cta-band {
+      background: var(--color-brown);
+      padding: var(--space-16) var(--space-4);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .cta-band::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+      pointer-events: none; opacity: 0.06; z-index: 0;
+    }
+    .cta-band-content { position: relative; z-index: 1; }
+    .cta-band h2 {
+      font-family: var(--font-display);
+      font-size: clamp(var(--text-3xl), 4vw, var(--text-5xl));
+      font-weight: 400;
+      color: var(--color-cream);
+      margin-bottom: var(--space-3);
+    }
+    .cta-band p {
+      color: rgba(253,248,240,0.75);
+      margin-bottom: var(--space-8);
+      font-size: var(--text-lg);
+    }
+    .cta-band-actions { display: flex; gap: var(--space-4); justify-content: center; flex-wrap: wrap; }
+    .btn-cream {
+      background: var(--color-cream);
+      color: var(--color-brown);
+      border-color: var(--color-cream);
+    }
+    .btn-cream:hover { background: transparent; color: var(--color-cream); border-color: var(--color-cream); }
+    .btn-outline-cream {
+      background: transparent;
+      color: var(--color-cream);
+      border-color: rgba(253,248,240,0.6);
+    }
+    .btn-outline-cream:hover { background: var(--color-cream); color: var(--color-brown); }
+
+    /* ── Footer ────────────────────────────────────────── */
+    .footer { background: var(--color-brown-dark); color: var(--color-cream); padding-top: var(--space-16); }
+    .footer-main {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: var(--space-16);
+      padding-bottom: var(--space-16);
+      border-bottom: 1px solid rgba(253,248,240,0.1);
+    }
+    .footer-logo {
+      font-family: var(--font-display);
+      font-size: var(--text-2xl);
+      color: var(--color-gold);
+      margin-bottom: var(--space-3);
+      display: block;
+    }
+    .footer-tagline { font-size: var(--text-sm); color: rgba(253,248,240,0.6); margin-bottom: var(--space-6); }
+    .footer-social { display: flex; gap: var(--space-4); }
+    .footer-social a {
+      width: 38px; height: 38px;
+      border: 1px solid rgba(253,248,240,0.2);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      color: rgba(253,248,240,0.7);
+      font-size: 1.1rem;
+      transition: background 0.2s, color 0.2s, border-color 0.2s;
+    }
+    .footer-social a:hover { background: var(--color-gold); color: var(--color-brown-dark); border-color: var(--color-gold); }
+    .footer-sitemap { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-8); }
+    .footer-col h4 {
+      font-family: var(--font-body);
+      font-size: var(--text-xs);
+      font-weight: 500;
+      letter-spacing: var(--tracking-wider);
+      text-transform: uppercase;
+      color: var(--color-gold);
+      margin-bottom: var(--space-4);
+    }
+    .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: var(--space-2); }
+    .footer-col a { font-size: var(--text-sm); color: rgba(253,248,240,0.6); transition: color 0.2s; }
+    .footer-col a:hover { color: var(--color-cream); }
+    .footer-bottom { padding: var(--space-8) 0; }
+    .footer-nap { margin-bottom: var(--space-4); }
+    .footer-nap address {
+      font-style: normal;
+      font-size: var(--text-sm);
+      color: rgba(253,248,240,0.5);
+    }
+    .footer-nap a { color: rgba(253,248,240,0.6); transition: color 0.2s; }
+    .footer-nap a:hover { color: var(--color-gold); }
+    .footer-bottom-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: var(--space-4);
+    }
+    .footer-copyright { font-size: var(--text-xs); color: rgba(253,248,240,0.35); }
+    .footer-lang { display: flex; gap: var(--space-2); align-items: center; color: rgba(253,248,240,0.35); font-size: var(--text-xs); }
+
+    /* ── Floating WhatsApp ─────────────────────────────── */
+    .floating-whatsapp {
+      position: fixed;
+      bottom: var(--space-8);
+      right: var(--space-8);
+      z-index: 400;
+      background: #25D366;
+      color: white;
+      padding: 14px 24px;
+      border-radius: var(--radius-full);
+      display: flex;
+      align-items: center;
+      gap: var(--space-2);
+      font-size: var(--text-sm);
+      font-weight: 500;
+      box-shadow: var(--shadow-lg);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .floating-whatsapp:hover { transform: translateY(-2px); box-shadow: var(--shadow-xl); }
+    .floating-whatsapp i { font-size: 1.25rem; }
+
+    /* ── Responsive ────────────────────────────────────── */
+    @media (max-width: 900px) {
+      .section-inner { grid-template-columns: 1fr; }
+      .section-inner.reverse { direction: ltr; }
+      .section-image { aspect-ratio: 16/9; }
+      .footer-main { grid-template-columns: 1fr; }
+      .footer-sitemap { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 600px) {
+      .footer-sitemap { grid-template-columns: 1fr; }
+      .floating-whatsapp span { display: none; }
+      .floating-whatsapp { padding: 14px; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Skip link -->
+  <a class="skip-link" href="#main">Passer au contenu principal</a>
+
+  <!-- Custom cursor -->
+  <div class="cursor" aria-hidden="true"></div>
+  <div class="cursor-dot" aria-hidden="true"></div>
+
+  <!-- Loader -->
+  <div class="page-loader" id="page-loader" aria-hidden="true">
+    <div class="loader-inner">
+      <img src="/assets/images/logo.png" alt="Crusthy'lia" class="loader-logo-img">
+      <p class="loader-slogan">Le rendez-vous des gourmands</p>
+      <div class="loader-spinner" aria-hidden="true"></div>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="site-nav" id="site-nav" role="navigation" aria-label="Navigation principale">
+    <div class="container nav-inner">
+      <a href="/" class="nav-logo" aria-label="Crusthy'lia — Accueil">
+        <img src="/assets/images/logo.png" alt="Crusthy'lia" class="nav-logo-img">
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="/menu.html" data-i18n="nav_menu" class="nav-link">Menu</a></li>
+        <li><a href="/brunch-marrakech.html" data-i18n="nav_brunch" class="nav-link">Brunch</a></li>
+        <li><a href="/qui-sommes-nous.html" data-i18n="nav_about" class="nav-link" aria-current="page">Notre Histoire</a></li>
+        <li><a href="/blog/" data-i18n="nav_blog" class="nav-link">Blog</a></li>
+        <li><a href="/contact.html" data-i18n="nav_contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <div class="lang-switcher" role="navigation" aria-label="Language selector">
+          <button class="lang-btn active" data-lang="fr" aria-pressed="true">FR</button>
+          <span class="lang-divider">|</span>
+          <button class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+          <span class="lang-divider">|</span>
+          <button class="lang-btn" data-lang="ar" aria-pressed="false">درج</button>
+        </div>
+        <a href="/reservation-marrakech.html" class="btn btn-primary btn-sm nav-cta btn-magnetic">
+          <span data-i18n="nav_reserve">Réserver</span>
+        </a>
+      </div>
+      <button class="nav-hamburger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-label="Menu de navigation mobile">
+      <button class="mobile-menu-close" aria-label="Fermer le menu">
+        <i class="ph ph-x"></i>
+      </button>
+      <ul class="mobile-nav-links" role="list">
+        <li><a href="/menu.html" class="mobile-nav-link">Menu</a></li>
+        <li><a href="/brunch-marrakech.html" class="mobile-nav-link">Brunch</a></li>
+        <li><a href="/qui-sommes-nous.html" class="mobile-nav-link">Notre Histoire</a></li>
+        <li><a href="/blog/" class="mobile-nav-link">Blog</a></li>
+        <li><a href="/contact.html" class="mobile-nav-link">Contact</a></li>
+      </ul>
+      <div class="mobile-lang-switcher">
+        <button class="lang-btn active" data-lang="fr">FR</button>
+        <span class="lang-divider">|</span>
+        <button class="lang-btn" data-lang="en">EN</button>
+        <span class="lang-divider">|</span>
+        <button class="lang-btn" data-lang="ar">درج</button>
+      </div>
+      <a href="/reservation-marrakech.html" class="btn btn-primary btn-magnetic mobile-cta">
+        <span data-i18n="nav_reserve">Réserver</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main id="main">
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+      <div class="container page-hero-content">
+        <nav class="breadcrumb" aria-label="Fil d'Ariane">
+          <a href="/">Accueil</a>
+          <span class="breadcrumb-sep" aria-hidden="true">›</span>
+          <span aria-current="page">Notre Histoire</span>
+        </nav>
+        <h1>Notre Histoire — <em>Crusthy'lia</em>,<br>la Boulangerie de Targa</h1>
+        <p class="page-hero-sub">De la conviction qu'un quartier mérite une vraie boulangerie artisanale, ancrée dans sa communauté.</p>
+
+        <!-- IMAGE SLOT: page-hero-about -->
+        <!-- File: equipe-crusthylia-targa-marrakech.jpg | 1920×680 | Placement: qui-sommes-nous hero -->
+        <div class="hero-image-wrap">
+          <div class="img-slot image-hover-wrap img-reveal"
+               data-slot="hero-about"
+               style="aspect-ratio: 16/7;">
+            <img
+              src="/assets/images/equipe-crusthylia-targa-marrakech.jpg"
+              alt="L'équipe de Crusthy'lia dans la boulangerie artisanale de Targa, Marrakech"
+              title="L'équipe Crusthy'lia — Boulangerie Artisanale Targa Marrakech"
+              width="1920" height="680"
+              loading="eager"
+              fetchpriority="high"
+              onerror="this.parentElement.classList.add('img-missing')"
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 1: Les Origines -->
+    <section class="section" aria-labelledby="section-origines">
+      <div class="container">
+        <div class="section-inner">
+          <div class="section-text">
+            <span class="eyebrow">Les origines</span>
+            <div class="gold-line"></div>
+            <h2 id="section-origines" class="reveal-text">Né d'une conviction, <em>ancré</em> dans un quartier</h2>
+            <p>Crusthy'lia n'est pas né d'une étude de marché ou d'un business plan rédigé dans un incubateur. Il est né d'une conviction : que Targa, quartier résidentiel en plein développement au nord-ouest de Marrakech, méritait une vraie boulangerie. Pas une supérette avec un four industriel. Pas une franchise venue d'ailleurs. Une boulangerie de quartier, ancrée dans son environnement, portée par des gens qui y habitent et qui savent ce que les familles du coin cherchent vraiment.</p>
+            <p>L'adresse choisie — 890 Lotissement Nakhil 2 — n'est pas anodine. C'est un carrefour de vie quotidienne : parents qui déposent les enfants à l'école, voisins qui traversent en allant au travail, résidents qui cherchent un endroit où déjeuner tranquillement. Crusthy'lia s'est installé là avec l'ambition d'être utile, chaque jour, à tous ces gens.</p>
+            <p>La vision dès le départ était large : boulangerie le matin, café et restaurant le midi et le soir, livraison pour ceux qui ne peuvent pas se déplacer. Une adresse unique qui couvre l'ensemble des besoins d'un quartier. Retrouvez tout ce que nous proposons sur notre <a href="/" class="inline-link">page d'accueil</a>.</p>
+          </div>
+          <div class="section-image">
+            <!-- IMAGE SLOT: about-origines -->
+            <!-- File: boulangerie-crusthylia-interieur-targa.jpg | 800×1000 -->
+            <div class="img-slot image-hover-wrap img-reveal"
+                 data-slot="about-origines">
+              <img
+                src="assets/images/boulangerie-crusthylia-interieur-targa.jpg"
+                alt="Intérieur de la boulangerie Crusthy'lia à Targa, Marrakech — espace chaleureux et artisanal"
+                title="Intérieur Crusthy'lia Targa — Boulangerie Artisanale"
+                width="800" height="1000"
+                loading="lazy"
+                onerror="this.parentElement.classList.add('img-missing')"
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2: Notre Boulangerie -->
+    <section class="section section-beige" aria-labelledby="section-boulangerie">
+      <div class="container">
+        <div class="section-inner reverse">
+          <div class="section-image">
+            <!-- IMAGE SLOT: about-boulangerie -->
+            <!-- File: pain-artisanal-crusthylia-marrakech.jpg | 800×1000 -->
+            <div class="img-slot image-hover-wrap img-reveal"
+                 data-slot="about-boulangerie">
+              <img
+                src="assets/images/pain-artisanal-crusthylia-marrakech.jpg"
+                alt="Pain artisanal et viennoiseries Crusthy'lia — baguettes, croissants et brioches faits maison à Marrakech"
+                title="Pain artisanal Crusthy'lia Marrakech — Boulangerie Targa"
+                width="800" height="1000"
+                loading="lazy"
+                onerror="this.parentElement.classList.add('img-missing')"
+              >
+            </div>
+          </div>
+          <div class="section-text">
+            <span class="eyebrow">Notre Boulangerie</span>
+            <div class="gold-line"></div>
+            <h2 id="section-boulangerie" class="reveal-text">Un fournil qui tourne <em>avant l'aube</em></h2>
+            <p>Le fournil de Crusthy'lia tourne avant même que la ville ne soit réveillée. Les premières fournées sortent avant 07h00 — baguettes, pains de campagne, pains aux céréales, brioches, croissants. Chaque pièce est pétrie à la main ou sur pétrin lent, fermentée suffisamment pour développer ses arômes, cuite sur sole à la bonne température.</p>
+            <p>Le pain artisanal que nous faisons ici n'est pas un pain qui se ressemble tous les jours par magie industrielle. Il vit avec le temps, avec la météo, avec la qualité du lot de farine. Nos boulangers ajustent chaque matin en fonction de ce qu'ils sentent et voient. C'est ça, l'artisanat : une attention quotidienne, jamais automatisée.</p>
+            <p>Côté viennoiseries, nous travaillons exclusivement le beurre AOC pour nos feuilletages. Le croissant que vous trouvez chez nous a ce qu'il faut : un extérieur doré et craquant, une mie alvéolée et beurrée, un parfum qui ne ment pas. Rien n'est congelé avant vente, rien n'est réchauffé après la veille.</p>
+            <div class="highlight-box">
+              <p>Nos viennoiseries sont disponibles en boutique dès 07h00, et en livraison sur commande via <a href="https://wa.me/message/NDWNBPJQV6GXE1" class="inline-link">WhatsApp</a>. Les stocks sont limités — arrivez tôt ou commandez la veille.</p>
+            </div>
+            <a href="/boulangerie-artisanale-marrakech.html" class="btn btn-secondary" style="margin-top: var(--space-6);">Notre boulangerie →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: Notre Cuisine -->
+    <section class="section" aria-labelledby="section-cuisine">
+      <div class="container">
+        <div class="section-inner">
+          <div class="section-text">
+            <span class="eyebrow">Notre Cuisine</span>
+            <div class="gold-line"></div>
+            <h2 id="section-cuisine" class="reveal-text">La cuisine maison, <em>du souk à l'assiette</em></h2>
+            <p>Si la boulangerie représente l'âme de Crusthy'lia, la cuisine en est le cœur battant. Dès le midi, notre équipe prend le relais pour un service restaurant complet, jusqu'à 00h00 chaque soir.</p>
+            <p>La cuisine maison est le principe directeur de tout ce que nous cuisinons. Les sauces sont réduites sur place. Les marinades sont préparées à l'avance avec les épices achetées fraîches au souk. Les plats du jour changent selon les arrivages et les saisons — pas parce que c'est tendance, mais parce que c'est logique.</p>
+            <p>Notre carte mêle avec naturel les influences marocaines et internationales. La harira est préparée selon une recette transmise et affinée — bouillon riche, légumineuses fondantes, coriandre et citron confit en finition. La pastilla, qu'elle soit au poulet et amandes ou revisitée aux fruits de mer, est feuilletée, parfumée, dorée comme elle se doit. Côté international, les burgers utilisent des steaks hachés préparés le jour même, les pizzas cuisent sur sole chaude.</p>
+            <a href="/menu.html" class="btn btn-secondary" style="margin-top: var(--space-6);">Voir le menu complet →</a>
+          </div>
+          <div class="section-image">
+            <!-- IMAGE SLOT: about-cuisine -->
+            <!-- File: cuisine-maison-crusthylia-restaurant-targa.jpg | 800×1000 -->
+            <div class="img-slot image-hover-wrap img-reveal"
+                 data-slot="about-cuisine">
+              <img
+                src="assets/images/cuisine-maison-crusthylia-restaurant-targa.jpg"
+                alt="Cuisine maison Crusthy'lia — plats marocains et internationaux préparés chaque jour à Targa Marrakech"
+                title="Cuisine maison Crusthy'lia — Restaurant Targa Marrakech"
+                width="800" height="1000"
+                loading="lazy"
+                onerror="this.parentElement.classList.add('img-missing')"
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4: Notre Café -->
+    <section class="section section-beige" aria-labelledby="section-cafe">
+      <div class="container">
+        <div class="section-inner reverse">
+          <div class="section-image">
+            <!-- IMAGE SLOT: about-cafe -->
+            <!-- File: cafe-artisanal-crusthylia-marrakech-salle.jpg | 800×1000 -->
+            <div class="img-slot image-hover-wrap img-reveal"
+                 data-slot="about-cafe">
+              <img
+                src="assets/images/cafe-artisanal-crusthylia-marrakech-salle.jpg"
+                alt="Salle du café artisanal Crusthy'lia à Targa Marrakech — lumière naturelle, ambiance cosy"
+                title="Café Artisanal Crusthy'lia — Targa Marrakech"
+                width="800" height="1000"
+                loading="lazy"
+                onerror="this.parentElement.classList.add('img-missing')"
+              >
+            </div>
+          </div>
+          <div class="section-text">
+            <span class="eyebrow">Notre Café</span>
+            <div class="gold-line"></div>
+            <h2 id="section-cafe" class="reveal-text">Un café artisanal <em>à part entière</em></h2>
+            <p>Le café chez Crusthy'lia, c'est une troisième identité à part entière — ni accessoire, ni afterthought. Nous avons investi dans l'équipement et dans la formation pour proposer un café artisanal qui tient la route face aux meilleures adresses spécialisées.</p>
+            <p>Notre espresso de base est soigneusement sélectionné : équilibre entre acidité et corps, extraction calibrée pour chaque service. Sur cette base, nous construisons tous nos espresso-based drinks — cappuccino, latte, flat white, cortado. La mousse de lait est texturée à la bonne température, ni trop chaude ni trop froide.</p>
+            <p>Les boissons signature complètent la carte : matcha latte préparé avec du vrai matcha cérémonie, cold brew en infusion lente sur 12 heures, chocolat chaud à la couverture, smoothies aux fruits frais. La salle café est conçue pour qu'on s'y attarde : lumière naturelle en journée, éclairage chaud le soir, WiFi disponible.</p>
+            <a href="/cafe-artisanal-marrakech.html" class="btn btn-secondary" style="margin-top: var(--space-6);">Notre carte café →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 5: Notre Engagement -->
+    <section class="section section-dark" aria-labelledby="section-engagement">
+      <div class="container">
+        <div class="section-single">
+          <span class="eyebrow">Notre Engagement</span>
+          <div class="gold-line" style="margin-left:0;"></div>
+          <h2 id="section-engagement" class="reveal-text">Une adresse de quartier, <em>une responsabilité locale</em></h2>
+          <p>Crusthy'lia est une adresse de quartier, et elle assume pleinement cette responsabilité locale. Notre engagement envers la communauté Targa se traduit de plusieurs façons concrètes.</p>
+          <p>Le programme de livraison école est notre initiative la plus structurée : des repas équilibrés, préparés quotidiennement, livrés directement dans les établissements scolaires du secteur. Les parents abonnés reçoivent un menu hebdomadaire le dimanche soir et commandent via WhatsApp. C'est une réponse directe à un besoin réel des familles de Targa.</p>
+          <p>Côté approvisionnement, nous travaillons autant que possible avec des produits locaux : légumes du marché de Targa, fruits de saison, épices du souk. Pas par posture, mais parce que les produits locaux sont souvent meilleurs, plus frais, et que leur achat fait sens économiquement pour le tissu local.</p>
+
+          <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: var(--space-6); margin-top: var(--space-12);">
+            <div style="text-align:center; padding: var(--space-6); border: 1px solid rgba(200,169,110,0.3); border-radius: var(--radius-lg);">
+              <i class="ph ph-bread" style="font-size: 2rem; color: var(--color-gold); display:block; margin-bottom: var(--space-3);"></i>
+              <strong style="font-family: var(--font-display); font-size: var(--text-xl); color: var(--color-gold-light);">Fraîcheur</strong>
+              <p style="font-size: var(--text-sm); margin-top: var(--space-2);">Quotidienne, sans exception</p>
+            </div>
+            <div style="text-align:center; padding: var(--space-6); border: 1px solid rgba(200,169,110,0.3); border-radius: var(--radius-lg);">
+              <i class="ph ph-leaf" style="font-size: 2rem; color: var(--color-gold); display:block; margin-bottom: var(--space-3);"></i>
+              <strong style="font-family: var(--font-display); font-size: var(--text-xl); color: var(--color-gold-light);">Local</strong>
+              <p style="font-size: var(--text-sm); margin-top: var(--space-2);">Sourcing local privilégié</p>
+            </div>
+            <div style="text-align:center; padding: var(--space-6); border: 1px solid rgba(200,169,110,0.3); border-radius: var(--radius-lg);">
+              <i class="ph ph-student" style="font-size: 2rem; color: var(--color-gold); display:block; margin-bottom: var(--space-3);"></i>
+              <strong style="font-family: var(--font-display); font-size: var(--text-xl); color: var(--color-gold-light);">Communauté</strong>
+              <p style="font-size: var(--text-sm); margin-top: var(--space-2);">Programme école actif</p>
+            </div>
+            <div style="text-align:center; padding: var(--space-6); border: 1px solid rgba(200,169,110,0.3); border-radius: var(--radius-lg);">
+              <i class="ph ph-users" style="font-size: 2rem; color: var(--color-gold); display:block; margin-bottom: var(--space-3);"></i>
+              <strong style="font-family: var(--font-display); font-size: var(--text-xl); color: var(--color-gold-light);">Accueil</strong>
+              <p style="font-size: var(--text-sm); margin-top: var(--space-2);">Tout le monde bienvenu</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Band -->
+    <section class="cta-band" aria-label="Venez nous rendre visite">
+      <div class="container cta-band-content">
+        <span class="eyebrow" style="color:var(--color-gold-light);">Targa, Marrakech</span>
+        <h2 class="reveal-text">Venez nous rendre visite</h2>
+        <p>890 Lotissement Nakhil 2, Targa — Tous les jours 07h00–00h00</p>
+        <div class="cta-band-actions">
+          <a href="https://wa.me/message/NDWNBPJQV6GXE1" class="btn btn-cream btn-magnetic" target="_blank" rel="noopener">
+            <i class="ph ph-whatsapp-logo"></i>
+            <span>Commander sur WhatsApp</span>
+          </a>
+          <a href="https://maps.app.goo.gl/vTmgJStVPV5HHdK79" class="btn btn-outline-cream" target="_blank" rel="noopener">
+            <i class="ph ph-map-pin"></i>
+            <span>Voir sur Google Maps</span>
+          </a>
+          <a href="/faq.html" class="btn btn-outline-cream">
+            <i class="ph ph-question"></i>
+            <span>Questions fréquentes</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-main container">
+      <div class="footer-brand">
+        <a href="/" class="footer-logo">Crusthy'lia</a>
+        <p class="footer-tagline">Fait maison, chaque jour.</p>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/crusthylia/" aria-label="Instagram" target="_blank" rel="noopener"><i class="ph ph-instagram-logo"></i></a>
+          <a href="https://wa.me/message/NDWNBPJQV6GXE1" aria-label="WhatsApp" target="_blank" rel="noopener"><i class="ph ph-whatsapp-logo"></i></a>
+          <a href="https://maps.app.goo.gl/vTmgJStVPV5HHdK79" aria-label="Google Maps" target="_blank" rel="noopener"><i class="ph ph-map-pin"></i></a>
+          <a href="https://www.tripadvisor.fr/Restaurant_Review-g293734-d34128682-Reviews-Crusthy_lia-Marrakech_Marrakech_Safi.html" aria-label="TripAdvisor" target="_blank" rel="noopener"><i class="ph ph-star"></i></a>
+        </div>
+      </div>
+      <nav class="footer-sitemap" aria-label="Plan du site">
+        <div class="footer-col"><h4>Nos Offres</h4><ul>
+          <li><a href="/menu.html">Menu Complet Crusthy'lia</a></li>
+          <li><a href="/brunch-marrakech.html">Brunch à Marrakech</a></li>
+          <li><a href="/petit-dejeuner-targa-marrakech.html">Petit Déjeuner Targa</a></li>
+          <li><a href="/boulangerie-artisanale-marrakech.html">Boulangerie Artisanale Marrakech</a></li>
+          <li><a href="/patisserie-marrakech.html">Pâtisserie Marrakech</a></li>
+          <li><a href="/cafe-artisanal-marrakech.html">Café Artisanal Marrakech</a></li>
+          <li><a href="/restaurant-targa-marrakech.html">Restaurant Targa Marrakech</a></li>
+        </ul></div>
+        <div class="footer-col"><h4>Services</h4><ul>
+          <li><a href="/livraison-marrakech.html">Livraison à Marrakech</a></li>
+          <li><a href="/livraison-dejeuner-ecole-marrakech.html">Livraison Déjeuner École Marrakech</a></li>
+          <li><a href="/reservation-marrakech.html">Réserver une Table Marrakech</a></li>
+          <li><a href="/evenements-marrakech.html">Événements &amp; Privatisation Marrakech</a></li>
+          <li><a href="/pourquoi-crusthylia.html">Pourquoi Crusthy'lia ?</a></li>
+        </ul></div>
+        <div class="footer-col"><h4>Informations</h4><ul>
+          <li><a href="/qui-sommes-nous.html">Notre Histoire</a></li>
+          <li><a href="/faq.html">Questions Fréquentes</a></li>
+          <li><a href="/contact.html">Contact &amp; Adresse</a></li>
+          <li><a href="/notre-engagement.html">Notre Engagement Qualité</a></li>
+          <li><a href="/blog/">Blog — Marrakech Food Guide</a></li>
+        </ul></div>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-nap container">
+        <address>
+          <span>890 Lotissement Nakhil 2, Targa, Marrakech 40000, Maroc</span>
+          <span> · </span><a href="tel:+212764745159">+212 764 745 159</a>
+          <span> · </span><span>Tous les jours 07:00–00:00</span>
+        </address>
+      </div>
+      <div class="footer-bottom-bar container">
+        <p class="footer-copyright">© 2026 Crusthy'lia — Boulangerie Artisanale Marrakech</p>
+        <div class="footer-lang">
+          <button class="lang-btn active" data-lang="fr">FR</button><span>|</span>
+          <button class="lang-btn" data-lang="en">EN</button><span>|</span>
+          <button class="lang-btn" data-lang="ar">درج</button>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Actions -->
+  <div class="floating-actions" id="floating-actions">
+    <a href="https://glovoapp.com/fr/ma/marrakech/stores/crusthylia-mar" class="floating-btn floating-btn-glovo" target="_blank" rel="noopener noreferrer" aria-label="Commander sur Glovo" title="Commander sur Glovo">
+      <i class="ph ph-storefront" aria-hidden="true"></i>
+    </a>
+    <a href="https://wa.me/message/NDWNBPJQV6GXE1" class="floating-btn floating-btn-wa" target="_blank" rel="noopener noreferrer" aria-label="Commander sur WhatsApp" title="Commander sur WhatsApp">
+      <i class="ph ph-whatsapp-logo" aria-hidden="true"></i>
+    </a>
+  </div>
+  <script>
+  window.addEventListener('scroll',function(){var b=document.querySelectorAll('.floating-btn');var v=window.scrollY>300;b.forEach(function(x){x.classList.toggle('visible',v);});},{passive:true});
+  </script>
+
+  <!-- JS -->
+  <script src="/assets/js/i18n.js" defer></script>
+  <script src="/assets/js/main.js" defer></script>
+  <script src="/assets/js/animations.js" defer></script>
+
+  <script>
+    // Loader
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        document.getElementById('page-loader').classList.add('loaded');
+      }, 700);
+    });
+
+    // Nav scroll state
+    const nav = document.getElementById('site-nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 80);
+    }, { passive: true });
+
+    // Mobile menu
+    const hamburger = document.querySelector('.nav-hamburger');
+    const mobileMenu = document.getElementById('mobile-menu');
+    hamburger?.addEventListener('click', () => {
+      const open = mobileMenu.classList.toggle('open');
+      hamburger.setAttribute('aria-expanded', open);
+      mobileMenu.setAttribute('aria-hidden', !open);
+      document.body.style.overflow = open ? 'hidden' : '';
+    });
+
+    // Custom cursor
+    const cursor = document.querySelector('.cursor');
+    const cursorDot = document.querySelector('.cursor-dot');
+    if (cursor && cursorDot) {
+      window.addEventListener('mousemove', (e) => {
+        gsap.to(cursor, { x: e.clientX, y: e.clientY, duration: 0.6, ease: 'power2.out' });
+        gsap.to(cursorDot, { x: e.clientX, y: e.clientY, duration: 0.1 });
+      });
+      document.querySelectorAll('a, button, .card').forEach(el => {
+        el.addEventListener('mouseenter', () => gsap.to(cursor, { scale: 2.5, duration: 0.3 }));
+        el.addEventListener('mouseleave', () => gsap.to(cursor, { scale: 1, duration: 0.3 }));
+      });
+    }
+
+    // GSAP Animations
+    gsap.registerPlugin(ScrollTrigger, SplitText);
+
+    // Nav slide in
+    gsap.from('.nav', { y: -100, opacity: 0, duration: 0.6, ease: 'power3.out', delay: 0.8 });
+
+    // Hero content
+    gsap.from('.page-hero h1', { y: 60, opacity: 0, duration: 1, ease: 'power4.out', delay: 1 });
+    gsap.from('.page-hero-sub', { y: 30, opacity: 0, duration: 0.8, ease: 'power3.out', delay: 1.3 });
+    gsap.from('.breadcrumb', { y: 20, opacity: 0, duration: 0.6, ease: 'power3.out', delay: 0.9 });
+
+    // Hero image reveal
+    gsap.from('.hero-image-wrap .img-slot', {
+      clipPath: 'inset(100% 0% 0% 0%)',
+      duration: 1.2,
+      ease: 'power3.inOut',
+      delay: 1.1
+    });
+
+    // Reveal text headings
+    gsap.utils.toArray('.reveal-text').forEach(el => {
+      try {
+        const split = new SplitText(el, { type: 'lines,words' });
+        gsap.from(split.words, {
+          scrollTrigger: { trigger: el, start: 'top 85%', toggleActions: 'play none none none' },
+          opacity: 0, y: 60, rotateX: -15,
+          stagger: 0.05, duration: 0.9, ease: 'power3.out'
+        });
+      } catch(e) {
+        gsap.from(el, {
+          scrollTrigger: { trigger: el, start: 'top 85%' },
+          opacity: 0, y: 40, duration: 0.8, ease: 'power3.out'
+        });
+      }
+    });
+
+    // Image reveals on scroll
+    gsap.utils.toArray('.img-reveal').forEach(img => {
+      gsap.from(img, {
+        scrollTrigger: { trigger: img, start: 'top 85%' },
+        clipPath: 'inset(100% 0% 0% 0%)',
+        duration: 1.1,
+        ease: 'power3.inOut'
+      });
+    });
+
+    // Section text fade
+    gsap.utils.toArray('.section-text p, .section-text .btn').forEach(el => {
+      gsap.from(el, {
+        scrollTrigger: { trigger: el, start: 'top 90%' },
+        opacity: 0, y: 25, duration: 0.7, ease: 'power2.out'
+      });
+    });
+
+    // Magnetic buttons
+    document.querySelectorAll('.btn-magnetic').forEach(btn => {
+      btn.addEventListener('mousemove', (e) => {
+        const rect = btn.getBoundingClientRect();
+        const x = e.clientX - rect.left - rect.width / 2;
+        const y = e.clientY - rect.top - rect.height / 2;
+        gsap.to(btn, { x: x * 0.25, y: y * 0.25, duration: 0.4, ease: 'power2.out' });
+      });
+      btn.addEventListener('mouseleave', () => {
+        gsap.to(btn, { x: 0, y: 0, duration: 0.6, ease: 'elastic.out(1, 0.5)' });
+      });
+    });
+
+    // Lenis smooth scroll
+    if (typeof Lenis !== 'undefined') {
+      const lenis = new Lenis({
+        duration: 1.4,
+        easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+        direction: 'vertical',
+        smooth: true,
+        smoothTouch: false,
+        touchMultiplier: 2,
+      });
+      lenis.on('scroll', ScrollTrigger.update);
+      gsap.ticker.add((time) => lenis.raf(time * 1000));
+      gsap.ticker.lagSmoothing(0);
+    }
+  </script>
+<div class="floating-actions" id="floating-actions">
+  <a href="https://glovoapp.com/fr/ma/marrakech/stores/crusthylia-mar" class="floating-btn floating-btn-glovo" target="_blank" rel="noopener noreferrer" aria-label="Commander sur Glovo" title="Commander sur Glovo">
+    <i class="ph ph-storefront" aria-hidden="true"></i>
+  </a>
+  <a href="https://wa.me/message/NDWNBPJQV6GXE1" class="floating-btn floating-btn-wa" target="_blank" rel="noopener noreferrer" aria-label="Commander sur WhatsApp" title="Commander sur WhatsApp">
+    <i class="ph ph-whatsapp-logo" aria-hidden="true"></i>
+  </a>
+</div>
+<script>
+window.addEventListener('scroll',function(){var b=document.querySelectorAll('.floating-btn');var v=window.scrollY>300;b.forEach(function(x){x.classList.toggle('visible',v);});},{passive:true});
+</script>
+</body>
+</html>

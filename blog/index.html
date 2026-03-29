@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog & Actualités — Crusthy'lia Boulangerie Marrakech</title>
+  <meta name="description" content="Conseils, guides et actualités de votre boulangerie-café artisanale à Marrakech. Brunch, petit déjeuner, pâtisserie marocaine, café artisanal — le blog de Crusthy'lia.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://crusthylia.com/blog/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Blog & Actualités — Crusthy'lia Boulangerie Marrakech">
+  <meta property="og:description" content="Conseils, guides et actualités de votre boulangerie-café artisanale à Marrakech.">
+  <meta property="og:url" content="https://crusthylia.com/blog/">
+  <meta property="og:image" content="https://crusthylia.com/assets/images/blog-index-og.jpg">
+  <meta property="og:locale" content="fr_MA">
+  <meta property="og:site_name" content="Crusthy'lia">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Blog & Actualités — Crusthy'lia Boulangerie Marrakech">
+  <meta name="twitter:description" content="Conseils, guides et actualités de votre boulangerie-café artisanale à Marrakech.">
+  <meta name="twitter:image" content="https://crusthylia.com/assets/images/blog-index-og.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&family=Cairo:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/animations.css">
+  <link rel="stylesheet" href="/assets/css/rtl.css">
+  <style>
+    .blog-card:hover .img-slot img { transform: scale(1.04); }
+    .blog-card { transition: box-shadow 0.3s ease; }
+    .blog-card:hover { box-shadow: 0 8px 40px rgba(0,0,0,0.12); }
+  </style>
+</head>
+<body>
+  <a href="#main" class="skip-link">Aller au contenu principal</a>
+  <div class="cursor" aria-hidden="true"></div>
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="page-loader" id="page-loader" aria-hidden="true">
+    <div class="loader-inner">
+  <img src="/assets/images/logo.png" alt="Crusthy'lia" class="loader-logo-img">
+  <p class="loader-slogan">Le rendez-vous des gourmands</p>
+</div>
+  </div>
+
+  <nav class="site-nav" id="site-nav" role="navigation" aria-label="Navigation principale">
+    <div class="container nav-inner">
+      <a href="/" class="nav-logo" aria-label="Crusthy'lia — Accueil"><img src="/assets/images/logo.png" alt="Crusthy'lia" class="nav-logo-img"></a>
+      <ul class="nav-links" role="list">
+        <li><a href="/menu.html" data-i18n="nav_menu" class="nav-link">Menu</a></li>
+        <li><a href="/brunch-marrakech.html" data-i18n="nav_brunch" class="nav-link">Brunch</a></li>
+        <li><a href="/qui-sommes-nous.html" data-i18n="nav_about" class="nav-link">Notre Histoire</a></li>
+        <li><a href="/blog/" data-i18n="nav_blog" class="nav-link active" aria-current="page">Blog</a></li>
+        <li><a href="/contact.html" data-i18n="nav_contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <div class="lang-switcher" role="navigation" aria-label="Language selector">
+          <button class="lang-btn active" data-lang="fr" aria-pressed="true">FR</button>
+          <span class="lang-divider">|</span>
+          <button class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+          <span class="lang-divider">|</span>
+          <button class="lang-btn" data-lang="ar" aria-pressed="false">AR</button>
+        </div>
+        <a href="/reservation-marrakech.html" class="btn btn-primary btn-sm nav-cta btn-magnetic">
+          <span data-i18n="nav_reserve">Réserver</span>
+        </a>
+      </div>
+      <button class="nav-hamburger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span class="hamburger-line"></span><span class="hamburger-line"></span><span class="hamburger-line"></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true">
+      <button class="mobile-menu-close" aria-label="Fermer le menu"><i class="ph ph-x"></i></button>
+      <ul class="mobile-nav-links" role="list">
+        <li><a href="/menu.html" class="mobile-nav-link">Menu</a></li>
+        <li><a href="/brunch-marrakech.html" class="mobile-nav-link">Brunch</a></li>
+        <li><a href="/qui-sommes-nous.html" class="mobile-nav-link">Notre Histoire</a></li>
+        <li><a href="/blog/" class="mobile-nav-link">Blog</a></li>
+        <li><a href="/contact.html" class="mobile-nav-link">Contact</a></li>
+      </ul>
+      <div class="mobile-lang-switcher">
+        <button class="lang-btn active" data-lang="fr">FR</button><span class="lang-divider">|</span>
+        <button class="lang-btn" data-lang="en">EN</button><span class="lang-divider">|</span>
+        <button class="lang-btn" data-lang="ar">درج</button>
+      </div>
+      <a href="/reservation-marrakech.html" class="btn btn-primary btn-magnetic mobile-cta"><span data-i18n="nav_reserve">Réserver</span></a>
+    </div>
+  </nav>
+
+  <main id="main">
+    <!-- PAGE HERO -->
+    <section class="page-hero section-dark has-grain" style="background: var(--color-brown-dark); padding: var(--space-32) 0 var(--space-24);">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Fil d'Ariane">
+          <a href="/">Accueil</a>
+          <span class="breadcrumb-separator" aria-hidden="true">→</span>
+          <span aria-current="page">Blog</span>
+        </nav>
+        <div class="page-hero-content" style="color:var(--color-cream); margin-top:var(--space-8);">
+          <span class="eyebrow">Crusthy'lia</span>
+          <h1 class="reveal-text" style="color:var(--color-cream);">Blog &amp; Actualités</h1>
+          <p style="color:rgba(253,248,240,0.75); max-width:55ch; margin-top:var(--space-4);">
+            Conseils, guides et actualités de votre boulangerie-café artisanale à Marrakech
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- BLOG GRID -->
+    <section style="padding: var(--space-24) 0; background: var(--color-cream);">
+      <div class="container">
+        <div class="card-grid" style="display:grid; grid-template-columns: repeat(auto-fill, minmax(320px,1fr)); gap: var(--space-8);">
+
+          <!-- 1 -->
+          <article class="card blog-card">
+            <div class="img-slot" data-slot="blog-brunch-marrakech-2026-hero" style="aspect-ratio:16/9; overflow:hidden;">
+              <img src="/assets/images/blog-brunch-marrakech-2026-hero.jpg" alt="Brunch artisanal chez Crusthy'lia à Targa, Marrakech" width="800" height="450" loading="lazy" onerror="this.closest('.img-slot').classList.add('img-missing')" style="width:100%; height:100%; object-fit:cover; transition: transform 0.6s ease;">
+            </div>
+            <div class="card-body" style="padding: var(--space-6);">
+              <div class="blog-card-meta" style="display:flex; gap:var(--space-3); margin-bottom:var(--space-3); font-size:var(--text-xs); color:var(--color-text-muted); letter-spacing:var(--tracking-wide); text-transform:uppercase;">
+                <span>Brunch</span>
+                <span>·</span>
+                <time datetime="2026-03-27">Mars 2026</time>
+                <span>·</span>
+                <span>6 min de lecture</span>
+              </div>
+              <h2 style="font-family:var(--font-display); font-size:var(--text-2xl); color:var(--color-brown-dark); margin-bottom:var(--space-3); line-height:var(--leading-snug);">Les Meilleurs Brunchs de Marrakech en 2026 — Notre Sélection</h2>
+              <p style="color:var(--color-text-muted); font-size:var(--text-base); margin-bottom:var(--space-4);">Guide des meilleurs brunchs à Marrakech en 2026. De Targa à Guéliz, on vous dit où manger le week-end — et pourquoi le brunch de quartier l'emporte.</p>
+              <a href="/blog/meilleurs-brunchs-marrakech-2026.html" class="btn btn-secondary" style="font-size:var(--text-sm); padding: 10px 20px;">Lire l'article →</a>
+            </div>
+          </article>
+
+          <!-- 2 -->
+          <article class="card blog-card">
+            <div class="img-slot" data-slot="blog-petit-dejeuner-targa-hero" style="aspect-ratio:16/9; overflow:hidden;">
+              <img src="/assets/images/blog-petit-dejeuner-targa-hero.jpg" alt="Petit déjeuner marocain beldi chez Crusthy'lia à Targa" width="800" height="450" loading="lazy" onerror="this.closest('.img-slot').classList.add('img-missing')" style="width:100%; height:100%; object-fit:cover; transition: transform 0.6s ease;">
+            </div>
+            <div class="card-body" style="padding: var(--space-6);">
+              <div class="blog-card-meta" style="display:flex; gap:var(--space-3); margin-bottom:var(--space-3); font-size:var(--text-xs); color:var(--color-text-muted); letter-spacing:var(--tracking-wide); text-transform:uppercase;">
+                <span>Petit Déjeuner</span>
+                <span>·</span>
+                <time datetime="2026-03-27">Mars 2026</time>
+                <span>·</span>
+                <span>5 min de lecture</span>
+              </div>
+              <h2 style="font-family:var(--font-display); font-size:var(--text-2xl); color:var(--color-brown-dark); margin-bottom:var(--space-3); line-height:var(--leading-snug);">Petit Déjeuner à Targa, Marrakech — Guide Complet 2026</h2>
+              <p style="color:var(--color-text-muted); font-size:var(--text-base); margin-bottom:var(--space-4);">Tout ce qu'il faut savoir pour bien commencer la journée dans le quartier de Targa : formules, prix, horaires et la meilleure adresse artisanale du secteur.</p>
+              <a href="/blog/petit-dejeuner-targa-guide-complet.html" class="btn btn-secondary" style="font-size:var(--text-sm); padding: 10px 20px;">Lire l'article →</a>
+            </div>
+          </article>
+
+          <!-- 3 -->
+          <article class="card blog-card">
+            <div class="img-slot" data-slot="blog-livraison-ecole-marrakech-hero" style="aspect-ratio:16/9; overflow:hidden;">
+              <img src="/assets/images/blog-livraison-ecole-marrakech-hero.jpg" alt="Lunch box repas scolaire livraison école Marrakech" width="800" height="450" loading="lazy" onerror="this.closest('.img-slot').classList.add('img-missing')" style="width:100%; height:100%; object-fit:cover; transition: transform 0.6s ease;">
+            </div>
+            <div class="card-body" style="padding: var(--space-6);">
+              <div class="blog-card-meta" style="display:flex; gap:var(--space-3); margin-bottom:var(--space-3); font-size:var(--text-xs); color:var(--color-text-muted); letter-spacing:var(--tracking-wide); text-transform:uppercase;">
+                <span>Familles</span>
+                <span>·</span>
+                <time datetime="2026-03-27">Mars 2026</time>
+                <span>·</span>
+                <span>5 min de lecture</span>
+              </div>
+              <h2 style="font-family:var(--font-display); font-size:var(--text-2xl); color:var(--color-brown-dark); margin-bottom:var(--space-3); line-height:var(--leading-snug);">Livraison Déjeuner École à Marrakech — Guide Complet pour les Parents</h2>
+              <p style="color:var(--color-text-muted); font-size:var(--text-base); margin-bottom:var(--space-4);">Ce que tout parent doit savoir avant de chercher une solution pour le repas scolaire de son enfant. Programme Menu École de Crusthy'lia, abonnements et menus types.</p>
+              <a href="/blog/livraison-ecole-marrakech-guide-parents.html" class="btn btn-secondary" style="font-size:var(--text-sm); padding: 10px 20px;">Lire l'article →</a>
+            </div>
+          </article>
+
+          <!-- 4 -->
+          <article class="card blog-card">
+            <div class="img-slot" data-slot="blog-boulangerie-artisanale-vs-industrielle-hero" style="aspect-ratio:16/9; overflow:hidden;">
+              <img src="/assets/images/blog-boulangerie-artisanale-vs-industrielle-hero.jpg" alt="Pain artisanal sorti du fournil de Crusthy'lia à Marrakech" width="800" height="450" loading="lazy" onerror="this.closest('.img-slot').classList.add('img-missing')" style="width:100%; height:100%; object-fit:cover; transition: transform 0.6s ease;">
+            </div>
+            <div class="card-body" style="padding: var(--space-6);">
+              <div class="blog-card-meta" style="display:flex; gap:var(--space-3); margin-bottom:var(--space-3); font-size:var(--text-xs); color:var(--color-text-muted); letter-spacing:var(--tracking-wide); text-transform:uppercase;">
+                <span>Boulangerie</span>
+                <span>·</span>
+                <time datetime="2026-03-27">Mars 2026</time>
+                <span>·</span>
+                <span>5 min de lecture</span>
+              </div>
+              <h2 style="font-family:var(--font-display); font-size:var(--text-2xl); color:var(--color-brown-dark); margin-bottom:var(--space-3); line-height:var(--leading-snug);">Boulangerie Artisanale vs Industrielle à Marrakech — Quelle Différence ?</h2>
+              <p style="color:var(--color-text-muted); font-size:var(--text-base); margin-bottom:var(--space-4);">Ingrédients, fermentation, fraîcheur : pourquoi le pain artisanal de Crusthy'lia est fondamentalement différent de ce que vous trouvez dans une épicerie. Ce que ça change vraiment dans l'assiette.</p>
+              <a href="/blog/boulangerie-artisanale-vs-industrielle-marrakech.html" class="btn btn-secondary" style="font-size:var(--text-sm); padding: 10px 20px;">Lire l'article →</a>
+            </div>
+          </article>
+
+          <!-- 5 -->
+          <article class="card blog-card">
+            <div class="img-slot" data-slot="blog-guide-cafe-marrakech-hero" style="aspect-ratio:16/9; overflow:hidden;">
+              <img src="/assets/images/blog-guide-cafe-marrakech-hero.jpg" alt="Espresso artisanal préparé chez Crusthy'lia Targa Marrakech" width="800" height="450" loading="lazy" onerror="this.closest('.img-slot').classList.add('img-missing')" style="width:100%; height:100%; object-fit:cover; transition: transform 0.6s ease;">
+            </div>
+            <div class="card-body" style="padding: var(--space-6);">
+              <div class="blog-card-meta" style="display:flex; gap:var(--space-3); margin-bottom:var(--space-3); font-size:var(--text-xs); color:var(--color-text-muted); letter-spacing:var(--tracking-wide); text-transform:uppercase;">
+                <span>Café</span>
+                <span>·</span>
+                <time datetime="2026-03-27">Mars 2026</time>
+                <span>·</span>
+                <span>5 min de lecture</span>
+              </div>
+              <h2 style="font-family:var(--font-display); font-size:var(--text-2xl); color:var(--color-brown-dark); margin-bottom:var(--space-3); line-height:var(--leading-snug);">Guide des Meilleurs Cafés de Marrakech — Où Boire un Bon Café en 2026</h2>
+              <p style="color:var(--color-text-muted); font-size:var(--text-base); margin-bottom:var(--space-4);">Pour les amateurs qui ne veulent plus transiger sur la qualité de leur espresso. Les critères d'un bon café artisanal, les adresses qui valent le détour, et pourquoi Targa se hisse en tête.</p>
+              <a href="/blog/guide-cafe-marrakech-les-meilleurs.html" class="btn btn-secondary" style="font-size:var(--text-sm); padding: 10px 20px;">Lire l'article →</a>
+            </div>
+          </article>
+
+          <!-- 6 -->
+          <article class="card blog-card">
+            <div class="img-slot" data-slot="blog-patisserie-marocaine-traditions-hero" style="aspect-ratio:16/9; overflow:hidden;">
+              <img src="/assets/images/blog-patisserie-marocaine-traditions-hero.jpg" alt="Plateau de pâtisseries marocaines traditionnelles — cornes de gazelle, chebakia, makrout" width="800" height="450" loading="lazy" onerror="this.closest('.img-slot').classList.add('img-missing')" style="width:100%; height:100%; object-fit:cover; transition: transform 0.6s ease;">
+            </div>
+            <div class="card-body" style="padding: var(--space-6);">
+              <div class="blog-card-meta" style="display:flex; gap:var(--space-3); margin-bottom:var(--space-3); font-size:var(--text-xs); color:var(--color-text-muted); letter-spacing:var(--tracking-wide); text-transform:uppercase;">
+                <span>Pâtisserie</span>
+                <span>·</span>
+                <time datetime="2026-03-27">Mars 2026</time>
+                <span>·</span>
+                <span>6 min de lecture</span>
+              </div>
+              <h2 style="font-family:var(--font-display); font-size:var(--text-2xl); color:var(--color-brown-dark); margin-bottom:var(--space-3); line-height:var(--leading-snug);">Pâtisserie Marocaine : Traditions et Saveurs à Marrakech</h2>
+              <p style="color:var(--color-text-muted); font-size:var(--text-base); margin-bottom:var(--space-4);">Un voyage dans les recettes ancestrales de la table marocaine : cornes de gazelle, chebakia, makrout, sellou, fekkas. Histoire et savoir-faire artisanal à Crusthy'lia.</p>
+              <a href="/blog/patisserie-marocaine-traditions-marrakech.html" class="btn btn-secondary" style="font-size:var(--text-sm); padding: 10px 20px;">Lire l'article →</a>
+            </div>
+          </article>
+
+          <!-- 7 -->
+          <article class="card blog-card">
+            <div class="img-slot" data-slot="blog-brunch-marrakech-english-hero" style="aspect-ratio:16/9; overflow:hidden;">
+              <img src="/assets/images/blog-brunch-marrakech-english-hero.jpg" alt="Weekend brunch table at Crusthy'lia — Norwegian brunch with smoked salmon, Marrakech" width="800" height="450" loading="lazy" onerror="this.closest('.img-slot').classList.add('img-missing')" style="width:100%; height:100%; object-fit:cover; transition: transform 0.6s ease;">
+            </div>
+            <div class="card-body" style="padding: var(--space-6);">
+              <div class="blog-card-meta" style="display:flex; gap:var(--space-3); margin-bottom:var(--space-3); font-size:var(--text-xs); color:var(--color-text-muted); letter-spacing:var(--tracking-wide); text-transform:uppercase;">
+                <span>Brunch · English</span>
+                <span>·</span>
+                <time datetime="2026-03-27">Mars 2026</time>
+                <span>·</span>
+                <span>6 min read</span>
+              </div>
+              <h2 style="font-family:var(--font-display); font-size:var(--text-2xl); color:var(--color-brown-dark); margin-bottom:var(--space-3); line-height:var(--leading-snug);">Brunch in Marrakech — The Complete English Guide (2026)</h2>
+              <p style="color:var(--color-text-muted); font-size:var(--text-base); margin-bottom:var(--space-4);">Everything you need to know to find the best brunch in Marrakech — written for English-speaking visitors, expats, and food-curious travellers exploring beyond the medina.</p>
+              <a href="/blog/brunch-marrakech-english-guide.html" class="btn btn-secondary" style="font-size:var(--text-sm); padding: 10px 20px;">Read the article →</a>
+            </div>
+          </article>
+
+          <!-- 8 -->
+          <article class="card blog-card">
+            <div class="img-slot" data-slot="blog-menu-ramadan-iftar-hero" style="aspect-ratio:16/9; overflow:hidden;">
+              <img src="/assets/images/blog-menu-ramadan-iftar-hero.jpg" alt="Table de ftour ramadan chez Crusthy'lia — harira, chebakia, dattes, Marrakech" width="800" height="450" loading="lazy" onerror="this.closest('.img-slot').classList.add('img-missing')" style="width:100%; height:100%; object-fit:cover; transition: transform 0.6s ease;">
+            </div>
+            <div class="card-body" style="padding: var(--space-6);">
+              <div class="blog-card-meta" style="display:flex; gap:var(--space-3); margin-bottom:var(--space-3); font-size:var(--text-xs); color:var(--color-text-muted); letter-spacing:var(--tracking-wide); text-transform:uppercase;">
+                <span>Ramadan</span>
+                <span>·</span>
+                <time datetime="2026-03-27">Mars 2026</time>
+                <span>·</span>
+                <span>5 min de lecture</span>
+              </div>
+              <h2 style="font-family:var(--font-display); font-size:var(--text-2xl); color:var(--color-brown-dark); margin-bottom:var(--space-3); line-height:var(--leading-snug);">Menu Ramadan &amp; Iftar à Marrakech — Crusthy'lia pour votre Ftour</h2>
+              <p style="color:var(--color-text-muted); font-size:var(--text-base); margin-bottom:var(--space-4);">La table du ftour mérite le meilleur. Harira maison, chebakia, dattes, menus complets et livraison iftar à Marrakech pendant tout le mois de ramadan.</p>
+              <a href="/blog/menu-ramadan-iftar-marrakech.html" class="btn btn-secondary" style="font-size:var(--text-sm); padding: 10px 20px;">Lire l'article →</a>
+            </div>
+          </article>
+
+          <!-- 9 -->
+          <article class="card blog-card">
+            <div class="img-slot" data-slot="blog-anniversaire-restaurant-marrakech-hero" style="aspect-ratio:16/9; overflow:hidden;">
+              <img src="/assets/images/blog-anniversaire-restaurant-marrakech-hero.jpg" alt="Gâteau d'anniversaire sur commande chez Crusthy'lia, restaurant Targa Marrakech" width="800" height="450" loading="lazy" onerror="this.closest('.img-slot').classList.add('img-missing')" style="width:100%; height:100%; object-fit:cover; transition: transform 0.6s ease;">
+            </div>
+            <div class="card-body" style="padding: var(--space-6);">
+              <div class="blog-card-meta" style="display:flex; gap:var(--space-3); margin-bottom:var(--space-3); font-size:var(--text-xs); color:var(--color-text-muted); letter-spacing:var(--tracking-wide); text-transform:uppercase;">
+                <span>Événements</span>
+                <span>·</span>
+                <time datetime="2026-03-27">Mars 2026</time>
+                <span>·</span>
+                <span>5 min de lecture</span>
+              </div>
+              <h2 style="font-family:var(--font-display); font-size:var(--text-2xl); color:var(--color-brown-dark); margin-bottom:var(--space-3); line-height:var(--leading-snug);">Anniversaire au Restaurant à Marrakech — Idées et Inspiration chez Crusthy'lia</h2>
+              <p style="color:var(--color-text-muted); font-size:var(--text-base); margin-bottom:var(--space-4);">Gâteau sur commande, privatisation, brunch anniversaire ou dîner de groupe — tout ce qu'on peut faire pour que votre fête soit vraiment mémorable à Targa.</p>
+              <a href="/blog/anniversaire-restaurant-marrakech-idees.html" class="btn btn-secondary" style="font-size:var(--text-sm); padding: 10px 20px;">Lire l'article →</a>
+            </div>
+          </article>
+
+          <!-- 10 -->
+          <article class="card blog-card">
+            <div class="img-slot" data-slot="blog-marrakech-targa-neighbourhood-food-guide-hero" style="aspect-ratio:16/9; overflow:hidden;">
+              <img src="/assets/images/blog-marrakech-targa-neighbourhood-food-guide-hero.jpg" alt="Targa neighbourhood street, Marrakech — residential life beyond the medina" width="800" height="450" loading="lazy" onerror="this.closest('.img-slot').classList.add('img-missing')" style="width:100%; height:100%; object-fit:cover; transition: transform 0.6s ease;">
+            </div>
+            <div class="card-body" style="padding: var(--space-6);">
+              <div class="blog-card-meta" style="display:flex; gap:var(--space-3); margin-bottom:var(--space-3); font-size:var(--text-xs); color:var(--color-text-muted); letter-spacing:var(--tracking-wide); text-transform:uppercase;">
+                <span>Guide · English</span>
+                <span>·</span>
+                <time datetime="2026-03-27">Mars 2026</time>
+                <span>·</span>
+                <span>6 min read</span>
+              </div>
+              <h2 style="font-family:var(--font-display); font-size:var(--text-2xl); color:var(--color-brown-dark); margin-bottom:var(--space-3); line-height:var(--leading-snug);">Targa, Marrakech — Neighbourhood Food Guide for Visitors</h2>
+              <p style="color:var(--color-text-muted); font-size:var(--text-base); margin-bottom:var(--space-4);">Beyond Djemaa el-Fna, beyond the medina walls — a guide to the real Marrakech neighbourhood that locals call home, and where to eat when you get there.</p>
+              <a href="/blog/marrakech-targa-neighbourhood-food-guide.html" class="btn btn-secondary" style="font-size:var(--text-sm); padding: 10px 20px;">Read the article →</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="/" class="footer-logo">Crusthy'lia</a>
+        <p class="footer-tagline" data-i18n="footer_tagline">Fait maison, chaque jour</p>
+        <div class="social-links">
+          <a href="https://www.instagram.com/crusthylia/" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="ph ph-instagram-logo"></i></a>
+          <a href="https://wa.me/message/NDWNBPJQV6GXE1" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer"><i class="ph ph-whatsapp-logo"></i></a>
+          <a href="https://maps.app.goo.gl/vTmgJStVPV5HHdK79" aria-label="Google Maps" target="_blank" rel="noopener noreferrer"><i class="ph ph-map-pin"></i></a>
+          <a href="https://www.tripadvisor.fr/Restaurant_Review-g293734-d34128682-Reviews-Crusthy_lia-Marrakech_Marrakech_Safi.html" aria-label="TripAdvisor" target="_blank" rel="noopener noreferrer"><i class="ph ph-star"></i></a>
+        </div>
+      </div>
+      <div class="footer-nav">
+        <h3 class="footer-heading">Navigation</h3>
+        <ul class="footer-links">
+          <li><a href="/menu.html">Menu</a></li>
+          <li><a href="/brunch-marrakech.html">Brunch à Marrakech</a></li>
+          <li><a href="/petit-dejeuner-targa-marrakech.html">Petit Déjeuner Targa</a></li>
+          <li><a href="/livraison-marrakech.html">Livraison Marrakech</a></li>
+          <li><a href="/boulangerie-artisanale-marrakech.html">Boulangerie Artisanale</a></li>
+          <li><a href="/patisserie-marrakech.html">Pâtisserie Marrakech</a></li>
+          <li><a href="/cafe-artisanal-marrakech.html">Café Artisanal</a></li>
+          <li><a href="/restaurant-targa-marrakech.html">Restaurant Targa</a></li>
+        </ul>
+      </div>
+      <div class="footer-info">
+        <h3 class="footer-heading">Informations</h3>
+        <ul class="footer-links">
+          <li><a href="/qui-sommes-nous.html">Notre Histoire</a></li>
+          <li><a href="/notre-engagement.html">Notre Engagement</a></li>
+          <li><a href="/pourquoi-crusthylia.html">Pourquoi Crusthy'lia</a></li>
+          <li><a href="/faq.html">FAQ</a></li>
+          <li><a href="/evenements-marrakech.html">Événements</a></li>
+          <li><a href="/reservation-marrakech.html">Réservations</a></li>
+          <li><a href="/livraison-dejeuner-ecole-marrakech.html">Déjeuner École</a></li>
+          <li><a href="/blog/">Blog</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h3 class="footer-heading">Contact</h3>
+        <address>
+          <p><i class="ph ph-map-pin" aria-hidden="true"></i> 890 Lotissement Nakhil 2, Targa, Marrakech 40000</p>
+          <p><i class="ph ph-phone" aria-hidden="true"></i> <a href="tel:+212764745159">+212 764 745 159</a></p>
+          <p><i class="ph ph-envelope" aria-hidden="true"></i> <a href="mailto:contact@crusthylia.com">contact@crusthylia.com</a></p>
+          <p><i class="ph ph-clock" aria-hidden="true"></i> <span data-i18n="footer_hours">Tous les jours 07:00 – 00:00</span></p>
+        </address>
+        <div class="lang-switcher footer-lang">
+          <button class="lang-btn active" data-lang="fr">FR</button><span class="lang-divider">|</span>
+          <button class="lang-btn" data-lang="en">EN</button><span class="lang-divider">|</span>
+          <button class="lang-btn" data-lang="ar">درج</button>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p data-i18n="footer_copyright">© 2026 Crusthy'lia. Tous droits réservés.</p>
+        <a href="#top" class="back-to-top" aria-label="Retour en haut de page"><i class="ph ph-arrow-up" aria-hidden="true"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/SplitText.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/TextPlugin.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <script src="/assets/js/i18n.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/animations.js"></script>
+<div class="floating-actions" id="floating-actions">
+  <a href="https://glovoapp.com/fr/ma/marrakech/stores/crusthylia-mar" class="floating-btn floating-btn-glovo" target="_blank" rel="noopener noreferrer" aria-label="Commander sur Glovo" title="Commander sur Glovo">
+    <i class="ph ph-storefront" aria-hidden="true"></i>
+  </a>
+  <a href="https://wa.me/message/NDWNBPJQV6GXE1" class="floating-btn floating-btn-wa" target="_blank" rel="noopener noreferrer" aria-label="Commander sur WhatsApp" title="Commander sur WhatsApp">
+    <i class="ph ph-whatsapp-logo" aria-hidden="true"></i>
+  </a>
+</div>
+<script>
+window.addEventListener('scroll',function(){var b=document.querySelectorAll('.floating-btn');var v=window.scrollY>300;b.forEach(function(x){x.classList.toggle('visible',v);});},{passive:true});
+</script>
+</body>
+</html>

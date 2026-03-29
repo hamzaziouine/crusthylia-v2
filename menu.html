@@ -1,0 +1,1047 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu Crusthy'lia — Carte Complète | Boulangerie Café Restaurant Targa Marrakech</title>
+  <meta name="description" content="Carte complète de Crusthy'lia — boulangerie, pâtisserie et restaurant à Targa, Marrakech. Petits déjeuners, brunchs, pizzas, cuisine marocaine, desserts. Livraison Marrakech. Ouvert 07h–23h.">
+  <meta name="keywords" content="menu restaurant Marrakech, carte boulangerie Targa, pâtisserie Marrakech, café artisanal Marrakech, petit déjeuner Marrakech, brunch Marrakech, livraison Marrakech, restaurant Targa Marrakech, Crusthylia menu">
+  <link rel="canonical" href="https://crusthylia.com/menu">
+  <meta property="og:type" content="restaurant.menu">
+  <meta property="og:url" content="https://crusthylia.com/menu">
+  <meta property="og:title" content="Menu Crusthy'lia — Carte Complète | Boulangerie Café Restaurant Targa Marrakech">
+  <meta property="og:description" content="Découvrez notre carte complète : petits déjeuners, brunchs, pizzas, cuisine marocaine, desserts artisanaux. Targa, Marrakech. Ouvert 07h–23h.">
+  <meta property="og:image" content="https://crusthylia.com/assets/images/og-menu-crusthylia-marrakech.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="robots" content="index, follow">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://crusthylia.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Menu", "item": "https://crusthylia.com/menu" }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Crusthy'lia",
+    "url": "https://crusthylia.com",
+    "telephone": "+212764745159",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "890 Lotissement Nakhil 2, Targa",
+      "addressLocality": "Marrakech",
+      "postalCode": "40000",
+      "addressCountry": "MA"
+    },
+    "openingHours": "Mo-Su 07:00-00:00",
+    "priceRange": "MAD 12–250",
+    "servesCuisine": ["Marocaine", "Française", "Italienne", "Américaine"],
+    "hasMenu": "https://crusthylia.com/menu"
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&family=Cairo:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/animations.css">
+  <link rel="stylesheet" href="/assets/css/rtl.css">
+
+  <style>
+    /* ===== MENU PAGE — INLINE STYLES ===== */
+
+    /* Tab navigation */
+    .menu-tab-nav-wrapper {
+      background: var(--color-brown-dark);
+      position: sticky;
+      top: 0;
+      z-index: 90;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.28);
+    }
+    .menu-tab-nav {
+      display: flex;
+      overflow-x: auto;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+    }
+    .menu-tab-nav::-webkit-scrollbar { display: none; }
+    .menu-tab-btn {
+      flex-shrink: 0;
+      padding: 0.9rem 1.25rem;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      font-family: var(--font-body);
+      font-size: 0.8rem;
+      font-weight: 500;
+      letter-spacing: var(--tracking-wide);
+      text-transform: uppercase;
+      color: rgba(253,248,240,0.5);
+      border-bottom: 3px solid transparent;
+      transition: color 0.25s ease, border-color 0.25s ease;
+      white-space: nowrap;
+    }
+    .menu-tab-btn:hover { color: var(--color-gold); }
+    .menu-tab-btn.active {
+      color: var(--color-gold);
+      border-bottom-color: var(--color-gold);
+    }
+
+    /* Tab panels */
+    .menu-tab-panel { display: none; }
+    .menu-tab-panel.active { display: block; }
+
+    /* Intro */
+    .menu-intro-text {
+      max-width: 840px;
+      margin: 0 auto;
+      text-align: center;
+      font-size: var(--text-lg);
+      color: var(--color-text-muted);
+      line-height: var(--leading-loose);
+    }
+
+    /* Order cards */
+    .menu-order-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    .menu-order-card {
+      background: var(--color-white);
+      border-radius: 14px;
+      padding: 2rem 1.5rem;
+      text-align: center;
+      box-shadow: 0 4px 20px rgba(61,43,31,0.08);
+      border-top: 4px solid var(--color-gold);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+    .menu-order-card:hover { transform: translateY(-4px); box-shadow: 0 8px 32px rgba(61,43,31,0.14); }
+    .menu-order-icon { font-size: 2.4rem; margin-bottom: 1rem; }
+    .menu-order-card h3 { font-family: var(--font-body); font-size: var(--text-base); font-weight: 600; color: var(--color-brown); text-transform: none; letter-spacing: 0; margin-bottom: 0.5rem; }
+    .menu-order-card p { font-size: var(--text-sm); color: var(--color-text-muted); margin: 0; }
+
+    /* Section headers */
+    .menu-section { padding: 3rem 0 2rem; background: var(--color-cream); }
+    .menu-section:nth-child(even) { background: var(--color-white); }
+    .menu-section-header { margin-bottom: 1.5rem; padding-bottom: 1rem; border-bottom: 2px solid var(--color-beige); }
+    .menu-section-intro { font-size: var(--text-base); color: var(--color-text-muted); max-width: 760px; line-height: var(--leading-loose); margin-bottom: 0; }
+
+    /* Item cards grid */
+    .menu-items-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1rem;
+      margin-top: 1.25rem;
+    }
+    .menu-item-card {
+      background: var(--color-white);
+      border-radius: 8px;
+      padding: 1rem 1.25rem;
+      box-shadow: 0 2px 10px rgba(61,43,31,0.07);
+      border-left: 3px solid var(--color-gold);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+      display: flex;
+      flex-direction: column;
+      gap: 0.2rem;
+    }
+    .menu-item-card:hover { transform: translateY(-2px); box-shadow: 0 4px 20px rgba(61,43,31,0.12); }
+    .menu-item-name { font-size: var(--text-base); color: var(--color-brown-dark); font-weight: 700; font-family: var(--font-body); }
+    .menu-item-desc { font-size: var(--text-sm); color: var(--color-text-muted); line-height: 1.55; }
+    .menu-item-price { font-size: var(--text-sm); color: var(--color-gold); font-weight: 700; margin-top: 0.15rem; }
+
+    /* Simple list (dense sections) */
+    .menu-item-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 0.6rem;
+      margin-top: 1rem;
+    }
+    .menu-list-item {
+      background: var(--color-white);
+      padding: 0.75rem 1rem;
+      border-radius: 8px;
+      border-left: 3px solid var(--color-gold);
+      font-size: var(--text-sm);
+      color: var(--color-text);
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 0.5rem;
+    }
+    .menu-list-item-name { font-weight: 600; color: var(--color-brown); }
+    .menu-list-item-price { flex-shrink: 0; font-weight: 700; color: var(--color-gold); font-size: var(--text-xs); white-space: nowrap; }
+
+    /* Formula cards */
+    .menu-formula-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1.25rem;
+      margin-top: 1.25rem;
+    }
+    .menu-formula-card {
+      background: var(--color-white);
+      border-radius: 14px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 20px rgba(61,43,31,0.08);
+      border-top: 4px solid var(--color-brown);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+    .menu-formula-card:hover { transform: translateY(-4px); box-shadow: 0 8px 32px rgba(61,43,31,0.14); }
+    .menu-formula-flag { font-size: 1.5rem; margin-bottom: 0.5rem; }
+    .menu-formula-name { font-family: var(--font-display); font-size: var(--text-xl); font-weight: 600; color: var(--color-brown); margin-bottom: 0.4rem; }
+    .menu-formula-desc { font-size: var(--text-sm); color: var(--color-text-muted); line-height: 1.65; margin-bottom: 0.75rem; }
+    .menu-formula-price { display: inline-block; background: var(--color-beige); color: var(--color-brown); font-weight: 700; font-size: var(--text-xs); padding: 0.3rem 0.75rem; border-radius: 20px; border: 1px solid var(--color-gold); }
+
+    /* Brunch cards */
+    .menu-brunch-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1.25rem;
+    }
+    .menu-brunch-card {
+      background: linear-gradient(135deg, var(--color-white) 0%, var(--color-beige) 100%);
+      border-radius: 14px;
+      padding: 2rem 1.5rem;
+      box-shadow: 0 4px 20px rgba(61,43,31,0.08);
+      border: 1px solid rgba(200,169,110,0.3);
+      position: relative;
+      overflow: hidden;
+    }
+    .menu-brunch-card::after { content: ''; position: absolute; top: -30px; right: -30px; width: 100px; height: 100px; background: radial-gradient(circle, rgba(200,169,110,0.2) 0%, transparent 70%); border-radius: 50%; }
+    .menu-brunch-name { font-family: var(--font-display); font-size: var(--text-2xl); color: var(--color-brown-dark); margin-bottom: 0.3rem; font-weight: 600; }
+    .menu-brunch-price { font-size: var(--text-sm); color: var(--color-gold); font-weight: 700; margin-bottom: 0.75rem; }
+    .menu-brunch-desc { font-size: var(--text-sm); color: var(--color-text-muted); line-height: 1.7; }
+
+    /* Sub-divider */
+    .menu-sub-divider { display: flex; align-items: center; gap: 1rem; margin: 2rem 0 1rem; }
+    .menu-sub-divider-label { font-family: var(--font-body); font-size: var(--text-sm); font-weight: 600; text-transform: uppercase; letter-spacing: var(--tracking-wide); color: var(--color-brown); flex-shrink: 0; }
+    .menu-sub-divider::after { content: ''; flex: 1; height: 1px; background: linear-gradient(to right, var(--color-gold), transparent); }
+
+    /* Info section */
+    .menu-info-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+    .menu-info-card { background: var(--color-white); border-radius: 14px; padding: 1.75rem; box-shadow: 0 4px 20px rgba(61,43,31,0.08); }
+    .menu-info-card h3 { font-family: var(--font-body); font-size: var(--text-lg); font-weight: 600; color: var(--color-brown); margin-bottom: 0.75rem; text-transform: none; letter-spacing: 0; }
+    .menu-info-card p { font-size: var(--text-sm); color: var(--color-text-muted); line-height: var(--leading-loose); }
+
+    /* Allergen tags */
+    .menu-allergen-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.75rem; }
+    .menu-allergen-tag { background: var(--color-beige); color: var(--color-brown); border: 1px solid var(--color-gold); border-radius: 20px; font-size: var(--text-xs); font-weight: 600; padding: 0.2rem 0.65rem; }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .menu-tab-btn { padding: 0.75rem 0.9rem; font-size: 0.73rem; }
+      .menu-formula-grid { grid-template-columns: 1fr; }
+      .menu-brunch-grid { grid-template-columns: 1fr; }
+      .menu-items-grid { grid-template-columns: 1fr; }
+      .menu-item-list { grid-template-columns: 1fr; }
+    }
+    @media (min-width: 1024px) {
+      .menu-items-grid { grid-template-columns: repeat(3, 1fr); }
+    }
+  </style>
+</head>
+<body>
+  <a href="#main" class="skip-link">Aller au contenu principal</a>
+  <div class="cursor" aria-hidden="true"></div>
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="page-loader" id="page-loader" aria-hidden="true">
+    <div class="loader-inner">
+      <img src="/assets/images/logo.png" alt="Crusthy'lia" class="loader-logo-img">
+      <p class="loader-slogan">Le rendez-vous des gourmands</p>
+      <div class="loader-spinner" aria-hidden="true"></div>
+    </div>
+  </div>
+
+  <nav class="site-nav" id="site-nav" role="navigation" aria-label="Navigation principale">
+    <div class="container nav-inner">
+      <a href="/" class="nav-logo" aria-label="Crusthy'lia — Accueil">
+        <img src="/assets/images/logo.png" alt="Crusthy'lia" class="nav-logo-img">
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="/menu.html" class="nav-link" aria-current="page">Menu</a></li>
+        <li><a href="/brunch-marrakech.html" class="nav-link">Brunch</a></li>
+        <li><a href="/qui-sommes-nous.html" class="nav-link">Notre Histoire</a></li>
+        <li><a href="/blog/" class="nav-link">Blog</a></li>
+        <li><a href="/contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <div class="lang-switcher" role="navigation" aria-label="Language selector">
+          <button class="lang-btn active" data-lang="fr" aria-pressed="true">FR</button>
+          <span class="lang-divider">|</span>
+          <button class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+          <span class="lang-divider">|</span>
+          <button class="lang-btn" data-lang="ar" aria-pressed="false">درج</button>
+        </div>
+        <a href="/reservation-marrakech.html" class="btn btn-primary btn-sm nav-cta btn-magnetic"><span>Réserver</span></a>
+      </div>
+      <button class="nav-hamburger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span class="hamburger-line"></span><span class="hamburger-line"></span><span class="hamburger-line"></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true">
+      <button class="mobile-menu-close" aria-label="Fermer le menu"><i class="ph ph-x"></i></button>
+      <ul class="mobile-nav-links" role="list">
+        <li><a href="/menu.html" class="mobile-nav-link" aria-current="page">Menu</a></li>
+        <li><a href="/brunch-marrakech.html" class="mobile-nav-link">Brunch</a></li>
+        <li><a href="/qui-sommes-nous.html" class="mobile-nav-link">Notre Histoire</a></li>
+        <li><a href="/blog/" class="mobile-nav-link">Blog</a></li>
+        <li><a href="/contact.html" class="mobile-nav-link">Contact</a></li>
+      </ul>
+      <div class="mobile-lang-switcher">
+        <button class="lang-btn active" data-lang="fr">FR</button><span class="lang-divider">|</span>
+        <button class="lang-btn" data-lang="en">EN</button><span class="lang-divider">|</span>
+        <button class="lang-btn" data-lang="ar">درج</button>
+      </div>
+      <a href="/reservation-marrakech.html" class="btn btn-primary btn-magnetic mobile-cta"><span>Réserver</span></a>
+    </div>
+  </nav>
+
+  <main id="main">
+
+    <!-- HERO -->
+    <section class="page-hero bg-dark" aria-labelledby="menu-hero-heading">
+      <div class="container page-hero-inner">
+        <nav class="breadcrumb" aria-label="Fil d'Ariane">
+          <ol class="breadcrumb-list" role="list">
+            <li><a href="/">Accueil</a></li>
+            <li aria-hidden="true"><span class="breadcrumb-sep">/</span></li>
+            <li><span aria-current="page">Menu</span></li>
+          </ol>
+        </nav>
+        <p class="page-hero-eyebrow reveal-text" data-i18n="menu.hero.eyebrow">Boulangerie · Café · Restaurant</p>
+        <h1 id="menu-hero-heading" class="page-hero-title reveal-text" data-i18n="menu.hero.title">Notre Carte</h1>
+        <p class="page-hero-subtitle reveal-text" data-i18n="menu.hero.subtitle">Fait maison chaque jour à Targa, Marrakech — 07h00 à 23h00</p>
+        <div class="page-hero-meta">
+          <span><i class="ph ph-clock" aria-hidden="true"></i> Ouvert 07h00–23h00, 7j/7</span>
+          <span><i class="ph ph-map-pin" aria-hidden="true"></i> 890 Nakhil 2, Targa, Marrakech</span>
+          <span><i class="ph ph-currency-circle-dollar" aria-hidden="true"></i> MAD 12–250</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTRO -->
+    <section class="section bg-cream" aria-label="Introduction">
+      <div class="container">
+        <p class="menu-intro-text">
+          Bienvenue sur la carte de <strong>Crusthy'lia</strong>, votre <strong>restaurant boulangerie-pâtisserie-café à Targa, Marrakech</strong>. Chaque croissant sort de notre four à l'aube, chaque confiture mijote dans notre cuisine, chaque plat est préparé avec des ingrédients frais. Notre carte propose petits déjeuners généreux, brunchs élaborés, pizzas artisanales, cuisine marocaine authentique et desserts de pâtisserie. Disponible sur place, à emporter ou en <strong>livraison Marrakech</strong> tous les jours de 07h00 à 23h00.
+        </p>
+      </div>
+    </section>
+
+    <!-- COMMENT COMMANDER -->
+    <section class="section bg-beige" aria-labelledby="order-heading">
+      <div class="container">
+        <h2 id="order-heading" class="section-title reveal-text" data-i18n="menu.order.title">Comment Commander</h2>
+        <div class="menu-order-grid">
+          <div class="menu-order-card">
+            <div class="menu-order-icon">🏠</div>
+            <h3>Sur Place</h3>
+            <p>Venez nous rendre visite au 890 Lotissement Nakhil 2, Targa. Notre salle vous accueille tous les jours de 07h00 à 23h00.</p>
+          </div>
+          <div class="menu-order-card">
+            <div class="menu-order-icon">📱</div>
+            <h3>À Emporter</h3>
+            <p>Commandez via <a href="https://wa.me/message/NDWNBPJQV6GXE1" target="_blank" rel="noopener">WhatsApp</a> au +212 764 745 159. Récupérez votre commande prête à l'heure souhaitée, sans attente.</p>
+          </div>
+          <div class="menu-order-card">
+            <div class="menu-order-icon">🚚</div>
+            <h3>Livraison Marrakech</h3>
+            <p>Livraison à domicile disponible tous les jours. Passez commande sur WhatsApp, indiquez votre adresse — livré frais et chaud.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB NAVIGATION -->
+    <div class="menu-tab-nav-wrapper" aria-label="Navigation du menu">
+      <div class="container">
+        <nav class="menu-tab-nav" role="tablist" aria-label="Catégories du menu">
+          <button id="tab-btn-boissons" class="menu-tab-btn active" role="tab" aria-selected="true" aria-controls="mtab-boissons" data-tab="boissons">Boissons</button>
+          <button id="tab-btn-dejeuners" class="menu-tab-btn" role="tab" aria-selected="false" aria-controls="mtab-dejeuners" data-tab="dejeuners">Petits Déjeuners</button>
+          <button id="tab-btn-brunchs" class="menu-tab-btn" role="tab" aria-selected="false" aria-controls="mtab-brunchs" data-tab="brunchs">Brunchs</button>
+          <button id="tab-btn-crepes" class="menu-tab-btn" role="tab" aria-selected="false" aria-controls="mtab-crepes" data-tab="crepes">Crêpes &amp; Gaufres</button>
+          <button id="tab-btn-plats" class="menu-tab-btn" role="tab" aria-selected="false" aria-controls="mtab-plats" data-tab="plats">Plats</button>
+          <button id="tab-btn-marocain" class="menu-tab-btn" role="tab" aria-selected="false" aria-controls="mtab-marocain" data-tab="marocain">Cuisine Marocaine</button>
+          <button id="tab-btn-desserts" class="menu-tab-btn" role="tab" aria-selected="false" aria-controls="mtab-desserts" data-tab="desserts">Desserts &amp; Boulangerie</button>
+        </nav>
+      </div>
+    </div>
+
+    <!-- ── MENU TAB PANELS ─────────────────────────────────── -->
+    <section class="section" id="menu-panels-content">
+      <div class="container" style="max-width:860px;">
+
+        <!-- ── BOISSONS ─────────────────────────────────────── -->
+        <div id="mtab-boissons" class="menu-panel">
+
+          <h2 class="menu-category-title">Boissons Chaudes</h2>
+          <div class="menu-item"><div><span class="menu-item-name">Café Noir</span></div><span class="menu-item-price">16 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Double Espresso</span></div><span class="menu-item-price">25 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Café Américain</span></div><span class="menu-item-price">28 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Café Allongé</span></div><span class="menu-item-price">25 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Café Crème</span></div><span class="menu-item-price">23 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Nes Nes</span></div><span class="menu-item-price">22 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Nescafé</span></div><span class="menu-item-price">22 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Lait Chaud</span></div><span class="menu-item-price">15 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Cappuccino</span></div><span class="menu-item-price">25 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Cappuccino Viennoise</span></div><span class="menu-item-price">25 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Café Bombon</span></div><span class="menu-item-price">30 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Café Noisette</span></div><span class="menu-item-price">30 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Coconut Latte</span></div><span class="menu-item-price">30 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Spanish Latte</span></div><span class="menu-item-price">30 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Caramel Macchiato</span></div><span class="menu-item-price">30 DH</span></div>
+
+          <h2 class="menu-category-title" style="margin-top:var(--space-10);">Thés &amp; Infusions</h2>
+          <div class="menu-item"><div><span class="menu-item-name">Thé Classic</span></div><span class="menu-item-price">16 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Thé Menthe</span></div><span class="menu-item-price">16 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Thé Mélange</span></div><span class="menu-item-price">16 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Thé Chamali</span></div><span class="menu-item-price">16 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Vervine</span></div><span class="menu-item-price">16 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Lipton</span></div><span class="menu-item-price">16 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Ice Thé Passion</span></div><span class="menu-item-price">25 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Ice Thé Pêche</span></div><span class="menu-item-price">25 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Ice Thé Fruit Rouge</span></div><span class="menu-item-price">25 DH</span></div>
+
+          <h2 class="menu-category-title" style="margin-top:var(--space-10);">Chocolat &amp; Frappuccino</h2>
+          <div class="menu-item"><div><span class="menu-item-name">Chocolat Chaud</span></div><span class="menu-item-price">29 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Chocolat Viennoise</span></div><span class="menu-item-price">35 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Chocolat à l'Ancienne</span></div><span class="menu-item-price">38 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Chocolat Blanc Fruits Rouges</span></div><span class="menu-item-price">38 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Frappuccino Cookies</span></div><span class="menu-item-price">36 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Frappuccino Caramel</span></div><span class="menu-item-price">36 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Frappuccino Nutella</span></div><span class="menu-item-price">36 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Frappuccino Vanille</span></div><span class="menu-item-price">36 DH</span></div>
+
+          <h2 class="menu-category-title" style="margin-top:var(--space-10);">Jus Frais</h2>
+          <div class="menu-item"><div><span class="menu-item-name">Jus d'Orange</span></div><span class="menu-item-price">25 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Jus Mangue</span></div><span class="menu-item-price">35 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Jus Avocat</span></div><span class="menu-item-price">35 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Jus Banane</span></div><span class="menu-item-price">28 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Jus Fraise</span></div><span class="menu-item-price">35 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Jus Kiwi</span></div><span class="menu-item-price">35 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Jus Citron Menthe</span></div><span class="menu-item-price">27 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Jus Carotte Orange</span></div><span class="menu-item-price">27 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Jus Betterave</span></div><span class="menu-item-price">28 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Jus Crusthy'lia</span></div><span class="menu-item-price">45 DH</span></div>
+
+          <h2 class="menu-category-title" style="margin-top:var(--space-10);">Smoothies &amp; Milkshakes</h2>
+          <div class="menu-item"><div><span class="menu-item-name">Smoothie Avocat Dattes</span></div><span class="menu-item-price">38 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Smoothie Banane Dattes</span></div><span class="menu-item-price">38 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Smoothie Mangue Ananas</span></div><span class="menu-item-price">38 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Smoothie Crusthy'lia</span></div><span class="menu-item-price">45 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Milkshake Nutella</span></div><span class="menu-item-price">42 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Milkshake Fraise</span></div><span class="menu-item-price">42 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Milkshake Caramel</span></div><span class="menu-item-price">42 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Milkshake Pistache</span></div><span class="menu-item-price">42 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Milkshake Crusthy'lia</span></div><span class="menu-item-price">45 DH</span></div>
+
+          <h2 class="menu-category-title" style="margin-top:var(--space-10);">Froides &amp; Sodas</h2>
+          <div class="menu-item"><div><span class="menu-item-name">Coca Cola / Zéro 33cl</span></div><span class="menu-item-price">19 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Fanta</span></div><span class="menu-item-price">19 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Sprite</span></div><span class="menu-item-price">19 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Schweppes</span></div><span class="menu-item-price">19 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Red Bull</span></div><span class="menu-item-price">32 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Oulmes 50cl</span></div><span class="menu-item-price">18 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Oulmes 1L</span></div><span class="menu-item-price">20 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Sidi Ali 33cl</span></div><span class="menu-item-price">05 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Sidi Ali 50cl</span></div><span class="menu-item-price">15 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Sidi Ali 1.5L</span></div><span class="menu-item-price">20 DH</span></div>
+
+          <h2 class="menu-category-title" style="margin-top:var(--space-10);">Mojitos</h2>
+          <div class="menu-item"><div><span class="menu-item-name">Mojito Classique</span></div><span class="menu-item-price">30 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Mojito Orange</span></div><span class="menu-item-price">30 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Mojito Passion</span></div><span class="menu-item-price">35 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Mojito Mangue</span></div><span class="menu-item-price">35 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Mojito Fruits Rouges</span></div><span class="menu-item-price">35 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Mojito Framboise</span></div><span class="menu-item-price">35 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Mojito Red Bull</span></div><span class="menu-item-price">40 DH</span></div>
+
+          <h2 class="menu-category-title" style="margin-top:var(--space-10);">Ice Coffee</h2>
+          <div class="menu-item"><div><span class="menu-item-name">Ice Coffee Oreo</span></div><span class="menu-item-price">32 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Ice Coffee Popcorn</span></div><span class="menu-item-price">32 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Ice Coffee Caramel</span></div><span class="menu-item-price">35 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Ice Coffee Cookies</span></div><span class="menu-item-price">35 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Ice Coffee Nutella</span></div><span class="menu-item-price">38 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Ice Coffee Lotus Biscoff</span></div><span class="menu-item-price">38 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Ice Coffee Crusthy'lia</span></div><span class="menu-item-price">40 DH</span></div>
+
+          <h2 class="menu-category-title" style="margin-top:var(--space-10);">Za3za3 · Matcha &amp; Détox</h2>
+          <div class="menu-item"><div><span class="menu-item-name">Za3za3 Avocat Dragon</span></div><span class="menu-item-price">38 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Za3za3 Mangue Dragon</span></div><span class="menu-item-price">38 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Za3za3 Kiwi Avocat</span></div><span class="menu-item-price">38 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Ice Matcha Espresso</span></div><span class="menu-item-price">46 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Ice Matcha Fraise</span></div><span class="menu-item-price">52 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Ice Matcha Mangue</span></div><span class="menu-item-price">52 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Ice Matcha Crusthy'lia</span></div><span class="menu-item-price">60 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Détox Vert</span></div><span class="menu-item-price">42 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Détox Brain Boost</span></div><span class="menu-item-price">42 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Détox Cleansing</span></div><span class="menu-item-price">42 DH</span></div>
+
+        </div><!-- /mtab-boissons -->
+
+        <!-- ── PETITS DÉJEUNERS ──────────────────────────────── -->
+        <div id="mtab-dejeuners" class="menu-panel">
+
+          <h2 class="menu-category-title">Formules Petit Déjeuner</h2>
+          <div class="menu-item">
+            <div><span class="menu-item-name">Expresse</span><p class="menu-item-desc">Boisson chaude · Eau minérale · 2 Viennoiseries · Pain pistolet · Beurre, Miel, Confiture</p></div>
+            <span class="menu-item-price">40 DH</span>
+          </div>
+          <div class="menu-item">
+            <div><span class="menu-item-name">Beldi</span><p class="menu-item-desc">Boisson chaude · Jus · Œufs au Khlii · Harcha, Msamen, Batbout, Baghrir · Olive, Beurre beldi, Miel pur, Huile d'olive</p></div>
+            <span class="menu-item-price">55 DH</span>
+          </div>
+          <div class="menu-item">
+            <div><span class="menu-item-name">Amazigh</span><p class="menu-item-desc">Boisson chaude · Eau · Jus · Omelette tomate poivron · Harcha aux olives, Msamen, Batbout · Amlou, Miel, Huile d'olive</p></div>
+            <span class="menu-item-price">65 DH</span>
+          </div>
+          <div class="menu-item">
+            <div><span class="menu-item-name">Turkish</span><p class="menu-item-desc">Boisson chaude · Œuf à la turque · Jben, Dinde fumée, Olives variées, Fromage râpé · Pain pistolet ou baguette</p></div>
+            <span class="menu-item-price">75 DH</span>
+          </div>
+          <div class="menu-item">
+            <div><span class="menu-item-name">French</span><p class="menu-item-desc">Boisson chaude · Jus d'orange · 2 Toasts avocat saumon · 2 Fluffy Nutella · Yaourt maison · 3 Viennoiseries</p></div>
+            <span class="menu-item-price">75 DH</span>
+          </div>
+          <div class="menu-item">
+            <div><span class="menu-item-name">Espagnol</span><p class="menu-item-desc">Boisson chaude · Jus · Tortilla, Concassé de tomate, Tapenade · 3 Pains pistolets · Jben</p></div>
+            <span class="menu-item-price">55 DH</span>
+          </div>
+          <div class="menu-item">
+            <div><span class="menu-item-name">Royal</span><p class="menu-item-desc">Boisson chaude · Cocktail · Crevettes royales · Toasts guacamol dinde œufs pochés · Brownie · Viennoiseries</p></div>
+            <span class="menu-item-price">90 DH</span>
+          </div>
+          <div class="menu-item">
+            <div><span class="menu-item-name">Crusthy'lia</span><p class="menu-item-desc">Boisson chaude · Cocktail · Croquettes bœuf, Tomate gratinée · 2 Fluffy Nutella · Yaourt maison · Gâteau pâtisserie maison</p></div>
+            <span class="menu-item-price">105 DH</span>
+          </div>
+
+          <h2 class="menu-category-title" style="margin-top:var(--space-10);">À la Carte — Beldi</h2>
+          <div class="menu-item"><div><span class="menu-item-name">2 Msamen</span></div><span class="menu-item-price">12 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">2 Harcha</span></div><span class="menu-item-price">11 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">2 Batbout</span></div><span class="menu-item-price">12 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">2 Baghrir</span></div><span class="menu-item-price">11 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Msamen Farci Khlii &amp; Œuf</span></div><span class="menu-item-price">22 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Harcha à l'Huile d'Olive &amp; Miel</span></div><span class="menu-item-price">18 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Omelette <span class="menu-item-desc" style="display:inline;">(Nature / Fromage / Khlii / Champignons / Jambon fromage)</span></span></div><span class="menu-item-price">15–22 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">3 Œufs (Au plat / Brouillés / Pochés)</span></div><span class="menu-item-price">15 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Shakshuka</span></div><span class="menu-item-price">35 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Portion Amlou Maison</span></div><span class="menu-item-price">12 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Portion Miel Pur</span></div><span class="menu-item-price">10 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Portion Confiture Maison</span></div><span class="menu-item-price">10 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Pain Grillé Amlou</span></div><span class="menu-item-price">22 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Tartine Jben Miel &amp; Noix</span></div><span class="menu-item-price">25 DH</span></div>
+
+          <h2 class="menu-category-title" style="margin-top:var(--space-10);">À la Carte — Composé</h2>
+          <div class="menu-item"><div><span class="menu-item-name">Toast Beurre &amp; Confiture</span></div><span class="menu-item-price">18 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Toast Fromage Fondu &amp; Dinde</span></div><span class="menu-item-price">28 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Avocado Toast Nature</span></div><span class="menu-item-price">45 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Avocado Toast Saumon fumé</span></div><span class="menu-item-price">55 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Œuf Bénédicte</span></div><span class="menu-item-price">35 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">French Toast</span></div><span class="menu-item-price">38 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Croissant Fourré Dinde fumée avocat</span></div><span class="menu-item-price">60 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Croissant Fourré Saumon avocat</span></div><span class="menu-item-price">60 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Saucisse de Bœuf Grillée</span></div><span class="menu-item-price">25 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">3 Fluffy Pancakes Nature</span></div><span class="menu-item-price">35 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">3 Fluffy Pancakes Nutella</span></div><span class="menu-item-price">40 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">3 Fluffy Pancakes Fruits rouges</span></div><span class="menu-item-price">45 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">3 Fluffy Pancakes Banane caramel</span></div><span class="menu-item-price">45 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Granola Bowl</span></div><span class="menu-item-price">45 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Açaï Bowl</span></div><span class="menu-item-price">55 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Yaourt Maison</span></div><span class="menu-item-price">25 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Fromage Blanc Miel &amp; Fruits Secs</span></div><span class="menu-item-price">28 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Bol de Céréales &amp; Lait</span></div><span class="menu-item-price">20 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Viennoiserie — Croissant beurre</span></div><span class="menu-item-price">12 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Viennoiserie — Pain au chocolat</span></div><span class="menu-item-price">14 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">2 Mini Viennoiseries au choix</span></div><span class="menu-item-price">18 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Gâteau Maison à la tranche <span class="menu-item-desc" style="display:inline;">(Cake citron / marbré / chocolat, Muffin, Brownie)</span></span></div><span class="menu-item-price">18–20 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Assiette Fromagère</span></div><span class="menu-item-price">45 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Assiette Charcuterie</span></div><span class="menu-item-price">50 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Assiette de Fruits de Saison</span></div><span class="menu-item-price">50 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Jus d'Orange Pressé</span></div><span class="menu-item-price">25 DH</span></div>
+
+        </div><!-- /mtab-dejeuners -->
+
+        <!-- ── BRUNCHS ────────────────────────────────────────── -->
+        <div id="mtab-brunchs" class="menu-panel">
+
+          <h2 class="menu-category-title">Formules Brunch</h2>
+          <div class="menu-item">
+            <div><span class="menu-item-name">Miami Kids</span><p class="menu-item-desc">Boisson chaude · Jus · Omelette fromage · 2 Crêpes Nutella · Cornflakes · Panier de pain</p></div>
+            <span class="menu-item-price">35 DH</span>
+          </div>
+          <div class="menu-item">
+            <div><span class="menu-item-name">Parisien</span><p class="menu-item-desc">Boisson chaude · Jus · Eau · Croissant dinde fumée · 3 Viennoiseries · Yaourt maison · Corbeille mini-pains</p></div>
+            <span class="menu-item-price">75 DH</span>
+          </div>
+          <div class="menu-item">
+            <div><span class="menu-item-name">Norvégien</span><p class="menu-item-desc">Boisson chaude · Jus · Eau · 2 Toasts saumon fumé guacamole · 2 Pains cakes salés fromage · 2 Œufs pochés pesto</p></div>
+            <span class="menu-item-price">80 DH</span>
+          </div>
+          <div class="menu-item">
+            <div><span class="menu-item-name">Americano</span><p class="menu-item-desc">Boisson chaude · Jus · Eau · 3 Croquettes · Omelette champignon saucisse · Pomme de terre gratinée · 3 Fluffy Nutella</p></div>
+            <span class="menu-item-price">95 DH</span>
+          </div>
+          <div class="menu-item">
+            <div><span class="menu-item-name">London</span><p class="menu-item-desc">Boisson chaude · Jus · Saucisse bœuf grillée champignon · Pomme de terre sautée · Œuf plat · Fruits de saison · Baguette, viennoiseries</p></div>
+            <span class="menu-item-price">95 DH</span>
+          </div>
+
+          <h2 class="menu-category-title" style="margin-top:var(--space-10);">Les Partages</h2>
+          <div class="menu-item"><div><span class="menu-item-name">Les Wings</span></div><span class="menu-item-price">35 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Cuisses de Poulet</span></div><span class="menu-item-price">39 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Chicken Fingers</span></div><span class="menu-item-price">39 DH</span></div>
+
+          <h2 class="menu-category-title" style="margin-top:var(--space-10);">Salades</h2>
+          <div class="menu-item"><div><span class="menu-item-name">Salade César</span></div><span class="menu-item-price">45 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Salade Avocat</span></div><span class="menu-item-price">40 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Salade Thon Revisité</span></div><span class="menu-item-price">60 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Salade Exotique</span></div><span class="menu-item-price">70 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Salade Crusthy'lia</span></div><span class="menu-item-price">65 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Salade Saumon Stracciatella</span></div><span class="menu-item-price">75 DH</span></div>
+
+        </div><!-- /mtab-brunchs -->
+
+        <!-- ── CRÊPES & GAUFRES ──────────────────────────────── -->
+        <div id="mtab-crepes" class="menu-panel">
+
+          <h2 class="menu-category-title">Crêpes Sucrées</h2>
+          <div class="menu-item"><div><span class="menu-item-name">Crêpe Nutella</span></div><span class="menu-item-price">28 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Crêpe Nutella Banane</span></div><span class="menu-item-price">30 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Crêpe Nutella Fraise</span></div><span class="menu-item-price">30 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Crêpe Nutella Caramel</span></div><span class="menu-item-price">30 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Crêpe Nutella Oreo</span></div><span class="menu-item-price">35 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Crêpe Nutella Kinder</span></div><span class="menu-item-price">45 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Crêpe Nutella Speculoos</span></div><span class="menu-item-price">45 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Crêpe Nutella Kunafa Pistache</span></div><span class="menu-item-price">50 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Crêpe Amlou Banane Noix</span></div><span class="menu-item-price">60 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Crêpe Fruit Mixte</span></div><span class="menu-item-price">40 DH</span></div>
+
+          <h2 class="menu-category-title" style="margin-top:var(--space-10);">Crêpes Salées</h2>
+          <div class="menu-item"><div><span class="menu-item-name">Crêpe Fromage</span></div><span class="menu-item-price">35 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Crêpe Fromage &amp; Champignon</span></div><span class="menu-item-price">40 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Crêpe Fromage &amp; Thon</span></div><span class="menu-item-price">40 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Crêpe Jambon &amp; Fromage</span></div><span class="menu-item-price">40 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Crêpe Fromage Thon &amp; Champignon</span></div><span class="menu-item-price">45 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Crêpe Fromage Chèvre &amp; Miel</span></div><span class="menu-item-price">45 DH</span></div>
+
+          <h2 class="menu-category-title" style="margin-top:var(--space-10);">Gaufres</h2>
+          <div class="menu-item"><div><span class="menu-item-name">Gaufre Nature</span></div><span class="menu-item-price">30 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Gaufre Miel</span></div><span class="menu-item-price">30 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Gaufre Nutella</span></div><span class="menu-item-price">30 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Gaufre Lotus</span></div><span class="menu-item-price">40 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Gaufre Nutella Oreo</span></div><span class="menu-item-price">40 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Gaufre Kinder Bueno</span></div><span class="menu-item-price">40 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Gaufre Fruits Secs</span></div><span class="menu-item-price">40 DH</span></div>
+
+        </div><!-- /mtab-crepes -->
+
+        <!-- ── PLATS ──────────────────────────────────────────── -->
+        <div id="mtab-plats" class="menu-panel">
+
+          <h2 class="menu-category-title">Sandwichs &amp; Wraps</h2>
+          <div class="menu-item"><div><span class="menu-item-name">Sandwich Poulet</span></div><span class="menu-item-price">35 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Sandwich Viande Hachée</span></div><span class="menu-item-price">40 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Sandwich Merguez</span></div><span class="menu-item-price">45 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Sandwich Mexicain</span></div><span class="menu-item-price">45 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Wrap Crispy</span></div><span class="menu-item-price">38 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Wrap Viande Hachée</span></div><span class="menu-item-price">40 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Wrap Mexicain</span></div><span class="menu-item-price">52 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Wrap Cordon Bleu</span></div><span class="menu-item-price">45 DH</span></div>
+
+          <h2 class="menu-category-title" style="margin-top:var(--space-10);">Burgers</h2>
+          <div class="menu-item"><div><span class="menu-item-name">Cheese Burger</span></div><span class="menu-item-price">48 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Crispy Burger</span></div><span class="menu-item-price">48 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Chicken Burger</span></div><span class="menu-item-price">48 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Spicy Burger</span></div><span class="menu-item-price">48 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Burger à la Truffe</span></div><span class="menu-item-price">70 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Burger Crusthy'lia</span></div><span class="menu-item-price">68 DH</span></div>
+
+          <h2 class="menu-category-title" style="margin-top:var(--space-10);">Chiabattas &amp; Croques</h2>
+          <div class="menu-item"><div><span class="menu-item-name">Chiabatta Poulet</span></div><span class="menu-item-price">49 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Chiabatta Viande Hachée</span></div><span class="menu-item-price">49 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Chiabatta Bœuf</span></div><span class="menu-item-price">59 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Croque Monsieur Gratiné</span></div><span class="menu-item-price">39 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Croque Madame Gratiné</span></div><span class="menu-item-price">39 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Croque Saumon Gratiné</span></div><span class="menu-item-price">65 DH</span></div>
+
+          <h2 class="menu-category-title" style="margin-top:var(--space-10);">Pizzas</h2>
+          <div class="menu-item"><div><span class="menu-item-name">Pizza Margherita</span></div><span class="menu-item-price">40 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Pizza Viande Hachée</span></div><span class="menu-item-price">50 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Pizza Végétarienne</span></div><span class="menu-item-price">50 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Pizza Alfredo</span></div><span class="menu-item-price">55 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Pizza 4 Saisons</span></div><span class="menu-item-price">60 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Pizza Fruits de Mer</span></div><span class="menu-item-price">60 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Pizza Burrata à la Truffe</span></div><span class="menu-item-price">80 DH</span></div>
+
+          <h2 class="menu-category-title" style="margin-top:var(--space-10);">Menu Kids</h2>
+          <div class="menu-item"><div><span class="menu-item-name">Mini Burger + Frite + Jus + Dessert</span></div><span class="menu-item-price">35 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Mini Pizza + Jus + Dessert</span></div><span class="menu-item-price">35 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Nuggets + Frite + Jus + Dessert</span></div><span class="menu-item-price">35 DH</span></div>
+
+          <h2 class="menu-category-title" style="margin-top:var(--space-10);">Pâtes</h2>
+          <div class="menu-item"><div><span class="menu-item-name">Pâtes Sauce Tomate</span></div><span class="menu-item-price">40 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Pâtes Sauce Blanche</span></div><span class="menu-item-price">40 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Pâtes Arrabiata</span></div><span class="menu-item-price">45 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Pâtes Pistou</span></div><span class="menu-item-price">40 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Pâtes Alfredo</span></div><span class="menu-item-price">55 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Pâtes Bolognaise</span></div><span class="menu-item-price">55 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Pâtes Pistou Poulet Champignons</span></div><span class="menu-item-price">55 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Pâtes Fruits de Mer</span></div><span class="menu-item-price">60 DH</span></div>
+
+          <h2 class="menu-category-title" style="margin-top:var(--space-10);">Plats &amp; Grillades</h2>
+          <div class="menu-item"><div><span class="menu-item-name">Émincé Poulet Champignons</span></div><span class="menu-item-price">65 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Brochette Poulet</span></div><span class="menu-item-price">59 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Émincé Bœuf</span></div><span class="menu-item-price">70 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Mixte Grillée</span></div><span class="menu-item-price">85 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Plat Crusthy'lia</span></div><span class="menu-item-price">80 DH</span></div>
+
+        </div><!-- /mtab-plats -->
+
+        <!-- ── CUISINE MAROCAINE ──────────────────────────────── -->
+        <div id="mtab-marocain" class="menu-panel">
+
+          <h2 class="menu-category-title">Cuisine Marocaine</h2>
+          <div class="menu-item"><div><span class="menu-item-name">Pastilla au Poulet</span></div><span class="menu-item-price">55 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Pastilla aux Fruits de Mer</span></div><span class="menu-item-price">75 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Couscous Poulet ou Bœuf</span></div><span class="menu-item-price">55 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Harira Marocaine</span></div><span class="menu-item-price">15 DH</span></div>
+
+        </div><!-- /mtab-marocain -->
+
+        <!-- ── DESSERTS & BOULANGERIE ─────────────────────────── -->
+        <div id="mtab-desserts" class="menu-panel">
+
+          <h2 class="menu-category-title">Desserts</h2>
+          <div class="menu-item"><div><span class="menu-item-name">Tiramisu</span></div><span class="menu-item-price">35 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Cheesecake</span></div><span class="menu-item-price">30 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Crème Brûlée</span></div><span class="menu-item-price">30 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Fondant Chocolat</span></div><span class="menu-item-price">30 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Panna Cotta</span></div><span class="menu-item-price">30 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Crème Catalane</span></div><span class="menu-item-price">30 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Assiette Gâteaux</span></div><span class="menu-item-price">30 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Assiette Fruits</span></div><span class="menu-item-price">40 DH</span></div>
+
+          <h2 class="menu-category-title" style="margin-top:var(--space-10);">Pâtisserie Maison</h2>
+          <div class="menu-item"><div><span class="menu-item-name">Trompe l'œil <span class="menu-item-desc" style="display:inline;">(Fraise / Chocolat / Passion)</span></span></div><span class="menu-item-price">40 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Entremet 1kg au choix</span></div><span class="menu-item-price">200 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Grand Plateau Varié</span></div><span class="menu-item-price">155 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Grand Plateau Soirée 48 pièces</span></div><span class="menu-item-price">176 DH</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Sellou 500g</span></div><span class="menu-item-price">146 DH</span></div>
+
+        </div><!-- /mtab-desserts -->
+
+      </div><!-- /.container -->
+    </section><!-- /#menu-panels-content -->
+
+    <!-- Menu Gallery — replaces PDF iframe (X-Frame-Options fix) -->
+    <section class="section" id="menu-gallery" aria-label="Carte complète Crusthy'lia">
+      <div style="max-width:960px;margin:0 auto;padding:0 1rem;">
+
+        <!-- Top action bar -->
+        <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;margin-bottom:1.5rem;">
+          <p style="font-family:var(--font-display);font-size:1.05rem;color:var(--color-brown);font-style:italic;">
+            Cliquez sur une page pour l'agrandir
+          </p>
+          <a href="/assets/menu.pdf" download class="btn btn-outline-gold btn-sm" style="display:inline-flex;align-items:center;gap:0.4rem;">
+            <i class="ph ph-download-simple" aria-hidden="true"></i>
+            Télécharger le menu (PDF)
+          </a>
+        </div>
+
+        <!-- Image grid -->
+        <div id="menu-pages-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1rem;">
+          <img src="/assets/menu/Menu_compressed-1_page-0001.jpg" alt="Menu Crusthy'lia — page 1" class="menu-page-img" loading="eager" style="width:100%;border-radius:8px;cursor:zoom-in;box-shadow:0 4px 16px rgba(61,43,31,0.12);transition:transform 0.25s ease,box-shadow 0.25s ease;" onmouseover="this.style.transform='scale(1.02)';this.style.boxShadow='0 8px 28px rgba(61,43,31,0.2)'" onmouseout="this.style.transform='';this.style.boxShadow='0 4px 16px rgba(61,43,31,0.12)'" onclick="openMenuLightbox(0)">
+          <img src="/assets/menu/Menu_compressed-1_page-0002.jpg" alt="Menu Crusthy'lia — page 2" class="menu-page-img" loading="lazy" style="width:100%;border-radius:8px;cursor:zoom-in;box-shadow:0 4px 16px rgba(61,43,31,0.12);transition:transform 0.25s ease,box-shadow 0.25s ease;" onmouseover="this.style.transform='scale(1.02)';this.style.boxShadow='0 8px 28px rgba(61,43,31,0.2)'" onmouseout="this.style.transform='';this.style.boxShadow='0 4px 16px rgba(61,43,31,0.12)'" onclick="openMenuLightbox(1)">
+          <img src="/assets/menu/Menu_compressed-1_page-0003.jpg" alt="Menu Crusthy'lia — page 3" class="menu-page-img" loading="lazy" style="width:100%;border-radius:8px;cursor:zoom-in;box-shadow:0 4px 16px rgba(61,43,31,0.12);transition:transform 0.25s ease,box-shadow 0.25s ease;" onmouseover="this.style.transform='scale(1.02)';this.style.boxShadow='0 8px 28px rgba(61,43,31,0.2)'" onmouseout="this.style.transform='';this.style.boxShadow='0 4px 16px rgba(61,43,31,0.12)'" onclick="openMenuLightbox(2)">
+          <img src="/assets/menu/Menu_compressed-1_page-0004.jpg" alt="Menu Crusthy'lia — page 4" class="menu-page-img" loading="lazy" style="width:100%;border-radius:8px;cursor:zoom-in;box-shadow:0 4px 16px rgba(61,43,31,0.12);transition:transform 0.25s ease,box-shadow 0.25s ease;" onmouseover="this.style.transform='scale(1.02)';this.style.boxShadow='0 8px 28px rgba(61,43,31,0.2)'" onmouseout="this.style.transform='';this.style.boxShadow='0 4px 16px rgba(61,43,31,0.12)'" onclick="openMenuLightbox(3)">
+          <img src="/assets/menu/Menu_compressed-1_page-0005.jpg" alt="Menu Crusthy'lia — page 5" class="menu-page-img" loading="lazy" style="width:100%;border-radius:8px;cursor:zoom-in;box-shadow:0 4px 16px rgba(61,43,31,0.12);transition:transform 0.25s ease,box-shadow 0.25s ease;" onmouseover="this.style.transform='scale(1.02)';this.style.boxShadow='0 8px 28px rgba(61,43,31,0.2)'" onmouseout="this.style.transform='';this.style.boxShadow='0 4px 16px rgba(61,43,31,0.12)'" onclick="openMenuLightbox(4)">
+          <img src="/assets/menu/Menu_compressed-1_page-0006.jpg" alt="Menu Crusthy'lia — page 6" class="menu-page-img" loading="lazy" style="width:100%;border-radius:8px;cursor:zoom-in;box-shadow:0 4px 16px rgba(61,43,31,0.12);transition:transform 0.25s ease,box-shadow 0.25s ease;" onmouseover="this.style.transform='scale(1.02)';this.style.boxShadow='0 8px 28px rgba(61,43,31,0.2)'" onmouseout="this.style.transform='';this.style.boxShadow='0 4px 16px rgba(61,43,31,0.12)'" onclick="openMenuLightbox(5)">
+          <img src="/assets/menu/Menu_compressed-1_page-0007.jpg" alt="Menu Crusthy'lia — page 7" class="menu-page-img" loading="lazy" style="width:100%;border-radius:8px;cursor:zoom-in;box-shadow:0 4px 16px rgba(61,43,31,0.12);transition:transform 0.25s ease,box-shadow 0.25s ease;" onmouseover="this.style.transform='scale(1.02)';this.style.boxShadow='0 8px 28px rgba(61,43,31,0.2)'" onmouseout="this.style.transform='';this.style.boxShadow='0 4px 16px rgba(61,43,31,0.12)'" onclick="openMenuLightbox(6)">
+          <img src="/assets/menu/Menu_compressed-1_page-0008.jpg" alt="Menu Crusthy'lia — page 8" class="menu-page-img" loading="lazy" style="width:100%;border-radius:8px;cursor:zoom-in;box-shadow:0 4px 16px rgba(61,43,31,0.12);transition:transform 0.25s ease,box-shadow 0.25s ease;" onmouseover="this.style.transform='scale(1.02)';this.style.boxShadow='0 8px 28px rgba(61,43,31,0.2)'" onmouseout="this.style.transform='';this.style.boxShadow='0 4px 16px rgba(61,43,31,0.12)'" onclick="openMenuLightbox(7)">
+          <img src="/assets/menu/Menu_compressed-1_page-0009.jpg" alt="Menu Crusthy'lia — page 9" class="menu-page-img" loading="lazy" style="width:100%;border-radius:8px;cursor:zoom-in;box-shadow:0 4px 16px rgba(61,43,31,0.12);transition:transform 0.25s ease,box-shadow 0.25s ease;" onmouseover="this.style.transform='scale(1.02)';this.style.boxShadow='0 8px 28px rgba(61,43,31,0.2)'" onmouseout="this.style.transform='';this.style.boxShadow='0 4px 16px rgba(61,43,31,0.12)'" onclick="openMenuLightbox(8)">
+          <img src="/assets/menu/Menu_compressed-1_page-0010.jpg" alt="Menu Crusthy'lia — page 10" class="menu-page-img" loading="lazy" style="width:100%;border-radius:8px;cursor:zoom-in;box-shadow:0 4px 16px rgba(61,43,31,0.12);transition:transform 0.25s ease,box-shadow 0.25s ease;" onmouseover="this.style.transform='scale(1.02)';this.style.boxShadow='0 8px 28px rgba(61,43,31,0.2)'" onmouseout="this.style.transform='';this.style.boxShadow='0 4px 16px rgba(61,43,31,0.12)'" onclick="openMenuLightbox(9)">
+          <img src="/assets/menu/Menu_compressed-1_page-0011.jpg" alt="Menu Crusthy'lia — page 11" class="menu-page-img" loading="lazy" style="width:100%;border-radius:8px;cursor:zoom-in;box-shadow:0 4px 16px rgba(61,43,31,0.12);transition:transform 0.25s ease,box-shadow 0.25s ease;" onmouseover="this.style.transform='scale(1.02)';this.style.boxShadow='0 8px 28px rgba(61,43,31,0.2)'" onmouseout="this.style.transform='';this.style.boxShadow='0 4px 16px rgba(61,43,31,0.12)'" onclick="openMenuLightbox(10)">
+          <img src="/assets/menu/Menu_compressed-1_page-0012.jpg" alt="Menu Crusthy'lia — page 12" class="menu-page-img" loading="lazy" style="width:100%;border-radius:8px;cursor:zoom-in;box-shadow:0 4px 16px rgba(61,43,31,0.12);transition:transform 0.25s ease,box-shadow 0.25s ease;" onmouseover="this.style.transform='scale(1.02)';this.style.boxShadow='0 8px 28px rgba(61,43,31,0.2)'" onmouseout="this.style.transform='';this.style.boxShadow='0 4px 16px rgba(61,43,31,0.12)'" onclick="openMenuLightbox(11)">
+          <img src="/assets/menu/Menu_compressed-1_page-0013.jpg" alt="Menu Crusthy'lia — page 13" class="menu-page-img" loading="lazy" style="width:100%;border-radius:8px;cursor:zoom-in;box-shadow:0 4px 16px rgba(61,43,31,0.12);transition:transform 0.25s ease,box-shadow 0.25s ease;" onmouseover="this.style.transform='scale(1.02)';this.style.boxShadow='0 8px 28px rgba(61,43,31,0.2)'" onmouseout="this.style.transform='';this.style.boxShadow='0 4px 16px rgba(61,43,31,0.12)'" onclick="openMenuLightbox(12)">
+          <img src="/assets/menu/Menu_compressed-1_page-0014.jpg" alt="Menu Crusthy'lia — page 14" class="menu-page-img" loading="lazy" style="width:100%;border-radius:8px;cursor:zoom-in;box-shadow:0 4px 16px rgba(61,43,31,0.12);transition:transform 0.25s ease,box-shadow 0.25s ease;" onmouseover="this.style.transform='scale(1.02)';this.style.boxShadow='0 8px 28px rgba(61,43,31,0.2)'" onmouseout="this.style.transform='';this.style.boxShadow='0 4px 16px rgba(61,43,31,0.12)'" onclick="openMenuLightbox(13)">
+          <img src="/assets/menu/Menu_compressed-1_page-0015.jpg" alt="Menu Crusthy'lia — page 15" class="menu-page-img" loading="lazy" style="width:100%;border-radius:8px;cursor:zoom-in;box-shadow:0 4px 16px rgba(61,43,31,0.12);transition:transform 0.25s ease,box-shadow 0.25s ease;" onmouseover="this.style.transform='scale(1.02)';this.style.boxShadow='0 8px 28px rgba(61,43,31,0.2)'" onmouseout="this.style.transform='';this.style.boxShadow='0 4px 16px rgba(61,43,31,0.12)'" onclick="openMenuLightbox(14)">
+          <img src="/assets/menu/Menu_compressed-1_page-0016.jpg" alt="Menu Crusthy'lia — page 16" class="menu-page-img" loading="lazy" style="width:100%;border-radius:8px;cursor:zoom-in;box-shadow:0 4px 16px rgba(61,43,31,0.12);transition:transform 0.25s ease,box-shadow 0.25s ease;" onmouseover="this.style.transform='scale(1.02)';this.style.boxShadow='0 8px 28px rgba(61,43,31,0.2)'" onmouseout="this.style.transform='';this.style.boxShadow='0 4px 16px rgba(61,43,31,0.12)'" onclick="openMenuLightbox(15)">
+          <img src="/assets/menu/Menu_compressed-1_page-0017.jpg" alt="Menu Crusthy'lia — page 17" class="menu-page-img" loading="lazy" style="width:100%;border-radius:8px;cursor:zoom-in;box-shadow:0 4px 16px rgba(61,43,31,0.12);transition:transform 0.25s ease,box-shadow 0.25s ease;" onmouseover="this.style.transform='scale(1.02)';this.style.boxShadow='0 8px 28px rgba(61,43,31,0.2)'" onmouseout="this.style.transform='';this.style.boxShadow='0 4px 16px rgba(61,43,31,0.12)'" onclick="openMenuLightbox(16)">
+        </div>
+
+        <!-- Lightbox overlay -->
+        <div id="menu-lightbox" role="dialog" aria-modal="true" aria-label="Vue agrandie du menu" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.92);z-index:10000;align-items:center;justify-content:center;flex-direction:column;">
+          <button onclick="closeMenuLightbox()" aria-label="Fermer" style="position:absolute;top:1rem;right:1.25rem;background:none;border:none;color:#fff;font-size:2rem;cursor:pointer;line-height:1;padding:0.5rem;">&times;</button>
+          <button onclick="prevMenuPage()" aria-label="Page précédente" style="position:absolute;left:1rem;top:50%;transform:translateY(-50%);background:rgba(255,255,255,0.12);border:none;color:#fff;font-size:2rem;cursor:pointer;padding:0.75rem 1rem;border-radius:8px;line-height:1;">&#8249;</button>
+          <img id="lightbox-img" src="" alt="Page du menu Crusthy'lia" style="max-height:90vh;max-width:90vw;border-radius:8px;box-shadow:0 20px 60px rgba(0,0,0,0.5);">
+          <p id="lightbox-counter" style="color:rgba(255,255,255,0.6);margin-top:0.75rem;font-size:0.875rem;font-family:sans-serif;"></p>
+          <button onclick="nextMenuPage()" aria-label="Page suivante" style="position:absolute;right:1rem;top:50%;transform:translateY(-50%);background:rgba(255,255,255,0.12);border:none;color:#fff;font-size:2rem;cursor:pointer;padding:0.75rem 1rem;border-radius:8px;line-height:1;">&#8250;</button>
+        </div>
+
+        <!-- Lightbox JS -->
+        <script>
+        (function(){
+          var pages = [
+            '/assets/menu/Menu_compressed-1_page-0001.jpg',
+            '/assets/menu/Menu_compressed-1_page-0002.jpg',
+            '/assets/menu/Menu_compressed-1_page-0003.jpg',
+            '/assets/menu/Menu_compressed-1_page-0004.jpg',
+            '/assets/menu/Menu_compressed-1_page-0005.jpg',
+            '/assets/menu/Menu_compressed-1_page-0006.jpg',
+            '/assets/menu/Menu_compressed-1_page-0007.jpg',
+            '/assets/menu/Menu_compressed-1_page-0008.jpg',
+            '/assets/menu/Menu_compressed-1_page-0009.jpg',
+            '/assets/menu/Menu_compressed-1_page-0010.jpg',
+            '/assets/menu/Menu_compressed-1_page-0011.jpg',
+            '/assets/menu/Menu_compressed-1_page-0012.jpg',
+            '/assets/menu/Menu_compressed-1_page-0013.jpg',
+            '/assets/menu/Menu_compressed-1_page-0014.jpg',
+            '/assets/menu/Menu_compressed-1_page-0015.jpg',
+            '/assets/menu/Menu_compressed-1_page-0016.jpg',
+            '/assets/menu/Menu_compressed-1_page-0017.jpg'
+          ];
+          var current = 0;
+          var lb = document.getElementById('menu-lightbox');
+          var img = document.getElementById('lightbox-img');
+          var counter = document.getElementById('lightbox-counter');
+
+          window.openMenuLightbox = function(idx) {
+            current = idx;
+            img.src = pages[current];
+            img.alt = 'Menu Crusthy\u2019lia — page ' + (current+1);
+            counter.textContent = (current+1) + ' / ' + pages.length;
+            lb.style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+          };
+          window.closeMenuLightbox = function() {
+            lb.style.display = 'none';
+            document.body.style.overflow = '';
+          };
+          window.nextMenuPage = function() {
+            current = (current + 1) % pages.length;
+            img.src = pages[current];
+            img.alt = 'Menu Crusthy\u2019lia — page ' + (current+1);
+            counter.textContent = (current+1) + ' / ' + pages.length;
+          };
+          window.prevMenuPage = function() {
+            current = (current - 1 + pages.length) % pages.length;
+            img.src = pages[current];
+            img.alt = 'Menu Crusthy\u2019lia — page ' + (current+1);
+            counter.textContent = (current+1) + ' / ' + pages.length;
+          };
+          // Close on backdrop click
+          lb.addEventListener('click', function(e){ if(e.target===lb) window.closeMenuLightbox(); });
+          // Keyboard navigation
+          document.addEventListener('keydown', function(e){
+            if(lb.style.display==='flex'){
+              if(e.key==='ArrowRight'||e.key==='ArrowDown') window.nextMenuPage();
+              else if(e.key==='ArrowLeft'||e.key==='ArrowUp') window.prevMenuPage();
+              else if(e.key==='Escape') window.closeMenuLightbox();
+            }
+          });
+        })();
+        </script>
+      </div>
+    </section>
+
+    <!-- INFO SECTION -->
+    <section class="section bg-beige" aria-label="Informations">
+      <div class="container">
+        <div class="menu-info-grid">
+          <div class="menu-info-card">
+            <h3>Nos Ingrédients — Fait Maison à Marrakech</h3>
+            <p>Chez Crusthy'lia, la qualité commence à la source. Chaque matin, nos équipes sélectionnent les produits frais au marché — légumes de saison, œufs du jour, viandes halal certifiées, herbes aromatiques fraîches. Nos confitures, sauces, pâtes à pizza et viennoiseries sont <strong>faites maison</strong> chaque jour sans exception. Nous travaillons avec des producteurs locaux : huile d'olive de l'Atlas, miel de thym d'Azilal, fromages frais artisanaux.</p>
+          </div>
+          <div class="menu-info-card">
+            <h3>Informations Allergènes — Restaurant Marrakech</h3>
+            <p>Nos plats peuvent contenir des traces de : <strong>gluten</strong> (blé, seigle, orge), <strong>lactose</strong> (lait, fromage, crème), <strong>noix et fruits à coque</strong>, <strong>œufs</strong>, poisson et fruits de mer. Si vous souffrez d'une allergie alimentaire, informez-nous avant de commander — notre équipe prendra toutes les précautions nécessaires.</p>
+            <div class="menu-allergen-tags">
+              <span class="menu-allergen-tag">Gluten</span>
+              <span class="menu-allergen-tag">Lactose</span>
+              <span class="menu-allergen-tag">Noix</span>
+              <span class="menu-allergen-tag">Œufs</span>
+              <span class="menu-allergen-tag">Poisson</span>
+              <span class="menu-allergen-tag">Soja</span>
+              <span class="menu-allergen-tag">Céleri</span>
+              <span class="menu-allergen-tag">Moutarde</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="section bg-dark section-cta" aria-labelledby="cta-heading">
+      <div class="container" style="text-align:center;">
+        <h2 id="cta-heading" class="reveal-text" style="color:var(--color-cream);">Passer Votre Commande</h2>
+        <p style="color:var(--color-cream); opacity:0.72; max-width:500px; margin:0 auto 2rem;">Sur place, à emporter ou en livraison — disponible tous les jours de 07h00 à 23h00 à Targa, Marrakech.</p>
+        <div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;">
+          <a href="https://wa.me/message/NDWNBPJQV6GXE1" class="btn btn-primary btn-magnetic" target="_blank" rel="noopener"><span>Commander sur WhatsApp</span></a>
+          <a href="tel:+212764745159" class="btn btn-secondary btn-magnetic"><span>+212 764 745 159</span></a>
+        </div>
+        <p style="margin-top:1.5rem; font-size:var(--text-sm); color:rgba(253,248,240,0.45);">890 Lotissement Nakhil 2, Targa, Marrakech 40000</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="/" class="footer-logo">Crusthy'lia</a>
+        <p class="footer-tagline">Fait maison, chaque jour</p>
+        <div class="social-links">
+          <a href="https://www.instagram.com/crusthylia/" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="ph ph-instagram-logo"></i></a>
+          <a href="https://wa.me/message/NDWNBPJQV6GXE1" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer"><i class="ph ph-whatsapp-logo"></i></a>
+          <a href="https://maps.app.goo.gl/vTmgJStVPV5HHdK79" aria-label="Google Maps" target="_blank" rel="noopener noreferrer"><i class="ph ph-map-pin"></i></a>
+          <a href="https://www.tripadvisor.fr/Restaurant_Review-g293734-d34128682-Reviews-Crusthy_lia-Marrakech_Marrakech_Safi.html" aria-label="TripAdvisor" target="_blank" rel="noopener noreferrer"><i class="ph ph-star"></i></a>
+        </div>
+      </div>
+      <div class="footer-nav">
+        <h3 class="footer-heading">Navigation</h3>
+        <ul class="footer-links">
+          <li><a href="/menu.html">Menu</a></li>
+          <li><a href="/brunch-marrakech.html">Brunch à Marrakech</a></li>
+          <li><a href="/petit-dejeuner-targa-marrakech.html">Petit Déjeuner Targa</a></li>
+          <li><a href="/livraison-marrakech.html">Livraison Marrakech</a></li>
+          <li><a href="/boulangerie-artisanale-marrakech.html">Boulangerie Artisanale</a></li>
+          <li><a href="/patisserie-marrakech.html">Pâtisserie Marrakech</a></li>
+          <li><a href="/cafe-artisanal-marrakech.html">Café Artisanal</a></li>
+          <li><a href="/restaurant-targa-marrakech.html">Restaurant Targa</a></li>
+        </ul>
+      </div>
+      <div class="footer-info">
+        <h3 class="footer-heading">Informations</h3>
+        <ul class="footer-links">
+          <li><a href="/qui-sommes-nous.html">Notre Histoire</a></li>
+          <li><a href="/notre-engagement.html">Notre Engagement</a></li>
+          <li><a href="/pourquoi-crusthylia.html">Pourquoi Crusthy'lia</a></li>
+          <li><a href="/faq.html">FAQ</a></li>
+          <li><a href="/evenements-marrakech.html">Événements</a></li>
+          <li><a href="/reservation-marrakech.html">Réservations</a></li>
+          <li><a href="/livraison-dejeuner-ecole-marrakech.html">Déjeuner École</a></li>
+          <li><a href="/blog/">Blog</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h3 class="footer-heading">Contact</h3>
+        <address>
+          <p><i class="ph ph-map-pin" aria-hidden="true"></i> 890 Lotissement Nakhil 2, Targa, Marrakech 40000</p>
+          <p><i class="ph ph-phone" aria-hidden="true"></i> <a href="tel:+212764745159">+212 764 745 159</a></p>
+          <p><i class="ph ph-envelope" aria-hidden="true"></i> <a href="mailto:contact@crusthylia.com">contact@crusthylia.com</a></p>
+          <p><i class="ph ph-clock" aria-hidden="true"></i> Tous les jours 07:00 – 00:00</p>
+        </address>
+        <div class="lang-switcher footer-lang">
+          <button class="lang-btn active" data-lang="fr">FR</button><span class="lang-divider">|</span>
+          <button class="lang-btn" data-lang="en">EN</button><span class="lang-divider">|</span>
+          <button class="lang-btn" data-lang="ar">درج</button>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>© 2026 Crusthy'lia. Tous droits réservés.</p>
+        <a href="#top" class="back-to-top" aria-label="Retour en haut de page"><i class="ph ph-arrow-up" aria-hidden="true"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/SplitText.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/TextPlugin.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <script src="/assets/js/i18n.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/animations.js"></script>
+<div class="floating-actions" id="floating-actions">
+  <a href="https://glovoapp.com/fr/ma/marrakech/stores/crusthylia-mar" class="floating-btn floating-btn-glovo" target="_blank" rel="noopener noreferrer" aria-label="Commander sur Glovo" title="Commander sur Glovo">
+    <i class="ph ph-storefront" aria-hidden="true"></i>
+  </a>
+  <a href="https://wa.me/message/NDWNBPJQV6GXE1" class="floating-btn floating-btn-wa" target="_blank" rel="noopener noreferrer" aria-label="Commander sur WhatsApp" title="Commander sur WhatsApp">
+    <i class="ph ph-whatsapp-logo" aria-hidden="true"></i>
+  </a>
+</div>
+<script>
+window.addEventListener('scroll',function(){var b=document.querySelectorAll('.floating-btn');var v=window.scrollY>300;b.forEach(function(x){x.classList.toggle('visible',v);});},{passive:true});
+</script>
+  <script>
+    (function () {
+      'use strict';
+      var tabBtns = document.querySelectorAll('.menu-tab-btn');
+      var tabPanels = document.querySelectorAll('.menu-tab-panel');
+      var tabNavWrapper = document.querySelector('.menu-tab-nav-wrapper');
+
+      function activateTab(tabId) {
+        tabBtns.forEach(function (btn) {
+          var isTarget = btn.dataset.tab === tabId;
+          btn.classList.toggle('active', isTarget);
+          btn.setAttribute('aria-selected', isTarget ? 'true' : 'false');
+        });
+        tabPanels.forEach(function (panel) {
+          panel.classList.toggle('active', panel.id === 'mtab-' + tabId);
+        });
+        if (tabNavWrapper) {
+          var y = tabNavWrapper.getBoundingClientRect().top + window.pageYOffset - 4;
+          window.scrollTo({ top: y, behavior: 'smooth' });
+        }
+      }
+
+      tabBtns.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          activateTab(btn.dataset.tab);
+        });
+      });
+
+      // Keyboard nav
+      var tabNav = document.querySelector('.menu-tab-nav');
+      if (tabNav) {
+        tabNav.addEventListener('keydown', function (e) {
+          var btns = Array.from(tabBtns);
+          var idx = btns.indexOf(document.activeElement);
+          if (idx === -1) return;
+          if (e.key === 'ArrowRight') { btns[(idx + 1) % btns.length].focus(); }
+          else if (e.key === 'ArrowLeft') { btns[(idx - 1 + btns.length) % btns.length].focus(); }
+          else if (e.key === 'Enter' || e.key === ' ') { activateTab(document.activeElement.dataset.tab); }
+        });
+      }
+
+      // Entrance animation for menu cards
+      if ('IntersectionObserver' in window) {
+        var cards = document.querySelectorAll('.menu-item-card, .menu-formula-card, .menu-brunch-card, .menu-order-card');
+        cards.forEach(function (card) {
+          card.style.opacity = '0';
+          card.style.transform = 'translateY(16px)';
+          card.style.transition = 'opacity 0.4s ease, transform 0.4s ease';
+        });
+        var observer = new IntersectionObserver(function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              entry.target.style.opacity = '1';
+              entry.target.style.transform = 'translateY(0)';
+              observer.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+        cards.forEach(function (card) { observer.observe(card); });
+      }
+    })();
+  </script>
+</body>
+</html>
