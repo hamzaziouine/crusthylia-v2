@@ -582,7 +582,7 @@
               Nous croyons à la livraison Marrakech qui respecte le produit : les viennoiseries partent livrées dans des emballages qui préservent leur croustillant. Les sandwichs et plats sont conditionnés chauds. Le brunch week-end peut être livré ou pris en salle — dans les deux cas, la qualité est identique.
             </p>
 
-            <a href="/notre-engagement.html" class="btn btn-outline-dark" style="margin-top: var(--space-4);">
+            <a href="/notre-engagement.html" class="btn btn-outline-dark" style="margin-top: var(--space-4); margin-bottom: 10px;">
               <span data-i18n="index_promise_cta">Notre engagement</span> <span aria-hidden="true">→</span>
             </a>
           </div>
@@ -659,17 +659,13 @@
       <div class="container">
         <div class="school-lunch-inner">
 
-          <div class="school-icon-wrap" aria-hidden="true">
-            <i class="ph ph-backpack"></i>
-          </div>
-
           <div class="school-content">
             <span class="eyebrow" data-i18n="index_school_eyebrow">Pour les familles</span>
             <h2 class="section-heading school-h2 reveal-text" id="school-heading" data-i18n="index_school_h2">Programme Déjeuner École</h2>
             <p class="school-body" data-i18n="index_school_body">
               Notre programme de livraison école est pensé pour les parents qui veulent offrir à leurs enfants un repas équilibré, préparé avec soin, livré directement à l'établissement scolaire. Des menus qui changent chaque semaine pour varier les plaisirs tout en assurant une alimentation saine : sandwich artisanal, plat du jour, dessert maison et boisson. Livraison directe dans les écoles du quartier de Targa — formules hebdomadaires ou mensuelles disponibles. Les inscriptions pour le trimestre sont ouvertes.
             </p>
-            <a href="/livraison-dejeuner-ecole-marrakech.html" class="btn btn-outline-dark btn-magnetic">
+            <a href="/livraison-dejeuner-ecole-marrakech.html" class="btn btn-outline-dark btn-magnetic" style="margin-top: 10px; margin-bottom: 10px;">
               <span data-i18n="index_card_learn_more">En savoir plus</span> <span aria-hidden="true">→</span>
             </a>
           </div>
@@ -685,7 +681,7 @@
          ====================================================== -->
     <section class="english-section section-pad" aria-labelledby="english-heading" lang="en">
       <div class="container">
-        <div class="english-inner">
+        <div class="english-inner fade-up">
 
           <p class="english-flag" data-i18n="index_english_flag">For our English-speaking guests</p>
 
@@ -713,12 +709,9 @@
             Open every day from 07:00 to 23:00. Find us on <a href="https://maps.app.goo.gl/vTmgJStVPV5HHdK79" target="_blank" rel="noopener noreferrer">Google Maps</a>, order via <a href="https://wa.me/message/NDWNBPJQV6GXE1" target="_blank" rel="noopener noreferrer">WhatsApp</a>, or email us at <a href="mailto:contact@crusthylia.com">contact@crusthylia.com</a>. We'd love to have you.
           </p>
 
-          <div style="margin-top: var(--space-8); display: flex; gap: var(--space-4); flex-wrap: wrap;">
+          <div style="margin-top: var(--space-8); display: flex; gap: var(--space-4); flex-wrap: wrap; justify-content: center;">
             <a href="/reservation-marrakech.html" class="btn btn-primary btn-magnetic" lang="fr">
               <span data-i18n="index_english_cta_reserve">Réserver une table</span>
-            </a>
-            <a href="https://maps.app.goo.gl/vTmgJStVPV5HHdK79" class="btn btn-outline-dark" target="_blank" rel="noopener noreferrer">
-              <span data-i18n="index_english_cta_maps">Find us on Maps</span> <span aria-hidden="true">→</span>
             </a>
           </div>
 
@@ -857,7 +850,7 @@
           <!-- Left: Map -->
           <div class="map-wrap">
             <iframe
-              src="https://maps.google.com/maps?q=Crusthylia+Marrakech+890+Lotissement+Nakhil+2+Targa&output=embed"
+              src="https://www.google.com/maps?q=Crusthy%27lia+890+Lotissement+Nakhil+2+Targa+Marrakech+40000&ftid=0xdafef821e0238b7:0xb17f9deb8e6757bf&output=embed"
               loading="lazy"
               title="Localisation de Crusthy'lia sur Google Maps"
               aria-label="Carte Google Maps montrant l'emplacement de Crusthy'lia au 890 Lotissement Nakhil 2, Targa, Marrakech"
@@ -900,10 +893,6 @@
                       <td data-i18n="index_contact_days">Lundi – Dimanche</td>
                       <td itemprop="openingHours" content="Mo-Su 07:00-00:00">07:00 – 00:00</td>
                     </tr>
-                    <tr>
-                      <td data-i18n="index_contact_holidays">Jours fériés</td>
-                      <td>07:00 – 00:00</td>
-                    </tr>
                   </tbody>
                 </table>
               </div>
@@ -919,16 +908,6 @@
               >
                 <i class="ph ph-whatsapp-logo" aria-hidden="true"></i>
                 <span data-i18n="index_contact_cta_order">Commander sur WhatsApp</span>
-              </a>
-              <a
-                href="https://maps.app.goo.gl/vTmgJStVPV5HHdK79"
-                class="btn btn-outline-dark"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Ouvrir Crusthy'lia dans Google Maps"
-              >
-                <i class="ph ph-map-pin" aria-hidden="true"></i>
-                <span data-i18n="index_contact_cta_maps">Itinéraire Google Maps</span>
               </a>
               <a href="/reservation-marrakech.html" class="btn btn-outline-dark">
                 <i class="ph ph-calendar-blank" aria-hidden="true"></i>
@@ -1082,42 +1061,6 @@
         if (e.key === 'Escape' && mobileMenu.classList.contains('open')) closeMenu();
       });
 
-      /* --- Custom cursor --- */
-      var cursor = document.querySelector('.cursor');
-      var cursorDot = document.querySelector('.cursor-dot');
-      var mouseX = 0, mouseY = 0;
-      var curX = 0, curY = 0;
-
-      document.addEventListener('mousemove', function (e) {
-        mouseX = e.clientX;
-        mouseY = e.clientY;
-        if (cursorDot) {
-          cursorDot.style.left = mouseX + 'px';
-          cursorDot.style.top = mouseY + 'px';
-        }
-      });
-
-      function animateCursor() {
-        curX += (mouseX - curX) * 0.12;
-        curY += (mouseY - curY) * 0.12;
-        if (cursor) {
-          cursor.style.left = curX + 'px';
-          cursor.style.top = curY + 'px';
-        }
-        requestAnimationFrame(animateCursor);
-      }
-      animateCursor();
-
-      /* Enlarge cursor over links/buttons */
-      document.querySelectorAll('a, button').forEach(function (el) {
-        el.addEventListener('mouseenter', function () {
-          if (cursor) cursor.style.transform = 'translate(-50%, -50%) scale(1.6)';
-        });
-        el.addEventListener('mouseleave', function () {
-          if (cursor) cursor.style.transform = 'translate(-50%, -50%) scale(1)';
-        });
-      });
-
       /* --- Counter animation --- */
       function animateCounter(el) {
         var target = parseInt(el.getAttribute('data-target'), 10);
@@ -1154,7 +1097,7 @@
       }
 
       /* --- Scroll reveal fallback (if animations.js not loaded) --- */
-      var revealEls = document.querySelectorAll('.reveal-text, .img-reveal, .card');
+      var revealEls = document.querySelectorAll('.reveal-text, .img-reveal, .card, .menu-card, .fade-up');
       if ('IntersectionObserver' in window) {
         var revealObs = new IntersectionObserver(function (entries) {
           entries.forEach(function (entry) {

@@ -205,8 +205,8 @@ function initCursor() {
   window.addEventListener('mousemove', (e) => {
     mouseX = e.clientX;
     mouseY = e.clientY;
-    gsap.to(cursor, { x: mouseX, y: mouseY, duration: 0.6, ease: 'power2.out' });
-    gsap.to(cursorDot, { x: mouseX, y: mouseY, duration: 0.1 });
+    gsap.to(cursor, { left: mouseX, top: mouseY, duration: 0.6, ease: 'power2.out' });
+    gsap.to(cursorDot, { left: mouseX, top: mouseY, duration: 0.1 });
   });
 
   // Grow on interactive elements

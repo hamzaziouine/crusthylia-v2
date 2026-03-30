@@ -118,10 +118,10 @@
   /* --- Floating WhatsApp Pulse --- */
   @keyframes waPulse {
     0%, 100% {
-      box-shadow: 0 4px 20px rgba(42, 107, 67, 0.35);
+      box-shadow: 0 4px 20px rgba(46, 139, 87, 0.35);
     }
     50% {
-      box-shadow: 0 4px 28px rgba(42, 107, 67, 0.55), 0 0 0 10px rgba(42, 107, 67, 0.06);
+      box-shadow: 0 4px 28px rgba(46, 139, 87, 0.55), 0 0 0 10px rgba(46, 139, 87, 0.06);
     }
   }
 
