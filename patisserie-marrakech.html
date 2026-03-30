@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/assets/images/logo-crusthylia.png" type="image/png">
   <title>Pâtisserie à Marrakech — Desserts Français &amp; Marocains chez Crusthy'lia</title>
   <meta name="description" content="Pâtisserie artisanale à Marrakech chez Crusthy'lia : tiramisu, macarons, cornes de gazelle, chebakia, gâteau anniversaire sur commande à Targa.">
   <meta name="keywords" content="pâtisserie Marrakech, pâtisserie marocaine Targa, desserts Marrakech, gâteau anniversaire Marrakech, tiramisu Marrakech, macarons Marrakech, cornes de gazelle Marrakech, chebakia Marrakech, makrout Marrakech, pâtisserie artisanale Marrakech">
@@ -50,14 +51,14 @@
   <link rel="stylesheet" href="/assets/css/animations.css">
   <link rel="stylesheet" href="/assets/css/rtl.css">
 </head>
-<body>
-  <a href="#main" class="skip-link">Aller au contenu principal</a>
+<body id="top">
+  <a href="#main" class="skip-link" data-i18n="skip_link">Aller au contenu principal</a>
   <div class="cursor" aria-hidden="true"></div>
   <div class="cursor-dot" aria-hidden="true"></div>
   <div class="page-loader" id="page-loader" aria-hidden="true">
     <div class="loader-inner">
   <img src="/assets/images/logo.png" alt="Crusthy'lia" class="loader-logo-img">
-  <p class="loader-slogan">Le rendez-vous des gourmands</p>
+  <p class="loader-slogan" data-i18n="loader_slogan">Le rendez-vous des gourmands</p>
   <div class="loader-spinner" aria-hidden="true"></div>
 </div>
   </div>
@@ -113,16 +114,16 @@
       <div class="container page-hero-inner">
         <nav class="breadcrumb" aria-label="Fil d'Ariane">
           <ol class="breadcrumb-list" role="list">
-            <li><a href="/">Accueil</a></li>
+            <li><a href="/" data-i18n="breadcrumb_home">Accueil</a></li>
             <li aria-hidden="true"><span class="breadcrumb-sep">/</span></li>
-            <li><span aria-current="page">Pâtisserie Marrakech</span></li>
+            <li><span aria-current="page" data-i18n="patisserie_breadcrumb_current">Pâtisserie Marrakech</span></li>
           </ol>
         </nav>
-        <h1 id="hero-heading" class="page-hero-title reveal-text">Pâtisserie à Marrakech<br><em>Desserts Français &amp; Marocains</em></h1>
-        <p class="page-hero-sub reveal-text">Tiramisu, macarons, cornes de gazelle, chebakia — préparés chaque jour à Targa avec des ingrédients frais et des recettes respectées.</p>
+        <h1 id="hero-heading" class="page-hero-title reveal-text" data-i18n="patisserie_hero_title">Pâtisserie à Marrakech<br><em>Desserts Français &amp; Marocains</em></h1>
+        <p class="page-hero-sub reveal-text" data-i18n="patisserie_hero_sub">Tiramisu, macarons, cornes de gazelle, chebakia — préparés chaque jour à Targa avec des ingrédients frais et des recettes respectées.</p>
         <div class="hero-ctas">
-          <a href="https://wa.me/message/NDWNBPJQV6GXE1" class="btn btn-primary btn-magnetic" target="_blank" rel="noopener noreferrer">Commander via WhatsApp</a>
-          <a href="/menu.html" class="btn btn-outline btn-magnetic">Voir le menu complet</a>
+          <a href="https://wa.me/message/NDWNBPJQV6GXE1" class="btn btn-primary btn-magnetic" target="_blank" rel="noopener noreferrer" data-i18n="patisserie_hero_cta_order">Commander via WhatsApp</a>
+          <a href="/menu.html" class="btn btn-outline btn-magnetic" data-i18n="cta_view_menu">Voir le menu complet</a>
         </div>
       </div>
     </section>
@@ -137,7 +138,7 @@
     <!-- SECTION 1: La pâtisserie comme art de vivre -->
     <section class="content-section bg-beige" aria-labelledby="art-heading">
       <div class="container content-section-inner content-section-text">
-        <h2 id="art-heading" class="section-title reveal-text">La pâtisserie comme art de vivre, à Targa et à Marrakech</h2>
+        <h2 id="art-heading" class="section-title reveal-text" data-i18n="patisserie_art_title">La pâtisserie comme art de vivre, à Targa et à Marrakech</h2>
         <div class="prose">
           <p>Dans la tradition culinaire marocaine comme dans la grande pâtisserie française, le dessert n'est pas une réflexion après coup — c'est une destination. Chez Crusthy'lia, boulangerie-restaurant-pâtisserie à Targa, Marrakech, nous prenons cet héritage au sérieux des deux côtés de la Méditerranée.</p>
           <p>Notre pâtissière travaille avec les mêmes exigences que notre boulanger : produits frais chaque jour, crèmes préparées sur place, chocolats de couverture de qualité, fruits sélectionnés à maturité. La pâtisserie marocaine Targa que nous proposons s'appuie sur des recettes transmises et respectées, sans les shortcuts de l'industrie. La pâtisserie française suit les techniques classiques — mais avec le soin d'un atelier artisanal, pas d'une chaîne de production.</p>
@@ -149,8 +150,8 @@
     <section class="content-section bg-cream" aria-labelledby="francais-heading">
       <div class="container content-section-inner">
         <div class="content-section-text">
-          <h2 id="francais-heading" class="section-title reveal-text">Nos Desserts Français</h2>
-          <p class="section-intro">De la crème brûlée au fondant chocolat — les classiques de la pâtisserie française, exécutés avec rigueur dans notre atelier de Targa.</p>
+          <h2 id="francais-heading" class="section-title reveal-text" data-i18n="patisserie_french_title">Nos Desserts Français</h2>
+          <p class="section-intro" data-i18n="patisserie_french_intro">De la crème brûlée au fondant chocolat — les classiques de la pâtisserie française, exécutés avec rigueur dans notre atelier de Targa.</p>
         </div>
         <div class="desserts-grid">
 
@@ -222,8 +223,8 @@
     <section class="content-section bg-beige" aria-labelledby="marocaine-heading">
       <div class="container content-section-inner">
         <div class="content-section-text">
-          <h2 id="marocaine-heading" class="section-title reveal-text">Notre Pâtisserie Marocaine</h2>
-          <p class="section-intro">Les monuments de la tradition sucrée marocaine — préparés à la main selon des recettes respectées, avec les parfums d'ici : fleur d'oranger, cannelle, miel, anis.</p>
+          <h2 id="marocaine-heading" class="section-title reveal-text" data-i18n="patisserie_moroccan_title">Notre Pâtisserie Marocaine</h2>
+          <p class="section-intro" data-i18n="patisserie_moroccan_intro">Les monuments de la tradition sucrée marocaine — préparés à la main selon des recettes respectées, avec les parfums d'ici : fleur d'oranger, cannelle, miel, anis.</p>
         </div>
         <div class="desserts-grid">
 
@@ -295,7 +296,7 @@
     <section class="content-section bg-cream" aria-labelledby="anniversaire-heading">
       <div class="container content-section-inner content-split">
         <div class="content-split-text">
-          <h2 id="anniversaire-heading" class="section-title reveal-text">Gâteaux d'Anniversaire sur Commande</h2>
+          <h2 id="anniversaire-heading" class="section-title reveal-text" data-i18n="patisserie_cake_title">Gâteaux d'Anniversaire sur Commande</h2>
           <p>Crusthy'lia réalise des <strong>gâteaux d'anniversaire sur commande</strong> à Marrakech — layer cakes décorés, entremets aux fruits, cheesecakes personnalisés, ou créations pâtisserie marocaine pour les occasions de fête.</p>
           <p>Précisez le parfum, le nombre de parts, la décoration souhaitée et l'inscription en passant commande au moins <strong>48 heures à l'avance</strong> via WhatsApp ou par email.</p>
           <p>Nos desserts sont également disponibles en <a href="/livraison-marrakech.html">livraison à domicile</a> pour vos événements. Retrouvez l'ensemble de nos produits en boutique au 890 Lotissement Nakhil 2, Targa, Marrakech.</p>
@@ -316,12 +317,12 @@
     <section class="cta-band bg-brown" aria-label="Appel à l'action">
       <div class="container cta-band-inner">
         <div class="cta-band-text">
-          <h2 class="cta-band-title reveal-text">Une envie de douceur ?</h2>
-          <p class="cta-band-sub">Venez découvrir notre vitrine pâtisserie au 890 Lotissement Nakhil 2, Targa — ouverte tous les jours de 07h00 à 23h00.</p>
+          <h2 class="cta-band-title reveal-text" data-i18n="patisserie_cta_title">Une envie de douceur ?</h2>
+          <p class="cta-band-sub" data-i18n="patisserie_cta_sub">Venez découvrir notre vitrine pâtisserie au 890 Lotissement Nakhil 2, Targa — ouverte tous les jours de 07h00 à 23h00.</p>
         </div>
         <div class="cta-band-actions">
-          <a href="https://wa.me/message/NDWNBPJQV6GXE1" class="btn btn-light btn-magnetic" target="_blank" rel="noopener noreferrer">Commander maintenant</a>
-          <a href="https://maps.app.goo.gl/vTmgJStVPV5HHdK79" class="btn btn-outline-light btn-magnetic" target="_blank" rel="noopener noreferrer">Nous trouver</a>
+          <a href="https://wa.me/message/NDWNBPJQV6GXE1" class="btn btn-light btn-magnetic" target="_blank" rel="noopener noreferrer" data-i18n="patisserie_cta_order_now">Commander maintenant</a>
+          <a href="https://maps.app.goo.gl/vTmgJStVPV5HHdK79" class="btn btn-outline-light btn-magnetic" target="_blank" rel="noopener noreferrer" data-i18n="cta_directions">Nous trouver</a>
         </div>
       </div>
     </section>
@@ -329,15 +330,15 @@
     <!-- RELATED PAGES -->
     <section class="related-pages" aria-labelledby="related-heading">
       <div class="container">
-        <h2 id="related-heading" class="section-title related-title reveal-text">À découvrir aussi</h2>
+        <h2 id="related-heading" class="section-title related-title reveal-text" data-i18n="related_also">À découvrir aussi</h2>
         <div class="related-grid">
           <a href="/boulangerie-artisanale-marrakech.html" class="related-card">
             <div class="img-slot img-reveal" data-slot="related-boulangerie" style="aspect-ratio:16/9;">
               <img src="/assets/images/presentoir-viennoiseries-assortiment-boulangerie-marrakech.jpg" alt="Presentoir de viennoiseries artisanales assorties chez Crusthy'lia boulangerie Marrakech" title="Un assortiment gourmand de viennoiseries faites maison chaque jour à Targa" width="600" height="338" loading="lazy" onerror="this.closest('.img-slot').classList.add('img-missing')">
             </div>
             <div class="related-card-body">
-              <h3 class="related-card-title">Boulangerie Artisanale</h3>
-              <p>Pain et viennoiseries faits maison chaque matin à Targa.</p>
+              <h3 class="related-card-title" data-i18n="related_boulangerie_title">Boulangerie Artisanale</h3>
+              <p data-i18n="related_boulangerie_desc">Pain et viennoiseries faits maison chaque matin à Targa.</p>
             </div>
           </a>
           <a href="/menu.html" class="related-card">
@@ -345,8 +346,8 @@
               <img src="/assets/images/tableau-menu-ardoise-boulangerie-cafe-crusthylia-targa.jpg" alt="Tableau menu ardoise du café Crusthy'lia avec formules petit déjeuner et brunch à Targa" title="Nos formules du jour affichées sur ardoise pour une expérience authentique à Marrakech" width="600" height="338" loading="lazy" onerror="this.closest('.img-slot').classList.add('img-missing')">
             </div>
             <div class="related-card-body">
-              <h3 class="related-card-title">Menu Complet</h3>
-              <p>Tout notre menu — du café du matin au dîner en soirée.</p>
+              <h3 class="related-card-title" data-i18n="related_menu_title">Menu Complet</h3>
+              <p data-i18n="related_menu_desc">Tout notre menu — du café du matin au dîner en soirée.</p>
             </div>
           </a>
           <a href="/brunch-marrakech.html" class="related-card">
@@ -354,8 +355,8 @@
               <img src="/assets/images/brunch-parisien-spread-complet-crusthylia-marrakech.jpg" alt="Brunch parisien complet servi chez Crusthy'lia avec viennoiseries jus et café à Marrakech" title="Notre brunch parisien : une expérience gourmande et généreuse tous les weekends à Targa" width="600" height="338" loading="lazy" onerror="this.closest('.img-slot').classList.add('img-missing')">
             </div>
             <div class="related-card-body">
-              <h3 class="related-card-title">Brunch à Marrakech</h3>
-              <p>Trois formules brunch — Parisien, Norvégien, Américain.</p>
+              <h3 class="related-card-title" data-i18n="related_brunch_title">Brunch à Marrakech</h3>
+              <p data-i18n="related_brunch_desc">Trois formules brunch — Parisien, Norvégien, Américain.</p>
             </div>
           </a>
         </div>
@@ -377,7 +378,7 @@
         </div>
       </div>
       <div class="footer-nav">
-        <h3 class="footer-heading">Navigation</h3>
+        <h3 class="footer-heading" data-i18n="footer_nav">Navigation</h3>
         <ul class="footer-links">
           <li><a href="/menu.html">Menu</a></li>
           <li><a href="/brunch-marrakech.html">Brunch à Marrakech</a></li>
@@ -390,7 +391,7 @@
         </ul>
       </div>
       <div class="footer-info">
-        <h3 class="footer-heading">Informations</h3>
+        <h3 class="footer-heading" data-i18n="footer_info">Informations</h3>
         <ul class="footer-links">
           <li><a href="/qui-sommes-nous.html">Notre Histoire</a></li>
           <li><a href="/notre-engagement.html">Notre Engagement</a></li>
@@ -403,7 +404,7 @@
         </ul>
       </div>
       <div class="footer-contact">
-        <h3 class="footer-heading">Contact</h3>
+        <h3 class="footer-heading" data-i18n="footer_contact">Contact</h3>
         <address>
           <p><i class="ph ph-map-pin" aria-hidden="true"></i> 890 Lotissement Nakhil 2, Targa, Marrakech 40000</p>
           <p><i class="ph ph-phone" aria-hidden="true"></i> <a href="tel:+212764745159">+212 764 745 159</a></p>

@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/assets/images/logo-crusthylia.png" type="image/png">
   <title>Livraison Marrakech — Café Brunch Crusthy'lia</title>
   <meta name="description" content="Livraison de petits déjeuners, brunchs et pâtisseries à Marrakech. Commandez via WhatsApp ou en ligne. Délais 30–60 min. Crusthy'lia livre dans tout Marrakech !">
   <meta name="keywords" content="livraison Marrakech, livraison petit déjeuner Marrakech, livraison brunch Marrakech, commande en ligne café Marrakech, livraison pâtisserie Marrakech, livraison boulangerie Marrakech, delivery Marrakech, WhatsApp commande Marrakech, Crusthy'lia livraison, livraison domicile Marrakech">
@@ -15,14 +16,14 @@
   <meta property="og:title" content="Livraison Marrakech — Café Brunch Crusthy'lia">
   <meta property="og:description" content="Livraison petit déjeuner, brunch et pâtisseries à Marrakech. 30–60 min. Commandez sur WhatsApp ou en ligne !">
   <meta property="og:url" content="https://crusthylia.com/livraison-marrakech">
-  <meta property="og:image" content="https://crusthylia.com/images/og-livraison.jpg">
+  <meta property="og:image" content="https://crusthylia.com/assets/images/og-livraison.jpg">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Crusthy'lia">
   <meta property="og:locale" content="fr_MA">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Livraison Marrakech — Café Brunch Crusthy'lia">
   <meta name="twitter:description" content="Livraison petit déjeuner, brunch et pâtisseries à Marrakech en 30–60 min.">
-  <meta name="twitter:image" content="https://crusthylia.com/images/og-livraison.jpg">
+  <meta name="twitter:image" content="https://crusthylia.com/assets/images/og-livraison.jpg">
 
   <script type="application/ld+json">
   {
@@ -91,14 +92,14 @@
   <link rel="stylesheet" href="/assets/css/animations.css">
   <link rel="stylesheet" href="/assets/css/rtl.css">
 </head>
-<body>
-  <a href="#main" class="skip-link">Aller au contenu principal</a>
+<body id="top">
+  <a href="#main" class="skip-link" data-i18n="skip_link">Aller au contenu principal</a>
   <div class="cursor" aria-hidden="true"></div>
   <div class="cursor-dot" aria-hidden="true"></div>
   <div class="page-loader" id="page-loader" aria-hidden="true">
     <div class="loader-inner">
   <img src="/assets/images/logo.png" alt="Crusthy'lia" class="loader-logo-img">
-  <p class="loader-slogan">Le rendez-vous des gourmands</p>
+  <p class="loader-slogan" data-i18n="loader_slogan">Le rendez-vous des gourmands</p>
   <div class="loader-spinner" aria-hidden="true"></div>
 </div>
   </div>
@@ -153,20 +154,20 @@
     <section class="page-hero section-dark has-grain" style="background: var(--color-brown-dark); padding: var(--space-32) 0 var(--space-24);">
       <div class="container">
         <nav class="breadcrumb" aria-label="Fil d'Ariane">
-          <a href="/">Accueil</a>
+          <a href="/" data-i18n="breadcrumb_home">Accueil</a>
           <span class="breadcrumb-separator" aria-hidden="true">→</span>
-          <span aria-current="page">Livraison Marrakech</span>
+          <span aria-current="page" data-i18n="livraison_breadcrumb_current">Livraison Marrakech</span>
         </nav>
         <div class="page-hero-content" style="color: var(--color-cream); margin-top: var(--space-8);">
-          <span class="eyebrow">Targa, Marrakech</span>
-          <h1 class="reveal-text" style="color: var(--color-cream);">Livraison à Marrakech — Commandez chez Crusthy'lia</h1>
-          <p class="hero-sub" style="color: rgba(253,248,240,0.75); max-width: 55ch; margin-top: var(--space-4);">
+          <span class="eyebrow" data-i18n="livraison_hero_eyebrow">Targa, Marrakech</span>
+          <h1 class="reveal-text" style="color: var(--color-cream);" data-i18n="livraison_hero_title">Livraison à Marrakech — Commandez chez Crusthy'lia</h1>
+          <p class="hero-sub" style="color: rgba(253,248,240,0.75); max-width: 55ch; margin-top: var(--space-4);" data-i18n="livraison_hero_sub">
             Livraison de viennoiseries, repas et pâtisseries à Marrakech. Commandez via WhatsApp. Livraison Targa, Guéliz et environs tous les jours 07h–22h30.
           </p>
           <div class="hero-buttons" style="margin-top: var(--space-8); display:flex; gap:var(--space-4); flex-wrap:wrap;">
-            <a href="https://wa.me/message/NDWNBPJQV6GXE1" class="btn btn-primary btn-magnetic" target="_blank" rel="noopener" style="font-size:1.1rem; padding: var(--space-4) var(--space-8);">
+            <a href="https://wa.me/message/NDWNBPJQV6GXE1" class="btn btn-primary btn-magnetic" target="_blank" rel="noopener noreferrer" style="font-size:1.1rem; padding: var(--space-4) var(--space-8);">
               <i class="ph ph-whatsapp-logo" aria-hidden="true"></i>
-              <span>Commander maintenant</span>
+              <span data-i18n="livraison_cta_order_now">Commander maintenant</span>
             </a>
             <a href="tel:+212764745159" class="btn btn-secondary btn-magnetic">
               <i class="ph ph-phone" aria-hidden="true"></i>
@@ -196,12 +197,12 @@
     <section style="background: #25D366; padding: var(--space-8) 0;">
       <div class="container" style="display:flex; align-items:center; justify-content:center; gap: var(--space-6); flex-wrap:wrap; text-align:center;">
         <div style="color: white;">
-          <p style="font-size:1.2rem; font-weight:600; margin:0;">Commandez directement sur WhatsApp</p>
-          <p style="margin: var(--space-2) 0 0; opacity:0.9;">La façon la plus rapide et la plus simple de commander votre livraison</p>
+          <p style="font-size:1.2rem; font-weight:600; margin:0;" data-i18n="livraison_wa_title">Commandez directement sur WhatsApp</p>
+          <p style="margin: var(--space-2) 0 0; opacity:0.9;" data-i18n="livraison_wa_sub">La façon la plus rapide et la plus simple de commander votre livraison</p>
         </div>
-        <a href="https://wa.me/message/NDWNBPJQV6GXE1" class="btn" target="_blank" rel="noopener" style="background:white; color:#25D366; font-weight:700; padding: var(--space-4) var(--space-8); border-radius:50px; text-decoration:none; display:inline-flex; align-items:center; gap:var(--space-2); white-space:nowrap;">
+        <a href="https://wa.me/message/NDWNBPJQV6GXE1" class="btn" target="_blank" rel="noopener noreferrer" style="background:white; color:#25D366; font-weight:700; padding: var(--space-4) var(--space-8); border-radius:50px; text-decoration:none; display:inline-flex; align-items:center; gap:var(--space-2); white-space:nowrap;">
           <i class="ph ph-whatsapp-logo" aria-hidden="true" style="font-size:1.3rem;"></i>
-          Commander sur WhatsApp
+          <span data-i18n="cta_order">Commander sur WhatsApp</span>
         </a>
       </div>
     </section>
@@ -211,17 +212,17 @@
     <!-- Section: La qualité Crusthy'lia livrée -->
     <section class="content-section" style="padding: var(--space-24) 0; background: var(--color-cream);">
       <div class="container" style="max-width: 860px;">
-        <h2 class="reveal-text">La qualité Crusthy'lia livrée chez vous</h2>
+        <h2 class="reveal-text" data-i18n="livraison_quality_title">La qualité Crusthy'lia livrée chez vous</h2>
         <div class="gold-line"></div>
         <p>Certains matins, on ne peut pas se déplacer. Certains midis, le bureau ne permet pas une vraie pause. Certains soirs, on préfère rester chez soi sans sacrifier le repas. Pour toutes ces occasions, le service de livraison Crusthy'lia est là — disponible tous les jours de 07h00 à 22h30, avec la même qualité artisanale que celle servie dans notre salle à Targa.</p>
-        <p>Nous livrons à <strong>Targa, Guéliz</strong> et dans les quartiers résidentiels adjacents de Marrakech. Pas besoin d'application, pas besoin de créer un compte — un simple message <a href="https://wa.me/message/NDWNBPJQV6GXE1" target="_blank" rel="noopener">WhatsApp</a> suffit pour passer commande.</p>
+        <p>Nous livrons à <strong>Targa, Guéliz</strong> et dans les quartiers résidentiels adjacents de Marrakech. Pas besoin d'application, pas besoin de créer un compte — un simple message <a href="https://wa.me/message/NDWNBPJQV6GXE1" target="_blank" rel="noopener noreferrer">WhatsApp</a> suffit pour passer commande.</p>
       </div>
     </section>
 
     <!-- Section: Ce que nous livrons -->
     <section class="content-section" style="padding: var(--space-24) 0; background: var(--color-beige);">
       <div class="container">
-        <h2 class="reveal-text" style="text-align:center; margin-bottom: var(--space-4);">Ce que nous livrons</h2>
+        <h2 class="reveal-text" style="text-align:center; margin-bottom: var(--space-4);" data-i18n="livraison_what_title">Ce que nous livrons</h2>
         <div class="gold-line" style="margin: 0 auto var(--space-12);"></div>
 
         <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: var(--space-6);">
@@ -232,7 +233,7 @@
               <img src="/assets/images/formule-petit-dejeuner-assiette-boulangerie-targa-marrakech.jpg" alt="Formule petit déjeuner complète servie en assiette au café Crusthy'lia à Targa Marrakech" width="560" height="315" loading="lazy" onerror="this.closest('.img-slot').classList.add('img-missing')" style="width:100%; height:100%; object-fit:cover;">
             </div>
             <div style="padding: var(--space-6);">
-              <h3 class="reveal-text" style="margin-bottom: var(--space-3);">Petit déjeuner &amp; Viennoiseries</h3>
+              <h3 class="reveal-text" style="margin-bottom: var(--space-3);" data-i18n="livraison_cat_breakfast">Petit déjeuner &amp; Viennoiseries</h3>
               <p>Le matin, nous livrons l'intégralité de nos formules petit déjeuner — de la Formule Express à la Formule Royal. Les croissants, pains au chocolat et brioches sont emballés chauds dans du papier kraft et une pochette isotherme. Les jus sont pressés à la commande juste avant le départ du livreur. La livraison viennoiseries Marrakech est disponible dès 07h00 — commandez la veille pour un créneau garanti.</p>
             </div>
           </article>
@@ -243,7 +244,7 @@
               <img src="/assets/images/pizza-maison-garnie-restaurant-crusthylia-targa-marrakech.jpg" alt="Pizza maison généreusement garnie servie au restaurant Crusthy'lia de Targa à Marrakech" width="560" height="315" loading="lazy" onerror="this.closest('.img-slot').classList.add('img-missing')" style="width:100%; height:100%; object-fit:cover;">
             </div>
             <div style="padding: var(--space-6);">
-              <h3 class="reveal-text" style="margin-bottom: var(--space-3);">Déjeuner &amp; Dîner</h3>
+              <h3 class="reveal-text" style="margin-bottom: var(--space-3);" data-i18n="livraison_cat_lunch">Déjeuner &amp; Dîner</h3>
               <p>Notre cuisine complète est disponible à la livraison : burgers, wraps, pizzas, pâtes, salades composées, plats marocains (tajines, couscous, kefta), plats du jour. Les plats chauds sont conditionnés dans des contenants isolants. La livraison pizza Marrakech est particulièrement demandée le soir — précisez si vous souhaitez la pizza coupée ou non.</p>
             </div>
           </article>
@@ -254,8 +255,8 @@
               <img src="/assets/images/tiramisu-maison-dessert-boulangerie-crusthylia-marrakech.jpg" alt="Tiramisu fait maison onctueux et crémeux au café-restaurant Crusthy'lia à Marrakech" width="560" height="315" loading="lazy" onerror="this.closest('.img-slot').classList.add('img-missing')" style="width:100%; height:100%; object-fit:cover;">
             </div>
             <div style="padding: var(--space-6);">
-              <h3 class="reveal-text" style="margin-bottom: var(--space-3);">Pâtisseries &amp; Desserts</h3>
-              <p>Tiramisu en verrine individuelle, cheesecake en portion, fondant au chocolat, macarons à la boîte, gâteaux entiers sur commande — toute notre gamme pâtisserie est livrable. Pour les commandes de gâteaux entiers, passez votre commande au moins 48h à l'avance via <a href="https://wa.me/message/NDWNBPJQV6GXE1" target="_blank" rel="noopener">WhatsApp</a> ou <a href="mailto:contact@crusthylia.com">contact@crusthylia.com</a>.</p>
+              <h3 class="reveal-text" style="margin-bottom: var(--space-3);" data-i18n="livraison_cat_pastry">Pâtisseries &amp; Desserts</h3>
+              <p>Tiramisu en verrine individuelle, cheesecake en portion, fondant au chocolat, macarons à la boîte, gâteaux entiers sur commande — toute notre gamme pâtisserie est livrable. Pour les commandes de gâteaux entiers, passez votre commande au moins 48h à l'avance via <a href="https://wa.me/message/NDWNBPJQV6GXE1" target="_blank" rel="noopener noreferrer">WhatsApp</a> ou <a href="mailto:contact@crusthylia.com">contact@crusthylia.com</a>.</p>
             </div>
           </article>
 
@@ -265,7 +266,7 @@
               <img src="/assets/images/cappuccino-latte-art-cafe-artisanal-crusthylia-marrakech.jpg" alt="Cappuccino avec latte art servi dans une tasse en céramique au café Crusthy'lia Marrakech" width="560" height="315" loading="lazy" onerror="this.closest('.img-slot').classList.add('img-missing')" style="width:100%; height:100%; object-fit:cover;">
             </div>
             <div style="padding: var(--space-6);">
-              <h3 class="reveal-text" style="margin-bottom: var(--space-3);">Café &amp; Boissons</h3>
+              <h3 class="reveal-text" style="margin-bottom: var(--space-3);" data-i18n="livraison_cat_drinks">Café &amp; Boissons</h3>
               <p>Espresso, latte, cappuccino, cold brew, matcha latte, smoothies, jus frais — nos boissons sont préparées à la commande et livrées dans des gobelets hermétiques. Pour les espresso-based drinks, nous recommandons une livraison courte distance (Targa immédiat) pour une dégustation optimale à réception.</p>
             </div>
           </article>
@@ -277,7 +278,7 @@
     <!-- Section: Comment commander -->
     <section class="content-section" style="padding: var(--space-24) 0; background: var(--color-cream);">
       <div class="container" style="max-width: 860px;">
-        <h2 class="reveal-text">Comment commander</h2>
+        <h2 class="reveal-text" data-i18n="livraison_how_title">Comment commander</h2>
         <div class="gold-line"></div>
 
         <div style="display:grid; gap: var(--space-4); margin-top: var(--space-8);">
@@ -285,37 +286,37 @@
           <div style="display:grid; grid-template-columns: 56px 1fr; gap: var(--space-6); align-items:start;">
             <div style="width:56px; height:56px; background: var(--color-gold); border-radius:50%; display:flex; align-items:center; justify-content:center; color:white; font-size:1.3rem; font-weight:700; flex-shrink:0;">1</div>
             <div style="padding-top: var(--space-3);">
-              <strong>Envoyez un message sur <a href="https://wa.me/message/NDWNBPJQV6GXE1" target="_blank" rel="noopener">WhatsApp</a> ou appelez le <a href="tel:+212764745159">+212 764 745 159</a></strong>
+              <strong data-i18n="livraison_step1">Envoyez un message sur <a href="https://wa.me/message/NDWNBPJQV6GXE1" target="_blank" rel="noopener noreferrer">WhatsApp</a> ou appelez le <a href="tel:+212764745159">+212 764 745 159</a></strong>
             </div>
           </div>
 
           <div style="display:grid; grid-template-columns: 56px 1fr; gap: var(--space-6); align-items:start;">
             <div style="width:56px; height:56px; background: var(--color-gold); border-radius:50%; display:flex; align-items:center; justify-content:center; color:white; font-size:1.3rem; font-weight:700; flex-shrink:0;">2</div>
             <div style="padding-top: var(--space-3);">
-              <strong>Précisez votre commande, votre adresse complète à Marrakech, et le créneau horaire souhaité</strong>
+              <strong data-i18n="livraison_step2">Précisez votre commande, votre adresse complète à Marrakech, et le créneau horaire souhaité</strong>
             </div>
           </div>
 
           <div style="display:grid; grid-template-columns: 56px 1fr; gap: var(--space-6); align-items:start;">
             <div style="width:56px; height:56px; background: var(--color-gold); border-radius:50%; display:flex; align-items:center; justify-content:center; color:white; font-size:1.3rem; font-weight:700; flex-shrink:0;">3</div>
             <div style="padding-top: var(--space-3);">
-              <strong>Nous confirmons la disponibilité, le délai estimé et le prix total incluant les frais de livraison</strong>
+              <strong data-i18n="livraison_step3">Nous confirmons la disponibilité, le délai estimé et le prix total incluant les frais de livraison</strong>
             </div>
           </div>
 
           <div style="display:grid; grid-template-columns: 56px 1fr; gap: var(--space-6); align-items:start;">
             <div style="width:56px; height:56px; background: var(--color-gold); border-radius:50%; display:flex; align-items:center; justify-content:center; color:white; font-size:1.3rem; font-weight:700; flex-shrink:0;">4</div>
             <div style="padding-top: var(--space-3);">
-              <strong>Votre commande est préparée et livrée — paiement à la livraison en espèces ou par carte</strong>
+              <strong data-i18n="livraison_step4">Votre commande est préparée et livrée — paiement à la livraison en espèces ou par carte</strong>
             </div>
           </div>
 
         </div>
 
         <div style="margin-top: var(--space-10); text-align:center;">
-          <a href="https://wa.me/message/NDWNBPJQV6GXE1" class="btn btn-primary btn-magnetic" target="_blank" rel="noopener" style="font-size:1.1rem; padding: var(--space-5) var(--space-10);">
+          <a href="https://wa.me/message/NDWNBPJQV6GXE1" class="btn btn-primary btn-magnetic" target="_blank" rel="noopener noreferrer" style="font-size:1.1rem; padding: var(--space-5) var(--space-10);">
             <i class="ph ph-whatsapp-logo" aria-hidden="true"></i>
-            Commander sur WhatsApp maintenant
+            <span data-i18n="livraison_cta_wa_now">Commander sur WhatsApp maintenant</span>
           </a>
         </div>
       </div>
@@ -367,7 +368,7 @@
         <div style="margin-top: var(--space-8); padding: var(--space-8); background: var(--color-beige); border-radius: 12px; border-left: 4px solid var(--color-gold);">
           <p style="margin:0; font-size:1.05rem;"><strong>Horaires de livraison :</strong> tous les jours de <strong>07h00 à 22h30</strong></p>
           <p style="margin: var(--space-3) 0 0;"><strong>Zone :</strong> Targa (prioritaire), Guéliz, environs de Targa</p>
-          <p style="margin: var(--space-3) 0 0;"><strong>Contact :</strong> <a href="https://wa.me/message/NDWNBPJQV6GXE1" target="_blank" rel="noopener">WhatsApp</a> | <a href="tel:+212764745159">+212 764 745 159</a></p>
+          <p style="margin: var(--space-3) 0 0;"><strong>Contact :</strong> <a href="https://wa.me/message/NDWNBPJQV6GXE1" target="_blank" rel="noopener noreferrer">WhatsApp</a> | <a href="tel:+212764745159">+212 764 745 159</a></p>
         </div>
       </div>
     </section>
@@ -380,7 +381,7 @@
           Venez nous rendre visite
         </h2>
         <div style="display:flex; gap:var(--space-4); justify-content:center; flex-wrap:wrap;">
-          <a href="https://wa.me/message/NDWNBPJQV6GXE1" class="btn btn-primary btn-magnetic" target="_blank" rel="noopener">
+          <a href="https://wa.me/message/NDWNBPJQV6GXE1" class="btn btn-primary btn-magnetic" target="_blank" rel="noopener noreferrer">
             <i class="ph ph-whatsapp-logo" aria-hidden="true"></i>
             <span data-i18n="cta_order">Commander sur WhatsApp</span>
           </a>
@@ -449,7 +450,7 @@
         </div>
       </div>
       <div class="footer-nav">
-        <h3 class="footer-heading">Navigation</h3>
+        <h3 class="footer-heading" data-i18n="footer_nav">Navigation</h3>
         <ul class="footer-links">
           <li><a href="/menu.html">Menu</a></li>
           <li><a href="/brunch-marrakech.html">Brunch à Marrakech</a></li>
@@ -462,7 +463,7 @@
         </ul>
       </div>
       <div class="footer-info">
-        <h3 class="footer-heading">Informations</h3>
+        <h3 class="footer-heading" data-i18n="footer_info">Informations</h3>
         <ul class="footer-links">
           <li><a href="/qui-sommes-nous.html">Notre Histoire</a></li>
           <li><a href="/notre-engagement.html">Notre Engagement</a></li>
@@ -475,7 +476,7 @@
         </ul>
       </div>
       <div class="footer-contact">
-        <h3 class="footer-heading">Contact</h3>
+        <h3 class="footer-heading" data-i18n="footer_contact">Contact</h3>
         <address>
           <p><i class="ph ph-map-pin" aria-hidden="true"></i> 890 Lotissement Nakhil 2, Targa, Marrakech 40000</p>
           <p><i class="ph ph-phone" aria-hidden="true"></i> <a href="tel:+212764745159">+212 764 745 159</a></p>

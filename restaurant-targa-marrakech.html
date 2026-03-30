@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/assets/images/logo-crusthylia.png" type="image/png">
   <title>Restaurant à Targa, Marrakech — Déjeuner &amp; Dîner chez Crusthy'lia</title>
   <meta name="description" content="Restaurant à Targa, Marrakech. Déjeuner et dîner tous les jours chez Crusthy'lia : burgers, pizzas, plats marocains, pâtes, salades. Ouvert 12h–23h.">
   <meta name="keywords" content="restaurant Targa Marrakech, restaurant ouvert tous les jours Marrakech, déjeuner dîner Targa, burger Marrakech, pizza Marrakech, plats marocains restaurant Marrakech, tajine restaurant Marrakech, couscous Marrakech">
@@ -52,14 +53,14 @@
   <link rel="stylesheet" href="/assets/css/animations.css">
   <link rel="stylesheet" href="/assets/css/rtl.css">
 </head>
-<body>
-  <a href="#main" class="skip-link">Aller au contenu principal</a>
+<body id="top">
+  <a href="#main" class="skip-link" data-i18n="skip_link">Aller au contenu principal</a>
   <div class="cursor" aria-hidden="true"></div>
   <div class="cursor-dot" aria-hidden="true"></div>
   <div class="page-loader" id="page-loader" aria-hidden="true">
     <div class="loader-inner">
   <img src="/assets/images/logo.png" alt="Crusthy'lia" class="loader-logo-img">
-  <p class="loader-slogan">Le rendez-vous des gourmands</p>
+  <p class="loader-slogan" data-i18n="loader_slogan">Le rendez-vous des gourmands</p>
   <div class="loader-spinner" aria-hidden="true"></div>
 </div>
   </div>
@@ -68,11 +69,11 @@
     <div class="container nav-inner">
       <a href="/" class="nav-logo" aria-label="Crusthy'lia — Accueil"><img src="/assets/images/logo.png" alt="Crusthy'lia" class="nav-logo-img"></a>
       <ul class="nav-links" role="list">
-        <li><a href="/menu.html" class="nav-link">Menu</a></li>
-        <li><a href="/brunch-marrakech.html" class="nav-link">Brunch</a></li>
-        <li><a href="/qui-sommes-nous.html" class="nav-link">Notre Histoire</a></li>
-        <li><a href="/blog/" class="nav-link">Blog</a></li>
-        <li><a href="/contact.html" class="nav-link">Contact</a></li>
+        <li><a href="/menu.html" class="nav-link" data-i18n="nav_menu">Menu</a></li>
+        <li><a href="/brunch-marrakech.html" class="nav-link" data-i18n="nav_brunch">Brunch</a></li>
+        <li><a href="/qui-sommes-nous.html" class="nav-link" data-i18n="nav_about">Notre Histoire</a></li>
+        <li><a href="/blog/" class="nav-link" data-i18n="nav_blog">Blog</a></li>
+        <li><a href="/contact.html" class="nav-link" data-i18n="nav_contact">Contact</a></li>
       </ul>
       <div class="nav-right">
         <div class="lang-switcher" role="navigation" aria-label="Language selector">
@@ -82,7 +83,7 @@
           <span class="lang-divider">|</span>
           <button class="lang-btn" data-lang="ar" aria-pressed="false">AR</button>
         </div>
-        <a href="/reservation-marrakech.html" class="btn btn-primary btn-sm nav-cta btn-magnetic"><span>Réserver</span></a>
+        <a href="/reservation-marrakech.html" class="btn btn-primary btn-sm nav-cta btn-magnetic"><span data-i18n="nav_reserve">Réserver</span></a>
       </div>
       <button class="nav-hamburger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobile-menu">
         <span class="hamburger-line"></span><span class="hamburger-line"></span><span class="hamburger-line"></span>
@@ -91,18 +92,18 @@
     <div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true">
       <button class="mobile-menu-close" aria-label="Fermer le menu"><i class="ph ph-x"></i></button>
       <ul class="mobile-nav-links" role="list">
-        <li><a href="/menu.html" class="mobile-nav-link">Menu</a></li>
-        <li><a href="/brunch-marrakech.html" class="mobile-nav-link">Brunch</a></li>
-        <li><a href="/qui-sommes-nous.html" class="mobile-nav-link">Notre Histoire</a></li>
-        <li><a href="/blog/" class="mobile-nav-link">Blog</a></li>
-        <li><a href="/contact.html" class="mobile-nav-link">Contact</a></li>
+        <li><a href="/menu.html" class="mobile-nav-link" data-i18n="nav_menu">Menu</a></li>
+        <li><a href="/brunch-marrakech.html" class="mobile-nav-link" data-i18n="nav_brunch">Brunch</a></li>
+        <li><a href="/qui-sommes-nous.html" class="mobile-nav-link" data-i18n="nav_about">Notre Histoire</a></li>
+        <li><a href="/blog/" class="mobile-nav-link" data-i18n="nav_blog">Blog</a></li>
+        <li><a href="/contact.html" class="mobile-nav-link" data-i18n="nav_contact">Contact</a></li>
       </ul>
       <div class="mobile-lang-switcher">
         <button class="lang-btn active" data-lang="fr">FR</button><span class="lang-divider">|</span>
         <button class="lang-btn" data-lang="en">EN</button><span class="lang-divider">|</span>
         <button class="lang-btn" data-lang="ar">درج</button>
       </div>
-      <a href="/reservation-marrakech.html" class="btn btn-primary btn-magnetic mobile-cta"><span>Réserver</span></a>
+      <a href="/reservation-marrakech.html" class="btn btn-primary btn-magnetic mobile-cta"><span data-i18n="nav_reserve">Réserver</span></a>
     </div>
   </nav>
 
@@ -112,16 +113,16 @@
       <div class="container page-hero-inner">
         <nav class="breadcrumb" aria-label="Fil d'Ariane">
           <ol class="breadcrumb-list" role="list">
-            <li><a href="/">Accueil</a></li>
+            <li><a href="/" data-i18n="breadcrumb_home">Accueil</a></li>
             <li aria-hidden="true"><span class="breadcrumb-sep">/</span></li>
-            <li><span aria-current="page">Restaurant Targa Marrakech</span></li>
+            <li><span aria-current="page" data-i18n="resto_breadcrumb_current">Restaurant Targa Marrakech</span></li>
           </ol>
         </nav>
-        <h1 id="hero-heading" class="page-hero-title reveal-text">Restaurant à Targa, Marrakech<br><em>Déjeuner &amp; Dîner chez Crusthy'lia</em></h1>
-        <p class="page-hero-sub reveal-text">Cuisine faite maison, portions honnêtes, service attentionné. Du midi au soir, tous les jours — burgers, pizzas, tajines, pâtes, salades.</p>
+        <h1 id="hero-heading" class="page-hero-title reveal-text" data-i18n="resto_hero_title">Restaurant à Targa, Marrakech<br><em>Déjeuner &amp; Dîner chez Crusthy'lia</em></h1>
+        <p class="page-hero-sub reveal-text" data-i18n="resto_hero_sub">Cuisine faite maison, portions honnêtes, service attentionné. Du midi au soir, tous les jours — burgers, pizzas, tajines, pâtes, salades.</p>
         <div class="hero-ctas">
-          <a href="/reservation-marrakech.html" class="btn btn-primary btn-magnetic">Réserver une table</a>
-          <a href="/menu.html" class="btn btn-outline btn-magnetic">Voir le menu</a>
+          <a href="/reservation-marrakech.html" class="btn btn-primary btn-magnetic" data-i18n="cta_reserve">Réserver une table</a>
+          <a href="/menu.html" class="btn btn-outline btn-magnetic" data-i18n="cta_menu">Voir le menu</a>
         </div>
       </div>
     </section>
@@ -134,11 +135,11 @@
 
     <section class="content-section bg-beige" aria-labelledby="quartier-heading">
       <div class="container content-section-inner content-section-text">
-        <h2 id="quartier-heading" class="section-title reveal-text">Un restaurant de quartier qui tient ses promesses</h2>
+        <h2 id="quartier-heading" class="section-title reveal-text" data-i18n="resto_intro_title">Un restaurant de quartier qui tient ses promesses</h2>
         <div class="prose">
-          <p>À Targa, les familles, les actifs et les habitants du quartier ont besoin d'un endroit où manger bien, sans prétention inutile, sans attente frustrante, et sans prix qui font mal. C'est ce que le restaurant Crusthy'lia propose chaque jour, du déjeuner au dîner, depuis son adresse au 890 Lotissement Nakhil 2.</p>
-          <p>Le restaurant est ouvert tous les jours de 12h00 à 23h00. Le service du midi accueille les familles, les professionnels en pause déjeuner et les habitants du quartier qui cherchent une vraie cuisine. Le service du soir prend un rythme plus posé — on s'installe pour dîner, on prend le temps, on finit avec un dessert.</p>
-          <p>La carte mêle les influences marocaines et internationales sans forcer la fusion. Notre cuisine travaille les produits frais chaque jour. Rien n'est surgelé à la cuisson. Les sauces sont préparées en cuisine. Le pain sur la table vient de notre propre fournil.</p>
+          <p data-i18n="resto_intro_p1">À Targa, les familles, les actifs et les habitants du quartier ont besoin d'un endroit où manger bien, sans prétention inutile, sans attente frustrante, et sans prix qui font mal. C'est ce que le restaurant Crusthy'lia propose chaque jour, du déjeuner au dîner, depuis son adresse au 890 Lotissement Nakhil 2.</p>
+          <p data-i18n="resto_intro_p2">Le restaurant est ouvert tous les jours de 12h00 à 23h00. Le service du midi accueille les familles, les professionnels en pause déjeuner et les habitants du quartier qui cherchent une vraie cuisine. Le service du soir prend un rythme plus posé — on s'installe pour dîner, on prend le temps, on finit avec un dessert.</p>
+          <p data-i18n="resto_intro_p3">La carte mêle les influences marocaines et internationales sans forcer la fusion. Notre cuisine travaille les produits frais chaque jour. Rien n'est surgelé à la cuisson. Les sauces sont préparées en cuisine. Le pain sur la table vient de notre propre fournil.</p>
         </div>
       </div>
     </section>
@@ -146,14 +147,14 @@
     <section class="content-section bg-cream" aria-labelledby="burgers-heading">
       <div class="container content-section-inner content-split">
         <div class="content-split-text">
-          <h2 id="burgers-heading" class="section-title reveal-text">Burgers &amp; Sandwichs</h2>
-          <p>Nos burgers sont préparés avec des steaks hachés façonnés le matin à partir de viande sélectionnée. Le pain burger vient de notre boulangerie — briochés, légèrement sucrés, absorbants sans s'effondrer.</p>
+          <h2 id="burgers-heading" class="section-title reveal-text" data-i18n="resto_burgers_title">Burgers &amp; Sandwichs</h2>
+          <p data-i18n="resto_burgers_intro">Nos burgers sont préparés avec des steaks hachés façonnés le matin à partir de viande sélectionnée. Le pain burger vient de notre boulangerie — briochés, légèrement sucrés, absorbants sans s'effondrer.</p>
           <ul class="menu-list">
-            <li><strong>Burger Classic</strong> — steak 150g, cheddar fondu, laitue, tomate, oignon rouge, cornichon, sauce maison</li>
-            <li><strong>Burger Crusthy'lia</strong> — double steak, bacon croustillant, oignons caramélisés, sauce BBQ maison, emmental, pickles</li>
-            <li><strong>Burger Végétarien</strong> — galette de pois chiche et légumes grillés, halloumi grillé, avocat, sauce tahini-citron</li>
-            <li><strong>Wrap Poulet Grillé</strong> — poulet mariné aux épices douces, laitue, tomate, maïs, sauce yaourt-herbes, tortilla blé</li>
-            <li><strong>Wrap Kefta</strong> — kefta marocaine grillée, sauce harissa douce, oignons, tomate, coriandre, pain maison</li>
+            <li><strong data-i18n="resto_burger_classic_name">Burger Classic</strong> — <span data-i18n="resto_burger_classic_desc">steak 150g, cheddar fondu, laitue, tomate, oignon rouge, cornichon, sauce maison</span></li>
+            <li><strong data-i18n="resto_burger_crusthylia_name">Burger Crusthy'lia</strong> — <span data-i18n="resto_burger_crusthylia_desc">double steak, bacon croustillant, oignons caramélisés, sauce BBQ maison, emmental, pickles</span></li>
+            <li><strong data-i18n="resto_burger_vege_name">Burger Végétarien</strong> — <span data-i18n="resto_burger_vege_desc">galette de pois chiche et légumes grillés, halloumi grillé, avocat, sauce tahini-citron</span></li>
+            <li><strong data-i18n="resto_wrap_poulet_name">Wrap Poulet Grillé</strong> — <span data-i18n="resto_wrap_poulet_desc">poulet mariné aux épices douces, laitue, tomate, maïs, sauce yaourt-herbes, tortilla blé</span></li>
+            <li><strong data-i18n="resto_wrap_kefta_name">Wrap Kefta</strong> — <span data-i18n="resto_wrap_kefta_desc">kefta marocaine grillée, sauce harissa douce, oignons, tomate, coriandre, pain maison</span></li>
           </ul>
         </div>
         <div class="content-split-image">
@@ -167,14 +168,14 @@
     <section class="content-section bg-beige" aria-labelledby="pizzas-heading">
       <div class="container content-section-inner content-split content-split-reverse">
         <div class="content-split-text">
-          <h2 id="pizzas-heading" class="section-title reveal-text">Pizzas</h2>
-          <p>Nos pizzas cuisent sur une sole chaude à haute température — la base est fine et croustillante au bord, avec une légère élasticité au centre.</p>
+          <h2 id="pizzas-heading" class="section-title reveal-text" data-i18n="resto_pizzas_title">Pizzas</h2>
+          <p data-i18n="resto_pizzas_intro">Nos pizzas cuisent sur une sole chaude à haute température — la base est fine et croustillante au bord, avec une légère élasticité au centre.</p>
           <ul class="menu-list">
-            <li><strong>Pizza Margherita</strong> — coulis de tomate maison, mozzarella, basilic frais, huile d'olive</li>
-            <li><strong>Pizza Poulet-Champignons</strong> — sauce béchamel légère, poulet rôti, champignons de Paris sautés, emmental</li>
-            <li><strong>Pizza Chèvre-Miel</strong> — base crème, fromage de chèvre, miel, noix, roquette en finition</li>
-            <li><strong>Pizza Chefchaouen</strong> — tomate, olives noires, poivron grillé, oignon rouge, fromage, épices marocaines douces</li>
-            <li><strong>Pizza Orientale</strong> — sauce tomate épicée, kefta, poivrons, oignons, coriandre fraîche, fromage</li>
+            <li><strong data-i18n="resto_pizza_margherita_name">Pizza Margherita</strong> — <span data-i18n="resto_pizza_margherita_desc">coulis de tomate maison, mozzarella, basilic frais, huile d'olive</span></li>
+            <li><strong data-i18n="resto_pizza_poulet_name">Pizza Poulet-Champignons</strong> — <span data-i18n="resto_pizza_poulet_desc">sauce béchamel légère, poulet rôti, champignons de Paris sautés, emmental</span></li>
+            <li><strong data-i18n="resto_pizza_chevre_name">Pizza Chèvre-Miel</strong> — <span data-i18n="resto_pizza_chevre_desc">base crème, fromage de chèvre, miel, noix, roquette en finition</span></li>
+            <li><strong data-i18n="resto_pizza_chefchaouen_name">Pizza Chefchaouen</strong> — <span data-i18n="resto_pizza_chefchaouen_desc">tomate, olives noires, poivron grillé, oignon rouge, fromage, épices marocaines douces</span></li>
+            <li><strong data-i18n="resto_pizza_orientale_name">Pizza Orientale</strong> — <span data-i18n="resto_pizza_orientale_desc">sauce tomate épicée, kefta, poivrons, oignons, coriandre fraîche, fromage</span></li>
           </ul>
         </div>
         <div class="content-split-image">
@@ -187,23 +188,23 @@
 
     <section class="content-section bg-cream" aria-labelledby="pates-heading">
       <div class="container content-section-inner content-section-text">
-        <h2 id="pates-heading" class="section-title reveal-text">Pâtes &amp; Plats Chauds</h2>
+        <h2 id="pates-heading" class="section-title reveal-text" data-i18n="resto_pates_title">Pâtes &amp; Plats Chauds</h2>
         <div class="menu-grid">
           <article class="menu-item">
-            <h3 class="menu-item-name reveal-text">Pâtes Carbonara</h3>
-            <p>Spaghetti cuits al dente, sauce crémée aux œufs et parmesan, lardons dorés — sans crème liquide, à la vraie technique.</p>
+            <h3 class="menu-item-name reveal-text" data-i18n="resto_pates_carbonara_name">Pâtes Carbonara</h3>
+            <p data-i18n="resto_pates_carbonara_desc">Spaghetti cuits al dente, sauce crémée aux œufs et parmesan, lardons dorés — sans crème liquide, à la vraie technique.</p>
           </article>
           <article class="menu-item">
-            <h3 class="menu-item-name reveal-text">Pâtes Bolognaise</h3>
-            <p>Sauce tomate-viande mitonnée longtemps, parmesan, basilic.</p>
+            <h3 class="menu-item-name reveal-text" data-i18n="resto_pates_bolo_name">Pâtes Bolognaise</h3>
+            <p data-i18n="resto_pates_bolo_desc">Sauce tomate-viande mitonnée longtemps, parmesan, basilic.</p>
           </article>
           <article class="menu-item">
-            <h3 class="menu-item-name reveal-text">Pâtes Pesto Maison</h3>
-            <p>Pesto basilic-parmesan-pignons fait maison, tomates cerises rôties, pignons torréfiés.</p>
+            <h3 class="menu-item-name reveal-text" data-i18n="resto_pates_pesto_name">Pâtes Pesto Maison</h3>
+            <p data-i18n="resto_pates_pesto_desc">Pesto basilic-parmesan-pignons fait maison, tomates cerises rôties, pignons torréfiés.</p>
           </article>
           <article class="menu-item">
-            <h3 class="menu-item-name reveal-text">Risotto du Jour</h3>
-            <p>Selon arrivage — champignons, légumes de saison, ou fruits de mer quand disponibles.</p>
+            <h3 class="menu-item-name reveal-text" data-i18n="resto_risotto_name">Risotto du Jour</h3>
+            <p data-i18n="resto_risotto_desc">Selon arrivage — champignons, légumes de saison, ou fruits de mer quand disponibles.</p>
           </article>
         </div>
       </div>
@@ -212,15 +213,15 @@
     <section class="content-section bg-beige" aria-labelledby="marocains-heading">
       <div class="container content-section-inner content-split">
         <div class="content-split-text">
-          <h2 id="marocains-heading" class="section-title reveal-text">Plats Marocains</h2>
-          <p>Les saveurs de Marrakech à notre table — tajines mijotés, couscous du vendredi, pastilla au poulet, harira de saison.</p>
+          <h2 id="marocains-heading" class="section-title reveal-text" data-i18n="resto_marocains_title">Plats Marocains</h2>
+          <p data-i18n="resto_marocains_intro">Les saveurs de Marrakech à notre table — tajines mijotés, couscous du vendredi, pastilla au poulet, harira de saison.</p>
           <ul class="menu-list">
-            <li><strong>Tajine de Poulet Citron-Olives</strong> — poulet fermier mijoté aux citrons confits, olives violettes, oignons doux, épices de Marrakech</li>
-            <li><strong>Tajine Kefta-Œuf</strong> — boulettes de viande hachée épicées, tomate concassée, œufs pochés en finition, coriandre</li>
-            <li><strong>Tajine de Légumes</strong> — courgettes, pommes de terre, carottes, pois chiches, épices douces — végétarien, nourrissant</li>
-            <li><strong>Couscous Vendredi</strong> — couscous fin à la vapeur, bouillon, merguez grillées, légumes confits, raisins secs. Sur réservation.</li>
-            <li><strong>Harira</strong> — soupe de légumineuses, tomates, coriandre, épices. Midi et soir, particulièrement en hiver et pendant ramadan.</li>
-            <li><strong>Pastilla au Poulet</strong> — feuilleté de brick, farce de poulet effiloché, amandes, cannelle, sucre glace — la signature de la cuisine marocaine festive</li>
+            <li><strong data-i18n="resto_tajine_citron_name">Tajine de Poulet Citron-Olives</strong> — <span data-i18n="resto_tajine_citron_desc">poulet fermier mijoté aux citrons confits, olives violettes, oignons doux, épices de Marrakech</span></li>
+            <li><strong data-i18n="resto_tajine_kefta_name">Tajine Kefta-Œuf</strong> — <span data-i18n="resto_tajine_kefta_desc">boulettes de viande hachée épicées, tomate concassée, œufs pochés en finition, coriandre</span></li>
+            <li><strong data-i18n="resto_tajine_legumes_name">Tajine de Légumes</strong> — <span data-i18n="resto_tajine_legumes_desc">courgettes, pommes de terre, carottes, pois chiches, épices douces — végétarien, nourrissant</span></li>
+            <li><strong data-i18n="resto_couscous_name">Couscous Vendredi</strong> — <span data-i18n="resto_couscous_desc">couscous fin à la vapeur, bouillon, merguez grillées, légumes confits, raisins secs. Sur réservation.</span></li>
+            <li><strong data-i18n="resto_harira_name">Harira</strong> — <span data-i18n="resto_harira_desc">soupe de légumineuses, tomates, coriandre, épices. Midi et soir, particulièrement en hiver et pendant ramadan.</span></li>
+            <li><strong data-i18n="resto_pastilla_name">Pastilla au Poulet</strong> — <span data-i18n="resto_pastilla_desc">feuilleté de brick, farce de poulet effiloché, amandes, cannelle, sucre glace — la signature de la cuisine marocaine festive</span></li>
           </ul>
         </div>
         <div class="content-split-image">
@@ -233,27 +234,27 @@
 
     <section class="content-section bg-cream" aria-labelledby="salades-heading">
       <div class="container content-section-inner content-section-text">
-        <h2 id="salades-heading" class="section-title reveal-text">Salades &amp; Entrées</h2>
+        <h2 id="salades-heading" class="section-title reveal-text" data-i18n="resto_salades_title">Salades &amp; Entrées</h2>
         <div class="menu-grid">
           <article class="menu-item">
-            <h3 class="menu-item-name reveal-text">Salade Niçoise</h3>
-            <p>Thon, haricots verts, tomates, olives, œuf dur, anchois, vinaigrette moutarde.</p>
+            <h3 class="menu-item-name reveal-text" data-i18n="resto_nicoise_name">Salade Niçoise</h3>
+            <p data-i18n="resto_nicoise_desc">Thon, haricots verts, tomates, olives, œuf dur, anchois, vinaigrette moutarde.</p>
           </article>
           <article class="menu-item">
-            <h3 class="menu-item-name reveal-text">Salade César</h3>
-            <p>Romaine, croûtons maison, parmesan, sauce césar préparée en cuisine.</p>
+            <h3 class="menu-item-name reveal-text" data-i18n="resto_cesar_name">Salade César</h3>
+            <p data-i18n="resto_cesar_desc">Romaine, croûtons maison, parmesan, sauce césar préparée en cuisine.</p>
           </article>
           <article class="menu-item">
-            <h3 class="menu-item-name reveal-text">Salade Orientale</h3>
-            <p>Roquette, pastèque, feta, menthe, grenade, vinaigrette au miel et citron.</p>
+            <h3 class="menu-item-name reveal-text" data-i18n="resto_orientale_name">Salade Orientale</h3>
+            <p data-i18n="resto_orientale_desc">Roquette, pastèque, feta, menthe, grenade, vinaigrette au miel et citron.</p>
           </article>
           <article class="menu-item">
-            <h3 class="menu-item-name reveal-text">Zaalouk</h3>
-            <p>Caviar d'aubergine marocain à la tomate, ail, coriandre — servi tiède avec pain maison.</p>
+            <h3 class="menu-item-name reveal-text" data-i18n="resto_zaalouk_name">Zaalouk</h3>
+            <p data-i18n="resto_zaalouk_desc">Caviar d'aubergine marocain à la tomate, ail, coriandre — servi tiède avec pain maison.</p>
           </article>
           <article class="menu-item">
-            <h3 class="menu-item-name reveal-text">Briouates au Fromage</h3>
-            <p>Croustillantes, fondantes à l'intérieur, sauce piquante en accompagnement.</p>
+            <h3 class="menu-item-name reveal-text" data-i18n="resto_briouates_name">Briouates au Fromage</h3>
+            <p data-i18n="resto_briouates_desc">Croustillantes, fondantes à l'intérieur, sauce piquante en accompagnement.</p>
           </article>
         </div>
       </div>
@@ -261,15 +262,15 @@
 
     <section class="content-section bg-beige" aria-labelledby="reserver-heading">
       <div class="container content-section-inner content-section-text">
-        <h2 id="reserver-heading" class="section-title reveal-text">Réserver &amp; Commander</h2>
+        <h2 id="reserver-heading" class="section-title reveal-text" data-i18n="resto_reserver_title">Réserver &amp; Commander</h2>
         <div class="prose">
-          <p>Le restaurant Targa Marrakech de Crusthy'lia accueille les groupes jusqu'à 30 personnes. Pour les groupes de 6 et plus, la réservation est recommandée — via <a href="https://wa.me/message/NDWNBPJQV6GXE1" target="_blank" rel="noopener noreferrer">WhatsApp</a> ou au +212 764 745 159.</p>
-          <p>La privatisation complète du restaurant est possible pour les événements — anniversaires, repas d'entreprise, célébrations familiales. Consultez notre page <a href="/evenements-marrakech.html">événements et privatisation</a> pour les détails.</p>
-          <p>Le menu complet est également disponible en <a href="/livraison-marrakech.html">livraison à domicile</a> à Targa et Guéliz. Consultez notre <a href="/faq.html">FAQ</a> pour toutes les questions pratiques.</p>
+          <p data-i18n="resto_reserver_p1">Le restaurant Targa Marrakech de Crusthy'lia accueille les groupes jusqu'à 30 personnes. Pour les groupes de 6 et plus, la réservation est recommandée — via <a href="https://wa.me/message/NDWNBPJQV6GXE1" target="_blank" rel="noopener noreferrer">WhatsApp</a> ou au +212 764 745 159.</p>
+          <p data-i18n="resto_reserver_p2">La privatisation complète du restaurant est possible pour les événements — anniversaires, repas d'entreprise, célébrations familiales. Consultez notre page <a href="/evenements-marrakech.html" data-i18n="resto_events_link">événements et privatisation</a> pour les détails.</p>
+          <p data-i18n="resto_reserver_p3">Le menu complet est également disponible en <a href="/livraison-marrakech.html" data-i18n="resto_delivery_link">livraison à domicile</a> à Targa et Guéliz. Consultez notre <a href="/faq.html">FAQ</a> pour toutes les questions pratiques.</p>
         </div>
         <div class="address-block">
           <p><i class="ph ph-map-pin" aria-hidden="true"></i> 890 Lotissement Nakhil 2, Targa, Marrakech 40000 — <a href="https://maps.app.goo.gl/vTmgJStVPV5HHdK79" target="_blank" rel="noopener noreferrer">Google Maps</a></p>
-          <p><i class="ph ph-clock" aria-hidden="true"></i> Restaurant : 12h00–23h00 tous les jours</p>
+          <p><i class="ph ph-clock" aria-hidden="true"></i> <span data-i18n="resto_hours_label">Restaurant : 12h00–23h00 tous les jours</span></p>
           <p><i class="ph ph-phone" aria-hidden="true"></i> <a href="tel:+212764745159">+212 764 745 159</a></p>
         </div>
       </div>
@@ -278,27 +279,27 @@
     <section class="cta-band bg-brown" aria-label="Appel à l'action">
       <div class="container cta-band-inner">
         <div class="cta-band-text">
-          <h2 class="cta-band-title reveal-text">Venez manger à Targa ce soir</h2>
-          <p class="cta-band-sub">Réservez votre table maintenant — en 30 secondes via WhatsApp.</p>
+          <h2 class="cta-band-title reveal-text" data-i18n="resto_cta_band_title">Venez manger à Targa ce soir</h2>
+          <p class="cta-band-sub" data-i18n="resto_cta_band_sub">Réservez votre table maintenant — en 30 secondes via WhatsApp.</p>
         </div>
         <div class="cta-band-actions">
-          <a href="https://wa.me/message/NDWNBPJQV6GXE1" class="btn btn-light btn-magnetic" target="_blank" rel="noopener noreferrer">Réserver via WhatsApp</a>
-          <a href="/reservation-marrakech.html" class="btn btn-outline-light btn-magnetic">Formulaire de réservation</a>
+          <a href="https://wa.me/message/NDWNBPJQV6GXE1" class="btn btn-light btn-magnetic" target="_blank" rel="noopener noreferrer" data-i18n="brunch_cta_whatsapp">Réserver via WhatsApp</a>
+          <a href="/reservation-marrakech.html" class="btn btn-outline-light btn-magnetic" data-i18n="resto_cta_form">Formulaire de réservation</a>
         </div>
       </div>
     </section>
 
     <section class="related-pages" aria-labelledby="related-heading">
       <div class="container">
-        <h2 id="related-heading" class="section-title related-title reveal-text">À découvrir aussi</h2>
+        <h2 id="related-heading" class="section-title related-title reveal-text" data-i18n="cafe_related_title">À découvrir aussi</h2>
         <div class="related-grid">
           <a href="/menu.html" class="related-card">
             <div class="img-slot img-reveal" data-slot="related-menu" style="aspect-ratio:16/9;">
               <img src="/assets/images/tableau-menu-ardoise-boulangerie-cafe-crusthylia-targa.jpg" alt="Tableau menu ardoise du café Crusthy'lia" title="Menu Crusthy'lia" width="600" height="338" loading="lazy" onerror="this.closest('.img-slot').classList.add('img-missing')">
             </div>
             <div class="related-card-body">
-              <h3 class="related-card-title">Menu Complet</h3>
-              <p>Toute la carte du matin au soir.</p>
+              <h3 class="related-card-title" data-i18n="cafe_related3_title">Menu Complet</h3>
+              <p data-i18n="resto_related1_sub">Toute la carte du matin au soir.</p>
             </div>
           </a>
           <a href="/livraison-marrakech.html" class="related-card">
@@ -306,8 +307,8 @@
               <img src="/assets/images/commande-whatsapp-qr-livraison-crusthylia-marrakech.jpg" alt="Commande WhatsApp livraison Crusthy'lia Marrakech" title="Livraison Marrakech Crusthy'lia" width="600" height="338" loading="lazy" onerror="this.closest('.img-slot').classList.add('img-missing')">
             </div>
             <div class="related-card-body">
-              <h3 class="related-card-title">Livraison Marrakech</h3>
-              <p>Targa et Guéliz livrés 7j/7.</p>
+              <h3 class="related-card-title" data-i18n="resto_related2_title">Livraison Marrakech</h3>
+              <p data-i18n="resto_related2_sub">Targa et Guéliz livrés 7j/7.</p>
             </div>
           </a>
           <a href="/reservation-marrakech.html" class="related-card">
@@ -315,8 +316,8 @@
               <img src="/assets/images/coin-intime-table-deux-cafe-crusthylia-marrakech.jpg" alt="Table pour deux au restaurant Crusthy'lia Marrakech" title="Réserver une table chez Crusthy'lia" width="600" height="338" loading="lazy" onerror="this.closest('.img-slot').classList.add('img-missing')">
             </div>
             <div class="related-card-body">
-              <h3 class="related-card-title">Réserver une Table</h3>
-              <p>Formulaire et WhatsApp disponibles.</p>
+              <h3 class="related-card-title" data-i18n="resto_related3_title">Réserver une Table</h3>
+              <p data-i18n="resto_related3_sub">Formulaire et WhatsApp disponibles.</p>
             </div>
           </a>
         </div>
@@ -338,33 +339,33 @@
         </div>
       </div>
       <div class="footer-nav">
-        <h3 class="footer-heading">Navigation</h3>
+        <h3 class="footer-heading" data-i18n="footer_nav">Navigation</h3>
         <ul class="footer-links">
-          <li><a href="/menu.html">Menu</a></li>
-          <li><a href="/brunch-marrakech.html">Brunch à Marrakech</a></li>
-          <li><a href="/petit-dejeuner-targa-marrakech.html">Petit Déjeuner Targa</a></li>
-          <li><a href="/livraison-marrakech.html">Livraison Marrakech</a></li>
-          <li><a href="/boulangerie-artisanale-marrakech.html">Boulangerie Artisanale</a></li>
-          <li><a href="/patisserie-marrakech.html">Pâtisserie Marrakech</a></li>
-          <li><a href="/cafe-artisanal-marrakech.html">Café Artisanal</a></li>
-          <li><a href="/restaurant-targa-marrakech.html" aria-current="page">Restaurant Targa</a></li>
+          <li><a href="/menu.html" data-i18n="nav_menu">Menu</a></li>
+          <li><a href="/brunch-marrakech.html" data-i18n="footer_link_brunch">Brunch à Marrakech</a></li>
+          <li><a href="/petit-dejeuner-targa-marrakech.html" data-i18n="footer_link_petitdej">Petit Déjeuner Targa</a></li>
+          <li><a href="/livraison-marrakech.html" data-i18n="footer_link_livraison">Livraison Marrakech</a></li>
+          <li><a href="/boulangerie-artisanale-marrakech.html" data-i18n="footer_link_boulangerie">Boulangerie Artisanale</a></li>
+          <li><a href="/patisserie-marrakech.html" data-i18n="footer_link_patisserie">Pâtisserie Marrakech</a></li>
+          <li><a href="/cafe-artisanal-marrakech.html" data-i18n="footer_link_cafe">Café Artisanal</a></li>
+          <li><a href="/restaurant-targa-marrakech.html" aria-current="page" data-i18n="footer_link_restaurant">Restaurant Targa</a></li>
         </ul>
       </div>
       <div class="footer-info">
-        <h3 class="footer-heading">Informations</h3>
+        <h3 class="footer-heading" data-i18n="footer_info">Informations</h3>
         <ul class="footer-links">
-          <li><a href="/qui-sommes-nous.html">Notre Histoire</a></li>
-          <li><a href="/notre-engagement.html">Notre Engagement</a></li>
-          <li><a href="/pourquoi-crusthylia.html">Pourquoi Crusthy'lia</a></li>
+          <li><a href="/qui-sommes-nous.html" data-i18n="nav_about">Notre Histoire</a></li>
+          <li><a href="/notre-engagement.html" data-i18n="footer_link_engagement">Notre Engagement</a></li>
+          <li><a href="/pourquoi-crusthylia.html" data-i18n="footer_link_pourquoi">Pourquoi Crusthy'lia</a></li>
           <li><a href="/faq.html">FAQ</a></li>
-          <li><a href="/evenements-marrakech.html">Événements</a></li>
-          <li><a href="/reservation-marrakech.html">Réservations</a></li>
-          <li><a href="/livraison-dejeuner-ecole-marrakech.html">Déjeuner École</a></li>
-          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/evenements-marrakech.html" data-i18n="nav_events">Événements</a></li>
+          <li><a href="/reservation-marrakech.html" data-i18n="footer_link_reservations">Réservations</a></li>
+          <li><a href="/livraison-dejeuner-ecole-marrakech.html" data-i18n="footer_link_ecole">Déjeuner École</a></li>
+          <li><a href="/blog/" data-i18n="nav_blog">Blog</a></li>
         </ul>
       </div>
       <div class="footer-contact">
-        <h3 class="footer-heading">Contact</h3>
+        <h3 class="footer-heading" data-i18n="footer_contact">Contact</h3>
         <address>
           <p><i class="ph ph-map-pin" aria-hidden="true"></i> 890 Lotissement Nakhil 2, Targa, Marrakech 40000</p>
           <p><i class="ph ph-phone" aria-hidden="true"></i> <a href="tel:+212764745159">+212 764 745 159</a></p>
@@ -381,7 +382,7 @@
     <div class="footer-bottom">
       <div class="container footer-bottom-inner">
         <p data-i18n="footer_copyright">© 2026 Crusthy'lia. Tous droits réservés.</p>
-        <a href="#top" class="back-to-top" aria-label="Retour en haut de page"><i class="ph ph-arrow-up" aria-hidden="true"></i></a>
+        <a href="#top" class="back-to-top" data-i18n-aria="back_to_top" aria-label="Retour en haut de page"><i class="ph ph-arrow-up" aria-hidden="true"></i></a>
       </div>
     </div>
   </footer>

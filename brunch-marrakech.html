@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/assets/images/logo-crusthylia.png" type="image/png">
   <title>Brunch Marrakech — Crusthy'lia Targa, 7j/7</title>
   <meta name="description" content="Meilleur brunch à Marrakech chez Crusthy'lia, Targa. Formules de 120 à 250 MAD, 7j/7 de 09h à 14h. Terrasse, WiFi, ambiance conviviale. Réservez votre table !">
   <meta name="keywords" content="brunch Marrakech, brunch Targa Marrakech, meilleur brunch Marrakech, brunch café Marrakech, brunch week-end Marrakech, brunch famille Marrakech, brunch terrasse Marrakech, Crusthy'lia brunch, formule brunch Marrakech, brunch pas cher Marrakech">
@@ -15,14 +16,14 @@
   <meta property="og:title" content="Brunch Marrakech — Crusthy'lia Targa, 7j/7">
   <meta property="og:description" content="Meilleur brunch à Marrakech chez Crusthy'lia. Formules 120–250 MAD, 7j/7. Terrasse et WiFi disponibles. Réservez !">
   <meta property="og:url" content="https://crusthylia.com/brunch-marrakech">
-  <meta property="og:image" content="https://crusthylia.com/images/og-brunch.jpg">
+  <meta property="og:image" content="https://crusthylia.com/assets/images/og-brunch.jpg">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Crusthy'lia">
   <meta property="og:locale" content="fr_MA">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Brunch Marrakech — Crusthy'lia Targa, 7j/7">
   <meta name="twitter:description" content="Meilleur brunch à Marrakech. Formules 120–250 MAD, 7j/7. Terrasse, WiFi. Réservez !">
-  <meta name="twitter:image" content="https://crusthylia.com/images/og-brunch.jpg">
+  <meta name="twitter:image" content="https://crusthylia.com/assets/images/og-brunch.jpg">
 
   <script type="application/ld+json">
   {
@@ -119,14 +120,14 @@
   <link rel="stylesheet" href="/assets/css/animations.css">
   <link rel="stylesheet" href="/assets/css/rtl.css">
 </head>
-<body>
-  <a href="#main" class="skip-link">Aller au contenu principal</a>
+<body id="top">
+  <a href="#main" class="skip-link" data-i18n="skip_link">Aller au contenu principal</a>
   <div class="cursor" aria-hidden="true"></div>
   <div class="cursor-dot" aria-hidden="true"></div>
   <div class="page-loader" id="page-loader" aria-hidden="true">
     <div class="loader-inner">
       <img src="/assets/images/logo.png" alt="Crusthy'lia" class="loader-logo-img">
-      <p class="loader-slogan">Le rendez-vous des gourmands</p>
+      <p class="loader-slogan" data-i18n="loader_slogan">Le rendez-vous des gourmands</p>
       <div class="loader-spinner" aria-hidden="true"></div>
     </div>
   </div>
@@ -160,11 +161,11 @@
     <div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true">
       <button class="mobile-menu-close" aria-label="Fermer le menu"><i class="ph ph-x"></i></button>
       <ul class="mobile-nav-links" role="list">
-        <li><a href="/menu.html" class="mobile-nav-link">Menu</a></li>
-        <li><a href="/brunch-marrakech.html" class="mobile-nav-link">Brunch</a></li>
-        <li><a href="/qui-sommes-nous.html" class="mobile-nav-link">Notre Histoire</a></li>
-        <li><a href="/blog/" class="mobile-nav-link">Blog</a></li>
-        <li><a href="/contact.html" class="mobile-nav-link">Contact</a></li>
+        <li><a href="/menu.html" class="mobile-nav-link" data-i18n="nav_menu">Menu</a></li>
+        <li><a href="/brunch-marrakech.html" class="mobile-nav-link" data-i18n="nav_brunch">Brunch</a></li>
+        <li><a href="/qui-sommes-nous.html" class="mobile-nav-link" data-i18n="nav_about">Notre Histoire</a></li>
+        <li><a href="/blog/" class="mobile-nav-link" data-i18n="nav_blog">Blog</a></li>
+        <li><a href="/contact.html" class="mobile-nav-link" data-i18n="nav_contact">Contact</a></li>
       </ul>
       <div class="mobile-lang-switcher">
         <button class="lang-btn active" data-lang="fr">FR</button><span class="lang-divider">|</span>
@@ -181,18 +182,18 @@
     <section class="page-hero section-dark has-grain" style="background: var(--color-brown-dark); padding: var(--space-32) 0 var(--space-24);">
       <div class="container">
         <nav class="breadcrumb" aria-label="Fil d'Ariane">
-          <a href="/">Accueil</a>
+          <a href="/" data-i18n="breadcrumb_home">Accueil</a>
           <span class="breadcrumb-separator" aria-hidden="true">→</span>
-          <span aria-current="page">Brunch Marrakech</span>
+          <span aria-current="page" data-i18n="brunch_breadcrumb_current">Brunch Marrakech</span>
         </nav>
         <div class="page-hero-content" style="color: var(--color-cream); margin-top: var(--space-8);">
-          <span class="eyebrow">Targa, Marrakech</span>
-          <h1 class="reveal-text" style="color: var(--color-cream);">Brunch à Marrakech — Crusthy'lia, le Meilleur Brunch de Targa</h1>
-          <p class="hero-sub" style="color: rgba(253,248,240,0.75); max-width: 55ch; margin-top: var(--space-4);">
+          <span class="eyebrow" data-i18n="brunch_hero_eyebrow">Targa, Marrakech</span>
+          <h1 class="reveal-text" style="color: var(--color-cream);" data-i18n="brunch_hero_title">Brunch à Marrakech — Crusthy'lia, le Meilleur Brunch de Targa</h1>
+          <p class="hero-sub" style="color: rgba(253,248,240,0.75); max-width: 55ch; margin-top: var(--space-4);" data-i18n="brunch_hero_sub">
             Le meilleur brunch de Marrakech chez Crusthy'lia à Targa. Formules Parisien, Norvégien et Américain dès MAD 65. Chaque samedi et dimanche de 09h à 14h.
           </p>
           <div class="hero-buttons" style="margin-top: var(--space-8); display:flex; gap:var(--space-4); flex-wrap:wrap;">
-            <a href="https://wa.me/message/NDWNBPJQV6GXE1" class="btn btn-primary btn-magnetic" target="_blank" rel="noopener">
+            <a href="https://wa.me/message/NDWNBPJQV6GXE1" class="btn btn-primary btn-magnetic" target="_blank" rel="noopener noreferrer">
               <i class="ph ph-whatsapp-logo" aria-hidden="true"></i>
               <span data-i18n="cta_order">Commander sur WhatsApp</span>
             </a>
@@ -224,18 +225,18 @@
     <!-- Section: Le brunch, comme on l'aime -->
     <section class="content-section" style="padding: var(--space-24) 0; background: var(--color-cream);">
       <div class="container" style="max-width: 860px;">
-        <h2 class="reveal-text">Le brunch, comme on l'aime à Marrakech</h2>
+        <h2 class="reveal-text" data-i18n="brunch_intro_title">Le brunch, comme on l'aime à Marrakech</h2>
         <div class="gold-line"></div>
-        <p>Il y a des matins où l'on ne veut pas choisir entre le petit déjeuner et le déjeuner. Des matins de week-end où le temps s'étire, où la famille est réunie ou les amis enfin disponibles, où l'on a envie de s'installer quelque part de beau et d'y rester. C'est exactement pour ces matins-là que le brunch de Crusthy'lia a été pensé.</p>
-        <p>À Targa, au 890 Lotissement Nakhil 2, Crusthy'lia s'est imposé comme l'adresse du meilleur brunch Marrakech pour une raison simple : nous faisons les choses sérieusement. Les viennoiseries servies au brunch sortent de notre propre fournil. Les œufs sont cassés à la commande. Le saumon fumé est tranché épais. Le café est extrait avec la même rigueur qu'un espresso bar spécialisé. Rien n'est sorti d'un sachet ou réchauffé depuis la veille.</p>
-        <p>Le brunch week-end chez Crusthy'lia, c'est disponible <strong>chaque samedi et dimanche, de 09h00 à 14h00</strong>. La salle se remplit vite — les habitués le savent et réservent la veille. Que vous soyez une famille avec enfants, un couple, un groupe d'amis ou un touriste de passage à Marrakech, vous trouverez une table à votre mesure. Et si vous préférez manger chez vous, notre service de <a href="/livraison-marrakech.html">livraison à domicile</a> couvre Targa et Guéliz.</p>
+        <p data-i18n="brunch_intro_p1">Il y a des matins où l'on ne veut pas choisir entre le petit déjeuner et le déjeuner. Des matins de week-end où le temps s'étire, où la famille est réunie ou les amis enfin disponibles, où l'on a envie de s'installer quelque part de beau et d'y rester. C'est exactement pour ces matins-là que le brunch de Crusthy'lia a été pensé.</p>
+        <p data-i18n="brunch_intro_p2">À Targa, au 890 Lotissement Nakhil 2, Crusthy'lia s'est imposé comme l'adresse du meilleur brunch Marrakech pour une raison simple : nous faisons les choses sérieusement. Les viennoiseries servies au brunch sortent de notre propre fournil. Les œufs sont cassés à la commande. Le saumon fumé est tranché épais. Le café est extrait avec la même rigueur qu'un espresso bar spécialisé. Rien n'est sorti d'un sachet ou réchauffé depuis la veille.</p>
+        <p data-i18n="brunch_intro_p3">Le brunch week-end chez Crusthy'lia, c'est disponible <strong>chaque samedi et dimanche, de 09h00 à 14h00</strong>. La salle se remplit vite — les habitués le savent et réservent la veille. Que vous soyez une famille avec enfants, un couple, un groupe d'amis ou un touriste de passage à Marrakech, vous trouverez une table à votre mesure. Et si vous préférez manger chez vous, notre service de <a href="/livraison-marrakech.html" data-i18n="brunch_intro_delivery_link">livraison à domicile</a> couvre Targa et Guéliz.</p>
       </div>
     </section>
 
     <!-- Section: Nos Formules Brunch — cards with Swiper on mobile -->
     <section class="content-section" style="padding: var(--space-24) 0; background: var(--color-beige);">
       <div class="container">
-        <h2 class="reveal-text" style="text-align:center; margin-bottom: var(--space-4);">Nos Formules Brunch</h2>
+        <h2 class="reveal-text" style="text-align:center; margin-bottom: var(--space-4);" data-i18n="brunch_formulas_title">Nos Formules Brunch</h2>
         <div class="gold-line" style="margin: 0 auto var(--space-12);"></div>
 
         <!-- Swiper carousel (mobile) / grid (desktop) -->
@@ -257,22 +258,22 @@
                 </div>
                 <div style="padding: var(--space-8);">
                   <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom: var(--space-4);">
-                    <h3 class="reveal-text" style="margin:0;">Brunch Parisien</h3>
+                    <h3 class="reveal-text" style="margin:0;" data-i18n="brunch_parisien_title">Brunch Parisien</h3>
                     <span class="price-tag" style="font-size: 1.5rem; font-weight: 600; color: var(--color-gold);">MAD 130</span>
                   </div>
-                  <p style="margin-bottom: var(--space-4);">Le classique des classiques, revisité avec les produits de notre boulangerie artisanale. Le Brunch Parisien, c'est une table qui fait envie avant même qu'on y touche.</p>
-                  <p><strong>Inclus :</strong></p>
+                  <p style="margin-bottom: var(--space-4);" data-i18n="brunch_parisien_desc">Le classique des classiques, revisité avec les produits de notre boulangerie artisanale. Le Brunch Parisien, c'est une table qui fait envie avant même qu'on y touche.</p>
+                  <p><strong data-i18n="brunch_included_label">Inclus :</strong></p>
                   <ul style="list-style:none; padding:0; margin: var(--space-4) 0;">
-                    <li style="padding: var(--space-2) 0; padding-left: var(--space-6); position:relative;"><span style="position:absolute; left:0; color: var(--color-gold);">→</span> Corbeille de viennoiseries maison (croissant pur beurre, pain au chocolat, brioche feuilletée)</li>
-                    <li style="padding: var(--space-2) 0; padding-left: var(--space-6); position:relative;"><span style="position:absolute; left:0; color: var(--color-gold);">→</span> Deux tranches de pain de campagne toastées, beurre fermier et confiture artisanale</li>
-                    <li style="padding: var(--space-2) 0; padding-left: var(--space-6); position:relative;"><span style="position:absolute; left:0; color: var(--color-gold);">→</span> Sélection de charcuterie (jambon blanc, rosette) + fromage (comté ou brie)</li>
-                    <li style="padding: var(--space-2) 0; padding-left: var(--space-6); position:relative;"><span style="position:absolute; left:0; color: var(--color-gold);">→</span> Deux œufs au choix (brouillés, sur le plat, pochés ou en omelette)</li>
-                    <li style="padding: var(--space-2) 0; padding-left: var(--space-6); position:relative;"><span style="position:absolute; left:0; color: var(--color-gold);">→</span> Grand jus d'orange pressé à la commande</li>
-                    <li style="padding: var(--space-2) 0; padding-left: var(--space-6); position:relative;"><span style="position:absolute; left:0; color: var(--color-gold);">→</span> Boisson chaude au choix (café filtre, espresso, latte, thé, chocolat chaud)</li>
+                    <li style="padding: var(--space-2) 0; padding-left: var(--space-6); position:relative;"><span style="position:absolute; left:0; color: var(--color-gold);">→</span> <span data-i18n="brunch_parisien_item1">Corbeille de viennoiseries maison (croissant pur beurre, pain au chocolat, brioche feuilletée)</span></li>
+                    <li style="padding: var(--space-2) 0; padding-left: var(--space-6); position:relative;"><span style="position:absolute; left:0; color: var(--color-gold);">→</span> <span data-i18n="brunch_parisien_item2">Deux tranches de pain de campagne toastées, beurre fermier et confiture artisanale</span></li>
+                    <li style="padding: var(--space-2) 0; padding-left: var(--space-6); position:relative;"><span style="position:absolute; left:0; color: var(--color-gold);">→</span> <span data-i18n="brunch_parisien_item3">Sélection de charcuterie (jambon blanc, rosette) + fromage (comté ou brie)</span></li>
+                    <li style="padding: var(--space-2) 0; padding-left: var(--space-6); position:relative;"><span style="position:absolute; left:0; color: var(--color-gold);">→</span> <span data-i18n="brunch_parisien_item4">Deux œufs au choix (brouillés, sur le plat, pochés ou en omelette)</span></li>
+                    <li style="padding: var(--space-2) 0; padding-left: var(--space-6); position:relative;"><span style="position:absolute; left:0; color: var(--color-gold);">→</span> <span data-i18n="brunch_parisien_item5">Grand jus d'orange pressé à la commande</span></li>
+                    <li style="padding: var(--space-2) 0; padding-left: var(--space-6); position:relative;"><span style="position:absolute; left:0; color: var(--color-gold);">→</span> <span data-i18n="brunch_parisien_item6">Boisson chaude au choix (café filtre, espresso, latte, thé, chocolat chaud)</span></li>
                   </ul>
-                  <p>Le Brunch Parisien fonctionne bien pour ceux qui veulent le sucré et le salé en équilibre, sans excès. C'est le brunch qu'on reprend chaque semaine sans jamais s'en lasser.</p>
-                  <a href="https://wa.me/message/NDWNBPJQV6GXE1" class="btn btn-primary btn-magnetic" target="_blank" rel="noopener" style="margin-top: var(--space-6); display:inline-flex; align-items:center; gap:var(--space-2);">
-                    <i class="ph ph-whatsapp-logo" aria-hidden="true"></i> Réserver ce brunch
+                  <p data-i18n="brunch_parisien_closing">Le Brunch Parisien fonctionne bien pour ceux qui veulent le sucré et le salé en équilibre, sans excès. C'est le brunch qu'on reprend chaque semaine sans jamais s'en lasser.</p>
+                  <a href="https://wa.me/message/NDWNBPJQV6GXE1" class="btn btn-primary btn-magnetic" target="_blank" rel="noopener noreferrer" style="margin-top: var(--space-6); display:inline-flex; align-items:center; gap:var(--space-2);">
+                    <i class="ph ph-whatsapp-logo" aria-hidden="true"></i> <span data-i18n="brunch_cta_book">Réserver ce brunch</span>
                   </a>
                 </div>
               </article>
@@ -293,22 +294,22 @@
                 </div>
                 <div style="padding: var(--space-8);">
                   <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom: var(--space-4);">
-                    <h3 class="reveal-text" style="margin:0;">Brunch Norvégien</h3>
+                    <h3 class="reveal-text" style="margin:0;" data-i18n="brunch_norvegien_title">Brunch Norvégien</h3>
                     <span class="price-tag" style="font-size: 1.5rem; font-weight: 600; color: var(--color-gold);">MAD 155</span>
                   </div>
-                  <p style="margin-bottom: var(--space-4);">Pour ceux qui penchent vers le salé et qui apprécient la fraîcheur des produits nordiques, le Brunch Norvégien est une révélation à Marrakech. Notre formule la plus demandée par les habitués.</p>
-                  <p><strong>Inclus :</strong></p>
+                  <p style="margin-bottom: var(--space-4);" data-i18n="brunch_norvegien_desc">Pour ceux qui penchent vers le salé et qui apprécient la fraîcheur des produits nordiques, le Brunch Norvégien est une révélation à Marrakech. Notre formule la plus demandée par les habitués.</p>
+                  <p><strong data-i18n="brunch_included_label">Inclus :</strong></p>
                   <ul style="list-style:none; padding:0; margin: var(--space-4) 0;">
-                    <li style="padding: var(--space-2) 0; padding-left: var(--space-6); position:relative;"><span style="position:absolute; left:0; color: var(--color-gold);">→</span> Bagel frais grillé + cream cheese maison aux herbes</li>
-                    <li style="padding: var(--space-2) 0; padding-left: var(--space-6); position:relative;"><span style="position:absolute; left:0; color: var(--color-gold);">→</span> Tranches de saumon fumé (portion généreuse)</li>
-                    <li style="padding: var(--space-2) 0; padding-left: var(--space-6); position:relative;"><span style="position:absolute; left:0; color: var(--color-gold);">→</span> Câpres, oignons rouges émincés et rondelles de citron</li>
-                    <li style="padding: var(--space-2) 0; padding-left: var(--space-6); position:relative;"><span style="position:absolute; left:0; color: var(--color-gold);">→</span> Avocat tranché avec fleur de sel et citron</li>
-                    <li style="padding: var(--space-2) 0; padding-left: var(--space-6); position:relative;"><span style="position:absolute; left:0; color: var(--color-gold);">→</span> Œuf poché ou mollet + roquette à l'huile d'olive</li>
-                    <li style="padding: var(--space-2) 0; padding-left: var(--space-6); position:relative;"><span style="position:absolute; left:0; color: var(--color-gold);">→</span> Jus de fruits frais (orange, pamplemousse ou carotte-gingembre)</li>
-                    <li style="padding: var(--space-2) 0; padding-left: var(--space-6); position:relative;"><span style="position:absolute; left:0; color: var(--color-gold);">→</span> Boisson chaude au choix</li>
+                    <li style="padding: var(--space-2) 0; padding-left: var(--space-6); position:relative;"><span style="position:absolute; left:0; color: var(--color-gold);">→</span> <span data-i18n="brunch_norvegien_item1">Bagel frais grillé + cream cheese maison aux herbes</span></li>
+                    <li style="padding: var(--space-2) 0; padding-left: var(--space-6); position:relative;"><span style="position:absolute; left:0; color: var(--color-gold);">→</span> <span data-i18n="brunch_norvegien_item2">Tranches de saumon fumé (portion généreuse)</span></li>
+                    <li style="padding: var(--space-2) 0; padding-left: var(--space-6); position:relative;"><span style="position:absolute; left:0; color: var(--color-gold);">→</span> <span data-i18n="brunch_norvegien_item3">Câpres, oignons rouges émincés et rondelles de citron</span></li>
+                    <li style="padding: var(--space-2) 0; padding-left: var(--space-6); position:relative;"><span style="position:absolute; left:0; color: var(--color-gold);">→</span> <span data-i18n="brunch_norvegien_item4">Avocat tranché avec fleur de sel et citron</span></li>
+                    <li style="padding: var(--space-2) 0; padding-left: var(--space-6); position:relative;"><span style="position:absolute; left:0; color: var(--color-gold);">→</span> <span data-i18n="brunch_norvegien_item5">Œuf poché ou mollet + roquette à l'huile d'olive</span></li>
+                    <li style="padding: var(--space-2) 0; padding-left: var(--space-6); position:relative;"><span style="position:absolute; left:0; color: var(--color-gold);">→</span> <span data-i18n="brunch_norvegien_item6">Jus de fruits frais (orange, pamplemousse ou carotte-gingembre)</span></li>
+                    <li style="padding: var(--space-2) 0; padding-left: var(--space-6); position:relative;"><span style="position:absolute; left:0; color: var(--color-gold);">→</span> <span data-i18n="brunch_hot_drink">Boisson chaude au choix</span></li>
                   </ul>
-                  <a href="https://wa.me/message/NDWNBPJQV6GXE1" class="btn btn-primary btn-magnetic" target="_blank" rel="noopener" style="margin-top: var(--space-6); display:inline-flex; align-items:center; gap:var(--space-2);">
-                    <i class="ph ph-whatsapp-logo" aria-hidden="true"></i> Réserver ce brunch
+                  <a href="https://wa.me/message/NDWNBPJQV6GXE1" class="btn btn-primary btn-magnetic" target="_blank" rel="noopener noreferrer" style="margin-top: var(--space-6); display:inline-flex; align-items:center; gap:var(--space-2);">
+                    <i class="ph ph-whatsapp-logo" aria-hidden="true"></i> <span data-i18n="brunch_cta_book">Réserver ce brunch</span>
                   </a>
                 </div>
               </article>
@@ -329,22 +330,22 @@
                 </div>
                 <div style="padding: var(--space-8);">
                   <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom: var(--space-4);">
-                    <h3 class="reveal-text" style="margin:0;">Brunch Américain</h3>
+                    <h3 class="reveal-text" style="margin:0;" data-i18n="brunch_americain_title">Brunch Américain</h3>
                     <span class="price-tag" style="font-size: 1.5rem; font-weight: 600; color: var(--color-gold);">MAD 145</span>
                   </div>
-                  <p style="margin-bottom: var(--space-4);">Généreux, réconfortant, et assemblé avec des produits vrais. Nos pancakes sont préparés avec une recette maison, montés en buttermilk, épais et moelleux.</p>
-                  <p><strong>Inclus :</strong></p>
+                  <p style="margin-bottom: var(--space-4);" data-i18n="brunch_americain_desc">Généreux, réconfortant, et assemblé avec des produits vrais. Nos pancakes sont préparés avec une recette maison, montés en buttermilk, épais et moelleux.</p>
+                  <p><strong data-i18n="brunch_included_label">Inclus :</strong></p>
                   <ul style="list-style:none; padding:0; margin: var(--space-4) 0;">
-                    <li style="padding: var(--space-2) 0; padding-left: var(--space-6); position:relative;"><span style="position:absolute; left:0; color: var(--color-gold);">→</span> Une pile de trois pancakes maison + sirop d'érable pur + beurre</li>
-                    <li style="padding: var(--space-2) 0; padding-left: var(--space-6); position:relative;"><span style="position:absolute; left:0; color: var(--color-gold);">→</span> Deux tranches de bacon croustillant</li>
-                    <li style="padding: var(--space-2) 0; padding-left: var(--space-6); position:relative;"><span style="position:absolute; left:0; color: var(--color-gold);">→</span> Deux œufs au choix (brouillés ou sur le plat)</li>
-                    <li style="padding: var(--space-2) 0; padding-left: var(--space-6); position:relative;"><span style="position:absolute; left:0; color: var(--color-gold);">→</span> Tomates cerises rôties</li>
-                    <li style="padding: var(--space-2) 0; padding-left: var(--space-6); position:relative;"><span style="position:absolute; left:0; color: var(--color-gold);">→</span> Toast avec beurre de cacahuète et confiture</li>
-                    <li style="padding: var(--space-2) 0; padding-left: var(--space-6); position:relative;"><span style="position:absolute; left:0; color: var(--color-gold);">→</span> Jus d'orange pressé + boisson chaude au choix</li>
+                    <li style="padding: var(--space-2) 0; padding-left: var(--space-6); position:relative;"><span style="position:absolute; left:0; color: var(--color-gold);">→</span> <span data-i18n="brunch_americain_item1">Une pile de trois pancakes maison + sirop d'érable pur + beurre</span></li>
+                    <li style="padding: var(--space-2) 0; padding-left: var(--space-6); position:relative;"><span style="position:absolute; left:0; color: var(--color-gold);">→</span> <span data-i18n="brunch_americain_item2">Deux tranches de bacon croustillant</span></li>
+                    <li style="padding: var(--space-2) 0; padding-left: var(--space-6); position:relative;"><span style="position:absolute; left:0; color: var(--color-gold);">→</span> <span data-i18n="brunch_americain_item3">Deux œufs au choix (brouillés ou sur le plat)</span></li>
+                    <li style="padding: var(--space-2) 0; padding-left: var(--space-6); position:relative;"><span style="position:absolute; left:0; color: var(--color-gold);">→</span> <span data-i18n="brunch_americain_item4">Tomates cerises rôties</span></li>
+                    <li style="padding: var(--space-2) 0; padding-left: var(--space-6); position:relative;"><span style="position:absolute; left:0; color: var(--color-gold);">→</span> <span data-i18n="brunch_americain_item5">Toast avec beurre de cacahuète et confiture</span></li>
+                    <li style="padding: var(--space-2) 0; padding-left: var(--space-6); position:relative;"><span style="position:absolute; left:0; color: var(--color-gold);">→</span> <span data-i18n="brunch_americain_item6">Jus d'orange pressé + boisson chaude au choix</span></li>
                   </ul>
-                  <p>Ce brunch est parfait pour les matins où l'on a vraiment faim, ou pour les enfants (et les adultes) qui aiment le sucré-salé bien dosé.</p>
-                  <a href="https://wa.me/message/NDWNBPJQV6GXE1" class="btn btn-primary btn-magnetic" target="_blank" rel="noopener" style="margin-top: var(--space-6); display:inline-flex; align-items:center; gap:var(--space-2);">
-                    <i class="ph ph-whatsapp-logo" aria-hidden="true"></i> Réserver ce brunch
+                  <p data-i18n="brunch_americain_closing">Ce brunch est parfait pour les matins où l'on a vraiment faim, ou pour les enfants (et les adultes) qui aiment le sucré-salé bien dosé.</p>
+                  <a href="https://wa.me/message/NDWNBPJQV6GXE1" class="btn btn-primary btn-magnetic" target="_blank" rel="noopener noreferrer" style="margin-top: var(--space-6); display:inline-flex; align-items:center; gap:var(--space-2);">
+                    <i class="ph ph-whatsapp-logo" aria-hidden="true"></i> <span data-i18n="brunch_cta_book">Réserver ce brunch</span>
                   </a>
                 </div>
               </article>
@@ -361,7 +362,7 @@
     <!-- Section: Brunch Enfants -->
     <section class="content-section" style="padding: var(--space-24) 0; background: var(--color-cream);">
       <div class="container" style="max-width: 860px;">
-        <h2 class="reveal-text">Brunch Enfants — MAD 65</h2>
+        <h2 class="reveal-text" data-i18n="brunch_kids_title">Brunch Enfants — MAD 65</h2>
         <div class="gold-line"></div>
         <div class="img-slot img-reveal" data-slot="brunch-enfants" style="aspect-ratio:16/9; margin-bottom: var(--space-10); border-radius: 8px; overflow:hidden;">
           <img
@@ -373,30 +374,30 @@
             onerror="this.closest('.img-slot').classList.add('img-missing')"
           >
         </div>
-        <p>Crusthy'lia est une adresse familiale et notre brunch en est le meilleur exemple. Le <strong>Brunch Enfants</strong> a été conçu avec des portions adaptées aux appétits des petits et des saveurs qui leur plaisent sans compromis nutritionnel.</p>
+        <p data-i18n="brunch_kids_p1">Crusthy'lia est une adresse familiale et notre brunch en est le meilleur exemple. Le <strong data-i18n="brunch_kids_name">Brunch Enfants</strong> a été conçu avec des portions adaptées aux appétits des petits et des saveurs qui leur plaisent sans compromis nutritionnel.</p>
         <ul style="list-style:none; padding:0; margin: var(--space-6) 0;">
-          <li style="padding: var(--space-3) 0; padding-left: var(--space-6); position:relative; border-bottom: 1px solid rgba(0,0,0,0.06);"><span style="position:absolute; left:0; color: var(--color-gold);">→</span> Mini-croissant ou pain au chocolat maison</li>
-          <li style="padding: var(--space-3) 0; padding-left: var(--space-6); position:relative; border-bottom: 1px solid rgba(0,0,0,0.06);"><span style="position:absolute; left:0; color: var(--color-gold);">→</span> Tartine de pain brioche avec beurre et confiture maison</li>
-          <li style="padding: var(--space-3) 0; padding-left: var(--space-6); position:relative; border-bottom: 1px solid rgba(0,0,0,0.06);"><span style="position:absolute; left:0; color: var(--color-gold);">→</span> Œuf brouillé ou à la coque avec mouillettes</li>
-          <li style="padding: var(--space-3) 0; padding-left: var(--space-6); position:relative; border-bottom: 1px solid rgba(0,0,0,0.06);"><span style="position:absolute; left:0; color: var(--color-gold);">→</span> Compote de fruits ou bol de fruits frais de saison</li>
-          <li style="padding: var(--space-3) 0; padding-left: var(--space-6); position:relative;"><span style="position:absolute; left:0; color: var(--color-gold);">→</span> Verre de lait chaud ou de jus d'orange pressé</li>
+          <li style="padding: var(--space-3) 0; padding-left: var(--space-6); position:relative; border-bottom: 1px solid rgba(0,0,0,0.06);"><span style="position:absolute; left:0; color: var(--color-gold);">→</span> <span data-i18n="brunch_kids_item1">Mini-croissant ou pain au chocolat maison</span></li>
+          <li style="padding: var(--space-3) 0; padding-left: var(--space-6); position:relative; border-bottom: 1px solid rgba(0,0,0,0.06);"><span style="position:absolute; left:0; color: var(--color-gold);">→</span> <span data-i18n="brunch_kids_item2">Tartine de pain brioche avec beurre et confiture maison</span></li>
+          <li style="padding: var(--space-3) 0; padding-left: var(--space-6); position:relative; border-bottom: 1px solid rgba(0,0,0,0.06);"><span style="position:absolute; left:0; color: var(--color-gold);">→</span> <span data-i18n="brunch_kids_item3">Œuf brouillé ou à la coque avec mouillettes</span></li>
+          <li style="padding: var(--space-3) 0; padding-left: var(--space-6); position:relative; border-bottom: 1px solid rgba(0,0,0,0.06);"><span style="position:absolute; left:0; color: var(--color-gold);">→</span> <span data-i18n="brunch_kids_item4">Compote de fruits ou bol de fruits frais de saison</span></li>
+          <li style="padding: var(--space-3) 0; padding-left: var(--space-6); position:relative;"><span style="position:absolute; left:0; color: var(--color-gold);">→</span> <span data-i18n="brunch_kids_item5">Verre de lait chaud ou de jus d'orange pressé</span></li>
         </ul>
-        <p>Les chaises hautes sont disponibles pour les tout-petits. Notre équipe est habituée à accueillir les familles avec enfants en bas âge — on prévient les voisins de table avec le sourire, pas les parents. Le week-end à Crusthy'lia, les enfants sont aussi les bienvenus que les adultes.</p>
+        <p data-i18n="brunch_kids_p2">Les chaises hautes sont disponibles pour les tout-petits. Notre équipe est habituée à accueillir les familles avec enfants en bas âge — on prévient les voisins de table avec le sourire, pas les parents. Le week-end à Crusthy'lia, les enfants sont aussi les bienvenus que les adultes.</p>
       </div>
     </section>
 
     <!-- Section: Réserver votre Brunch -->
     <section class="content-section" style="padding: var(--space-24) 0; background: var(--color-beige);">
       <div class="container" style="max-width: 860px;">
-        <h2 class="reveal-text">Réserver votre Brunch</h2>
+        <h2 class="reveal-text" data-i18n="brunch_reserve_title">Réserver votre Brunch</h2>
         <div class="gold-line"></div>
-        <p>Le brunch du week-end affiche souvent complet, en particulier le <strong>dimanche matin</strong> entre 10h00 et 13h00. Pour être sûr d'avoir une table, <strong>réservez la veille via <a href="https://wa.me/message/NDWNBPJQV6GXE1" target="_blank" rel="noopener">WhatsApp</a></strong> — c'est le moyen le plus rapide et le plus simple. Précisez votre nom, le nombre de personnes, l'heure souhaitée et si vous venez avec des enfants.</p>
-        <p>Pour les groupes de plus de 6 personnes, contactez-nous 48 heures à l'avance afin qu'on prépare une table adaptée. Les privatisations de brunch (anniversaire, baby shower, réunion de famille) sont possibles — appelez le <a href="tel:+212764745159">+212 764 745 159</a> pour un devis.</p>
-        <p>Conseils pratiques : arrivez à l'ouverture à 09h00 si vous n'avez pas réservé — les meilleures tables en terrasse sont prises dès 09h30. Les heures les plus chargées sont entre 11h00 et 13h00.</p>
+        <p data-i18n="brunch_reserve_p1">Le brunch du week-end affiche souvent complet, en particulier le <strong data-i18n="brunch_reserve_sunday">dimanche matin</strong> entre 10h00 et 13h00. Pour être sûr d'avoir une table, <strong data-i18n="brunch_reserve_cta_text">réservez la veille via <a href="https://wa.me/message/NDWNBPJQV6GXE1" target="_blank" rel="noopener noreferrer">WhatsApp</a></strong> — c'est le moyen le plus rapide et le plus simple. Précisez votre nom, le nombre de personnes, l'heure souhaitée et si vous venez avec des enfants.</p>
+        <p data-i18n="brunch_reserve_p2">Pour les groupes de plus de 6 personnes, contactez-nous 48 heures à l'avance afin qu'on prépare une table adaptée. Les privatisations de brunch (anniversaire, baby shower, réunion de famille) sont possibles — appelez le <a href="tel:+212764745159">+212 764 745 159</a> pour un devis.</p>
+        <p data-i18n="brunch_reserve_p3">Conseils pratiques : arrivez à l'ouverture à 09h00 si vous n'avez pas réservé — les meilleures tables en terrasse sont prises dès 09h30. Les heures les plus chargées sont entre 11h00 et 13h00.</p>
         <div style="margin-top: var(--space-8); display:flex; gap: var(--space-4); flex-wrap:wrap;">
-          <a href="https://wa.me/message/NDWNBPJQV6GXE1" class="btn btn-primary btn-magnetic" target="_blank" rel="noopener">
+          <a href="https://wa.me/message/NDWNBPJQV6GXE1" class="btn btn-primary btn-magnetic" target="_blank" rel="noopener noreferrer">
             <i class="ph ph-whatsapp-logo" aria-hidden="true"></i>
-            Réserver via WhatsApp
+            <span data-i18n="brunch_cta_whatsapp">Réserver via WhatsApp</span>
           </a>
           <a href="tel:+212764745159" class="btn btn-secondary btn-magnetic">
             <i class="ph ph-phone" aria-hidden="true"></i>
@@ -409,33 +410,33 @@
     <!-- Section: Best Brunch (English SEO) -->
     <section class="content-section" style="padding: var(--space-24) 0; background: var(--color-cream);">
       <div class="container" style="max-width: 860px;">
-        <h2 class="reveal-text">Best Brunch in Marrakech — Crusthy'lia at Targa</h2>
+        <h2 class="reveal-text" data-i18n="brunch_en_title">Best Brunch in Marrakech — Crusthy'lia at Targa</h2>
         <div class="gold-line"></div>
-        <p>If you're visiting Marrakech and wondering where to find a proper weekend brunch, skip the tourist-trap cafés in the Médina and the hotel buffets that charge triple for half the quality. Come to Crusthy'lia in Targa — a neighbourhood spot that's been quietly serving some of the <strong>best brunch in Marrakech</strong> since it opened.</p>
-        <p>What sets us apart is simple: everything is made in-house. The croissants come from our own bakery. The bread is baked fresh that morning. The smoked salmon brunch comes with proper homemade cream cheese. The American pancakes are real buttermilk pancakes, not a mix. And the coffee — from espresso to flat white to cold brew — is taken seriously.</p>
-        <p><strong>Weekend brunch in Marrakech Morocco</strong> doesn't have to mean a medina riad charging 400 dirhams for a basket of bread and some jam. At Crusthy'lia, our brunch formulas run from MAD 65 for kids to MAD 155 for the Norwegian spread — excellent value for the quality on your plate. Tables fill up fast on Sunday mornings, so book via <a href="https://wa.me/message/NDWNBPJQV6GXE1" target="_blank" rel="noopener">WhatsApp</a> the evening before.</p>
-        <p>We're open every day from 07:00 to 00:00. Find us at 890 Lotissement Nakhil 2, Targa, Marrakech — or on <a href="https://maps.app.goo.gl/vTmgJStVPV5HHdK79" target="_blank" rel="noopener noreferrer">Google Maps</a>.</p>
+        <p data-i18n="brunch_en_p1">If you're visiting Marrakech and wondering where to find a proper weekend brunch, skip the tourist-trap cafés in the Médina and the hotel buffets that charge triple for half the quality. Come to Crusthy'lia in Targa — a neighbourhood spot that's been quietly serving some of the <strong>best brunch in Marrakech</strong> since it opened.</p>
+        <p data-i18n="brunch_en_p2">What sets us apart is simple: everything is made in-house. The croissants come from our own bakery. The bread is baked fresh that morning. The smoked salmon brunch comes with proper homemade cream cheese. The American pancakes are real buttermilk pancakes, not a mix. And the coffee — from espresso to flat white to cold brew — is taken seriously.</p>
+        <p data-i18n="brunch_en_p3"><strong>Weekend brunch in Marrakech Morocco</strong> doesn't have to mean a medina riad charging 400 dirhams for a basket of bread and some jam. At Crusthy'lia, our brunch formulas run from MAD 65 for kids to MAD 155 for the Norwegian spread — excellent value for the quality on your plate. Tables fill up fast on Sunday mornings, so book via <a href="https://wa.me/message/NDWNBPJQV6GXE1" target="_blank" rel="noopener noreferrer">WhatsApp</a> the evening before.</p>
+        <p data-i18n="brunch_en_p4">We're open every day from 07:00 to 00:00. Find us at 890 Lotissement Nakhil 2, Targa, Marrakech — or on <a href="https://maps.app.goo.gl/vTmgJStVPV5HHdK79" target="_blank" rel="noopener noreferrer">Google Maps</a>.</p>
       </div>
     </section>
 
     <!-- Section: FAQ Brunch -->
     <section class="content-section" style="padding: var(--space-24) 0; background: var(--color-beige);">
       <div class="container" style="max-width: 860px;">
-        <h2 class="reveal-text">FAQ Brunch</h2>
+        <h2 class="reveal-text" data-i18n="brunch_faq_title">FAQ Brunch</h2>
         <div class="gold-line"></div>
 
         <div class="faq-list">
           <details class="faq-item" style="border-bottom: 1px solid rgba(0,0,0,0.1); padding: var(--space-6) 0;">
-            <summary style="cursor:pointer; font-weight:500; list-style:none;"><strong>Le brunch est-il disponible toute la semaine ?</strong></summary>
-            <p style="margin-top: var(--space-4);">Non, nos formules brunch sont disponibles <strong>le samedi et le dimanche</strong> uniquement, de 09h00 à 14h00. En semaine, nous proposons nos formules <a href="/petit-dejeuner-targa-marrakech.html">petit déjeuner</a> de 07h00 à 11h00.</p>
+            <summary style="cursor:pointer; font-weight:500; list-style:none;"><strong data-i18n="brunch_faq1_q">Le brunch est-il disponible toute la semaine ?</strong></summary>
+            <p style="margin-top: var(--space-4);" data-i18n="brunch_faq1_a">Non, nos formules brunch sont disponibles <strong>le samedi et le dimanche</strong> uniquement, de 09h00 à 14h00. En semaine, nous proposons nos formules <a href="/petit-dejeuner-targa-marrakech.html">petit déjeuner</a> de 07h00 à 11h00.</p>
           </details>
           <details class="faq-item" style="border-bottom: 1px solid rgba(0,0,0,0.1); padding: var(--space-6) 0;">
-            <summary style="cursor:pointer; font-weight:500; list-style:none;"><strong>Peut-on commander le brunch en livraison ?</strong></summary>
-            <p style="margin-top: var(--space-4);">Oui ! La plupart des éléments du brunch peuvent être livrés chez vous le week-end matin. Commandez via <a href="https://wa.me/message/NDWNBPJQV6GXE1" target="_blank" rel="noopener">WhatsApp</a> en précisant votre adresse à Targa ou Guéliz. Certains éléments (œufs pochés, pancakes chauds) voyagent mieux que d'autres — nous vous conseillons lors de la commande.</p>
+            <summary style="cursor:pointer; font-weight:500; list-style:none;"><strong data-i18n="brunch_faq2_q">Peut-on commander le brunch en livraison ?</strong></summary>
+            <p style="margin-top: var(--space-4);" data-i18n="brunch_faq2_a">Oui ! La plupart des éléments du brunch peuvent être livrés chez vous le week-end matin. Commandez via <a href="https://wa.me/message/NDWNBPJQV6GXE1" target="_blank" rel="noopener noreferrer">WhatsApp</a> en précisant votre adresse à Targa ou Guéliz. Certains éléments (œufs pochés, pancakes chauds) voyagent mieux que d'autres — nous vous conseillons lors de la commande.</p>
           </details>
           <details class="faq-item" style="padding: var(--space-6) 0;">
-            <summary style="cursor:pointer; font-weight:500; list-style:none;"><strong>Peut-on privatiser le brunch pour un événement ?</strong></summary>
-            <p style="margin-top: var(--space-4);">Absolument. Baby shower, anniversaire, enterrement de vie de jeune fille, réunion familiale — nous organisons des brunchs privatisés sur mesure. Contactez-nous au <a href="tel:+212764745159">+212 764 745 159</a> ou à <a href="mailto:contact@crusthylia.com">contact@crusthylia.com</a> au moins 72 heures à l'avance. <a href="/faq.html">Voir notre FAQ complète →</a></p>
+            <summary style="cursor:pointer; font-weight:500; list-style:none;"><strong data-i18n="brunch_faq3_q">Peut-on privatiser le brunch pour un événement ?</strong></summary>
+            <p style="margin-top: var(--space-4);" data-i18n="brunch_faq3_a">Absolument. Baby shower, anniversaire, enterrement de vie de jeune fille, réunion familiale — nous organisons des brunchs privatisés sur mesure. Contactez-nous au <a href="tel:+212764745159">+212 764 745 159</a> ou à <a href="mailto:contact@crusthylia.com">contact@crusthylia.com</a> au moins 72 heures à l'avance. <a href="/faq.html" data-i18n="brunch_faq_see_all">Voir notre FAQ complète →</a></p>
           </details>
         </div>
       </div>
@@ -444,13 +445,13 @@
     <!-- 4. CTA BAND -->
     <section class="cta-band section-dark has-grain" style="background: var(--color-brown); padding: var(--space-16) 0;">
       <div class="container" style="text-align:center;">
-        <span class="eyebrow">Crusthy'lia — Targa, Marrakech</span>
-        <h2 class="reveal-text" style="color: var(--color-cream); margin-bottom: var(--space-8);">
+        <span class="eyebrow" data-i18n="brunch_cta_band_eyebrow">Crusthy'lia — Targa, Marrakech</span>
+        <h2 class="reveal-text" style="color: var(--color-cream); margin-bottom: var(--space-8);" data-i18n="brunch_cta_band_title">
           Votre table du week-end vous attend
         </h2>
-        <p style="color: rgba(253,248,240,0.75); max-width: 50ch; margin: 0 auto var(--space-8);">890 Lotissement Nakhil 2, Targa — Samedi &amp; dimanche 09h–14h</p>
+        <p style="color: rgba(253,248,240,0.75); max-width: 50ch; margin: 0 auto var(--space-8);" data-i18n="brunch_cta_band_sub">890 Lotissement Nakhil 2, Targa — Samedi &amp; dimanche 09h–14h</p>
         <div style="display:flex; gap:var(--space-4); justify-content:center; flex-wrap:wrap;">
-          <a href="https://wa.me/message/NDWNBPJQV6GXE1" class="btn btn-primary btn-magnetic" target="_blank" rel="noopener">
+          <a href="https://wa.me/message/NDWNBPJQV6GXE1" class="btn btn-primary btn-magnetic" target="_blank" rel="noopener noreferrer">
             <i class="ph ph-whatsapp-logo" aria-hidden="true"></i>
             <span data-i18n="cta_order">Commander sur WhatsApp</span>
           </a>
@@ -464,7 +465,7 @@
     <!-- 5. RELATED PAGES -->
     <section style="padding: var(--space-24) 0; background: var(--color-beige);">
       <div class="container">
-        <h2 class="reveal-text" style="margin-bottom: var(--space-12);">Découvrez aussi</h2>
+        <h2 class="reveal-text" style="margin-bottom: var(--space-12);" data-i18n="brunch_related_title">Découvrez aussi</h2>
         <div class="card-grid" style="display:grid; grid-template-columns: repeat(auto-fit, minmax(280px,1fr)); gap:var(--space-6);">
 
           <a href="/petit-dejeuner-targa-marrakech.html" class="related-card">
@@ -472,9 +473,9 @@
               <img src="/assets/images/formule-petit-dejeuner-assiette-boulangerie-targa-marrakech.jpg" alt="Formule petit déjeuner complète servie en assiette au café Crusthy'lia à Targa Marrakech" width="560" height="315" loading="lazy" onerror="this.closest('.img-slot').classList.add('img-missing')">
             </div>
             <div class="related-card-body">
-              <span class="eyebrow">Petit Déjeuner</span>
-              <h3 class="related-card-title">11 Formules Petit Déjeuner à Targa</h3>
-              <p class="related-card-eyebrow">De la Formule Express à la Formule Royal — dès 07h00 chaque matin.</p>
+              <span class="eyebrow" data-i18n="brunch_related1_eyebrow">Petit Déjeuner</span>
+              <h3 class="related-card-title" data-i18n="brunch_related1_title">11 Formules Petit Déjeuner à Targa</h3>
+              <p class="related-card-eyebrow" data-i18n="brunch_related1_sub">De la Formule Express à la Formule Royal — dès 07h00 chaque matin.</p>
             </div>
           </a>
 
@@ -483,9 +484,9 @@
               <img src="/assets/images/tableau-menu-ardoise-boulangerie-cafe-crusthylia-targa.jpg" alt="Tableau menu ardoise du café Crusthy'lia avec formules petit déjeuner et brunch à Targa" width="560" height="315" loading="lazy" onerror="this.closest('.img-slot').classList.add('img-missing')">
             </div>
             <div class="related-card-body">
-              <span class="eyebrow">Menu Complet</span>
-              <h3 class="related-card-title">Notre Carte Complète</h3>
-              <p class="related-card-eyebrow">Pizzas, burgers, pâtisseries, boissons artisanales — tout le menu de Crusthy'lia.</p>
+              <span class="eyebrow" data-i18n="brunch_related2_eyebrow">Menu Complet</span>
+              <h3 class="related-card-title" data-i18n="brunch_related2_title">Notre Carte Complète</h3>
+              <p class="related-card-eyebrow" data-i18n="brunch_related2_sub">Pizzas, burgers, pâtisseries, boissons artisanales — tout le menu de Crusthy'lia.</p>
             </div>
           </a>
 
@@ -494,9 +495,9 @@
               <img src="/assets/images/salle-restaurant-interieure-boulangerie-crusthylia-marrakech.jpg" alt="Salle principale du restaurant Crusthy'lia décorée dans des tons beige et crème à Marrakech" width="560" height="315" loading="lazy" onerror="this.closest('.img-slot').classList.add('img-missing')">
             </div>
             <div class="related-card-body">
-              <span class="eyebrow">Restaurant</span>
-              <h3 class="related-card-title">Restaurant Targa — Déjeuner &amp; Dîner</h3>
-              <p class="related-card-eyebrow">Ouvert 7j/7 de 07h à 00h. Cuisine complète, terrasse, WiFi gratuit.</p>
+              <span class="eyebrow" data-i18n="brunch_related3_eyebrow">Restaurant</span>
+              <h3 class="related-card-title" data-i18n="brunch_related3_title">Restaurant Targa — Déjeuner &amp; Dîner</h3>
+              <p class="related-card-eyebrow" data-i18n="brunch_related3_sub">Ouvert 7j/7 de 07h à 00h. Cuisine complète, terrasse, WiFi gratuit.</p>
             </div>
           </a>
 
@@ -519,33 +520,33 @@
         </div>
       </div>
       <div class="footer-nav">
-        <h3 class="footer-heading">Navigation</h3>
+        <h3 class="footer-heading" data-i18n="footer_nav">Navigation</h3>
         <ul class="footer-links">
-          <li><a href="/menu.html">Menu</a></li>
-          <li><a href="/brunch-marrakech.html">Brunch à Marrakech</a></li>
-          <li><a href="/petit-dejeuner-targa-marrakech.html">Petit Déjeuner Targa</a></li>
-          <li><a href="/livraison-marrakech.html">Livraison Marrakech</a></li>
-          <li><a href="/boulangerie-artisanale-marrakech.html">Boulangerie Artisanale</a></li>
-          <li><a href="/patisserie-marrakech.html">Pâtisserie Marrakech</a></li>
-          <li><a href="/cafe-artisanal-marrakech.html">Café Artisanal</a></li>
-          <li><a href="/restaurant-targa-marrakech.html">Restaurant Targa</a></li>
+          <li><a href="/menu.html" data-i18n="nav_menu">Menu</a></li>
+          <li><a href="/brunch-marrakech.html" data-i18n="footer_link_brunch">Brunch à Marrakech</a></li>
+          <li><a href="/petit-dejeuner-targa-marrakech.html" data-i18n="footer_link_petitdej">Petit Déjeuner Targa</a></li>
+          <li><a href="/livraison-marrakech.html" data-i18n="footer_link_livraison">Livraison Marrakech</a></li>
+          <li><a href="/boulangerie-artisanale-marrakech.html" data-i18n="footer_link_boulangerie">Boulangerie Artisanale</a></li>
+          <li><a href="/patisserie-marrakech.html" data-i18n="footer_link_patisserie">Pâtisserie Marrakech</a></li>
+          <li><a href="/cafe-artisanal-marrakech.html" data-i18n="footer_link_cafe">Café Artisanal</a></li>
+          <li><a href="/restaurant-targa-marrakech.html" data-i18n="footer_link_restaurant">Restaurant Targa</a></li>
         </ul>
       </div>
       <div class="footer-info">
-        <h3 class="footer-heading">Informations</h3>
+        <h3 class="footer-heading" data-i18n="footer_info">Informations</h3>
         <ul class="footer-links">
-          <li><a href="/qui-sommes-nous.html">Notre Histoire</a></li>
-          <li><a href="/notre-engagement.html">Notre Engagement</a></li>
-          <li><a href="/pourquoi-crusthylia.html">Pourquoi Crusthy'lia</a></li>
+          <li><a href="/qui-sommes-nous.html" data-i18n="nav_about">Notre Histoire</a></li>
+          <li><a href="/notre-engagement.html" data-i18n="footer_link_engagement">Notre Engagement</a></li>
+          <li><a href="/pourquoi-crusthylia.html" data-i18n="footer_link_pourquoi">Pourquoi Crusthy'lia</a></li>
           <li><a href="/faq.html">FAQ</a></li>
-          <li><a href="/evenements-marrakech.html">Événements</a></li>
-          <li><a href="/reservation-marrakech.html">Réservations</a></li>
-          <li><a href="/livraison-dejeuner-ecole-marrakech.html">Déjeuner École</a></li>
-          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/evenements-marrakech.html" data-i18n="nav_events">Événements</a></li>
+          <li><a href="/reservation-marrakech.html" data-i18n="footer_link_reservations">Réservations</a></li>
+          <li><a href="/livraison-dejeuner-ecole-marrakech.html" data-i18n="footer_link_ecole">Déjeuner École</a></li>
+          <li><a href="/blog/" data-i18n="nav_blog">Blog</a></li>
         </ul>
       </div>
       <div class="footer-contact">
-        <h3 class="footer-heading">Contact</h3>
+        <h3 class="footer-heading" data-i18n="footer_contact">Contact</h3>
         <address>
           <p><i class="ph ph-map-pin" aria-hidden="true"></i> 890 Lotissement Nakhil 2, Targa, Marrakech 40000</p>
           <p><i class="ph ph-phone" aria-hidden="true"></i> <a href="tel:+212764745159">+212 764 745 159</a></p>
@@ -562,7 +563,7 @@
     <div class="footer-bottom">
       <div class="container footer-bottom-inner">
         <p data-i18n="footer_copyright">© 2026 Crusthy'lia. Tous droits réservés.</p>
-        <a href="#top" class="back-to-top" aria-label="Retour en haut de page"><i class="ph ph-arrow-up" aria-hidden="true"></i></a>
+        <a href="#top" class="back-to-top" data-i18n-aria="back_to_top" aria-label="Retour en haut de page"><i class="ph ph-arrow-up" aria-hidden="true"></i></a>
       </div>
     </div>
   </footer>

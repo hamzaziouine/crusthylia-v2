@@ -271,7 +271,7 @@ function initBackToTop() {
 
 // ── 10. FLOATING WHATSAPP BUTTON ──────────────────────────────────────────────
 function initFloatingWhatsApp() {
-  const floatingWA = document.querySelector('.floating-wa');
+  const floatingWA = document.querySelector('.floating-btn-wa');
   if (!floatingWA) return;
   window.addEventListener('scroll', () => {
     floatingWA.classList.toggle('visible', window.scrollY > 300);
