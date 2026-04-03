@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+
+<html class="light" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Manrope:wght@300;400;600;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-container-high": "#f0e7d4",
+              "secondary-fixed": "#aaf3c1",
+              "on-secondary-container": "#2b7149",
+              "on-secondary": "#ffffff",
+              "secondary-fixed-dim": "#8fd6a6",
+              "error": "#ba1a1a",
+              "on-secondary-fixed-variant": "#00522e",
+              "surface-container-highest": "#eae2ce",
+              "outline-variant": "#d5c3bc",
+              "surface-container-lowest": "#ffffff",
+              "on-background": "#1f1b0f",
+              "surface-dim": "#e2d9c6",
+              "on-secondary-fixed": "#00210f",
+              "secondary": "#246b44",
+              "background": "#fff8ef",
+              "surface-tint": "#7d5544",
+              "primary-fixed-dim": "#f0bba6",
+              "on-tertiary-container": "#e280a8",
+              "inverse-on-surface": "#f9f0dc",
+              "primary-container": "#4f2d1f",
+              "inverse-surface": "#343023",
+              "surface-variant": "#eae2ce",
+              "primary": "#36180c",
+              "secondary-container": "#aaf3c1",
+              "on-primary-container": "#c49381",
+              "tertiary-fixed-dim": "#ffb0cd",
+              "tertiary": "#470027",
+              "on-surface-variant": "#51443f",
+              "on-primary-fixed": "#301408",
+              "on-tertiary": "#ffffff",
+              "surface-container-low": "#fcf3df",
+              "outline": "#83746f",
+              "surface-container": "#f6edd9",
+              "inverse-primary": "#f0bba6",
+              "on-tertiary-fixed": "#3e0021",
+              "surface-bright": "#fff8ef",
+              "on-primary-fixed-variant": "#633e2f",
+              "on-tertiary-fixed-variant": "#792a4f",
+              "on-primary": "#ffffff",
+              "error-container": "#ffdad6",
+              "tertiary-fixed": "#ffd9e4",
+              "on-surface": "#1f1b0f",
+              "tertiary-container": "#63183d",
+              "primary-fixed": "#ffdbce",
+              "on-error": "#ffffff",
+              "surface": "#fff8ef",
+              "on-error-container": "#93000a"
+            },
+            fontFamily: {
+              "serif": ["Noto Serif"],
+              "sans": ["Manrope"],
+              "headline": ["Noto Serif"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+      }
+      .bg-glass {
+        backdrop-filter: blur(12px);
+      }
+    </style>
+</head>
+<body class="bg-background text-on-background font-sans selection:bg-secondary-fixed">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#fff8ef]/80 dark:bg-[#36180c]/80 backdrop-blur-md shadow-sm dark:shadow-none">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<span class="text-2xl font-serif font-bold text-[#36180c] dark:text-[#fff8ef] tracking-tight">L'Atelier</span>
+<div class="hidden md:flex items-center space-gap-8 gap-x-8">
+<a class="text-[#36180c] dark:text-[#fff8ef] opacity-80 hover:text-[#246b44] transition-colors duration-300 font-sans Manrope text-sm tracking-wide" href="#">Menu</a>
+<a class="text-[#36180c] dark:text-[#fff8ef] opacity-80 hover:text-[#246b44] transition-colors duration-300 font-sans Manrope text-sm tracking-wide" href="#">Our Story</a>
+<a class="text-[#36180c] dark:text-[#fff8ef] opacity-80 hover:text-[#246b44] transition-colors duration-300 font-sans Manrope text-sm tracking-wide" href="#">Locations</a>
+<button class="bg-secondary text-on-secondary px-6 py-2 rounded-lg font-semibold hover:opacity-90 transition-all scale-95 active:opacity-80">Commander</button>
+</div>
+<div class="md:hidden">
+<span class="material-symbols-outlined text-primary cursor-pointer">menu</span>
+</div>
+</div>
+</nav>
+<main class="pt-20">
+<!-- Section 1: HERO -->
+<section class="relative min-h-[870px] flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Livraison Crusthylia" class="w-full h-full object-cover" data-alt="Close-up of freshly baked golden croissants and sourdough bread in a rustic paper bag with warm morning sun rays illuminating the bakery setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMmo9xg-XG_lSJvZnkMQaRkO-Tn122GxQSZx4FdNpqRMOgf5EyzgudP9_RIVt2ckKZmiUtuwa2DpjAKiXfyn9dx7j6d1PVi7Wfts6e3Scj0RlTN4kvSGtqpbNHqY-80PmXRDuMS0siAECO84BJGhwKB4ll8AaHSG6-DuhcMFwx_36Z-V23tSInEZZ_nXQX-gF4-6_DcqMs-vJYv27FJj5fkkZ1RN7Cu9LOIMAf1cRSNjK6s9eexEc8l_BCL1Ch9tyO-grQlnvTe914"/>
+<div class="absolute inset-0 bg-gradient-to-r from-background via-background/60 to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto px-8 w-full">
+<div class="max-w-2xl">
+<h1 class="text-5xl md:text-7xl font-serif font-bold text-primary mb-6 leading-tight">Livraison à Marrakech — Commandez chez Crusthy'lia</h1>
+<p class="text-lg md:text-xl text-on-surface-variant mb-10 leading-relaxed">Livraison de viennoiseries, repas et pâtisseries à Marrakech. Commandez via WhatsApp. Livraison Targa, Guéliz et environs tous les jours 07h–22h30.</p>
+<div class="flex flex-col sm:flex-row gap-4">
+<a class="inline-flex items-center justify-center gap-3 bg-secondary text-on-secondary px-8 py-4 rounded-lg font-bold text-lg hover:shadow-xl transition-all hover:-translate-y-1" href="https://wa.me/212764745159">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">chat</span>
+                            Commander maintenant
+                        </a>
+<a class="inline-flex items-center justify-center gap-3 border-2 border-outline-variant text-primary px-8 py-4 rounded-lg font-bold text-lg hover:bg-surface-container-low transition-all" href="tel:+212764745159">
+<span class="material-symbols-outlined">call</span>
+                            +212 764 745 159
+                        </a>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 2: WHATSAPP BANNER -->
+<section class="py-12 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-8">
+<div class="bg-surface-container-lowest rounded-xl p-8 flex flex-col md:flex-row items-center justify-between gap-6 shadow-sm">
+<div class="flex items-center gap-6">
+<div class="w-16 h-16 rounded-full bg-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-on-secondary-container text-3xl" style="font-variation-settings: 'FILL' 1;">send</span>
+</div>
+<div>
+<h3 class="text-xl font-serif font-bold text-primary">Commandez directement sur WhatsApp</h3>
+<p class="text-on-surface-variant">La façon la plus rapide et la plus simple de commander votre livraison</p>
+</div>
+</div>
+<a class="text-secondary font-bold flex items-center gap-2 group" href="#">
+                        Ouvrir WhatsApp 
+                        <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Section 3: WHAT WE DELIVER -->
+<section class="py-24 max-w-7xl mx-auto px-8">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-serif font-bold text-primary mb-4">Ce que nous livrons</h2>
+<div class="w-24 h-1 bg-secondary mx-auto rounded-full"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Card 1 -->
+<div class="group bg-surface-container-low p-8 rounded-xl hover:bg-surface-container-high transition-all duration-300 flex flex-col items-center text-center">
+<div class="w-20 h-20 rounded-full bg-surface-container-lowest flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-sm">
+<span class="material-symbols-outlined text-secondary text-4xl" data-icon="bakery_dining">bakery_dining</span>
+</div>
+<h4 class="text-xl font-bold text-primary mb-2">Petit déjeuner &amp; Viennoiseries</h4>
+<p class="text-sm text-on-surface-variant opacity-80">Livraison matinale dès 07h00 pour vos matins gourmands.</p>
+</div>
+<!-- Card 2 -->
+<div class="group bg-surface-container-low p-8 rounded-xl hover:bg-surface-container-high transition-all duration-300 flex flex-col items-center text-center">
+<div class="w-20 h-20 rounded-full bg-surface-container-lowest flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-sm">
+<span class="material-symbols-outlined text-secondary text-4xl" data-icon="restaurant">restaurant</span>
+</div>
+<h4 class="text-xl font-bold text-primary mb-2">Déjeuner &amp; Dîner</h4>
+<p class="text-sm text-on-surface-variant opacity-80">Tout notre menu restaurant livré chaud à votre porte.</p>
+</div>
+<!-- Card 3 -->
+<div class="group bg-surface-container-low p-8 rounded-xl hover:bg-surface-container-high transition-all duration-300 flex flex-col items-center text-center">
+<div class="w-20 h-20 rounded-full bg-surface-container-lowest flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-sm">
+<span class="material-symbols-outlined text-secondary text-4xl" data-icon="cake">cake</span>
+</div>
+<h4 class="text-xl font-bold text-primary mb-2">Pâtisseries &amp; Desserts</h4>
+<p class="text-sm text-on-surface-variant opacity-80">Gâteaux individuels ou sur commande pour vos célébrations.</p>
+</div>
+<!-- Card 4 -->
+<div class="group bg-surface-container-low p-8 rounded-xl hover:bg-surface-container-high transition-all duration-300 flex flex-col items-center text-center">
+<div class="w-20 h-20 rounded-full bg-surface-container-lowest flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-sm">
+<span class="material-symbols-outlined text-secondary text-4xl" data-icon="coffee">coffee</span>
+</div>
+<h4 class="text-xl font-bold text-primary mb-2">Café &amp; Boissons</h4>
+<p class="text-sm text-on-surface-variant opacity-80">Sélection de boissons chaudes et froides préparées minute.</p>
+</div>
+</div>
+</section>
+<!-- Section 4: HOW TO ORDER -->
+<section class="py-24 bg-surface-dim">
+<div class="max-w-7xl mx-auto px-8">
+<h2 class="text-4xl font-serif font-bold text-primary mb-16 text-center">Comment commander ?</h2>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 relative">
+<!-- Step 1 -->
+<div class="flex flex-col items-center text-center relative z-10">
+<div class="text-6xl font-serif text-outline-variant font-bold mb-4 opacity-50">01</div>
+<h4 class="text-xl font-bold text-primary mb-2">Contactez-nous</h4>
+<p class="text-on-surface-variant">Via WhatsApp ou directement par téléphone.</p>
+</div>
+<!-- Step 2 -->
+<div class="flex flex-col items-center text-center relative z-10">
+<div class="text-6xl font-serif text-outline-variant font-bold mb-4 opacity-50">02</div>
+<h4 class="text-xl font-bold text-primary mb-2">Précisez</h4>
+<p class="text-on-surface-variant">Votre commande, l'adresse exacte et l'heure souhaitée.</p>
+</div>
+<!-- Step 3 -->
+<div class="flex flex-col items-center text-center relative z-10">
+<div class="text-6xl font-serif text-outline-variant font-bold mb-4 opacity-50">03</div>
+<h4 class="text-xl font-bold text-primary mb-2">Confirmation</h4>
+<p class="text-on-surface-variant">Validation de disponibilité et calcul du total.</p>
+</div>
+<!-- Step 4 -->
+<div class="flex flex-col items-center text-center relative z-10">
+<div class="text-6xl font-serif text-outline-variant font-bold mb-4 opacity-50">04</div>
+<h4 class="text-xl font-bold text-primary mb-2">Livraison</h4>
+<p class="text-on-surface-variant">Paiement à la livraison (Espèces ou Carte).</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 5: DELIVERY ZONES TABLE -->
+<section class="py-24 max-w-5xl mx-auto px-8">
+<div class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm">
+<div class="p-8 bg-primary text-on-primary">
+<h3 class="text-2xl font-serif font-bold">Zones de Livraison &amp; Temps d'attente</h3>
+<p class="opacity-80">Service continu tous les jours : 07h00 – 22h30</p>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left">
+<thead class="bg-surface-container text-primary font-bold">
+<tr>
+<th class="p-6">Quartier</th>
+<th class="p-6">Délai estimé</th>
+<th class="p-6">Frais</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container">
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="p-6 font-semibold">Targa</td>
+<td class="p-6">20 – 35 min</td>
+<td class="p-6 text-secondary font-bold">Inclus</td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="p-6 font-semibold">Guéliz</td>
+<td class="p-6">35 – 50 min</td>
+<td class="p-6 text-secondary font-bold">15 MAD</td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="p-6 font-semibold">Environs (Massira/M'hamid)</td>
+<td class="p-6">25 – 40 min</td>
+<td class="p-6 text-secondary font-bold">20 MAD</td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="p-6 font-semibold">Autres zones</td>
+<td class="p-6">Sur demande</td>
+<td class="p-6 italic opacity-60">Nous consulter</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<!-- Section 6: SCHOOL LUNCH PROGRAM -->
+<section class="py-24 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid lg:grid-cols-2 gap-16 items-start">
+<div>
+<h2 class="text-4xl font-serif font-bold text-primary mb-8 leading-tight">Programme Menu École</h2>
+<div class="space-y-8 mb-12">
+<div class="flex gap-6">
+<div class="w-12 h-12 shrink-0 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-bold">1</div>
+<div>
+<h5 class="font-bold text-lg mb-1">Inscription flexible</h5>
+<p class="text-on-surface-variant">Inscrivez votre enfant à la semaine ou au mois selon vos besoins.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="w-12 h-12 shrink-0 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-bold">2</div>
+<div>
+<h5 class="font-bold text-lg mb-1">Menu hebdomadaire</h5>
+<p class="text-on-surface-variant">Chaque dimanche, recevez le menu détaillé élaboré par nos chefs.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="w-12 h-12 shrink-0 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-bold">3</div>
+<div>
+<h5 class="font-bold text-lg mb-1">Livraison garantie à 12h00</h5>
+<p class="text-on-surface-variant">Repas chaud et équilibré livré directement à l'établissement ou au domicile.</p>
+</div>
+</div>
+</div>
+<!-- FAQ Items -->
+<div class="space-y-4">
+<details class="group bg-surface-container-lowest rounded-xl p-4 cursor-pointer">
+<summary class="flex justify-between items-center font-bold text-primary list-none">
+                                    Quels types de repas proposez-vous ?
+                                    <span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="mt-4 text-on-surface-variant text-sm border-t border-surface-container pt-4">
+                                    Des plats équilibrés : protéines (poulet, poisson), féculents, légumes frais et un dessert maison ou fruit.
+                                </div>
+</details>
+<details class="group bg-surface-container-lowest rounded-xl p-4 cursor-pointer">
+<summary class="flex justify-between items-center font-bold text-primary list-none">
+                                    Gérez-vous les allergies ?
+                                    <span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="mt-4 text-on-surface-variant text-sm border-t border-surface-container pt-4">
+                                    Oui, merci de nous le préciser lors de l'inscription pour adapter le menu de votre enfant.
+                                </div>
+</details>
+<details class="group bg-surface-container-lowest rounded-xl p-4 cursor-pointer">
+<summary class="flex justify-between items-center font-bold text-primary list-none">
+                                    Peut-on annuler un jour spécifique ?
+                                    <span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="mt-4 text-on-surface-variant text-sm border-t border-surface-container pt-4">
+                                    Les annulations doivent être faites 24h à l'avance pour donner lieu à un avoir.
+                                </div>
+</details>
+</div>
+</div>
+<div class="space-y-8">
+<div class="bg-surface-container-lowest rounded-2xl p-8 shadow-sm">
+<h4 class="text-2xl font-serif font-bold text-primary mb-6">Exemple de Semaine</h4>
+<div class="space-y-4">
+<div class="flex justify-between border-b border-surface-container pb-2">
+<span class="font-bold text-secondary">Lundi</span>
+<span class="text-on-surface-variant">Lasagnes à la Bolognaise &amp; Fruits</span>
+</div>
+<div class="flex justify-between border-b border-surface-container pb-2">
+<span class="font-bold text-secondary">Mardi</span>
+<span class="text-on-surface-variant">Poulet rôti, Riz &amp; Légumes vapeur</span>
+</div>
+<div class="flex justify-between border-b border-surface-container pb-2">
+<span class="font-bold text-secondary">Mercredi</span>
+<span class="text-on-surface-variant">Tajine de Kefta &amp; Salade Marocaine</span>
+</div>
+<div class="flex justify-between border-b border-surface-container pb-2">
+<span class="font-bold text-secondary">Jeudi</span>
+<span class="text-on-surface-variant">Pâtes au Pesto &amp; Mousse au Chocolat</span>
+</div>
+<div class="flex justify-between border-b border-surface-container pb-2">
+<span class="font-bold text-secondary">Vendredi</span>
+<span class="text-on-surface-variant">Poisson grillé, Purée &amp; Jus frais</span>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+<div class="bg-surface-container-highest p-6 rounded-xl text-center">
+<p class="text-xs font-bold uppercase tracking-widest text-on-surface-variant mb-1">Par repas</p>
+<div class="text-xl font-bold text-primary">45–65 MAD</div>
+</div>
+<div class="bg-primary text-on-primary p-6 rounded-xl text-center transform scale-105 shadow-lg">
+<p class="text-xs font-bold uppercase tracking-widest opacity-70 mb-1">Par semaine</p>
+<div class="text-xl font-bold">200–280 MAD</div>
+</div>
+<div class="bg-surface-container-highest p-6 rounded-xl text-center">
+<p class="text-xs font-bold uppercase tracking-widest text-on-surface-variant mb-1">Mensuel</p>
+<div class="text-xl font-bold text-secondary">-10% Remise</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 7: CTA BAND -->
+<section class="py-24 max-w-7xl mx-auto px-8">
+<div class="bg-primary-container rounded-3xl p-12 text-center text-on-primary-container relative overflow-hidden">
+<div class="absolute top-0 left-0 w-64 h-64 bg-secondary/10 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2"></div>
+<div class="relative z-10">
+<h2 class="text-4xl font-serif font-bold mb-6">Prêt à savourer l'excellence ?</h2>
+<p class="text-xl mb-10 max-w-2xl mx-auto opacity-90">Inscrivez votre enfant à notre programme scolaire ou commandez dès maintenant votre prochain repas.</p>
+<div class="flex flex-col sm:flex-row justify-center gap-4">
+<a class="bg-secondary text-on-secondary px-8 py-4 rounded-xl font-bold text-lg hover:opacity-90 transition-all" href="#">
+                            Inscrivez votre enfant
+                        </a>
+<a class="bg-surface-container-lowest text-primary px-8 py-4 rounded-xl font-bold text-lg hover:bg-white transition-all shadow-md" href="#">
+                            Voir le menu complet
+                        </a>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full mt-24 bg-[#fcf3df] dark:bg-[#1a0c06]">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-12 py-16 max-w-7xl mx-auto font-sans Manrope text-sm tracking-wide text-[#36180c] dark:text-[#fff8ef]">
+<div class="col-span-1 md:col-span-1">
+<span class="text-xl font-serif italic text-[#36180c] dark:text-[#fff8ef]">L'Atelier Artisanal</span>
+<p class="mt-4 opacity-70">L'art de la boulangerie traditionnelle au cœur de Marrakech, Targa.</p>
+</div>
+<div>
+<h4 class="font-bold mb-6">Service Client</h4>
+<ul class="space-y-4">
+<li><a class="text-[#36180c]/70 dark:text-[#fff8ef]/70 hover:text-[#246b44] underline decoration-2 underline-offset-4 transition-all duration-200" href="#">Contact Us</a></li>
+<li><a class="text-[#36180c]/70 dark:text-[#fff8ef]/70 hover:text-[#246b44] underline decoration-2 underline-offset-4 transition-all duration-200" href="#">Shipping Info</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-6">Entreprise</h4>
+<ul class="space-y-4">
+<li><a class="text-[#36180c]/70 dark:text-[#fff8ef]/70 hover:text-[#246b44] underline decoration-2 underline-offset-4 transition-all duration-200" href="#">Careers</a></li>
+<li><a class="text-[#36180c]/70 dark:text-[#fff8ef]/70 hover:text-[#246b44] underline decoration-2 underline-offset-4 transition-all duration-200" href="#">Privacy Policy</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-6">Restez connecté</h4>
+<div class="flex gap-4">
+<span class="material-symbols-outlined cursor-pointer hover:text-secondary">social_leaderboard</span>
+<span class="material-symbols-outlined cursor-pointer hover:text-secondary">retweet</span>
+</div>
+</div>
+</div>
+<div class="border-t border-primary/5 py-8 text-center text-xs opacity-60">
+            © 2024 L'Atelier Artisanal. Fabriqué avec passion.
+        </div>
+</footer>
+</body></html>

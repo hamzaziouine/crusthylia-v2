@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>À Propos | Crusthylia Marrakech</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-dim": "#e2d9c6",
+              "surface-container": "#f6edd9",
+              "tertiary-fixed": "#ffd9e4",
+              "surface-container-lowest": "#ffffff",
+              "on-surface": "#1f1b0f",
+              "inverse-primary": "#f0bba6",
+              "on-tertiary-fixed-variant": "#792a4f",
+              "tertiary-fixed-dim": "#ffb0cd",
+              "on-surface-variant": "#51443f",
+              "error": "#ba1a1a",
+              "secondary-fixed": "#aaf3c1",
+              "inverse-surface": "#343023",
+              "outline": "#83746f",
+              "surface-container-low": "#fcf3df",
+              "primary-fixed": "#ffdbce",
+              "on-tertiary-fixed": "#3e0021",
+              "on-primary-fixed-variant": "#633e2f",
+              "surface-tint": "#7d5544",
+              "primary-fixed-dim": "#f0bba6",
+              "on-secondary": "#ffffff",
+              "tertiary": "#470027",
+              "secondary-fixed-dim": "#8fd6a6",
+              "secondary-container": "#aaf3c1",
+              "tertiary-container": "#63183d",
+              "surface-variant": "#eae2ce",
+              "surface-container-high": "#f0e7d4",
+              "background": "#fff8ef",
+              "secondary": "#246b44",
+              "primary": "#36180c",
+              "on-primary-fixed": "#301408",
+              "surface-container-highest": "#eae2ce",
+              "error-container": "#ffdad6",
+              "on-error": "#ffffff",
+              "on-background": "#1f1b0f",
+              "on-secondary-container": "#2b7149",
+              "on-primary-container": "#c49381",
+              "on-secondary-fixed-variant": "#00522e",
+              "surface": "#fff8ef",
+              "on-tertiary-container": "#e280a8",
+              "on-secondary-fixed": "#00210f",
+              "on-error-container": "#93000a",
+              "surface-bright": "#fff8ef",
+              "on-primary": "#ffffff",
+              "outline-variant": "#d5c3bc",
+              "on-tertiary": "#ffffff",
+              "primary-container": "#4f2d1f",
+              "inverse-on-surface": "#f9f0dc"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      body { font-family: 'Manrope', sans-serif; background-color: #fff8ef; color: #1f1b0f; }
+      .font-serif { font-family: 'Noto Serif', serif; }
+      .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+      .ambient-shadow { box-shadow: 0px 12px 32px rgba(31, 27, 15, 0.06); }
+    </style>
+</head>
+<body class="bg-background text-on-background selection:bg-secondary/30">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#fff8ef]/80 backdrop-blur-md">
+<div class="flex justify-between items-center w-full px-8 py-6 max-w-screen-2xl mx-auto">
+<a class="text-2xl font-serif italic text-[#36180c] font-bold" href="#">Crusthylia</a>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-body font-medium tracking-wide text-[#36180c] opacity-80 hover:text-[#246b44] transition-colors duration-300" href="#">Menu</a>
+<a class="font-body font-medium tracking-wide text-[#36180c] opacity-80 hover:text-[#246b44] transition-colors duration-300" href="#">Bakery</a>
+<a class="font-body font-medium tracking-wide text-[#246b44] border-b-2 border-[#246b44] pb-1" href="#">Our Story</a>
+<a class="font-body font-medium tracking-wide text-[#36180c] opacity-80 hover:text-[#246b44] transition-colors duration-300" href="#">Reservations</a>
+</div>
+<div class="flex items-center gap-6">
+<button class="hidden lg:flex items-center bg-secondary text-on-secondary px-6 py-2.5 rounded-lg font-medium hover:bg-secondary/90 transition-all ambient-shadow">
+                    Order Now
+                </button>
+<button class="text-[#36180c] hover:text-[#246b44] transition-colors">
+<span class="material-symbols-outlined" data-icon="shopping_bag">shopping_bag</span>
+</button>
+<button class="md:hidden text-[#36180c]">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+</div>
+</div>
+</nav>
+<main class="pt-24 overflow-hidden">
+<!-- SECTION 1: HERO -->
+<section class="relative px-8 pt-16 pb-24 max-w-screen-2xl mx-auto overflow-hidden">
+<div class="grid lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-6 z-10">
+<h1 class="text-5xl lg:text-7xl font-serif text-primary leading-tight mb-8">
+                        Notre Histoire — <span class="italic">Crusthy'lia</span>, la Boulangerie de Targa
+                    </h1>
+<p class="text-xl font-body text-on-surface-variant max-w-xl leading-relaxed">
+                        De la conviction qu'un quartier mérite une vraie boulangerie artisanale, ancrée dans sa communauté.
+                    </p>
+</div>
+<div class="lg:col-span-6 relative">
+<div class="aspect-[4/5] rounded-xl overflow-hidden ambient-shadow">
+<img alt="L'équipe Crusthylia" class="w-full h-full object-cover" data-alt="A warm group portrait of diverse bakery staff in Marrakech smiling, wearing artisan linen aprons in a sunlit modern rustic bakery kitchen" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNcM3EEYYgR1hd79lMSz8H_9s5y1SliUTTI_hDa3g7Ub91ZeozMgXGQC0gkX92_m28aW2B1UjOkf0dxLwQceyEeywuaCCKC19XGf-NbaOtJX887q5PeYFzU6PNHPTBQnUvCqHH-dsmCun7yM73wg_NldjYvSKEcDn0CleGxRSJJd7yf4QJBbKqp2FNFEeqPJGwJjrNpdD3OTPZmhy5kj3P2WoKejKPmVhtxeyDhPlTp-sEcAOCuAsHDDjpJNonzaEpRjxGwfBA0Dhs"/>
+</div>
+<!-- Decorative element -->
+<div class="absolute -bottom-6 -left-6 bg-secondary-container p-8 rounded-lg hidden lg:block">
+<p class="font-serif text-3xl text-on-secondary-container italic">Depuis 2021</p>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 2: LES ORIGINES -->
+<section class="bg-surface-container-low py-24">
+<div class="max-w-screen-2xl mx-auto px-8 grid lg:grid-cols-2 gap-16 items-center">
+<div class="order-2 lg:order-1">
+<span class="font-body text-secondary font-bold tracking-widest uppercase text-sm mb-4 block">Les origines</span>
+<h2 class="text-4xl lg:text-5xl font-serif text-primary mb-8">Né d'une conviction, ancré dans un quartier</h2>
+<div class="space-y-6 text-lg text-on-surface-variant leading-relaxed">
+<p>Crusthylia n'est pas seulement une enseigne, c'est une promesse faite aux habitants de Targa. Nous avons imaginé un lieu où le pain retrouve ses lettres de noblesse, loin des procédés industriels standardisés.</p>
+<p>Chaque matin, nos boulangers s'engagent dans un dialogue avec la farine, l'eau et le levain pour offrir un produit vivant, nutritif et authentique à notre voisinage.</p>
+</div>
+</div>
+<div class="order-1 lg:order-2">
+<div class="bg-surface-container-highest p-4 rounded-xl rotate-1 ambient-shadow">
+<img alt="Nos Origines" class="w-full h-[500px] object-cover rounded-lg" data-alt="Black and white artistic photograph of flour being dusted onto a rustic wooden table with artisan sourdough loaves in the background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQF5d7hs5OpvNNJjuWc8Tbr-AySlexNhTnqJc9Z-5ZsB0jWSH6gCKs1xapZZoFUZEgLzzJrknPyYf-BWyV2cAVhsYUNETrap4RNl38yM8OIriZB6k-uFD1BWhlRjcSZg8H_NNjs1SvmjxQc_DBpWbtrliDE-toob9W-CV924OnmN94AaFU2AJNgHPIfZ1QP41WLjL9IDH9zpypaZteYWgjDS-KxpawS5TPcdNQJgbalfINGiaWZ116jNs0glf24jJAjb_lkc0Kh_-y"/>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 3: NOTRE BOULANGERIE -->
+<section class="py-24 max-w-screen-2xl mx-auto px-8">
+<div class="grid lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-5">
+<div class="rounded-xl overflow-hidden -rotate-1 ambient-shadow">
+<img alt="Le Fournil" class="w-full h-[600px] object-cover" data-alt="Atmospheric shot of a traditional bakery oven with golden brown baguettes and steam rising in a warm morning light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCml5RhBvBPuYOAfdRZGT_cubs8_bguAu0B7YcRr_aSzNcISfAMl1XHx9NkrLWjFqg9J8ciVsHJJnQf5nF5ahObmOZz7lIY1E-_qREeFw63FXT1wxATuw7XY_OK4YHZQljU55GML_vg37KH85UpGEVg6-QIWr8PndfvRCshuDSRefUkWHYQeqZIvg2uHamQ5QFM6zY8BohlCloAnx96bSNZ-gm_95S4FGruOzH9yPR8MSkSAJFwr_X853OR25Ty_kR2b-I3bYf6ZkmN"/>
+</div>
+</div>
+<div class="lg:col-span-7 lg:pl-12">
+<span class="font-body text-secondary font-bold tracking-widest uppercase text-sm mb-4 block">Notre Boulangerie</span>
+<h2 class="text-4xl lg:text-5xl font-serif text-primary mb-8">Un fournil qui tourne avant l'aube</h2>
+<p class="text-lg text-on-surface-variant mb-12 leading-relaxed">
+                        Bien avant que Targa ne s'éveille, à 04h00, nos fours sont déjà à température. Nous croyons au temps : fermentation longue, pétrissage lent et respect des produits. Nous n'utilisons que du beurre AOC pour nos viennoiseries, garantissant ce feuilletage incomparable et ce goût authentique.
+                    </p>
+<div class="grid md:grid-cols-2 gap-8">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary text-3xl" data-icon="schedule">schedule</span>
+<div>
+<h4 class="font-bold text-primary mb-2">Cuissons 07h00</h4>
+<p class="text-sm text-on-surface-variant">Premières fournées dès l'ouverture.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary text-3xl" data-icon="bakery_dining">bakery_dining</span>
+<div>
+<h4 class="font-bold text-primary mb-2">Pétrissage Main</h4>
+<p class="text-sm text-on-surface-variant">Une attention tactile sur chaque miche.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 4: NOTRE CUISINE -->
+<section class="bg-primary text-on-primary py-24 overflow-hidden relative">
+<div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/natural-paper.png')] opacity-10"></div>
+<div class="max-w-screen-2xl mx-auto px-8 grid lg:grid-cols-2 gap-16 items-center relative z-10">
+<div>
+<span class="font-body text-secondary-fixed font-bold tracking-widest uppercase text-sm mb-4 block">Notre Cuisine</span>
+<h2 class="text-4xl lg:text-5xl font-serif mb-8 text-surface-bright">La cuisine maison, du souk à l'assiette</h2>
+<p class="text-lg text-primary-fixed-dim/80 mb-8 leading-relaxed">
+                        Notre restaurant ne se contente pas de nourrir, il célèbre le terroir. De midi à minuit, nous servons une cuisine sincère où tout est fait maison : des sauces réduites pendant des heures aux marinades secrètes. Nous suivons les saisons pour vous offrir le meilleur du marché local.
+                    </p>
+<div class="space-y-4">
+<div class="p-4 bg-primary-container rounded-lg flex items-center gap-4">
+<span class="material-symbols-outlined text-secondary-fixed" data-icon="restaurant">restaurant</span>
+<span class="font-medium">Service Continu : Midi — Minuit</span>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="space-y-4">
+<img alt="Cuisine 1" class="rounded-xl w-full h-64 object-cover ambient-shadow" data-alt="Exquisite plate of Moroccan fusion roasted vegetables with vibrant sauces on a dark ceramic plate" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBe_1fVzcmrmJFfkNM_MlAaSHbHmJJf2jJzmZyPi4nLjpXHfT_TfreR4Ra-fcoD-PLcycbF4hvw5Z3k9fADwCInEYiirfcE2uSBYgkp9f9iqS8x4-qcPvK21pZlN8Z7sKpFTwQoJGAXq__gs0LWXhMvWOJy8UaMpEUT0dZRO8OLhiZ5CUKgebZM6fuHsctaU08TTxR5u8nV5g1-QEH_DuHmGflHSETVEp1L_bley_sJH-I6Gx-o1huBDue_HBbm7XtAHClm1z97wALA"/>
+<img alt="Cuisine 2" class="rounded-xl w-full h-80 object-cover ambient-shadow" data-alt="Professional chef carefully garnishing a gourmet dish in a modern kitchen with warm lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0rRTQ2Qr9zGcV0rXzyJEuy7DuGK6vzb-MMDpC9n4XW-TgmG2d1M66NmWRiD48z79KCaf5fxsB_dLnFSF9_Lb37IIimxuHYsU3yCV26Pz1-phfGy455K_cIMm6r6jyYEC0F74jXxE2OS-yQQpqFliOtdMiQIRxX6MC_b5Rd1JjX_59OJA--0c0pb3Z4ST5l54nHwihKUIg4nEoyA4vtagUhUki6ciby_hXUcUFLAUQBZqyFAOlBtmdNjVO1s9DOr9rcy3V-lVHK-6W"/>
+</div>
+<div class="pt-8 space-y-4">
+<img alt="Cuisine 3" class="rounded-xl w-full h-80 object-cover ambient-shadow" data-alt="Top-down view of an artisanal steak dish with fresh herbs and colorful seasonal sides" src="https://lh3.googleusercontent.com/aida-public/AB6AXuApqMaaWTKHOJ-xdxOiWgfttpSxgVmHjrPdM-0e-NfKskQwTpB5cwLC39F3Q1G8SVJKmr9kwtq3YuzXXyENSYqXSY-j7TbBWcXqwpHb01auIs6ijXDf52prbfDVEDQbFMSiZ5Tq3oMyI0eBZA1ShNKZmkNdy9h4XvCSPHqO1J1QxwfPAC5Fd6SdRN-czju6r6pOwa_8lBwulcA6v-JI7KtUo5pfr6QgEi5w5OAhzRl1k8IjBqRlU3jI1fQAquo-XttwgVexHBaeLQBS"/>
+<img alt="Cuisine 4" class="rounded-xl w-full h-64 object-cover ambient-shadow" data-alt="Hands holding a fresh garden salad with edible flowers and artisanal dressing" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfa1Tq8lO52H90qDSRD72qMFs73AgiEw6viK6RFoZs2-Zyr5T_1CPh25uVVYEoT9dHpjRM-ysRpFTWK1JYemrOgVtK04HMAAUYlZF7Q4mc35X0mSeWyPGVqVMoivGVYURYjZzDZJGU8qQjtX9jogEIwHl7h4bkFMthe2kNVbq-Eg4fjNGuhqEJ9LeeQ9JzNwpenuiwiwI7v1T6cG7erkYeMf_P_RVsBP_zzwSOTLpq39eHTSz_L7WYpXuu8YGm3vkTpg3FV4rgCN7L"/>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 5: NOTRE CAFÉ -->
+<section class="py-24 max-w-screen-2xl mx-auto px-8">
+<div class="grid lg:grid-cols-2 gap-16 items-center">
+<div class="relative">
+<img alt="Café Interior" class="rounded-xl w-full aspect-video lg:aspect-square object-cover ambient-shadow" data-alt="Bright and airy café interior with light wood furniture, large windows, and lush green plants in Marrakech" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbr8EAEfe90iWJyYjTCfYbFaxj4EGhNjiobv-5tqwuVTPvlp5AEUFMhaf1zHVhtE1_An38H-tbd2cjUUAANHn527vA3L2oHn9tFURmV3NzjXGuYklfqaxzaVkNOkQ6L-RESM16KadweEYIelk5wS0AY4tfFR1SnA0LHh5H8_5szktXD7h_CfDWUk2Rx24TFRpLpYQCFZ99K5Tw3I7J6oGySYELWuGaQ32c7IXpeGO5VuPYqXtZLC0a6KGz0asX8iAzW3oJwWHtuT4M"/>
+<div class="absolute -top-4 -right-4 bg-tertiary p-6 rounded-lg text-on-tertiary hidden sm:block">
+<span class="material-symbols-outlined text-4xl block mb-2" data-icon="wifi">wifi</span>
+<p class="text-xs uppercase tracking-widest font-bold">Free Fiber WiFi</p>
+</div>
+</div>
+<div>
+<span class="font-body text-secondary font-bold tracking-widest uppercase text-sm mb-4 block">Notre Café</span>
+<h2 class="text-4xl lg:text-5xl font-serif text-primary mb-8">Un café artisanal à part entière</h2>
+<p class="text-lg text-on-surface-variant mb-8 leading-relaxed">
+                        Plus qu'un simple accompagnement, notre café est une destination. Notre barista sélectionne des grains d'exception pour vos espresso, cappuccino ou cold brew. Profitez de notre terrasse baignée de lumière pour travailler ou simplement savourer un chocolat chaud maison au cœur de Targa.
+                    </p>
+<ul class="grid grid-cols-2 gap-4">
+<li class="flex items-center gap-2 text-primary font-medium">
+<span class="material-symbols-outlined text-secondary" data-icon="coffee">coffee</span> Matcha Latte
+                        </li>
+<li class="flex items-center gap-2 text-primary font-medium">
+<span class="material-symbols-outlined text-secondary" data-icon="coffee_maker">coffee_maker</span> V60 &amp; Chemex
+                        </li>
+<li class="flex items-center gap-2 text-primary font-medium">
+<span class="material-symbols-outlined text-secondary" data-icon="deck">deck</span> Terrasse Ombragée
+                        </li>
+<li class="flex items-center gap-2 text-primary font-medium">
+<span class="material-symbols-outlined text-secondary" data-icon="laptop_mac">laptop_mac</span> Coworking Friendly
+                        </li>
+</ul>
+</div>
+</div>
+</section>
+<!-- SECTION 6: NOS ENGAGEMENTS (Bento Grid) -->
+<section class="bg-surface-container-low py-24">
+<div class="max-w-screen-2xl mx-auto px-8">
+<div class="text-center mb-16">
+<span class="font-body text-secondary font-bold tracking-widest uppercase text-sm mb-4 block">Notre Engagement</span>
+<h2 class="text-4xl lg:text-5xl font-serif text-primary">Une adresse de quartier, une responsabilité locale</h2>
+</div>
+<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Card 1 -->
+<div class="bg-surface-container-lowest p-8 rounded-xl ambient-shadow hover:translate-y-[-4px] transition-transform duration-300">
+<div class="w-12 h-12 bg-secondary/10 text-secondary rounded-full flex items-center justify-center mb-6">
+<span class="material-symbols-outlined" data-icon="temp_preferences_custom">temp_preferences_custom</span>
+</div>
+<h3 class="text-xl font-bold text-primary mb-3">Fraîcheur</h3>
+<p class="text-on-surface-variant text-sm">Quotidienne, sans exception. Aucun produit de la veille n'est vendu en boutique.</p>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-lowest p-8 rounded-xl ambient-shadow hover:translate-y-[-4px] transition-transform duration-300">
+<div class="w-12 h-12 bg-secondary/10 text-secondary rounded-full flex items-center justify-center mb-6">
+<span class="material-symbols-outlined" data-icon="local_shipping">local_shipping</span>
+</div>
+<h3 class="text-xl font-bold text-primary mb-3">Local</h3>
+<p class="text-on-surface-variant text-sm">Sourcing local privilégié pour nos fruits, légumes et farines régionales.</p>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-lowest p-8 rounded-xl ambient-shadow hover:translate-y-[-4px] transition-transform duration-300">
+<div class="w-12 h-12 bg-secondary/10 text-secondary rounded-full flex items-center justify-center mb-6">
+<span class="material-symbols-outlined" data-icon="groups">groups</span>
+</div>
+<h3 class="text-xl font-bold text-primary mb-3">Communauté</h3>
+<p class="text-on-surface-variant text-sm">Programme école actif pour faire découvrir les métiers de l'artisanat aux jeunes.</p>
+</div>
+<!-- Card 4 -->
+<div class="bg-surface-container-lowest p-8 rounded-xl ambient-shadow hover:translate-y-[-4px] transition-transform duration-300">
+<div class="w-12 h-12 bg-secondary/10 text-secondary rounded-full flex items-center justify-center mb-6">
+<span class="material-symbols-outlined" data-icon="diversity_3">diversity_3</span>
+</div>
+<h3 class="text-xl font-bold text-primary mb-3">Accueil</h3>
+<p class="text-on-surface-variant text-sm">Tout le monde est bienvenu. Un espace inclusif pour toutes les générations de Targa.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 7 & 8: QUALITY + 5 REASONS (Hybrid Layout) -->
+<section class="py-24 max-w-screen-2xl mx-auto px-8 overflow-hidden">
+<div class="grid lg:grid-cols-2 gap-24">
+<!-- Quality Standards -->
+<div>
+<h3 class="text-3xl font-serif text-primary mb-8 border-b-2 border-surface-container-highest pb-4">Standards de Qualité</h3>
+<ul class="space-y-6">
+<li class="flex items-center gap-4 group">
+<span class="w-2 h-2 bg-secondary rounded-full group-hover:scale-150 transition-transform"></span>
+<span class="text-lg text-on-surface font-medium">Ingrédients 100% frais et de saison</span>
+</li>
+<li class="flex items-center gap-4 group">
+<span class="w-2 h-2 bg-secondary rounded-full group-hover:scale-150 transition-transform"></span>
+<span class="text-lg text-on-surface font-medium">Extraction café contrôlée (Barista certifié)</span>
+</li>
+<li class="flex items-center gap-4 group">
+<span class="w-2 h-2 bg-secondary rounded-full group-hover:scale-150 transition-transform"></span>
+<span class="text-lg text-on-surface font-medium">Normes d'hygiène internationales strictes</span>
+</li>
+<li class="flex items-center gap-4 group">
+<span class="w-2 h-2 bg-secondary rounded-full group-hover:scale-150 transition-transform"></span>
+<span class="text-lg text-on-surface font-medium">Service attentif et personnalisé</span>
+</li>
+<li class="flex items-center gap-4 group">
+<span class="w-2 h-2 bg-secondary rounded-full group-hover:scale-150 transition-transform"></span>
+<span class="text-lg text-on-surface font-medium">Ouverture garantie 07h00 – 23h00</span>
+</li>
+</ul>
+</div>
+<!-- 5 Reasons -->
+<div class="bg-surface-container p-12 rounded-2xl relative">
+<div class="absolute -top-6 -right-6 w-24 h-24 bg-tertiary/10 rounded-full blur-2xl"></div>
+<h3 class="text-3xl font-serif text-primary mb-8">Pourquoi nous choisir ?</h3>
+<div class="space-y-8">
+<div class="flex gap-6">
+<span class="text-4xl font-serif italic text-secondary/30">01</span>
+<div>
+<h4 class="font-bold text-lg mb-1">Une Boulangerie Vraiment Artisanale</h4>
+<p class="text-sm text-on-surface-variant">Ici, rien n'est décongelé. Le pain est né d'ici.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<span class="text-4xl font-serif italic text-secondary/30">02</span>
+<div>
+<h4 class="font-bold text-lg mb-1">Le Brunch de Targa</h4>
+<p class="text-sm text-on-surface-variant">Le rendez-vous incontournable du weekend en famille.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<span class="text-4xl font-serif italic text-secondary/30">03</span>
+<div>
+<h4 class="font-bold text-lg mb-1">Livraison qui Arrive Vraiment</h4>
+<p class="text-sm text-on-surface-variant">Pain chaud livré à votre porte quand vous en avez besoin.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<span class="text-4xl font-serif italic text-secondary/30">04</span>
+<div>
+<h4 class="font-bold text-lg mb-1">Une Adresse Indépendante</h4>
+<p class="text-sm text-on-surface-variant">Pas une franchise, mais un cœur qui bat pour son quartier.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<span class="text-4xl font-serif italic text-secondary/30">05</span>
+<div>
+<h4 class="font-bold text-lg mb-1">Ouvert 7j/7</h4>
+<p class="text-sm text-on-surface-variant">Nous sommes là quand vous avez faim, tout simplement.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 9: CTA BAND -->
+<section class="max-w-screen-2xl mx-auto px-8 mb-24">
+<div class="bg-secondary p-12 lg:p-24 rounded-3xl text-center text-on-secondary relative overflow-hidden ambient-shadow">
+<div class="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -translate-y-1/2 translate-x-1/2"></div>
+<h2 class="text-4xl lg:text-6xl font-serif mb-8 relative z-10">Venez nous rendre visite</h2>
+<p class="text-xl mb-12 opacity-90 max-w-2xl mx-auto relative z-10">Targa, Marrakech — À deux pas du rond-point principal.</p>
+<div class="flex flex-col sm:flex-row gap-6 justify-center relative z-10">
+<a class="bg-on-secondary text-secondary px-10 py-4 rounded-lg font-bold text-lg hover:scale-105 transition-transform flex items-center justify-center gap-3" href="https://wa.me/212000000000">
+<span class="material-symbols-outlined" data-icon="chat">chat</span>
+                        WhatsApp
+                    </a>
+<a class="bg-secondary-container text-on-secondary-container px-10 py-4 rounded-lg font-bold text-lg hover:scale-105 transition-transform flex items-center justify-center gap-3" href="#">
+<span class="material-symbols-outlined" data-icon="location_on">location_on</span>
+                        Google Maps
+                    </a>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full rounded-t-3xl mt-24 bg-[#36180c] text-[#fff8ef]">
+<div class="flex flex-col md:flex-row justify-between items-start w-full px-12 py-16 gap-8 max-w-screen-2xl mx-auto">
+<div class="max-w-sm">
+<div class="text-3xl font-serif text-[#fff8ef] mb-4 italic">Crusthylia</div>
+<p class="text-sm font-body opacity-60 mb-6">Artisans de quartier, gardiens du goût. La boulangerie-café qui fait battre le cœur de Targa.</p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-12">
+<div>
+<h5 class="font-bold text-[#fff8ef] mb-6 font-serif">Plan du Site</h5>
+<ul class="space-y-4">
+<li><a class="text-[#fff8ef]/60 hover:text-[#246b44] transition-all text-sm" href="#">Le Menu</a></li>
+<li><a class="text-[#fff8ef]/60 hover:text-[#246b44] transition-all text-sm" href="#">La Boulangerie</a></li>
+<li><a class="text-[#246b44] font-bold text-sm" href="#">À Propos</a></li>
+<li><a class="text-[#fff8ef]/60 hover:text-[#246b44] transition-all text-sm" href="#">Réservations</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-bold text-[#fff8ef] mb-6 font-serif">Légal</h5>
+<ul class="space-y-4">
+<li><a class="text-[#fff8ef]/60 hover:text-[#246b44] transition-all text-sm" href="#">Privacy Policy</a></li>
+<li><a class="text-[#fff8ef]/60 hover:text-[#246b44] transition-all text-sm" href="#">Terms of Service</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-bold text-[#fff8ef] mb-6 font-serif">Contact</h5>
+<ul class="space-y-4">
+<li><a class="text-[#fff8ef]/60 hover:text-[#246b44] transition-all text-sm" href="#">Contact Us</a></li>
+<li><a class="text-[#fff8ef]/60 hover:text-[#246b44] transition-all text-sm" href="#">Careers</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="border-t border-[#fff8ef]/10 px-12 py-8 text-center md:text-left max-w-screen-2xl mx-auto">
+<p class="text-xs opacity-40 font-body">© 2024 Crusthylia Marrakech. Artisanal Excellence.</p>
+</div>
+</footer>
+</body></html>

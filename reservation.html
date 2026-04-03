@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+
+<html class="light" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Réserver une Table | Crusthylia Marrakech</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-primary-fixed-variant": "#633e2f",
+              "tertiary-fixed": "#ffd9e4",
+              "on-tertiary-fixed-variant": "#792a4f",
+              "on-primary": "#ffffff",
+              "error-container": "#ffdad6",
+              "inverse-primary": "#f0bba6",
+              "surface-container": "#f6edd9",
+              "surface-bright": "#fff8ef",
+              "on-tertiary-fixed": "#3e0021",
+              "surface": "#fff8ef",
+              "on-error-container": "#93000a",
+              "on-error": "#ffffff",
+              "on-surface": "#1f1b0f",
+              "tertiary-container": "#63183d",
+              "primary-fixed": "#ffdbce",
+              "tertiary-fixed-dim": "#ffb0cd",
+              "tertiary": "#470027",
+              "secondary-container": "#aaf3c1",
+              "on-primary-container": "#c49381",
+              "on-tertiary": "#ffffff",
+              "on-surface-variant": "#51443f",
+              "on-primary-fixed": "#301408",
+              "surface-container-low": "#fcf3df",
+              "outline": "#83746f",
+              "primary-fixed-dim": "#f0bba6",
+              "surface-tint": "#7d5544",
+              "on-secondary-fixed": "#00210f",
+              "secondary": "#246b44",
+              "background": "#fff8ef",
+              "primary-container": "#4f2d1f",
+              "surface-variant": "#eae2ce",
+              "primary": "#36180c",
+              "inverse-surface": "#343023",
+              "on-tertiary-container": "#e280a8",
+              "inverse-on-surface": "#f9f0dc",
+              "secondary-fixed-dim": "#8fd6a6",
+              "error": "#ba1a1a",
+              "on-secondary": "#ffffff",
+              "on-secondary-fixed-variant": "#00522e",
+              "surface-container-high": "#f0e7d4",
+              "secondary-fixed": "#aaf3c1",
+              "on-secondary-container": "#2b7149",
+              "surface-dim": "#e2d9c6",
+              "surface-container-lowest": "#ffffff",
+              "surface-container-highest": "#eae2ce",
+              "outline-variant": "#d5c3bc",
+              "on-background": "#1f1b0f"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .hero-pattern {
+            background-image: radial-gradient(circle at 2px 2px, #36180c 1px, transparent 0);
+            background-size: 40px 40px;
+            opacity: 0.03;
+        }
+        .ambient-shadow {
+            box-shadow: 0px 12px 32px rgba(31, 27, 15, 0.06);
+        }
+        select {
+            appearance: none;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%2336180c'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'%3E%3C/path%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 1rem center;
+            background-size: 1.25rem;
+        }
+    </style>
+</head>
+<body class="bg-background font-body text-on-surface selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#fff8ef]/80 dark:bg-[#1a0c06]/80 backdrop-blur-md">
+<div class="flex justify-between items-center max-w-7xl mx-auto px-8 py-4">
+<div class="text-2xl font-serif tracking-tight text-[#36180c] dark:text-[#fcf3df]">Crusthylia</div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-[#36180c] dark:text-[#fcf3df] font-medium hover:text-[#246b44] dark:hover:text-[#4ade80] transition-colors duration-300" href="#">Menu</a>
+<a class="text-[#36180c] dark:text-[#fcf3df] font-medium hover:text-[#246b44] dark:hover:text-[#4ade80] transition-colors duration-300" href="#">Brunch</a>
+<a class="text-[#36180c] dark:text-[#fcf3df] font-medium hover:text-[#246b44] dark:hover:text-[#4ade80] transition-colors duration-300" href="#">Galerie</a>
+<a class="text-[#36180c] dark:text-[#fcf3df] font-medium hover:text-[#246b44] dark:hover:text-[#4ade80] transition-colors duration-300" href="#">À Propos</a>
+<a class="text-[#36180c] dark:text-[#fcf3df] font-medium hover:text-[#246b44] dark:hover:text-[#4ade80] transition-colors duration-300" href="#">Blog</a>
+<a class="text-[#246b44] dark:text-[#4ade80] font-semibold border-b-2 border-[#246b44] pb-1 transition-all active:scale-[0.98]" href="#">Contact</a>
+</div>
+<button class="bg-secondary text-on-secondary px-6 py-2 rounded-xl font-semibold hover:opacity-90 transition-all active:scale-[0.98]">
+                Réserver
+            </button>
+</div>
+</nav>
+<main class="pt-24">
+<!-- Hero Section -->
+<section class="relative py-24 px-8 overflow-hidden">
+<div class="absolute inset-0 hero-pattern pointer-events-none"></div>
+<div class="max-w-4xl mx-auto text-center relative z-10">
+<span class="font-label text-secondary tracking-[0.2em] uppercase text-xs font-bold mb-4 block">Artisanal Hearth &amp; Table</span>
+<h1 class="font-headline text-5xl md:text-6xl text-primary font-bold mb-8 leading-tight">Réserver une Table</h1>
+<p class="text-on-surface-variant text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
+                    Brunch du week-end, déjeuner en famille, dîner entre amis, groupe de 6 ou privatisation complète — réservez en 30 secondes.
+                </p>
+</div>
+</section>
+<!-- WhatsApp Quick Reserve -->
+<section class="px-8 pb-16">
+<div class="max-w-7xl mx-auto">
+<div class="bg-surface-container-low rounded-2xl p-8 md:p-12 flex flex-col md:flex-row items-center justify-between gap-8 ambient-shadow border border-outline-variant/10">
+<div class="flex-1">
+<div class="flex items-center gap-3 mb-4">
+<span class="material-symbols-outlined text-secondary text-3xl">chat</span>
+<h2 class="font-headline text-2xl text-primary font-bold">La façon la plus rapide</h2>
+</div>
+<p class="text-on-surface-variant mb-2">Précisez date, heure et nombre de personnes pour une confirmation instantanée.</p>
+<p class="text-sm font-medium text-secondary/80 flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">bolt</span>
+                            Temps de réponse moyen : 2 minutes
+                        </p>
+</div>
+<a class="bg-secondary text-on-secondary px-8 py-4 rounded-xl font-bold flex items-center gap-3 hover:opacity-95 transition-all active:scale-[0.98] ambient-shadow" href="https://wa.me/2120000000">
+<span class="material-symbols-outlined">send</span>
+                        Je souhaite réserver une table…
+                    </a>
+</div>
+</div>
+</section>
+<!-- Useful Information Grid -->
+<section class="px-8 py-16 bg-surface-container-lowest">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<div class="p-8 rounded-xl bg-surface-container border border-outline-variant/5 transition-all hover:bg-surface-container-high">
+<span class="material-symbols-outlined text-primary mb-4 block">sunny</span>
+<h3 class="font-headline text-xl text-primary font-bold mb-2">Brunch</h3>
+<p class="text-on-surface-variant font-label text-sm">07:00 – 14:00</p>
+<p class="mt-4 text-xs text-on-surface/60 italic leading-relaxed">Le réveil gourmand de Targa avec nos pâtisseries fraîches.</p>
+</div>
+<div class="p-8 rounded-xl bg-surface-container border border-outline-variant/5 transition-all hover:bg-surface-container-high">
+<span class="material-symbols-outlined text-primary mb-4 block">restaurant</span>
+<h3 class="font-headline text-xl text-primary font-bold mb-2">Déjeuner</h3>
+<p class="text-on-surface-variant font-label text-sm">12:00 – 15:00</p>
+<p class="mt-4 text-xs text-on-surface/60 italic leading-relaxed">Cuisine de saison et grillades au feu de bois.</p>
+</div>
+<div class="p-8 rounded-xl bg-surface-container border border-outline-variant/5 transition-all hover:bg-surface-container-high">
+<span class="material-symbols-outlined text-primary mb-4 block">bedtime</span>
+<h3 class="font-headline text-xl text-primary font-bold mb-2">Dîner</h3>
+<p class="text-on-surface-variant font-label text-sm">19:00 – 23:00</p>
+<p class="mt-4 text-xs text-on-surface/60 italic leading-relaxed">Ambiance tamisée et partage au cœur du foyer.</p>
+</div>
+<div class="p-8 rounded-xl bg-surface-container border border-outline-variant/5 transition-all hover:bg-surface-container-high">
+<span class="material-symbols-outlined text-primary mb-4 block">groups</span>
+<h3 class="font-headline text-xl text-primary font-bold mb-2">Groupes 6+</h3>
+<p class="text-on-surface-variant font-label text-sm">Sur mesure</p>
+<p class="mt-4 text-xs text-on-surface/60 italic leading-relaxed">Réservation à l'avance obligatoire pour un service parfait.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Reservation Form -->
+<section class="px-8 py-24">
+<div class="max-w-4xl mx-auto">
+<div class="bg-surface-container-lowest rounded-2xl p-8 md:p-16 ambient-shadow relative">
+<div class="absolute top-0 right-0 p-8 opacity-5">
+<span class="material-symbols-outlined text-9xl">menu_book</span>
+</div>
+<div class="mb-12">
+<h2 class="font-headline text-3xl text-primary font-bold mb-4">Détails de la réservation</h2>
+<div class="h-1 w-20 bg-secondary rounded-full"></div>
+</div>
+<form class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-10">
+<!-- Nom Complet -->
+<div class="flex flex-col gap-2">
+<label class="font-label text-xs font-bold uppercase tracking-widest text-outline">Nom complet</label>
+<input class="bg-transparent border-0 border-b border-outline-variant/40 py-3 px-0 focus:ring-0 focus:border-secondary transition-all outline-none" placeholder="Jean Dupont" type="text"/>
+</div>
+<!-- Téléphone -->
+<div class="flex flex-col gap-2">
+<label class="font-label text-xs font-bold uppercase tracking-widest text-outline">Téléphone</label>
+<input class="bg-transparent border-0 border-b border-outline-variant/40 py-3 px-0 focus:ring-0 focus:border-secondary transition-all outline-none" placeholder="+212 6 00 00 00 00" type="tel"/>
+</div>
+<!-- Date -->
+<div class="flex flex-col gap-2">
+<label class="font-label text-xs font-bold uppercase tracking-widest text-outline">Date souhaitée</label>
+<input class="bg-transparent border-0 border-b border-outline-variant/40 py-3 px-0 focus:ring-0 focus:border-secondary transition-all outline-none" type="date"/>
+</div>
+<!-- Heure -->
+<div class="flex flex-col gap-2 text-primary">
+<label class="font-label text-xs font-bold uppercase tracking-widest text-outline">Heure</label>
+<select class="bg-transparent border-0 border-b border-outline-variant/40 py-3 px-0 focus:ring-0 focus:border-secondary transition-all outline-none cursor-pointer">
+<option disabled="" selected="" value="">Sélectionnez une plage</option>
+<optgroup class="font-bold py-2" label="Matin">
+<option>08:00</option>
+<option>09:30</option>
+<option>11:00</option>
+</optgroup>
+<optgroup class="font-bold py-2" label="Déjeuner">
+<option>12:00</option>
+<option>13:30</option>
+<option>14:30</option>
+</optgroup>
+<optgroup class="font-bold py-2" label="Après-midi">
+<option>16:00</option>
+<option>17:30</option>
+</optgroup>
+<optgroup class="font-bold py-2" label="Dîner">
+<option>19:30</option>
+<option>20:30</option>
+<option>21:30</option>
+</optgroup>
+</select>
+</div>
+<!-- Nombre de personnes -->
+<div class="flex flex-col gap-2">
+<label class="font-label text-xs font-bold uppercase tracking-widest text-outline">Nombre de convives</label>
+<input class="bg-transparent border-0 border-b border-outline-variant/40 py-3 px-0 focus:ring-0 focus:border-secondary transition-all outline-none" max="50" min="1" type="number" value="2"/>
+</div>
+<!-- Type de repas -->
+<div class="flex flex-col gap-2">
+<label class="font-label text-xs font-bold uppercase tracking-widest text-outline">Type d'événement</label>
+<select class="bg-transparent border-0 border-b border-outline-variant/40 py-3 px-0 focus:ring-0 focus:border-secondary transition-all outline-none cursor-pointer">
+<option>Brunch</option>
+<option>Déjeuner</option>
+<option>Dîner</option>
+<option>Anniversaire</option>
+<option>Événement privé</option>
+</select>
+</div>
+<!-- Informations complémentaires -->
+<div class="flex flex-col gap-2 md:col-span-2">
+<label class="font-label text-xs font-bold uppercase tracking-widest text-outline">Informations complémentaires</label>
+<textarea class="bg-transparent border-0 border-b border-outline-variant/40 py-3 px-0 focus:ring-0 focus:border-secondary transition-all outline-none resize-none" placeholder="Allergies, préférences de table (terrasse/intérieur)..." rows="3"></textarea>
+</div>
+<div class="md:col-span-2 pt-6">
+<button class="w-full bg-secondary text-on-secondary px-8 py-5 rounded-xl font-bold flex items-center justify-center gap-3 hover:shadow-lg transition-all active:scale-[0.99] ambient-shadow" type="submit">
+<span class="material-symbols-outlined" data-weight="fill">chat</span>
+                                Réserver via WhatsApp
+                            </button>
+<p class="text-center text-xs text-on-surface-variant mt-6 leading-relaxed">
+                                En cliquant, vous serez redirigé vers WhatsApp avec un message pré-rempli pour finaliser votre réservation.
+                            </p>
+</div>
+</form>
+</div>
+</div>
+</section>
+<!-- CTA BAND -->
+<section class="py-20 px-8 bg-surface-container">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8 text-center md:text-left">
+<div>
+<h3 class="font-headline text-3xl text-primary font-bold mb-2">Envie de voir le menu avant de réserver?</h3>
+<p class="text-on-surface-variant">Découvrez nos créations saisonnières et nos formules exclusives.</p>
+</div>
+<div class="flex flex-wrap gap-4 justify-center">
+<button class="bg-primary text-on-primary px-8 py-4 rounded-xl font-bold hover:opacity-90 transition-all active:scale-[0.98]">
+                        Voir le menu
+                    </button>
+<button class="bg-transparent border-2 border-primary/10 text-primary px-8 py-4 rounded-xl font-bold hover:bg-primary/5 transition-all active:scale-[0.98]">
+                        Formules brunch
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t border-[#36180c]/10 dark:border-[#fff8ef]/10 bg-[#fff8ef] dark:bg-[#1a0c06]">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-7xl mx-auto px-8 py-16">
+<div class="space-y-6">
+<div class="text-xl font-serif text-[#36180c] dark:text-[#fcf3df]">Crusthylia</div>
+<p class="text-[#36180c]/70 dark:text-[#fcf3df]/70 text-sm leading-relaxed">
+                    Une expérience culinaire ancrée dans le terroir, sublimée par notre four à bois artisanal.
+                </p>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-secondary">local_library</span>
+<span class="material-symbols-outlined text-secondary">grocery</span>
+<span class="material-symbols-outlined text-secondary">restaurant_menu</span>
+</div>
+</div>
+<div>
+<h4 class="font-headline text-primary font-bold mb-6">Navigation</h4>
+<ul class="space-y-4">
+<li><a class="text-[#36180c]/70 dark:text-[#fcf3df]/70 hover:text-[#246b44] underline-offset-4 hover:underline transition-all" href="#">Menu</a></li>
+<li><a class="text-[#36180c]/70 dark:text-[#fcf3df]/70 hover:text-[#246b44] underline-offset-4 hover:underline transition-all" href="#">Brunch</a></li>
+<li><a class="text-[#36180c]/70 dark:text-[#fcf3df]/70 hover:text-[#246b44] underline-offset-4 hover:underline transition-all" href="#">Galerie</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-headline text-primary font-bold mb-6">Contact</h4>
+<ul class="space-y-4">
+<li><a class="text-[#36180c]/70 dark:text-[#fcf3df]/70 hover:text-[#246b44] underline-offset-4 hover:underline transition-all" href="#">À Propos</a></li>
+<li><a class="text-[#36180c]/70 dark:text-[#fcf3df]/70 hover:text-[#246b44] underline-offset-4 hover:underline transition-all" href="#">Blog</a></li>
+<li><a class="text-[#36180c]/70 dark:text-[#fcf3df]/70 hover:text-[#246b44] underline-offset-4 hover:underline transition-all font-bold" href="#">Contact</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-headline text-primary font-bold mb-6">Juridique</h4>
+<ul class="space-y-4">
+<li><a class="text-[#36180c]/70 dark:text-[#fcf3df]/70 hover:text-[#246b44] underline-offset-4 hover:underline transition-all" href="#">Mentions Légales</a></li>
+<li><a class="text-[#36180c]/70 dark:text-[#fcf3df]/70 hover:text-[#246b44] underline-offset-4 hover:underline transition-all" href="#">Confidentialité</a></li>
+</ul>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-8 py-8 border-t border-outline-variant/10 flex justify-between items-center text-xs font-label text-on-surface-variant/60 tracking-wider">
+<span>© 2024 Crusthylia. Artisanal Hearth &amp; Table.</span>
+<span class="italic">Targa, Marrakech</span>
+</div>
+</footer>
+</body></html>

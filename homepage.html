@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Crusthylia | Artisanal Bakery &amp; Restaurant</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;500;600;700&amp;family=Manrope:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              colors: {
+                "on-secondary": "#ffffff",
+                "on-error-container": "#93000a",
+                "on-primary-fixed": "#301408",
+                "error": "#ba1a1a",
+                "on-tertiary-fixed": "#3e0021",
+                "primary-container": "#4f2d1f",
+                "surface-bright": "#fff8ef",
+                "secondary-fixed": "#aaf3c1",
+                "surface-container-low": "#fcf3df",
+                "inverse-primary": "#f0bba6",
+                "secondary": "#246b44",
+                "on-primary": "#ffffff",
+                "inverse-on-surface": "#f9f0dc",
+                "error-container": "#ffdad6",
+                "on-secondary-container": "#2b7149",
+                "surface-container-lowest": "#ffffff",
+                "on-secondary-fixed-variant": "#00522e",
+                "surface-dim": "#e2d9c6",
+                "on-primary-fixed-variant": "#633e2f",
+                "secondary-fixed-dim": "#8fd6a6",
+                "primary": "#36180c",
+                "surface": "#fff8ef",
+                "on-tertiary": "#ffffff",
+                "surface-variant": "#eae2ce",
+                "outline": "#83746f",
+                "on-primary-container": "#c49381",
+                "inverse-surface": "#343023",
+                "surface-container": "#f6edd9",
+                "on-secondary-fixed": "#00210f",
+                "surface-tint": "#7d5544",
+                "on-surface": "#1f1b0f",
+                "on-error": "#ffffff",
+                "on-background": "#1f1b0f",
+                "surface-container-highest": "#eae2ce",
+                "tertiary-fixed": "#ffd9e4",
+                "outline-variant": "#d5c3bc",
+                "surface-container-high": "#f0e7d4",
+                "on-surface-variant": "#51443f",
+                "tertiary-container": "#63183d",
+                "tertiary-fixed-dim": "#ffb0cd",
+                "secondary-container": "#aaf3c1",
+                "primary-fixed-dim": "#f0bba6",
+                "on-tertiary-fixed-variant": "#792a4f",
+                "on-tertiary-container": "#e280a8",
+                "background": "#fff8ef",
+                "primary-fixed": "#ffdbce",
+                "tertiary": "#470027"
+              },
+              fontFamily: {
+                "headline": ["Noto Serif"],
+                "body": ["Manrope"],
+                "label": ["Manrope"]
+              },
+              borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+            },
+          },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 24;
+            font-size: 24px;
+        }
+        .hero-gradient {
+            background: linear-gradient(to right, rgba(54, 24, 12, 0.8), rgba(54, 24, 12, 0.2));
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body selection:bg-secondary/30">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#fff8ef]/80 dark:bg-[#36180c]/80 backdrop-blur-md shadow-sm dark:shadow-none">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<div class="font-['Noto_Serif'] text-2xl font-bold tracking-tight text-[#36180c] dark:text-[#fff8ef]">Crusthylia</div>
+<div class="hidden md:flex items-center space-x-8 font-['Noto_Serif'] font-medium text-lg">
+<a class="text-[#36180c] dark:text-[#fcf3df] hover:text-[#246b44] hover:opacity-80 transition-opacity duration-300" href="#">Menu</a>
+<a class="text-[#36180c] dark:text-[#fcf3df] hover:text-[#246b44] hover:opacity-80 transition-opacity duration-300" href="#">Our Story</a>
+<a class="text-[#36180c] dark:text-[#fcf3df] hover:text-[#246b44] hover:opacity-80 transition-opacity duration-300" href="#">Locations</a>
+</div>
+<button class="bg-secondary text-on-secondary px-6 py-2 rounded-lg font-medium hover:opacity-90 transition-all active:scale-95 duration-300">
+                Reserve a Table
+            </button>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="relative h-screen flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover" data-alt="close-up of steaming artisan sourdough bread on dark wood with dramatic side lighting and flour dusting in a warm rustic kitchen" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuvzhM4Xuz1WRsfZvdPk6gfPOvaRxDDevmtrP8-GnaYOiaKp3vz6fpu4sfwsp06ETAsHIdI4pf1rDyLbyBSoo1pMcYA8nJrWae59cIkYsDiQ38r3s34ShBL_vl3gCQjf1tif_jhXSRsWxWIluyn9-1XMQfkqT_Ai0IZUq4H-W1I_ESGCXgb7Az-_MmL6ygZMWzSNeRQWy_fuGU5ba0WOr9yrv45hADRtZoToSTeWjE6Mve2ZhAL8VGB3eOh4oEbq_HKd3sIEsnMamw"/>
+<div class="absolute inset-0 hero-gradient"></div>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto px-8 w-full">
+<div class="max-w-2xl">
+<h1 class="font-headline text-5xl md:text-7xl font-bold text-white leading-tight mb-6">
+                    The Art of <br/><span class="italic font-light">the Bake</span>
+</h1>
+<p class="text-white/90 text-lg md:text-xl font-light mb-10 max-w-lg leading-relaxed">
+                    Honoring tradition through every fold, fermentation, and fire-touched crust. A symphony of grain and flame delivered to your morning.
+                </p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-secondary text-on-secondary px-8 py-4 rounded-lg font-semibold hover:bg-secondary/90 transition-all">
+                        View Menu
+                    </button>
+<button class="bg-white/10 backdrop-blur-md border border-white/20 text-white px-8 py-4 rounded-lg font-semibold hover:bg-white/20 transition-all">
+                        Our Story
+                    </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Daily Specials (Arched Cards) -->
+<section class="py-24 bg-surface px-8">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-4">
+<div>
+<span class="text-secondary font-label uppercase tracking-widest text-sm mb-4 block">Today's Harvest</span>
+<h2 class="font-headline text-4xl text-primary font-bold">Daily Specials</h2>
+</div>
+<a class="text-primary font-semibold border-b-2 border-secondary pb-1 hover:text-secondary transition-colors" href="#">See full bakery list</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<!-- Card 1 -->
+<div class="group cursor-pointer">
+<div class="relative aspect-[4/5] rounded-t-full overflow-hidden bg-surface-container mb-6">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="a freshly baked golden pain au chocolat with visible flaky layers and chocolate peeking out on a marble surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVY3Ob1ely6DaBnIiCiSIZlU1UzqyjPMmNK3ZpMEItT-qTzamOWyfZmP1xhIE1IE7k9u2CR5ydHnGiw1qVvxYIYURsGp3CxmiWj3B8Tn4-zYMtEhq5WGhkNV8ZZLmoQKTcb9QcX8qzbAStUr1ZDf4SBHWr5UoHPqn-5npWGe2M0wXfvsYOVdBhfIN5pdB7T1LVsIlhSsiTy1flBoeHEo0dtCwPBvfm1z7chY4ol_UGRLw0xdt1yAANSyXvxk0pd5QqF8Yo55w7Li0D"/>
+<div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/40 to-transparent">
+<span class="text-white font-label text-xs tracking-widest uppercase">Traditional French</span>
+</div>
+</div>
+<h3 class="font-headline text-2xl text-primary mb-2">Pain au Chocolat</h3>
+<p class="text-on-surface-variant font-light leading-relaxed mb-4">72 layers of grass-fed butter dough wrapped around Valrhona dark chocolate batons.</p>
+<span class="text-secondary font-bold">$5.50</span>
+</div>
+<!-- Card 2 -->
+<div class="group cursor-pointer mt-12 md:mt-24">
+<div class="relative aspect-[4/5] rounded-t-full overflow-hidden bg-surface-container mb-6">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="almond croissant topped with sliced almonds and powdered sugar on a warm linen napkin" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBA4XW32vg03rnI1qCarJUKGoliaUK7TeGierwmSOp0Z89F6lpw8CtKd2sznXRkSxpA7D8O-LFM2DVLItrTHjXddVmCOSWFyfVtA4-fwn84RaIUqJ-9g54FGhLs2BGmJXQSblcva0JLawzWkx2i6qt_9KHTOtd5cHbmdbKAtabvx7aNe5RISlaAE-Op-dIZmK9UmiTuTtpKMPdPMbgwGBWTEhh3c9sXCCFSskyUvGEbYAbaxkmapIKbCK0JafhY4BgmmqN2TGG5wXvG"/>
+<div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/40 to-transparent">
+<span class="text-white font-label text-xs tracking-widest uppercase">Baker's Favorite</span>
+</div>
+</div>
+<h3 class="font-headline text-2xl text-primary mb-2">Almond Croissants</h3>
+<p class="text-on-surface-variant font-light leading-relaxed mb-4">Double-baked with house-made frangipane and toasted California almonds.</p>
+<span class="text-secondary font-bold">$6.25</span>
+</div>
+<!-- Card 3 -->
+<div class="group cursor-pointer">
+<div class="relative aspect-[4/5] rounded-t-full overflow-hidden bg-surface-container mb-6">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="vibrant fresh fig tart with honey drizzle and pistachio crumbles on a delicate pastry base" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGJGeXoMTNqNmYCPdv7nb3O2ZJYVf9314sX5uhIqOgyh_A4pGhGJd-Fmas3aPl3Sul5GHCf7FfccSH3UumRkwZgQJCmuNxvZZ1Fb8Kf2wKn5mojzFLQ5XOZLUYnzizFVM1u2MI3zLEJdvT_7ABIlV2Qf9OuqQoGEbuYf3Vp72dxvK1wj21rVLOXy0c5qHHcQGobgyrNcgr5B2q5BozXdSp3lEtiAv4r3r2NzOP4Q5-aZaeIn-WBZBPHHgGIlt1wqJUr80xmwB6dvKw"/>
+<div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/40 to-transparent">
+<span class="text-white font-label text-xs tracking-widest uppercase">Seasonal Fruit</span>
+</div>
+</div>
+<h3 class="font-headline text-2xl text-primary mb-2">Fig &amp; Honey Tarts</h3>
+<p class="text-on-surface-variant font-light leading-relaxed mb-4">Caramelized mission figs, wildflower honey, and vanilla bean mascarpone.</p>
+<span class="text-secondary font-bold">$7.00</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Our Experience (Grid of Services) -->
+<section class="py-24 bg-surface-container-low px-8">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-20">
+<h2 class="font-headline text-4xl text-primary font-bold mb-4">Our Experience</h2>
+<div class="w-20 h-1 bg-secondary mx-auto"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+<div class="bg-white p-10 rounded-xl shadow-sm hover:shadow-md transition-shadow group">
+<div class="mb-6 text-secondary">
+<span class="material-symbols-outlined !text-4xl">bakery_dining</span>
+</div>
+<h4 class="font-headline text-xl text-primary font-bold mb-3">Artisanal Bakery</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">Slow-fermented breads and Viennoiseries baked fresh every 4 hours.</p>
+<a class="text-secondary text-xs font-bold uppercase tracking-widest flex items-center gap-2 group-hover:gap-3 transition-all" href="#">Explore <span class="material-symbols-outlined !text-sm">arrow_forward</span></a>
+</div>
+<div class="bg-white p-10 rounded-xl shadow-sm hover:shadow-md transition-shadow group">
+<div class="mb-6 text-secondary">
+<span class="material-symbols-outlined !text-4xl">coffee</span>
+</div>
+<h4 class="font-headline text-xl text-primary font-bold mb-3">Cafe &amp; Drinks</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">Single-origin beans roasted specifically to pair with our buttery pastries.</p>
+<a class="text-secondary text-xs font-bold uppercase tracking-widest flex items-center gap-2 group-hover:gap-3 transition-all" href="#">View Drinks <span class="material-symbols-outlined !text-sm">arrow_forward</span></a>
+</div>
+<div class="bg-white p-10 rounded-xl shadow-sm hover:shadow-md transition-shadow group">
+<div class="mb-6 text-secondary">
+<span class="material-symbols-outlined !text-4xl">restaurant</span>
+</div>
+<h4 class="font-headline text-xl text-primary font-bold mb-3">Dining &amp; Delivery</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">Farm-to-table bistro meals and sourdough pizzas, also available for home.</p>
+<a class="text-secondary text-xs font-bold uppercase tracking-widest flex items-center gap-2 group-hover:gap-3 transition-all" href="#">Order Now <span class="material-symbols-outlined !text-sm">arrow_forward</span></a>
+</div>
+<div class="bg-white p-10 rounded-xl shadow-sm hover:shadow-md transition-shadow group">
+<div class="mb-6 text-secondary">
+<span class="material-symbols-outlined !text-4xl">sunny</span>
+</div>
+<h4 class="font-headline text-xl text-primary font-bold mb-3">Brunch &amp; Breakfast</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">Weekend rituals featuring our signature shakshuka and baked eggs.</p>
+<a class="text-secondary text-xs font-bold uppercase tracking-widest flex items-center gap-2 group-hover:gap-3 transition-all" href="#">View Brunch <span class="material-symbols-outlined !text-sm">arrow_forward</span></a>
+</div>
+</div>
+</div>
+</section>
+<!-- Philosophy/Heritage (Split Layout) -->
+<section class="py-0 overflow-hidden">
+<div class="flex flex-col md:flex-row">
+<div class="md:w-1/2 h-[500px] md:h-[800px] relative">
+<img class="w-full h-full object-cover" data-alt="black and white moody photograph of artisan hands covered in flour kneading a large dough on a rustic wooden table" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDznZJftuTJpnO6oBBlPaVYT49m8tjzpR38ig19KnfMIwxEWay0_ASv2SyJ7v69VPg10Czm62FdEMJ7jmGFjzbp7zKF9oGG79xwvT7EBTrQ783fxpJubLslWhDsKRCHzTY0rhN7OsBKfzzNRNjeZv_Eqe3RDKePaLr303xECzHXT_zYu96hUXhGHygUn4oP6tSthOWqjh34lCgEI4HkY1k0TkxS-S09x6IyqXRWXLXcmnPrZr5MrZUq1B3PomTo8dEFdtJBrRBdEydM"/>
+<div class="absolute inset-0 bg-primary/10"></div>
+</div>
+<div class="md:w-1/2 bg-primary text-white flex items-center px-12 py-24 md:px-24">
+<div class="max-w-xl">
+<span class="text-secondary-fixed-dim font-label uppercase tracking-[0.2em] text-xs mb-6 block">Our Heritage</span>
+<h2 class="font-headline text-4xl md:text-5xl font-bold mb-8 leading-tight">Crusthylia Heritage and Process</h2>
+<div class="space-y-6 text-white/80 text-lg leading-relaxed font-light">
+<p>Founded on the belief that bread is the soul of the home, Crusthylia has spent three generations perfecting the art of the long-cold fermentation.</p>
+<p>We work exclusively with heritage grains from local mills, ensuring that every loaf carries the nuanced flavors of our local terroir. Our sourdough starter, affectionately named 'Aurelia', has been nurtured for over 40 years.</p>
+<p>No shortcuts. No additives. Just flour, water, salt, and the patient passing of time in our wood-fired hearths.</p>
+</div>
+<button class="mt-12 border-b-2 border-secondary pb-1 font-bold text-white hover:text-secondary-fixed transition-colors">Discover Our Full History</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Journal Section (Bento Grid) -->
+<section class="py-24 px-8 bg-surface">
+<div class="max-w-7xl mx-auto">
+<div class="flex items-center justify-between mb-16">
+<h2 class="font-headline text-4xl text-primary font-bold">The Journal</h2>
+<a class="font-label text-sm uppercase tracking-widest font-bold text-primary hover:text-secondary transition-colors" href="#">View All Articles</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Main Article -->
+<div class="md:col-span-2 relative group overflow-hidden rounded-xl h-[600px]">
+<img class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000" data-alt="overhead shot of a rustic wooden breakfast table with coffee, freshly baked bread, butter, and jam in warm morning light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBlBk6P_2YsNzHLTeOq4jHuQ2IBcK79_mLDR9Go3yP2Z4w2qse2WIWV9saI5Wy72bPkx3N7SBo2-yxu-rjeTT6t9-LuFQ15uBlfQHEywve3VFTS_ypX4P4hGqMAszxZoJ3NEWwdmCfdqRGj8gspD4Vx9y4B2qWPkVfB-sEAFf3fk4Ps8ipCCzeQQs5OUk0cmW19UjrLfcLhZI-Flu5gplDUTPkI_0rzoBS38XGlQgqJ5CC7G0cQbzJuCmtzPHrBfFjo4FG8cYuwVQqI"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/20 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-10">
+<span class="bg-secondary text-white text-[10px] px-3 py-1 rounded-full uppercase font-bold tracking-widest mb-4 inline-block">Living</span>
+<h3 class="text-3xl text-white font-headline font-bold mb-4">The Ritual of the Slow Morning</h3>
+<p class="text-white/80 line-clamp-2 max-w-lg font-light mb-6">Why taking twenty minutes to enjoy your coffee and croissant can change the entire trajectory of your day.</p>
+<span class="text-white text-sm font-semibold underline decoration-secondary">Read Story</span>
+</div>
+</div>
+<!-- Side Articles -->
+<div class="flex flex-col gap-8">
+<div class="group flex flex-col h-full bg-surface-container-low rounded-xl overflow-hidden shadow-sm">
+<div class="h-48 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="close-up of golden brown wheat fields during harvest time under a clear blue sky" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTISPSmtwd9WkVWHrYH_5KOFZU67z87Hm8Et4onVZnsZtcoGPsYkj-nt7MYrGL2aFpgbJSsAHJ8Ta1ZIsWk-CqE9qz0wO6udt_7OMC3z6FkH8QK6L-RBKF_JqdRPXt0MgU5m1bXp4T1kCfF69Q-gWcuWHMcgS350BQDERfqWmmON4u_2IVx1ukUuZ0VbhneBc-GrvY6mDv4ey8bqHpXn3D1ShozzmkxtDvh6--eVREuyOBB5VzeYqqOU5Xpa-F62TrZs1tmtNgcPV0"/>
+</div>
+<div class="p-6">
+<span class="text-secondary font-bold text-[10px] uppercase tracking-widest mb-2 block">Our Sourcing</span>
+<h4 class="font-headline text-lg text-primary font-bold mb-2">Winter Harvest: Our Local Mill Partners</h4>
+<p class="text-on-surface-variant text-xs line-clamp-2">Meet the farmers who grow our ancient grains.</p>
+</div>
+</div>
+<div class="group flex flex-col h-full bg-surface-container-low rounded-xl overflow-hidden shadow-sm">
+<div class="h-48 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="artisan hand pouring steamed milk into a ceramic cup creating a leaf pattern latte art" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJVdzwNMP2n-f5PocDRP-4Xyh4OBJb6f4pPQBNBy_Qp0q6WEe7W_gJn64dQ0lpVzENqsTLXS-v-yWAg9JhLC9_pgPK-vAYK41IMzN_wlNKcpxMM646qzZD-AJqzMUdGCNnedXQ_AguDZNXjQwUxPV13AuuQxSQsQ8kONcL8sCbsd9lr9bkvHB4vdWPtT3T5dv0NuqvBGAhUbEDadrwPhehgtQ_d6gmA98EnnN19MjV4Ix5ETZy8d9STGYUiEbmOxPtKT7cjwBk_qxj"/>
+</div>
+<div class="p-6">
+<span class="text-secondary font-bold text-[10px] uppercase tracking-widest mb-2 block">Brewing</span>
+<h4 class="font-headline text-lg text-primary font-bold mb-2">The Perfect Pour: Coffee and Crust</h4>
+<p class="text-on-surface-variant text-xs line-clamp-2">Understanding the flavor notes of our new Ethiopian roast.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Find Us Section -->
+<section class="py-24 px-8 bg-surface-container-high">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+<div class="space-y-10">
+<div>
+<h2 class="font-headline text-4xl text-primary font-bold mb-6">Find Our Hearth</h2>
+<p class="text-on-surface-variant max-w-md leading-relaxed">Located in the heart of the historic district, our flagship bakery and restaurant awaits. Come for the smell of fresh bread, stay for the warmth of the wood-fired stove.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+<div>
+<h5 class="font-headline text-lg text-primary font-bold mb-3">Flagship Location</h5>
+<p class="text-sm text-on-surface-variant leading-relaxed">
+                                442 Artisans Way<br/>
+                                Cobblestone District<br/>
+                                Heritage City, 55421
+                            </p>
+</div>
+<div>
+<h5 class="font-headline text-lg text-primary font-bold mb-3">Hours</h5>
+<p class="text-sm text-on-surface-variant leading-relaxed">
+                                Mon - Fri: 7:00am - 9:00pm<br/>
+                                Sat - Sun: 8:00am - 10:00pm<br/>
+<span class="text-secondary font-bold">Kitchen closes at 8:30pm</span>
+</p>
+</div>
+</div>
+<div class="flex gap-4">
+<button class="bg-primary text-white px-8 py-3 rounded-lg font-bold hover:bg-primary/90 transition-all flex items-center gap-2">
+<span class="material-symbols-outlined !text-sm">directions</span> Get Directions
+                        </button>
+<button class="border border-primary text-primary px-8 py-3 rounded-lg font-bold hover:bg-primary/5 transition-all">
+                            Call Us
+                        </button>
+</div>
+</div>
+<div class="relative h-[500px] bg-surface-container-highest rounded-2xl overflow-hidden shadow-2xl">
+<!-- Stylized Map Placeholder -->
+<div class="absolute inset-0 bg-[#e2d9c6]">
+<img class="w-full h-full object-cover opacity-50 grayscale contrast-125" data-location="Heritage City" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVEsJioNAGz_gqtKAO3Uw3QWu0UZgkHl0om-Gvpfhk8FiwFv3eFBvGk_d-RERGFXt_QTGMUd_aUuDOwAvyh7rE4S_Bz_r3JqtItLJbBYyHGoPEusUBIzTbgbX5xhF0UvUTodFnsC-TFK2GklRUTWtppewf6T3mTvEXl8asqhCoRiWsR5FU_L6UcFoXMmFT1eSlObKsKN2HWXaONWn2BcInMM5KrUw7TCJqddL_SmnW5tWhg2TT0bNdpUSCik9znrblYaFvEI5rwCE5"/>
+<!-- Custom Map Pin -->
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+<div class="relative">
+<div class="w-8 h-8 bg-primary rounded-full animate-ping absolute inset-0 opacity-20"></div>
+<div class="w-8 h-8 bg-primary rounded-full relative z-10 flex items-center justify-center border-2 border-white">
+<span class="material-symbols-outlined text-white !text-lg">bakery_dining</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="w-full border-t border-[#36180c]/10 bg-[#fcf3df] dark:bg-[#1a0c06]">
+<div class="flex flex-col md:flex-row justify-between items-center px-12 py-16 gap-8">
+<div class="font-['Noto_Serif'] text-xl font-semibold text-[#36180c] dark:text-[#fff8ef]">Crusthylia</div>
+<div class="flex flex-wrap justify-center gap-8 font-['Manrope'] text-sm tracking-wide">
+<a class="text-[#36180c]/70 dark:text-[#fcf3df]/70 hover:text-[#246b44] transition-colors duration-200" href="#">Contact Us</a>
+<a class="text-[#36180c]/70 dark:text-[#fcf3df]/70 hover:text-[#246b44] transition-colors duration-200" href="#">Hours &amp; Location</a>
+<a class="text-[#36180c]/70 dark:text-[#fcf3df]/70 hover:text-[#246b44] transition-colors duration-200" href="#">Privacy Policy</a>
+<a class="text-[#36180c]/70 dark:text-[#fcf3df]/70 hover:text-[#246b44] transition-colors duration-200" href="#">Instagram</a>
+<a class="text-[#36180c]/70 dark:text-[#fcf3df]/70 hover:text-[#246b44] transition-colors duration-200" href="#">Facebook</a>
+</div>
+<div class="font-['Manrope'] text-sm tracking-wide text-[#36180c]/70 dark:text-[#fcf3df]/70 text-center md:text-right">
+                © 2024 Crusthylia Artisanal Bakery &amp; Restaurant. Crafted for the Modern Hearth.
+            </div>
+</div>
+</footer>
+</body></html>
