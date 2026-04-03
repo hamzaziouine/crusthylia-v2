@@ -1,30 +1,3 @@
-# Crusthy'lia — Website
-
-Site web production-ready pour Crusthy'lia, boulangerie-café-restaurant à Marrakech.
-Hébergement : Netlify | Domaine : crusthylia.com (Namecheap)
-
----
-
-## Déploiement rapide (5 minutes)
-
-1. Va sur **[netlify.com](https://netlify.com)** → "Add new site" → "Deploy manually"
-2. **Glisse ce dossier entier** dans la zone de dépôt Netlify
-3. Le site est en ligne en 30 secondes
-
-### Connecter ton domaine crusthylia.com
-
-1. Dans Netlify : **Site settings → Domain management → Add custom domain**
-2. Tape `crusthylia.com` et confirme
-3. Dans **Namecheap** (ton registrar) → Manage Domain → Nameservers → Custom DNS
-4. Remplace les nameservers par ceux que Netlify t'indique (ex: `dns1.p05.nsone.net`)
-5. Attente de propagation DNS : 5 minutes à 24h
-
----
-
-## Ajouter les vraies photos
-
-Place les photos dans `assets/images/` avec **exactement ces noms de fichiers** :
-
 | Fichier | Page | Dimensions recommandées |
 |---------|------|------------------------|
 | `facade-restaurant-crusthylia-targa-marrakech.jpg` | Hero homepage | 1920 × 1080 px |
