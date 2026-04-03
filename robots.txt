@@ -5,11 +5,9 @@
 User-agent: *
 Allow: /
 
-# Disallow assets and utility paths
+# Disallow utility paths
 Disallow: /admin
 Disallow: /account
-Disallow: /assets/js/
-Disallow: /assets/css/
 
 # Allow key bots explicitly
 User-agent: Googlebot
