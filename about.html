@@ -20,29 +20,29 @@
 <script>
   tailwind.config = { theme: { extend: {
     colors: {
-      "primary": "#36180c", "primary-container": "#4f2d1f",
-      "secondary": "#246b44", "secondary-container": "#aaf3c1",
-      "tertiary": "#470027", "tertiary-container": "#63183d",
-      "surface": "#fff8ef", "surface-container-low": "#fcf3df",
-      "surface-container": "#f6edd9", "surface-container-high": "#f0e7d4",
-      "surface-container-highest": "#eae2ce", "surface-container-lowest": "#ffffff",
-      "on-surface": "#1f1b0f", "on-surface-variant": "#51443f",
+      "primary": "#9c1d50", "primary-container": "#5a102e",
+      "secondary": "#ce8f3f", "secondary-container": "#f4e9d8",
+      "tertiary": "#664187", "tertiary-container": "#8a5aab",
+      "surface": "#f9f2f5", "surface-container-low": "#fdf8fa",
+      "surface-container": "#f9f2f5", "surface-container-high": "#f3ebee",
+      "surface-container-highest": "#ede4e8", "surface-container-lowest": "#ffffff",
+      "on-surface": "#000000", "on-surface-variant": "#5a4550",
       "on-primary": "#ffffff", "on-secondary": "#ffffff",
-      "outline": "#83746f", "outline-variant": "#d5c3bc",
-      "background": "#fff8ef", "on-background": "#1f1b0f",
-      "inverse-surface": "#343023", "surface-dim": "#e2d9c6",
-      "surface-tint": "#7d5544", "secondary-fixed-dim": "#8fd6a6",
-      "on-primary-container": "#c49381", "on-secondary-container": "#2b7149",
-      "on-tertiary-container": "#e280a8", "primary-fixed-dim": "#f0bba6",
-      "secondary-fixed": "#aaf3c1", "on-tertiary": "#ffffff",
-      "tertiary-fixed": "#ffd9e4", "tertiary-fixed-dim": "#ffb0cd"
+      "outline": "#8a7580", "outline-variant": "#d5c0cc",
+      "background": "#ffffff", "on-background": "#000000",
+      "inverse-surface": "#2d2d2d", "surface-dim": "#e8dde2",
+      "surface-tint": "#9c1d50", "secondary-fixed-dim": "#d4a864",
+      "on-primary-container": "#d4708e", "on-secondary-container": "#8a6830",
+      "on-tertiary-container": "#b89ccc", "primary-fixed-dim": "#d4708e",
+      "secondary-fixed": "#f4e9d8", "on-tertiary": "#ffffff",
+      "tertiary-fixed": "#e8d4f0", "tertiary-fixed-dim": "#c4a0d8"
     },
     fontFamily: { "headline": ["Noto Serif"], "body": ["Manrope"], "label": ["Manrope"] },
     borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
   }}}
 </script>
 <style>
-      body { font-family: 'Manrope', sans-serif; background-color: #fff8ef; color: #1f1b0f; }
+      body { font-family: 'Manrope', sans-serif; background-color: #ffffff; color: #000000; }
       .font-serif { font-family: 'Noto Serif', serif; }
       .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
       .ambient-shadow { box-shadow: 0px 12px 32px rgba(31, 27, 15, 0.06); }
@@ -53,7 +53,7 @@
 <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[100] focus:bg-secondary focus:text-on-secondary focus:px-4 focus:py-2 focus:rounded-lg">Aller au contenu</a>
 
 <!-- Navigation -->
-<nav class="fixed top-0 w-full z-50 bg-[#fff8ef]/85 backdrop-blur-md border-b border-outline-variant/20" id="site-nav" role="navigation" aria-label="Navigation principale">
+<nav class="fixed top-0 w-full z-50 bg-[#ffffff]/85 backdrop-blur-md border-b border-outline-variant/20" id="site-nav" role="navigation" aria-label="Navigation principale">
   <div class="flex justify-between items-center w-full px-6 md:px-10 py-4 max-w-7xl mx-auto">
     <a href="homepage.html" class="flex items-center gap-2" aria-label="Crusthy'lia — Accueil">
       <span class="font-headline text-2xl font-bold tracking-tight text-primary">Crusthy'lia</span>
@@ -75,7 +75,7 @@
     </div>
   </div>
   <!-- Mobile Menu -->
-  <div class="md:hidden hidden bg-[#fff8ef] border-t border-outline-variant/20 px-6 py-6 flex flex-col gap-4" id="mobile-menu">
+  <div class="md:hidden hidden bg-[#ffffff] border-t border-outline-variant/20 px-6 py-6 flex flex-col gap-4" id="mobile-menu">
     <a href="menu.html" class="text-base font-label font-medium text-on-surface py-2" data-i18n="nav_menu">Menu</a>
     <a href="brunch.html" class="text-base font-label font-medium text-on-surface py-2" data-i18n="nav_brunch">Brunch</a>
     <a href="about.html" class="text-base font-label font-bold text-secondary py-2" aria-current="page" data-i18n="nav_about">Notre Histoire</a>
@@ -90,10 +90,10 @@
 <div class="grid lg:grid-cols-12 gap-12 items-center">
 <div class="lg:col-span-6 z-10">
 <h1 class="text-5xl lg:text-7xl font-serif text-primary leading-tight mb-8">
-                        Notre Histoire — <span class="italic">Crusthy'lia</span>, la Boulangerie de Targa
+                        Une famille, une passion — <span class="italic">Crusthy'lia</span> est née
                     </h1>
 <p class="text-xl font-body text-on-surface-variant max-w-xl leading-relaxed">
-                        De la conviction qu'un quartier mérite une vraie boulangerie artisanale, ancrée dans sa communauté.
+                        Reproduire la chaleur des cuisines de nos mères, le parfum du pain frais et le goût du fait maison. Voilà ce qui nous anime chaque jour à Targa.
                     </p>
 </div>
 <div class="lg:col-span-6 relative">
@@ -102,7 +102,7 @@
 </div>
 <!-- Decorative element -->
 <div class="absolute -bottom-6 -left-6 bg-secondary-container p-8 rounded-lg hidden lg:block">
-<p class="font-serif text-3xl text-on-secondary-container italic">Depuis 2021</p>
+<p class="font-serif text-3xl text-on-secondary-container italic">Depuis 2025</p>
 </div>
 </div>
 </div>
@@ -112,10 +112,10 @@
 <div class="max-w-7xl mx-auto px-8 grid lg:grid-cols-2 gap-16 items-center">
 <div class="order-2 lg:order-1">
 <span class="font-body text-secondary font-bold tracking-widest uppercase text-sm mb-4 block">Les origines</span>
-<h2 class="text-4xl lg:text-5xl font-serif text-primary mb-8">Né d'une conviction, ancré dans un quartier</h2>
+<h2 class="text-4xl lg:text-5xl font-serif text-primary mb-8">Le rêve d'une famille passionnée</h2>
 <div class="space-y-6 text-lg text-on-surface-variant leading-relaxed">
-<p>Crusthylia n'est pas seulement une enseigne, c'est une promesse faite aux habitants de Targa. Nous avons imaginé un lieu où le pain retrouve ses lettres de noblesse, loin des procédés industriels standardisés.</p>
-<p>Chaque matin, nos boulangers s'engagent dans un dialogue avec la farine, l'eau et le levain pour offrir un produit vivant, nutritif et authentique à notre voisinage.</p>
+<p>Crusthy'lia est née en 2025 d'une envie simple : retrouver le goût authentique du fait maison. Une famille marrakchie, passionnée de bonne cuisine, a voulu créer l'adresse qu'elle cherchait pour elle-même — une boulangerie-pâtisserie artisanale doublée d'un vrai restaurant, le tout dans l'esprit chaleureux de dar mama.</p>
+<p>Installés au cœur de Targa, nous avons ouvert nos portes avec une conviction : chaque croissant, chaque pain, chaque plat doit avoir le goût de la maison. Sans conservateurs, avec des produits locaux et un savoir-faire transmis de génération en génération.</p>
 </div>
 </div>
 <div class="order-1 lg:order-2">
@@ -135,23 +135,23 @@
 </div>
 <div class="lg:col-span-7 lg:pl-12">
 <span class="font-body text-secondary font-bold tracking-widest uppercase text-sm mb-4 block">Notre Boulangerie</span>
-<h2 class="text-4xl lg:text-5xl font-serif text-primary mb-8">Un fournil qui tourne avant l'aube</h2>
+<h2 class="text-4xl lg:text-5xl font-serif text-primary mb-8">Le fournil s'allume avant l'aube</h2>
 <p class="text-lg text-on-surface-variant mb-12 leading-relaxed">
-                        Bien avant que Targa ne s'éveille, à 04h00, nos fours sont déjà à température. Nous croyons au temps : fermentation longue, pétrissage lent et respect des produits. Nous n'utilisons que du beurre AOC pour nos viennoiseries, garantissant ce feuilletage incomparable et ce goût authentique.
+                        Chaque matin, bien avant que Targa ne s'éveille, nos boulangers lancent les fours. Pains au levain, viennoiseries feuilletées, pâtisseries du jour : tout est préparé sur place, sans conservateurs, avec des ingrédients locaux soigneusement sélectionnés. Ici, rien n'est décongelé, rien ne date de la veille.
                     </p>
 <div class="grid md:grid-cols-2 gap-8">
 <div class="flex items-start gap-4">
 <span class="material-symbols-outlined text-secondary text-3xl" data-icon="schedule">schedule</span>
 <div>
-<h3 class="font-bold text-primary mb-2">Cuissons 07h00</h3>
-<p class="text-sm text-on-surface-variant">Premières fournées dès l'ouverture.</p>
+<h3 class="font-bold text-primary mb-2">Fournées dès 07h30</h3>
+<p class="text-sm text-on-surface-variant">Pain chaud et viennoiseries fraîches à l'ouverture.</p>
 </div>
 </div>
 <div class="flex items-start gap-4">
 <span class="material-symbols-outlined text-secondary text-3xl" data-icon="bakery_dining">bakery_dining</span>
 <div>
-<h3 class="font-bold text-primary mb-2">Pétrissage Main</h3>
-<p class="text-sm text-on-surface-variant">Une attention tactile sur chaque miche.</p>
+<h3 class="font-bold text-primary mb-2">100% Fait Maison</h3>
+<p class="text-sm text-on-surface-variant">Sans conservateurs, produits locaux, préparé chaque jour.</p>
 </div>
 </div>
 </div>
@@ -164,14 +164,14 @@
 <div class="max-w-7xl mx-auto px-8 grid lg:grid-cols-2 gap-16 items-center relative z-10">
 <div>
 <span class="font-body text-secondary-fixed font-bold tracking-widest uppercase text-sm mb-4 block">Notre Cuisine</span>
-<h2 class="text-4xl lg:text-5xl font-serif mb-8 text-surface-bright">La cuisine maison, du souk à l'assiette</h2>
+<h2 class="text-4xl lg:text-5xl font-serif mb-8 text-surface-bright">Du brunch aux grillades, une carte qui voyage</h2>
 <p class="text-lg text-primary-fixed-dim/80 mb-8 leading-relaxed">
-                        Notre restaurant ne se contente pas de nourrir, il célèbre le terroir. De midi à minuit, nous servons une cuisine sincère où tout est fait maison : des sauces réduites pendant des heures aux marinades secrètes. Nous suivons les saisons pour vous offrir le meilleur du marché local.
+                        Chez Crusthy'lia, la journée commence par un brunch généreux servi de 09h à 15h — Express, Royal, London, Norvégien, Espagnol ou Signature. Le midi, place aux burgers, pizzas, ciabattas, pâtes et grillades. Le vendredi, c'est couscous. Et pour les grandes occasions, nos pastillas sont préparées sur commande.
                     </p>
 <div class="space-y-4">
 <div class="p-4 bg-primary-container rounded-lg flex items-center gap-4">
 <span class="material-symbols-outlined text-secondary-fixed" data-icon="restaurant">restaurant</span>
-<span class="font-medium">Service Continu : Midi — Minuit</span>
+<span class="font-medium">Ouvert 07h30 — Minuit, 7j/7</span>
 </div>
 </div>
 </div>
@@ -194,24 +194,24 @@
 <img alt="Café Interior" class="rounded-xl w-full aspect-video lg:aspect-square object-cover ambient-shadow" loading="lazy" data-alt="Bright and airy café interior with light wood furniture, large windows, and lush green plants in Marrakech" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbr8EAEfe90iWJyYjTCfYbFaxj4EGhNjiobv-5tqwuVTPvlp5AEUFMhaf1zHVhtE1_An38H-tbd2cjUUAANHn527vA3L2oHn9tFURmV3NzjXGuYklfqaxzaVkNOkQ6L-RESM16KadweEYIelk5wS0AY4tfFR1SnA0LHh5H8_5szktXD7h_CfDWUk2Rx24TFRpLpYQCFZ99K5Tw3I7J6oGySYELWuGaQ32c7IXpeGO5VuPYqXtZLC0a6KGz0asX8iAzW3oJwWHtuT4M"/>
 <div class="absolute -top-4 -right-4 bg-tertiary p-6 rounded-lg text-on-tertiary hidden sm:block">
 <span class="material-symbols-outlined text-4xl block mb-2" data-icon="wifi">wifi</span>
-<p class="text-xs uppercase tracking-widest font-bold">Free Fiber WiFi</p>
+<p class="text-xs uppercase tracking-widest font-bold">WiFi Fibre Gratuit</p>
 </div>
 </div>
 <div>
 <span class="font-body text-secondary font-bold tracking-widest uppercase text-sm mb-4 block">Notre Café</span>
-<h2 class="text-4xl lg:text-5xl font-serif text-primary mb-8">Un café artisanal à part entière</h2>
+<h2 class="text-4xl lg:text-5xl font-serif text-primary mb-8">Une terrasse où l'on se sent chez soi</h2>
 <p class="text-lg text-on-surface-variant mb-8 leading-relaxed">
-                        Plus qu'un simple accompagnement, notre café est une destination. Notre barista sélectionne des grains d'exception pour vos espresso, cappuccino ou cold brew. Profitez de notre terrasse baignée de lumière pour travailler ou simplement savourer un chocolat chaud maison au cœur de Targa.
+                        Notre terrasse 100% extérieure est pensée pour votre confort : pergola bioclimatique avec éclairage LED chaleureux, mur végétal surmonté de notre enseigne néon, brumisateurs en été et parasols pour chaque table. Venez travailler en profitant du WiFi fibre, retrouver vos proches autour d'un cappuccino ou simplement savourer un moment de calme au cœur de Targa.
                     </p>
 <ul class="grid grid-cols-2 gap-4">
 <li class="flex items-center gap-2 text-primary font-medium">
-<span class="material-symbols-outlined text-secondary" data-icon="coffee">coffee</span> Matcha Latte
+<span class="material-symbols-outlined text-secondary" data-icon="coffee">coffee</span> Cappuccino &amp; Latte
                         </li>
 <li class="flex items-center gap-2 text-primary font-medium">
-<span class="material-symbols-outlined text-secondary" data-icon="coffee_maker">coffee_maker</span> V60 &amp; Chemex
+<span class="material-symbols-outlined text-secondary" data-icon="coffee_maker">coffee_maker</span> Jus frais &amp; Smoothies
                         </li>
 <li class="flex items-center gap-2 text-primary font-medium">
-<span class="material-symbols-outlined text-secondary" data-icon="deck">deck</span> Terrasse Ombragée
+<span class="material-symbols-outlined text-secondary" data-icon="deck">deck</span> Pergola &amp; Brumisateurs
                         </li>
 <li class="flex items-center gap-2 text-primary font-medium">
 <span class="material-symbols-outlined text-secondary" data-icon="laptop_mac">laptop_mac</span> Coworking Friendly
@@ -225,7 +225,7 @@
 <div class="max-w-7xl mx-auto px-8">
 <div class="text-center mb-16">
 <span class="font-body text-secondary font-bold tracking-widest uppercase text-sm mb-4 block">Notre Engagement</span>
-<h2 class="text-4xl lg:text-5xl font-serif text-primary">Une adresse de quartier, une responsabilité locale</h2>
+<h2 class="text-4xl lg:text-5xl font-serif text-primary">Ce en quoi nous croyons</h2>
 </div>
 <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
 <!-- Card 1 -->
@@ -234,31 +234,31 @@
 <span class="material-symbols-outlined" data-icon="temp_preferences_custom">temp_preferences_custom</span>
 </div>
 <h3 class="text-xl font-bold text-primary mb-3">Fraîcheur</h3>
-<p class="text-on-surface-variant text-sm">Quotidienne, sans exception. Aucun produit de la veille n'est vendu en boutique.</p>
+<p class="text-on-surface-variant text-sm">Tout est préparé chaque matin. Aucun produit de la veille, aucun conservateur.</p>
 </div>
 <!-- Card 2 -->
 <div class="bg-surface-container-lowest p-8 rounded-xl ambient-shadow hover:translate-y-[-4px] transition-transform duration-300">
 <div class="w-12 h-12 bg-secondary/10 text-secondary rounded-full flex items-center justify-center mb-6">
 <span class="material-symbols-outlined" data-icon="local_shipping">local_shipping</span>
 </div>
-<h3 class="text-xl font-bold text-primary mb-3">Local</h3>
-<p class="text-on-surface-variant text-sm">Sourcing local privilégié pour nos fruits, légumes et farines régionales.</p>
+<h3 class="text-xl font-bold text-primary mb-3">Produits Locaux</h3>
+<p class="text-on-surface-variant text-sm">Fruits, légumes, farines et épices sourcés auprès de producteurs marocains.</p>
 </div>
 <!-- Card 3 -->
 <div class="bg-surface-container-lowest p-8 rounded-xl ambient-shadow hover:translate-y-[-4px] transition-transform duration-300">
 <div class="w-12 h-12 bg-secondary/10 text-secondary rounded-full flex items-center justify-center mb-6">
 <span class="material-symbols-outlined" data-icon="groups">groups</span>
 </div>
-<h3 class="text-xl font-bold text-primary mb-3">Communauté</h3>
-<p class="text-on-surface-variant text-sm">Programme école actif pour faire découvrir les métiers de l'artisanat aux jeunes.</p>
+<h3 class="text-xl font-bold text-primary mb-3">Famille</h3>
+<p class="text-on-surface-variant text-sm">Les enfants sont les bienvenus. Un espace pensé pour toutes les générations.</p>
 </div>
 <!-- Card 4 -->
 <div class="bg-surface-container-lowest p-8 rounded-xl ambient-shadow hover:translate-y-[-4px] transition-transform duration-300">
 <div class="w-12 h-12 bg-secondary/10 text-secondary rounded-full flex items-center justify-center mb-6">
 <span class="material-symbols-outlined" data-icon="diversity_3">diversity_3</span>
 </div>
-<h3 class="text-xl font-bold text-primary mb-3">Accueil</h3>
-<p class="text-on-surface-variant text-sm">Tout le monde est bienvenu. Un espace inclusif pour toutes les générations de Targa.</p>
+<h3 class="text-xl font-bold text-primary mb-3">Halal</h3>
+<p class="text-on-surface-variant text-sm">100% halal, sans exception. C'est un engagement fondamental pour nous.</p>
 </div>
 </div>
 </div>
@@ -272,23 +272,23 @@
 <ul class="space-y-6">
 <li class="flex items-center gap-4 group">
 <span class="w-2 h-2 bg-secondary rounded-full group-hover:scale-150 transition-transform"></span>
-<span class="text-lg text-on-surface font-medium">Ingrédients 100% frais et de saison</span>
+<span class="text-lg text-on-surface font-medium">Ingrédients frais, locaux et de saison</span>
 </li>
 <li class="flex items-center gap-4 group">
 <span class="w-2 h-2 bg-secondary rounded-full group-hover:scale-150 transition-transform"></span>
-<span class="text-lg text-on-surface font-medium">Extraction café contrôlée (Barista certifié)</span>
+<span class="text-lg text-on-surface font-medium">Préparations sans conservateurs ni additifs</span>
 </li>
 <li class="flex items-center gap-4 group">
 <span class="w-2 h-2 bg-secondary rounded-full group-hover:scale-150 transition-transform"></span>
-<span class="text-lg text-on-surface font-medium">Normes d'hygiène internationales strictes</span>
+<span class="text-lg text-on-surface font-medium">Cuisine 100% halal, normes d'hygiène strictes</span>
 </li>
 <li class="flex items-center gap-4 group">
 <span class="w-2 h-2 bg-secondary rounded-full group-hover:scale-150 transition-transform"></span>
-<span class="text-lg text-on-surface font-medium">Service attentif et personnalisé</span>
+<span class="text-lg text-on-surface font-medium">Accueil chaleureux, service attentionné</span>
 </li>
 <li class="flex items-center gap-4 group">
 <span class="w-2 h-2 bg-secondary rounded-full group-hover:scale-150 transition-transform"></span>
-<span class="text-lg text-on-surface font-medium">Ouverture garantie 07h00 – 23h00</span>
+<span class="text-lg text-on-surface font-medium">Ouvert 07h30 – Minuit, 7 jours sur 7</span>
 </li>
 </ul>
 </div>
@@ -300,36 +300,36 @@
 <div class="flex gap-6">
 <span class="text-4xl font-serif italic text-secondary/30">01</span>
 <div>
-<h4 class="font-bold text-lg mb-1">Une Boulangerie Vraiment Artisanale</h4>
-<p class="text-sm text-on-surface-variant">Ici, rien n'est décongelé. Le pain est né d'ici.</p>
+<h4 class="font-bold text-lg mb-1">Fait Maison, Chaque Matin</h4>
+<p class="text-sm text-on-surface-variant">Rien n'est décongelé. Pains, viennoiseries et pâtisseries naissent ici.</p>
 </div>
 </div>
 <div class="flex gap-6">
 <span class="text-4xl font-serif italic text-secondary/30">02</span>
 <div>
-<h4 class="font-bold text-lg mb-1">Le Brunch de Targa</h4>
-<p class="text-sm text-on-surface-variant">Le rendez-vous incontournable du weekend en famille.</p>
+<h4 class="font-bold text-lg mb-1">Brunch All-Day, 8 Formules</h4>
+<p class="text-sm text-on-surface-variant">De 09h à 15h, tous les jours. Express, Royal, London, Signature...</p>
 </div>
 </div>
 <div class="flex gap-6">
 <span class="text-4xl font-serif italic text-secondary/30">03</span>
 <div>
-<h4 class="font-bold text-lg mb-1">Livraison qui Arrive Vraiment</h4>
-<p class="text-sm text-on-surface-variant">Pain chaud livré à votre porte quand vous en avez besoin.</p>
+<h4 class="font-bold text-lg mb-1">Livraison Tout Marrakech</h4>
+<p class="text-sm text-on-surface-variant">Via Glovo ou WhatsApp, 10 DH, livré en 15 à 30 minutes.</p>
 </div>
 </div>
 <div class="flex gap-6">
 <span class="text-4xl font-serif italic text-secondary/30">04</span>
 <div>
-<h4 class="font-bold text-lg mb-1">Une Adresse Indépendante</h4>
-<p class="text-sm text-on-surface-variant">Pas une franchise, mais un cœur qui bat pour son quartier.</p>
+<h4 class="font-bold text-lg mb-1">Une Terrasse d'Exception</h4>
+<p class="text-sm text-on-surface-variant">Pergola, mur végétal, brumisateurs — un cadre unique à Targa.</p>
 </div>
 </div>
 <div class="flex gap-6">
 <span class="text-4xl font-serif italic text-secondary/30">05</span>
 <div>
-<h4 class="font-bold text-lg mb-1">Ouvert 7j/7</h4>
-<p class="text-sm text-on-surface-variant">Nous sommes là quand vous avez faim, tout simplement.</p>
+<h4 class="font-bold text-lg mb-1">Ouvert 7j/7 jusqu'à Minuit</h4>
+<p class="text-sm text-on-surface-variant">De 07h30 à 00h00, on est là. Mrhba bikom.</p>
 </div>
 </div>
 </div>
@@ -340,8 +340,8 @@
 <section class="max-w-7xl mx-auto px-8 mb-24">
 <div class="bg-secondary p-12 lg:p-24 rounded-3xl text-center text-on-secondary relative overflow-hidden ambient-shadow">
 <div class="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -translate-y-1/2 translate-x-1/2"></div>
-<h2 class="text-4xl lg:text-6xl font-serif mb-8 relative z-10">Venez nous rendre visite</h2>
-<p class="text-xl mb-12 opacity-90 max-w-2xl mx-auto relative z-10">Targa, Marrakech — À deux pas du rond-point principal.</p>
+<h2 class="text-4xl lg:text-6xl font-serif mb-8 relative z-10">On vous attend à Targa</h2>
+<p class="text-xl mb-12 opacity-90 max-w-2xl mx-auto relative z-10">890 Lotissement Nakhil 2, Targa, Marrakech — Parking disponible, ouvert 7j/7.</p>
 <div class="flex flex-col sm:flex-row gap-6 justify-center relative z-10">
 <a class="bg-on-secondary text-secondary px-10 py-4 rounded-lg font-bold text-lg hover:scale-105 transition-transform flex items-center justify-center gap-3" href="https://wa.me/212764745159">
 <span class="material-symbols-outlined" data-icon="chat">chat</span>
@@ -361,7 +361,7 @@
     <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
       <div>
         <span class="font-headline text-2xl font-bold text-white mb-5 block">Crusthy'lia</span>
-        <p class="text-white/60 font-body text-sm leading-relaxed mb-6" data-i18n="footer_tagline">Votre escale artisanale à Targa, Marrakech. Boulangerie, pâtisserie, café et restaurant unis par la passion du goût.</p>
+        <p class="text-white/60 font-body text-sm leading-relaxed mb-6" data-i18n="footer_tagline">Boulangerie Pâtisserie Café Restaurant à Targa, Marrakech. Le rendez-vous des gourmands, 7j/7 de 07h30 à minuit.</p>
         <div class="flex gap-4">
           <a href="https://www.instagram.com/crusthylia/" target="_blank" rel="noopener noreferrer" class="text-white/60 hover:text-white transition-colors" aria-label="Instagram">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
@@ -384,7 +384,7 @@
       <div>
         <h3 class="font-label uppercase tracking-widest text-xs font-bold text-white/40 mb-6" data-i18n="footer_contact_title">Nous trouver</h3>
         <address class="not-italic font-body text-sm text-white/60 space-y-2">
-          <p data-i18n="footer_address">Galerie Marchande Targa, Marrakech 40000</p>
+          <p data-i18n="footer_address">890 Lotissement Nakhil 2, Targa, Marrakech 40000</p>
           <p><a href="https://wa.me/212764745159" class="hover:text-white transition-colors" data-i18n="footer_whatsapp">WhatsApp</a></p>
           <p><a href="https://www.instagram.com/crusthylia/" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">@crusthylia</a></p>
         </address>
@@ -392,7 +392,7 @@
     </div>
     <div class="border-t border-white/10 pt-6 flex flex-col md:flex-row justify-between items-center gap-3">
       <p class="text-white/30 font-body text-xs" data-i18n="footer_copyright">&copy; 2026 Crusthy'lia. Tous droits réservés.</p>
-      <p class="text-white/20 font-body text-xs" data-i18n="footer_crafted">Artisanat &amp; passion, Marrakech.</p>
+      <p class="text-white/20 font-body text-xs" data-i18n="footer_crafted">Fait maison avec passion, Marrakech.</p>
     </div>
   </div>
 </footer>

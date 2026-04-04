@@ -20,22 +20,22 @@
 <script>
   tailwind.config = { theme: { extend: {
     colors: {
-      "primary": "#36180c", "primary-container": "#4f2d1f",
-      "secondary": "#246b44", "secondary-container": "#aaf3c1",
-      "tertiary": "#470027", "tertiary-container": "#63183d",
-      "surface": "#fff8ef", "surface-container-low": "#fcf3df",
-      "surface-container": "#f6edd9", "surface-container-high": "#f0e7d4",
-      "surface-container-highest": "#eae2ce", "surface-container-lowest": "#ffffff",
-      "on-surface": "#1f1b0f", "on-surface-variant": "#51443f",
+      "primary": "#9c1d50", "primary-container": "#5a102e",
+      "secondary": "#ce8f3f", "secondary-container": "#f4e9d8",
+      "tertiary": "#664187", "tertiary-container": "#8a5aab",
+      "surface": "#f9f2f5", "surface-container-low": "#fdf8fa",
+      "surface-container": "#f9f2f5", "surface-container-high": "#f3ebee",
+      "surface-container-highest": "#ede4e8", "surface-container-lowest": "#ffffff",
+      "on-surface": "#000000", "on-surface-variant": "#5a4550",
       "on-primary": "#ffffff", "on-secondary": "#ffffff",
-      "outline": "#83746f", "outline-variant": "#d5c3bc",
-      "background": "#fff8ef", "on-background": "#1f1b0f",
-      "inverse-surface": "#343023", "surface-dim": "#e2d9c6",
-      "surface-tint": "#7d5544", "secondary-fixed-dim": "#8fd6a6",
-      "on-primary-container": "#c49381", "on-secondary-container": "#2b7149",
-      "on-tertiary-container": "#e280a8", "primary-fixed-dim": "#f0bba6",
-      "secondary-fixed": "#aaf3c1", "on-tertiary": "#ffffff",
-      "tertiary-fixed": "#ffd9e4", "tertiary-fixed-dim": "#ffb0cd"
+      "outline": "#8a7580", "outline-variant": "#d5c0cc",
+      "background": "#ffffff", "on-background": "#000000",
+      "inverse-surface": "#2d2d2d", "surface-dim": "#e8dde2",
+      "surface-tint": "#9c1d50", "secondary-fixed-dim": "#d4a864",
+      "on-primary-container": "#d4708e", "on-secondary-container": "#8a6830",
+      "on-tertiary-container": "#b89ccc", "primary-fixed-dim": "#d4708e",
+      "secondary-fixed": "#f4e9d8", "on-tertiary": "#ffffff",
+      "tertiary-fixed": "#e8d4f0", "tertiary-fixed-dim": "#c4a0d8"
     },
     fontFamily: { "headline": ["Noto Serif"], "body": ["Manrope"], "label": ["Manrope"] },
     borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
@@ -52,7 +52,7 @@
 </head>
 <body class="bg-background text-on-background font-body selection:bg-secondary-container selection:text-on-secondary-container">
 <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[100] focus:bg-secondary focus:text-on-secondary focus:px-4 focus:py-2 focus:rounded-lg">Aller au contenu</a>
-<nav class="fixed top-0 w-full z-50 bg-[#fff8ef]/85 backdrop-blur-md border-b border-outline-variant/20" id="site-nav" role="navigation" aria-label="Navigation principale">
+<nav class="fixed top-0 w-full z-50 bg-[#ffffff]/85 backdrop-blur-md border-b border-outline-variant/20" id="site-nav" role="navigation" aria-label="Navigation principale">
   <div class="flex justify-between items-center w-full px-6 md:px-10 py-4 max-w-7xl mx-auto">
     <a href="homepage.html" class="flex items-center gap-2" aria-label="Crusthy'lia — Accueil">
       <span class="font-headline text-2xl font-bold tracking-tight text-primary">Crusthy'lia</span>
@@ -73,7 +73,7 @@
       </button>
     </div>
   </div>
-  <div class="md:hidden hidden bg-[#fff8ef] border-t border-outline-variant/20 px-6 py-6 flex flex-col gap-4" id="mobile-menu">
+  <div class="md:hidden hidden bg-[#ffffff] border-t border-outline-variant/20 px-6 py-6 flex flex-col gap-4" id="mobile-menu">
     <a href="menu.html" class="text-base font-label font-medium text-on-surface py-2" data-i18n="nav_menu">Menu</a>
     <a href="brunch.html" class="text-base font-label font-bold text-secondary py-2" data-i18n="nav_brunch">Brunch</a>
     <a href="about.html" class="text-base font-label font-medium text-on-surface py-2" data-i18n="nav_about">Notre Histoire</a>
@@ -89,11 +89,10 @@
 <div class="w-full md:w-1/2 z-10">
 <p class="font-label text-secondary uppercase tracking-[0.2em] font-semibold mb-4">Targa, Marrakech</p>
 <h1 class="font-headline text-5xl md:text-7xl text-primary leading-[1.1] mb-6">
-                        Brunch à Marrakech — <span class="italic text-tertiary">Crusthy'lia</span>, le Meilleur Brunch de Targa
+                        Le Brunch <span class="italic text-tertiary">Crusthy'lia</span> — Tous les jours de 09h à 15h
                     </h1>
 <p class="text-xl text-on-surface-variant max-w-xl mb-10 leading-relaxed">
-                        Formules Parisien, Norvégien et Américain dès MAD 65. <br class="hidden md:block"/>
-                        Chaque samedi et dimanche de 09h à 14h.
+                        8 formules du monde entier, de 80 à 150 DH. Express, Royal, London, Turkish, Norvégien, Espagnol, Americano et notre Signature — il y en a pour tous les goûts.
                     </p>
 <div class="flex flex-col sm:flex-row gap-4">
 <a href="https://wa.me/212764745159?text=Commande%20Brunch%20Crusthy%27lia" target="_blank" rel="noopener noreferrer" class="bg-secondary text-on-secondary px-8 py-4 rounded-xl font-semibold flex items-center justify-center gap-2 hover:opacity-90 transition-opacity tonal-layering-shadow">
@@ -110,8 +109,8 @@
 <img alt="Table de brunch chez Crusthy'lia — viennoiseries fraîches, jus d'orange, toast avocat et saumon sur céramiques artisanales" class="w-full h-full object-cover" loading="eager" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD83Ivv2zGoAMRz1UjkS8QlsH2KDjjtAATo-vaqf58U-4LogyG8sOMXdo9FiMeihe-DHh2w_gwy4iOCnu6WujEGs3UWOwLkvTGe3AJ4XvTq0kaAM1xYlPDibvweEB0Z90CO3uTsXcrkoAKsxlr17O3VYOGNKZKf5xNZBpENkR2IZqDhs6_NT_FU1BogYFuVGYDC5kZpCGlLBP_-cpe0OH-NRXYSG6DxOOE2Uqisi5PnnalthpA31XqsJdZVGWqh-jFlSHUDfrjP5cKg"/>
 </div>
 <div class="absolute -bottom-6 -left-6 bg-surface-container-lowest p-6 rounded-xl tonal-layering-shadow hidden md:block">
-<p class="text-tertiary font-headline italic text-2xl">L'Art du Pain</p>
-<p class="text-sm font-label tracking-widest text-outline">MARRAKECH TARGA</p>
+<p class="text-tertiary font-headline italic text-2xl">Fait maison</p>
+<p class="text-sm font-label tracking-widest text-outline">TOUS LES JOURS</p>
 </div>
 </div>
 </div>
@@ -120,11 +119,11 @@
 <section class="py-24 px-8 md:px-16 bg-surface-container-low">
 <div class="max-w-7xl mx-auto flex flex-col md:flex-row gap-20 items-start">
 <div class="w-full md:w-5/12 space-y-8">
-<h2 class="font-headline text-4xl text-primary leading-tight">Le brunch, comme on l'aime à Marrakech</h2>
+<h2 class="font-headline text-4xl text-primary leading-tight">Un brunch pour chaque envie, chaque matin</h2>
 <div class="space-y-6 text-lg text-on-surface-variant leading-relaxed">
-<p>Au cœur de Targa, Crusthylia réinvente le rituel du week-end. Notre approche est simple : le respect du produit brut et l'excellence de la boulangerie artisanale. Chaque samedi et dimanche, nous transformons notre fournil en une table généreuse où les parfums du café fraîchement torréfié se mêlent à l'odeur du pain chaud.</p>
-<p>Que vous soyez en quête de la sophistication d'un brunch norvégien au saumon ou de la gourmandise réconfortante de nos pancakes américains, chaque ingrédient est sélectionné avec soin. Nos œufs proviennent de fermes locales et nos jus sont pressés à la minute.</p>
-<p>Plus qu'un repas, c'est une parenthèse enchantée dans votre semaine. Une invitation à ralentir, à partager et à savourer le moment présent dans un cadre où l'élégance du design rencontre la chaleur du foyer.</p>
+<p>Chez Crusthy'lia, le brunch n'attend pas le week-end. Tous les jours de 09h à 15h, nous vous accueillons avec huit formules pensées pour satisfaire toutes les envies — du petit-déjeuner Express pour les pressés au Brunch Signature pour les gourmands sans compromis.</p>
+<p>Chaque formule est préparée avec des produits frais et locaux, dans la pure tradition du fait maison. Viennoiseries croustillantes sorties du fournil, œufs de fermes voisines, saumon fumé, pancakes moelleux, pain au levain — la cuisine de nos mères, servie avec élégance.</p>
+<p>Que vous rêviez d'un English Breakfast copieux, d'un brunch méditerranéen à la turque ou d'une assiette scandinave au saumon et avocat, notre carte voyage pour vous. Compatible avec tous les goûts, tous les appétits, tous les matins.</p>
 </div>
 </div>
 <div class="w-full md:w-7/12 mt-12 md:mt-24">
@@ -289,9 +288,9 @@
 </section>
 <!-- SEO Section -->
 <section class="py-24 px-8 md:px-16 max-w-4xl mx-auto text-center border-b border-outline/5">
-<h2 class="font-headline text-3xl text-primary mb-6">Best Brunch in Marrakech — Crusthy'lia at Targa</h2>
+<h2 class="font-headline text-3xl text-primary mb-6">Meilleur Brunch à Marrakech — Crusthy'lia à Targa</h2>
 <p class="text-on-surface-variant leading-relaxed text-lg">
-                Discover the ultimate culinary destination in Marrakech's Targa district. Crusthy'lia offers a premium brunch experience blending artisanal French bakery traditions with modern gastronomy. From sourdough breads and delicate viennoiseries to fresh salmon bagels and fluffy pancakes, our weekend brunch is designed for food lovers seeking quality and authenticity in Morocco. Join us every Saturday and Sunday for a refined meal in a contemporary yet cozy atmosphere.
+                Crusthy'lia vous invite à découvrir le brunch incontournable du quartier Targa à Marrakech. Servi tous les jours de 09h à 15h, notre brunch mêle tradition boulangère artisanale et gastronomie moderne. Pains au levain, viennoiseries feuilletées, bagels au saumon, pancakes moelleux — 8 formules de 80 à 150 DH pour satisfaire toutes les envies. Rejoignez-nous sur notre terrasse sous la pergola bioclimatique pour un moment gourmand en plein air, au calme de Targa.
             </p>
 </section>
 <!-- FAQ Brunch -->
@@ -354,7 +353,7 @@
                         Réserver en ligne
 </a>
 </div>
-<div class="absolute inset-0 bg-[linear-gradient(45deg,#36180c_0%,#4f2d1f_100%)] opacity-50"></div>
+<div class="absolute inset-0 bg-[linear-gradient(45deg,#9c1d50_0%,#5a102e_100%)] opacity-50"></div>
 </div>
 </section>
 </main>

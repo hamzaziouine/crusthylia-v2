@@ -18,22 +18,22 @@
   <script>
     tailwind.config = { theme: { extend: {
       colors: {
-        "primary": "#36180c", "primary-container": "#4f2d1f",
-        "secondary": "#246b44", "secondary-container": "#aaf3c1",
-        "tertiary": "#470027", "tertiary-container": "#63183d",
-        "surface": "#fff8ef", "surface-container-low": "#fcf3df",
-        "surface-container": "#f6edd9", "surface-container-high": "#f0e7d4",
-        "surface-container-highest": "#eae2ce", "surface-container-lowest": "#ffffff",
-        "on-surface": "#1f1b0f", "on-surface-variant": "#51443f",
+        "primary": "#9c1d50", "primary-container": "#5a102e",
+        "secondary": "#ce8f3f", "secondary-container": "#f4e9d8",
+        "tertiary": "#664187", "tertiary-container": "#8a5aab",
+        "surface": "#f9f2f5", "surface-container-low": "#fdf8fa",
+        "surface-container": "#f9f2f5", "surface-container-high": "#f3ebee",
+        "surface-container-highest": "#ede4e8", "surface-container-lowest": "#ffffff",
+        "on-surface": "#000000", "on-surface-variant": "#5a4550",
         "on-primary": "#ffffff", "on-secondary": "#ffffff",
-        "outline": "#83746f", "outline-variant": "#d5c3bc",
-        "background": "#fff8ef", "on-background": "#1f1b0f",
-        "inverse-surface": "#343023", "surface-dim": "#e2d9c6",
-        "surface-tint": "#7d5544", "secondary-fixed-dim": "#8fd6a6",
-        "on-primary-container": "#c49381", "on-secondary-container": "#2b7149",
-        "on-tertiary-container": "#e280a8", "primary-fixed-dim": "#f0bba6",
-        "secondary-fixed": "#aaf3c1", "on-tertiary": "#ffffff",
-        "tertiary-fixed": "#ffd9e4", "tertiary-fixed-dim": "#ffb0cd"
+        "outline": "#8a7580", "outline-variant": "#d5c0cc",
+        "background": "#ffffff", "on-background": "#000000",
+        "inverse-surface": "#2d2d2d", "surface-dim": "#e8dde2",
+        "surface-tint": "#9c1d50", "secondary-fixed-dim": "#d4a864",
+        "on-primary-container": "#d4708e", "on-secondary-container": "#8a6830",
+        "on-tertiary-container": "#b89ccc", "primary-fixed-dim": "#d4708e",
+        "secondary-fixed": "#f4e9d8", "on-tertiary": "#ffffff",
+        "tertiary-fixed": "#e8d4f0", "tertiary-fixed-dim": "#c4a0d8"
       },
       fontFamily: { "headline": ["Noto Serif"], "body": ["Manrope"], "label": ["Manrope"] },
       borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
@@ -60,9 +60,9 @@
   </script>
   <style>
     .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
-    .page-loader { position:fixed; inset:0; background:#fff8ef; z-index:9999; display:flex; align-items:center; justify-content:center; flex-direction:column; gap:1rem; transition:opacity 0.5s ease, visibility 0.5s ease; }
+    .page-loader { position:fixed; inset:0; background:#ffffff; z-index:9999; display:flex; align-items:center; justify-content:center; flex-direction:column; gap:1rem; transition:opacity 0.5s ease, visibility 0.5s ease; }
     .page-loader.hidden { opacity:0; visibility:hidden; }
-    .loader-spinner { width:36px; height:36px; border:3px solid #d5c3bc; border-top-color:#36180c; border-radius:50%; animation:spin 0.8s linear infinite; }
+    .loader-spinner { width:36px; height:36px; border:3px solid #d5c0cc; border-top-color:#9c1d50; border-radius:50%; animation:spin 0.8s linear infinite; }
     @keyframes spin { to { transform:rotate(360deg); } }
     .reveal { opacity:0; transform:translateY(28px); transition:opacity 0.7s ease, transform 0.7s ease; }
     .reveal.visible { opacity:1; transform:none; }
@@ -74,17 +74,17 @@
       line-height: 1;
       margin-top: 0.1rem;
       margin-right: 0.5rem;
-      color: #36180c;
+      color: #9c1d50;
       font-weight: 700;
     }
     /* Article typography */
     .article-body p { margin-bottom: 1.75rem; font-size: 1.125rem; line-height: 1.85; }
-    .article-body h2 { font-family: 'Noto Serif', serif; color: #36180c; font-size: 1.75rem; font-weight: 600; margin-top: 3rem; margin-bottom: 1.25rem; line-height: 1.25; }
-    .article-body h3 { font-family: 'Noto Serif', serif; color: #36180c; font-size: 1.25rem; font-weight: 600; margin-top: 2rem; margin-bottom: 0.75rem; }
-    .article-body blockquote { border-left: 4px solid #246b44; padding: 1rem 1.5rem; margin: 2.5rem 0; background: #fcf3df; border-radius: 0 12px 12px 0; font-family: 'Noto Serif', serif; font-style: italic; font-size: 1.2rem; color: #36180c; line-height: 1.6; }
+    .article-body h2 { font-family: 'Noto Serif', serif; color: #9c1d50; font-size: 1.75rem; font-weight: 600; margin-top: 3rem; margin-bottom: 1.25rem; line-height: 1.25; }
+    .article-body h3 { font-family: 'Noto Serif', serif; color: #9c1d50; font-size: 1.25rem; font-weight: 600; margin-top: 2rem; margin-bottom: 0.75rem; }
+    .article-body blockquote { border-left: 4px solid #ce8f3f; padding: 1rem 1.5rem; margin: 2.5rem 0; background: #fdf8fa; border-radius: 0 12px 12px 0; font-family: 'Noto Serif', serif; font-style: italic; font-size: 1.2rem; color: #9c1d50; line-height: 1.6; }
     .article-body ul { margin: 1.5rem 0 2rem; list-style: none; padding: 0; }
     .article-body ul li { display: flex; align-items: flex-start; gap: 1rem; margin-bottom: 0.875rem; font-size: 1.0625rem; line-height: 1.75; }
-    .article-body ul li::before { content: ''; flex-shrink: 0; width: 8px; height: 8px; background: #36180c; transform: rotate(45deg); margin-top: 0.6em; }
+    .article-body ul li::before { content: ''; flex-shrink: 0; width: 8px; height: 8px; background: #9c1d50; transform: rotate(45deg); margin-top: 0.6em; }
     /* Related card hover */
     .related-card { transition: box-shadow 0.3s ease, transform 0.3s ease; }
     .related-card:hover { box-shadow: 0 20px 48px rgba(31,27,15,0.08); transform: translateY(-2px); }
@@ -101,12 +101,12 @@
   <!-- Page Loader -->
   <div class="page-loader" id="page-loader" aria-hidden="true">
     <img src="/assets/images/logo-crusthylia.png" alt="Crusthy'lia" style="height:52px; object-fit:contain;">
-    <p style="font-family:'Manrope',sans-serif; font-size:0.8rem; letter-spacing:0.18em; color:#83746f; text-transform:uppercase;" data-i18n="loader_slogan">Le rendez-vous des gourmands</p>
+    <p style="font-family:'Manrope',sans-serif; font-size:0.8rem; letter-spacing:0.18em; color:#8a7580; text-transform:uppercase;" data-i18n="loader_slogan">Le rendez-vous des gourmands</p>
     <div class="loader-spinner"></div>
   </div>
 
   <!-- Navigation -->
-  <nav class="fixed top-0 w-full z-50 bg-[#fff8ef]/85 backdrop-blur-md border-b border-outline-variant/20" id="site-nav" role="navigation" aria-label="Navigation principale">
+  <nav class="fixed top-0 w-full z-50 bg-[#ffffff]/85 backdrop-blur-md border-b border-outline-variant/20" id="site-nav" role="navigation" aria-label="Navigation principale">
     <div class="flex justify-between items-center w-full px-6 md:px-10 py-4 max-w-7xl mx-auto">
       <a href="/" class="flex items-center gap-2" aria-label="Crusthy'lia — Accueil">
         <img src="/assets/images/logo-crusthylia.png" alt="Crusthy'lia" style="height:36px; object-fit:contain;">
@@ -128,7 +128,7 @@
       </div>
     </div>
     <!-- Mobile Menu -->
-    <div class="md:hidden hidden bg-[#fff8ef] border-t border-outline-variant/20 px-6 py-6 flex flex-col gap-4" id="mobile-menu">
+    <div class="md:hidden hidden bg-[#ffffff] border-t border-outline-variant/20 px-6 py-6 flex flex-col gap-4" id="mobile-menu">
       <a href="/menu.html" class="text-base font-label font-medium text-on-surface py-2" data-i18n="nav_menu">Menu</a>
       <a href="/brunch.html" class="text-base font-label font-medium text-on-surface py-2" data-i18n="nav_brunch">Brunch</a>
       <a href="/about.html" class="text-base font-label font-medium text-on-surface py-2" data-i18n="nav_about">Notre Histoire</a>
@@ -484,7 +484,7 @@
 
     // Reading progress bar (optional enhancement)
     const progressBar = document.createElement('div');
-    progressBar.style.cssText = 'position:fixed;top:0;left:0;height:2px;background:#246b44;z-index:9998;transition:width 0.1s linear;width:0;';
+    progressBar.style.cssText = 'position:fixed;top:0;left:0;height:2px;background:#ce8f3f;z-index:9998;transition:width 0.1s linear;width:0;';
     document.body.prepend(progressBar);
     window.addEventListener('scroll', () => {
       const scrolled = window.scrollY;

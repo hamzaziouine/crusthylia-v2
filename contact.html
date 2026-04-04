@@ -20,22 +20,22 @@
 <script>
   tailwind.config = { theme: { extend: {
     colors: {
-      "primary": "#36180c", "primary-container": "#4f2d1f",
-      "secondary": "#246b44", "secondary-container": "#aaf3c1",
-      "tertiary": "#470027", "tertiary-container": "#63183d",
-      "surface": "#fff8ef", "surface-container-low": "#fcf3df",
-      "surface-container": "#f6edd9", "surface-container-high": "#f0e7d4",
-      "surface-container-highest": "#eae2ce", "surface-container-lowest": "#ffffff",
-      "on-surface": "#1f1b0f", "on-surface-variant": "#51443f",
+      "primary": "#9c1d50", "primary-container": "#5a102e",
+      "secondary": "#ce8f3f", "secondary-container": "#f4e9d8",
+      "tertiary": "#664187", "tertiary-container": "#8a5aab",
+      "surface": "#f9f2f5", "surface-container-low": "#fdf8fa",
+      "surface-container": "#f9f2f5", "surface-container-high": "#f3ebee",
+      "surface-container-highest": "#ede4e8", "surface-container-lowest": "#ffffff",
+      "on-surface": "#000000", "on-surface-variant": "#5a4550",
       "on-primary": "#ffffff", "on-secondary": "#ffffff",
-      "outline": "#83746f", "outline-variant": "#d5c3bc",
-      "background": "#fff8ef", "on-background": "#1f1b0f",
-      "inverse-surface": "#343023", "surface-dim": "#e2d9c6",
-      "surface-tint": "#7d5544", "secondary-fixed-dim": "#8fd6a6",
-      "on-primary-container": "#c49381", "on-secondary-container": "#2b7149",
-      "on-tertiary-container": "#e280a8", "primary-fixed-dim": "#f0bba6",
-      "secondary-fixed": "#aaf3c1", "on-tertiary": "#ffffff",
-      "tertiary-fixed": "#ffd9e4", "tertiary-fixed-dim": "#ffb0cd"
+      "outline": "#8a7580", "outline-variant": "#d5c0cc",
+      "background": "#ffffff", "on-background": "#000000",
+      "inverse-surface": "#2d2d2d", "surface-dim": "#e8dde2",
+      "surface-tint": "#9c1d50", "secondary-fixed-dim": "#d4a864",
+      "on-primary-container": "#d4708e", "on-secondary-container": "#8a6830",
+      "on-tertiary-container": "#b89ccc", "primary-fixed-dim": "#d4708e",
+      "secondary-fixed": "#f4e9d8", "on-tertiary": "#ffffff",
+      "tertiary-fixed": "#e8d4f0", "tertiary-fixed-dim": "#c4a0d8"
     },
     fontFamily: { "headline": ["Noto Serif"], "body": ["Manrope"], "label": ["Manrope"] },
     borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
@@ -55,7 +55,7 @@
 </head>
 <body class="bg-background text-on-surface font-body selection:bg-secondary-container selection:text-on-secondary-container">
 <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[100] focus:bg-secondary focus:text-on-secondary focus:px-4 focus:py-2 focus:rounded-lg">Aller au contenu</a>
-<nav class="fixed top-0 w-full z-50 bg-[#fff8ef]/85 backdrop-blur-md border-b border-outline-variant/20" id="site-nav" role="navigation" aria-label="Navigation principale">
+<nav class="fixed top-0 w-full z-50 bg-[#ffffff]/85 backdrop-blur-md border-b border-outline-variant/20" id="site-nav" role="navigation" aria-label="Navigation principale">
   <div class="flex justify-between items-center w-full px-6 md:px-10 py-4 max-w-7xl mx-auto">
     <a href="homepage.html" class="flex items-center gap-2" aria-label="Crusthy'lia — Accueil">
       <span class="font-headline text-2xl font-bold tracking-tight text-primary">Crusthy'lia</span>
@@ -76,7 +76,7 @@
       </button>
     </div>
   </div>
-  <div class="md:hidden hidden bg-[#fff8ef] border-t border-outline-variant/20 px-6 py-6 flex flex-col gap-4" id="mobile-menu">
+  <div class="md:hidden hidden bg-[#ffffff] border-t border-outline-variant/20 px-6 py-6 flex flex-col gap-4" id="mobile-menu">
     <a href="menu.html" class="text-base font-label font-medium text-on-surface py-2" data-i18n="nav_menu">Menu</a>
     <a href="brunch.html" class="text-base font-label font-medium text-on-surface py-2" data-i18n="nav_brunch">Brunch</a>
     <a href="about.html" class="text-base font-label font-medium text-on-surface py-2" data-i18n="nav_about">Notre Histoire</a>
@@ -95,7 +95,7 @@
 <div class="relative z-10 max-w-4xl text-center">
 <h1 class="font-headline font-black text-primary text-5xl md:text-7xl mb-6 tracking-tight">Contactez-nous</h1>
 <p class="text-xl md:text-2xl text-on-surface-variant font-light max-w-3xl mx-auto leading-relaxed">
-                    Nous sommes disponibles tous les jours de 07h00 à 00h00 — par téléphone, WhatsApp, email ou en personne.
+                    Nous serions ravis de vous accueillir. Notre équipe est à votre écoute tous les jours de 07h30 à minuit — par téléphone, WhatsApp ou directement sur notre terrasse.
                 </p>
 </div>
 </section>
@@ -113,10 +113,10 @@
 <h3 class="font-headline text-2xl font-bold text-primary">WhatsApp</h3>
 </div>
 <p class="text-on-surface-variant mb-8 leading-relaxed">
-                            La façon la plus rapide de nous joindre — commandes, réservations, questions.
+                            Le moyen le plus rapide de nous joindre. Réservations, commandes spéciales, renseignements : nous vous répondons en quelques minutes.
                         </p>
 <a class="inline-flex items-center gap-3 bg-secondary text-on-secondary px-8 py-4 rounded-lg font-bold tracking-wide hover:opacity-95 transition-opacity cta-shadow" href="https://wa.me/212764745159" target="_blank" rel="noopener noreferrer">
-                            Ouvrir WhatsApp
+                            Discuter sur WhatsApp
                             <span class="material-symbols-outlined text-sm">arrow_forward</span>
 </a>
 </div>
@@ -142,20 +142,20 @@
 <span class="material-symbols-outlined text-secondary mb-3">schedule</span>
 <h4 class="font-bold text-primary mb-1">Horaires</h4>
 <div class="flex justify-between text-sm text-on-surface-variant">
-<span>Bakery &amp; Café :</span>
-<span class="font-semibold text-primary">07:00 – 00:00</span>
+<span>Boulangerie &amp; Café :</span>
+<span class="font-semibold text-primary">07h30 – 00h00</span>
 </div>
 <div class="flex justify-between text-sm text-on-surface-variant mt-1">
 <span>Restaurant :</span>
-<span class="font-semibold text-primary">12:00 – 23:00</span>
+<span class="font-semibold text-primary">12h00 – 23h00</span>
 </div>
 </div>
 </div>
 </div>
 <!-- Right Column: Contact Form -->
 <div class="lg:col-span-7 bg-surface-container-lowest p-10 md:p-14 rounded-2xl cta-shadow">
-<h2 class="font-headline text-3xl font-bold text-primary mb-2">Envoyez-nous un message</h2>
-<p class="text-on-surface-variant mb-10">Pour toute demande immédiate, nous recommandons l'utilisation de WhatsApp.</p>
+<h2 class="font-headline text-3xl font-bold text-primary mb-2">Laissez-nous un message</h2>
+<p class="text-on-surface-variant mb-10">Vous préférez écrire ? Remplissez le formulaire ci-dessous. Pour une réponse immédiate, privilégiez WhatsApp.</p>
 <form id="contact-form" class="grid grid-cols-1 md:grid-cols-2 gap-8">
 <div class="flex flex-col gap-2">
 <label for="contact-name" class="text-xs font-bold uppercase tracking-widest text-outline">Nom complet</label>
@@ -184,7 +184,7 @@
 </div>
 <div class="md:col-span-2 pt-4">
 <button type="submit" class="w-full bg-secondary text-on-secondary py-5 rounded-lg font-bold text-lg hover:opacity-95 transition-all cta-shadow">
-                                Envoyer le message
+                                Envoyer via WhatsApp
                             </button>
 </div>
 </form>
@@ -195,8 +195,8 @@
 <section class="max-w-7xl mx-auto px-8 mb-32">
 <div class="flex flex-col gap-8">
 <div class="flex justify-between items-end">
-<h2 class="font-headline text-4xl font-bold text-primary">Nous trouver à Targa, Marrakech</h2>
-<p class="hidden md:block text-on-surface-variant italic">Situé au cœur de Targa, un havre de paix gourmand.</p>
+<h2 class="font-headline text-4xl font-bold text-primary">Rendez-vous à Targa, Marrakech</h2>
+<p class="hidden md:block text-on-surface-variant italic">890 Lotissement Nakhil 2 — votre terrasse gourmande vous attend.</p>
 </div>
 <div class="aspect-video w-full rounded-3xl overflow-hidden bg-surface-container relative">
 <div class="absolute inset-0 bg-cover bg-center opacity-90 filter grayscale-[30%] contrast-[90%]" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCv2WvYZbHELiHz90lRxSnB5B64P9jAiS3URnz5QFL5ep5fH1dQVl0cLBxYJ_p1o6765kztacnQmeVRFT3vuNTp1Xk41UJ_2XVB_q-vgxGKeDavdaRaxU_hAbmA_TtQordHLxHO0Tq7qjNWnMmV1f3iQNN1QQvSJYQ_KRaliccd195znewJ0jIFRquvG-E50YR9oIq9pIoWnIki0nEIDfMtgX3_SP0YRLT-zhOHCtBF1Y3NhDsBg3rL3mpCtU7wziF6zQErQ184vbjQ')">
@@ -212,22 +212,22 @@
 <!-- Related Pages / Deep Links -->
 <section class="bg-surface-container-low py-24">
 <div class="max-w-7xl mx-auto px-8 text-center">
-<h3 class="font-headline text-3xl font-bold text-primary mb-12">Continuer l'expérience</h3>
+<h3 class="font-headline text-3xl font-bold text-primary mb-12">Poursuivez l'expérience Crusthy'lia</h3>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
 <a class="group block p-10 bg-surface-container-lowest rounded-2xl hover:bg-primary transition-all duration-500" href="reservation.html">
 <span class="material-symbols-outlined text-secondary text-4xl mb-4 group-hover:text-surface">event_seat</span>
-<h4 class="font-headline text-xl font-bold text-primary mb-2 group-hover:text-surface">Réserver une Table</h4>
-<p class="text-on-surface-variant text-sm group-hover:text-surface/80">Vivez l'expérience du foyer en direct.</p>
+<h4 class="font-headline text-xl font-bold text-primary mb-2 group-hover:text-surface">Réserver une table</h4>
+<p class="text-on-surface-variant text-sm group-hover:text-surface/80">Installez-vous sur notre terrasse sous la pergola bioclimatique.</p>
 </a>
 <a class="group block p-10 bg-surface-container-lowest rounded-2xl hover:bg-primary transition-all duration-500" href="faq.html">
 <span class="material-symbols-outlined text-secondary text-4xl mb-4 group-hover:text-surface">help_outline</span>
 <h4 class="font-headline text-xl font-bold text-primary mb-2 group-hover:text-surface">FAQ</h4>
-<p class="text-on-surface-variant text-sm group-hover:text-surface/80">Des questions sur nos farines ou livraisons ?</p>
+<p class="text-on-surface-variant text-sm group-hover:text-surface/80">Horaires, réservations, allergies : tout est ici.</p>
 </a>
 <a class="group block p-10 bg-surface-container-lowest rounded-2xl hover:bg-primary transition-all duration-500" href="about.html">
 <span class="material-symbols-outlined text-secondary text-4xl mb-4 group-hover:text-surface">auto_stories</span>
 <h4 class="font-headline text-xl font-bold text-primary mb-2 group-hover:text-surface">Notre Histoire</h4>
-<p class="text-on-surface-variant text-sm group-hover:text-surface/80">De la terre au four : notre voyage artisanal.</p>
+<p class="text-on-surface-variant text-sm group-hover:text-surface/80">Une famille passionnée, un reve devenu realite en 2025.</p>
 </a>
 </div>
 </div>
@@ -257,7 +257,7 @@
       <div>
         <h3 class="font-label uppercase tracking-widest text-xs font-bold text-white/40 mb-6" data-i18n="footer_contact_title">Nous trouver</h3>
         <address class="not-italic font-body text-sm text-white/60 space-y-2">
-          <p data-i18n="footer_address">Galerie Marchande Targa, Marrakech 40000</p>
+          <p data-i18n="footer_address">890 Lotissement Nakhil 2, Targa, Marrakech 40000</p>
           <p><a href="https://wa.me/212764745159" class="hover:text-white transition-colors">WhatsApp</a></p>
           <p><a href="https://www.instagram.com/crusthylia/" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">@crusthylia</a></p>
         </address>

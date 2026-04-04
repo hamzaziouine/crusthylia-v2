@@ -20,22 +20,22 @@
 <script>
   tailwind.config = { theme: { extend: {
     colors: {
-      "primary": "#36180c", "primary-container": "#4f2d1f",
-      "secondary": "#246b44", "secondary-container": "#aaf3c1",
-      "tertiary": "#470027", "tertiary-container": "#63183d",
-      "surface": "#fff8ef", "surface-container-low": "#fcf3df",
-      "surface-container": "#f6edd9", "surface-container-high": "#f0e7d4",
-      "surface-container-highest": "#eae2ce", "surface-container-lowest": "#ffffff",
-      "on-surface": "#1f1b0f", "on-surface-variant": "#51443f",
+      "primary": "#9c1d50", "primary-container": "#5a102e",
+      "secondary": "#ce8f3f", "secondary-container": "#f4e9d8",
+      "tertiary": "#664187", "tertiary-container": "#8a5aab",
+      "surface": "#f9f2f5", "surface-container-low": "#fdf8fa",
+      "surface-container": "#f9f2f5", "surface-container-high": "#f3ebee",
+      "surface-container-highest": "#ede4e8", "surface-container-lowest": "#ffffff",
+      "on-surface": "#000000", "on-surface-variant": "#5a4550",
       "on-primary": "#ffffff", "on-secondary": "#ffffff",
-      "outline": "#83746f", "outline-variant": "#d5c3bc",
-      "background": "#fff8ef", "on-background": "#1f1b0f",
-      "inverse-surface": "#343023", "surface-dim": "#e2d9c6",
-      "surface-tint": "#7d5544", "secondary-fixed-dim": "#8fd6a6",
-      "on-primary-container": "#c49381", "on-secondary-container": "#2b7149",
-      "on-tertiary-container": "#e280a8", "primary-fixed-dim": "#f0bba6",
-      "secondary-fixed": "#aaf3c1", "on-tertiary": "#ffffff",
-      "tertiary-fixed": "#ffd9e4", "tertiary-fixed-dim": "#ffb0cd"
+      "outline": "#8a7580", "outline-variant": "#d5c0cc",
+      "background": "#ffffff", "on-background": "#000000",
+      "inverse-surface": "#2d2d2d", "surface-dim": "#e8dde2",
+      "surface-tint": "#9c1d50", "secondary-fixed-dim": "#d4a864",
+      "on-primary-container": "#d4708e", "on-secondary-container": "#8a6830",
+      "on-tertiary-container": "#b89ccc", "primary-fixed-dim": "#d4708e",
+      "secondary-fixed": "#f4e9d8", "on-tertiary": "#ffffff",
+      "tertiary-fixed": "#e8d4f0", "tertiary-fixed-dim": "#c4a0d8"
     },
     fontFamily: { "headline": ["Noto Serif"], "body": ["Manrope"], "label": ["Manrope"] },
     borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
@@ -47,7 +47,7 @@
             vertical-align: middle;
         }
         .hero-pattern {
-            background-image: radial-gradient(circle at 2px 2px, #36180c 1px, transparent 0);
+            background-image: radial-gradient(circle at 2px 2px, #9c1d50 1px, transparent 0);
             background-size: 40px 40px;
             opacity: 0.03;
         }
@@ -65,7 +65,7 @@
 </head>
 <body class="bg-background font-body text-on-surface selection:bg-secondary-container selection:text-on-secondary-container">
 <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[100] focus:bg-secondary focus:text-on-secondary focus:px-4 focus:py-2 focus:rounded-lg">Aller au contenu</a>
-<nav class="fixed top-0 w-full z-50 bg-[#fff8ef]/85 backdrop-blur-md border-b border-outline-variant/20" id="site-nav" role="navigation" aria-label="Navigation principale">
+<nav class="fixed top-0 w-full z-50 bg-[#ffffff]/85 backdrop-blur-md border-b border-outline-variant/20" id="site-nav" role="navigation" aria-label="Navigation principale">
   <div class="flex justify-between items-center w-full px-6 md:px-10 py-4 max-w-7xl mx-auto">
     <a href="homepage.html" class="flex items-center gap-2" aria-label="Crusthy'lia — Accueil">
       <span class="font-headline text-2xl font-bold tracking-tight text-primary">Crusthy'lia</span>
@@ -86,7 +86,7 @@
       </button>
     </div>
   </div>
-  <div class="md:hidden hidden bg-[#fff8ef] border-t border-outline-variant/20 px-6 py-6 flex flex-col gap-4" id="mobile-menu">
+  <div class="md:hidden hidden bg-[#ffffff] border-t border-outline-variant/20 px-6 py-6 flex flex-col gap-4" id="mobile-menu">
     <a href="menu.html" class="text-base font-label font-medium text-on-surface py-2" data-i18n="nav_menu">Menu</a>
     <a href="brunch.html" class="text-base font-label font-medium text-on-surface py-2" data-i18n="nav_brunch">Brunch</a>
     <a href="about.html" class="text-base font-label font-medium text-on-surface py-2" data-i18n="nav_about">Notre Histoire</a>
@@ -100,10 +100,10 @@
 <section class="relative py-24 px-8 overflow-hidden">
 <div class="absolute inset-0 hero-pattern pointer-events-none"></div>
 <div class="max-w-4xl mx-auto text-center relative z-10">
-<span class="font-label text-secondary tracking-[0.2em] uppercase text-xs font-bold mb-4 block">Artisanal Hearth &amp; Table</span>
-<h1 class="font-headline text-5xl md:text-6xl text-primary font-bold mb-8 leading-tight">Réserver une Table</h1>
+<span class="font-label text-secondary tracking-[0.2em] uppercase text-xs font-bold mb-4 block">Le rendez-vous des gourmands</span>
+<h1 class="font-headline text-5xl md:text-6xl text-primary font-bold mb-8 leading-tight">Réservez votre table</h1>
 <p class="text-on-surface-variant text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
-                    Brunch du week-end, déjeuner en famille, dîner entre amis, groupe de 6 ou privatisation complète — réservez en 30 secondes.
+                    Brunch en famille, déjeuner d'affaires, dîner entre amis ou soirée privée : réservez votre place sur notre terrasse en plein air, sous la pergola bioclimatique de Crusthy'lia. Minimum 6 personnes, jusqu'à 100 convives.
                 </p>
 </div>
 </section>
@@ -114,17 +114,17 @@
 <div class="flex-1">
 <div class="flex items-center gap-3 mb-4">
 <span class="material-symbols-outlined text-secondary text-3xl">chat</span>
-<h2 class="font-headline text-2xl text-primary font-bold">La façon la plus rapide</h2>
+<h2 class="font-headline text-2xl text-primary font-bold">Réservez en un clic</h2>
 </div>
-<p class="text-on-surface-variant mb-2">Précisez date, heure et nombre de personnes pour une confirmation instantanée.</p>
+<p class="text-on-surface-variant mb-2">Indiquez votre date, l'heure souhaitée et le nombre de convives. Notre équipe vous confirme en quelques minutes.</p>
 <p class="text-sm font-medium text-secondary/80 flex items-center gap-2">
 <span class="material-symbols-outlined text-sm">bolt</span>
-                            Temps de réponse moyen : 2 minutes
+                            Confirmation rapide via WhatsApp
                         </p>
 </div>
 <a class="bg-secondary text-on-secondary px-8 py-4 rounded-xl font-bold flex items-center gap-3 hover:opacity-95 transition-all active:scale-[0.98] ambient-shadow" href="https://wa.me/212764745159?text=Bonjour%2C%20je%20souhaite%20r%C3%A9server%20une%20table%20chez%20Crusthy%27lia." target="_blank" rel="noopener noreferrer">
 <span class="material-symbols-outlined">send</span>
-                        Je souhaite réserver une table…
+                        Réserver via WhatsApp
                     </a>
 </div>
 </div>
@@ -135,27 +135,27 @@
 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
 <div class="p-8 rounded-xl bg-surface-container border border-outline-variant/5 transition-all hover:bg-surface-container-high">
 <span class="material-symbols-outlined text-primary mb-4 block">sunny</span>
-<h3 class="font-headline text-xl text-primary font-bold mb-2">Brunch</h3>
-<p class="text-on-surface-variant font-label text-sm">07:00 – 14:00</p>
-<p class="mt-4 text-xs text-on-surface/60 italic leading-relaxed">Le réveil gourmand de Targa avec nos pâtisseries fraîches.</p>
+<h3 class="font-headline text-xl text-primary font-bold mb-2">Petit-déjeuner &amp; Brunch</h3>
+<p class="text-on-surface-variant font-label text-sm">07h30 – 14h00</p>
+<p class="mt-4 text-xs text-on-surface/60 italic leading-relaxed">Viennoiseries maison, jus frais et formules brunch sur la terrasse.</p>
 </div>
 <div class="p-8 rounded-xl bg-surface-container border border-outline-variant/5 transition-all hover:bg-surface-container-high">
 <span class="material-symbols-outlined text-primary mb-4 block">restaurant</span>
 <h3 class="font-headline text-xl text-primary font-bold mb-2">Déjeuner</h3>
-<p class="text-on-surface-variant font-label text-sm">12:00 – 15:00</p>
-<p class="mt-4 text-xs text-on-surface/60 italic leading-relaxed">Cuisine de saison et grillades au feu de bois.</p>
+<p class="text-on-surface-variant font-label text-sm">12h00 – 15h00</p>
+<p class="mt-4 text-xs text-on-surface/60 italic leading-relaxed">Plats de saison, grillades et salades sous le mur végétal.</p>
 </div>
 <div class="p-8 rounded-xl bg-surface-container border border-outline-variant/5 transition-all hover:bg-surface-container-high">
 <span class="material-symbols-outlined text-primary mb-4 block">bedtime</span>
 <h3 class="font-headline text-xl text-primary font-bold mb-2">Dîner</h3>
-<p class="text-on-surface-variant font-label text-sm">19:00 – 23:00</p>
-<p class="mt-4 text-xs text-on-surface/60 italic leading-relaxed">Ambiance tamisée et partage au cœur du foyer.</p>
+<p class="text-on-surface-variant font-label text-sm">19h00 – 23h00</p>
+<p class="mt-4 text-xs text-on-surface/60 italic leading-relaxed">Ambiance tamisée, éclairage LED et néon Crusthy'lia en toile de fond.</p>
 </div>
 <div class="p-8 rounded-xl bg-surface-container border border-outline-variant/5 transition-all hover:bg-surface-container-high">
 <span class="material-symbols-outlined text-primary mb-4 block">groups</span>
-<h3 class="font-headline text-xl text-primary font-bold mb-2">Groupes 6+</h3>
-<p class="text-on-surface-variant font-label text-sm">Sur mesure</p>
-<p class="mt-4 text-xs text-on-surface/60 italic leading-relaxed">Réservation à l'avance obligatoire pour un service parfait.</p>
+<h3 class="font-headline text-xl text-primary font-bold mb-2">Groupes (6 à 100)</h3>
+<p class="text-on-surface-variant font-label text-sm">Sur réservation</p>
+<p class="mt-4 text-xs text-on-surface/60 italic leading-relaxed">Réservation obligatoire à partir de 6 personnes. Privatisation possible jusqu'à 100 convives.</p>
 </div>
 </div>
 </div>
@@ -168,7 +168,7 @@
 <span class="material-symbols-outlined text-9xl">menu_book</span>
 </div>
 <div class="mb-12">
-<h2 class="font-headline text-3xl text-primary font-bold mb-4">Détails de la réservation</h2>
+<h2 class="font-headline text-3xl text-primary font-bold mb-4">Complétez votre réservation</h2>
 <div class="h-1 w-20 bg-secondary rounded-full"></div>
 </div>
 <form id="reservation-form" class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-10">
@@ -216,7 +216,7 @@
 <!-- Nombre de personnes -->
 <div class="flex flex-col gap-2">
 <label for="res-convives" class="font-label text-xs font-bold uppercase tracking-widest text-outline">Nombre de convives</label>
-<input id="res-convives" name="convives" class="bg-transparent border-0 border-b border-outline-variant/40 py-3 px-0 focus:ring-0 focus:border-secondary transition-all outline-none" max="50" min="1" type="number" value="2"/>
+<input id="res-convives" name="convives" class="bg-transparent border-0 border-b border-outline-variant/40 py-3 px-0 focus:ring-0 focus:border-secondary transition-all outline-none" max="100" min="6" type="number" value="6"/>
 </div>
 <!-- Type de repas -->
 <div class="flex flex-col gap-2">
@@ -232,15 +232,15 @@
 <!-- Informations complémentaires -->
 <div class="flex flex-col gap-2 md:col-span-2">
 <label for="res-infos" class="font-label text-xs font-bold uppercase tracking-widest text-outline">Informations complémentaires</label>
-<textarea id="res-infos" name="infos" class="bg-transparent border-0 border-b border-outline-variant/40 py-3 px-0 focus:ring-0 focus:border-secondary transition-all outline-none resize-none" placeholder="Allergies, préférences de table (terrasse/intérieur)..." rows="3"></textarea>
+<textarea id="res-infos" name="infos" class="bg-transparent border-0 border-b border-outline-variant/40 py-3 px-0 focus:ring-0 focus:border-secondary transition-all outline-none resize-none" placeholder="Allergies, occasion spéciale, préférences de placement sur la terrasse..." rows="3"></textarea>
 </div>
 <div class="md:col-span-2 pt-6">
 <button class="w-full bg-secondary text-on-secondary px-8 py-5 rounded-xl font-bold flex items-center justify-center gap-3 hover:shadow-lg transition-all active:scale-[0.99] ambient-shadow" type="submit">
 <span class="material-symbols-outlined" data-weight="fill">chat</span>
-                                Réserver via WhatsApp
+                                Confirmer via WhatsApp
                             </button>
 <p class="text-center text-xs text-on-surface-variant mt-6 leading-relaxed">
-                                En cliquant, vous serez redirigé vers WhatsApp avec un message pré-rempli pour finaliser votre réservation.
+                                Vous serez redirigé vers WhatsApp avec un message pré-rempli. Notre équipe vous confirmera votre table dans les meilleurs délais.
                             </p>
 </div>
 </form>
@@ -251,15 +251,15 @@
 <section class="py-20 px-8 bg-surface-container">
 <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8 text-center md:text-left">
 <div>
-<h3 class="font-headline text-3xl text-primary font-bold mb-2">Envie de voir le menu avant de réserver ?</h3>
-<p class="text-on-surface-variant">Découvrez nos créations saisonnières et nos formules exclusives.</p>
+<h3 class="font-headline text-3xl text-primary font-bold mb-2">Consultez notre carte avant de réserver</h3>
+<p class="text-on-surface-variant">Parcourez nos créations artisanales, nos formules brunch et nos plats de saison.</p>
 </div>
 <div class="flex flex-wrap gap-4 justify-center">
 <a href="menu.html" class="bg-primary text-on-primary px-8 py-4 rounded-xl font-bold hover:opacity-90 transition-all active:scale-[0.98]">
-                        Voir le menu
+                        Découvrir la carte
                     </a>
 <a href="brunch.html" class="bg-transparent border-2 border-primary/10 text-primary px-8 py-4 rounded-xl font-bold hover:bg-primary/5 transition-all active:scale-[0.98]">
-                        Formules brunch
+                        Nos formules brunch
                     </a>
 </div>
 </div>
@@ -289,7 +289,7 @@
       <div>
         <h3 class="font-label uppercase tracking-widest text-xs font-bold text-white/40 mb-6" data-i18n="footer_contact_title">Nous trouver</h3>
         <address class="not-italic font-body text-sm text-white/60 space-y-2">
-          <p data-i18n="footer_address">Galerie Marchande Targa, Marrakech 40000</p>
+          <p data-i18n="footer_address">890 Lotissement Nakhil 2, Targa, Marrakech 40000</p>
           <p><a href="https://wa.me/212764745159" class="hover:text-white transition-colors">WhatsApp</a></p>
           <p><a href="https://www.instagram.com/crusthylia/" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">@crusthylia</a></p>
         </address>

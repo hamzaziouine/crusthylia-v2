@@ -20,22 +20,22 @@
 <script>
   tailwind.config = { theme: { extend: {
     colors: {
-      "primary": "#36180c", "primary-container": "#4f2d1f",
-      "secondary": "#246b44", "secondary-container": "#aaf3c1",
-      "tertiary": "#470027", "tertiary-container": "#63183d",
-      "surface": "#fff8ef", "surface-container-low": "#fcf3df",
-      "surface-container": "#f6edd9", "surface-container-high": "#f0e7d4",
-      "surface-container-highest": "#eae2ce", "surface-container-lowest": "#ffffff",
-      "on-surface": "#1f1b0f", "on-surface-variant": "#51443f",
+      "primary": "#9c1d50", "primary-container": "#5a102e",
+      "secondary": "#ce8f3f", "secondary-container": "#f4e9d8",
+      "tertiary": "#664187", "tertiary-container": "#8a5aab",
+      "surface": "#f9f2f5", "surface-container-low": "#fdf8fa",
+      "surface-container": "#f9f2f5", "surface-container-high": "#f3ebee",
+      "surface-container-highest": "#ede4e8", "surface-container-lowest": "#ffffff",
+      "on-surface": "#000000", "on-surface-variant": "#5a4550",
       "on-primary": "#ffffff", "on-secondary": "#ffffff",
-      "outline": "#83746f", "outline-variant": "#d5c3bc",
-      "background": "#fff8ef", "on-background": "#1f1b0f",
-      "inverse-surface": "#343023", "surface-dim": "#e2d9c6",
-      "surface-tint": "#7d5544", "secondary-fixed-dim": "#8fd6a6",
-      "on-primary-container": "#c49381", "on-secondary-container": "#2b7149",
-      "on-tertiary-container": "#e280a8", "primary-fixed-dim": "#f0bba6",
-      "secondary-fixed": "#aaf3c1", "on-tertiary": "#ffffff",
-      "tertiary-fixed": "#ffd9e4", "tertiary-fixed-dim": "#ffb0cd"
+      "outline": "#8a7580", "outline-variant": "#d5c0cc",
+      "background": "#ffffff", "on-background": "#000000",
+      "inverse-surface": "#2d2d2d", "surface-dim": "#e8dde2",
+      "surface-tint": "#9c1d50", "secondary-fixed-dim": "#d4a864",
+      "on-primary-container": "#d4708e", "on-secondary-container": "#8a6830",
+      "on-tertiary-container": "#b89ccc", "primary-fixed-dim": "#d4708e",
+      "secondary-fixed": "#f4e9d8", "on-tertiary": "#ffffff",
+      "tertiary-fixed": "#e8d4f0", "tertiary-fixed-dim": "#c4a0d8"
     },
     fontFamily: { "headline": ["Noto Serif"], "body": ["Manrope"], "label": ["Manrope"] },
     borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
@@ -58,7 +58,7 @@
 <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[100] focus:bg-secondary focus:text-on-secondary focus:px-4 focus:py-2 focus:rounded-lg">Aller au contenu</a>
 
 <!-- Navigation -->
-<nav class="fixed top-0 w-full z-50 bg-[#fff8ef]/85 backdrop-blur-md border-b border-outline-variant/20" id="site-nav" role="navigation" aria-label="Navigation principale">
+<nav class="fixed top-0 w-full z-50 bg-[#ffffff]/85 backdrop-blur-md border-b border-outline-variant/20" id="site-nav" role="navigation" aria-label="Navigation principale">
   <div class="flex justify-between items-center w-full px-6 md:px-10 py-4 max-w-7xl mx-auto">
     <a href="homepage.html" class="flex items-center gap-2" aria-label="Crusthy'lia — Accueil">
       <span class="font-headline text-2xl font-bold tracking-tight text-primary">Crusthy'lia</span>
@@ -80,7 +80,7 @@
     </div>
   </div>
   <!-- Mobile Menu -->
-  <div class="md:hidden hidden bg-[#fff8ef] border-t border-outline-variant/20 px-6 py-6 flex flex-col gap-4" id="mobile-menu">
+  <div class="md:hidden hidden bg-[#ffffff] border-t border-outline-variant/20 px-6 py-6 flex flex-col gap-4" id="mobile-menu">
     <a href="menu.html" class="text-base font-label font-bold text-secondary py-2" aria-current="page" data-i18n="nav_menu">Menu</a>
     <a href="brunch.html" class="text-base font-label font-medium text-on-surface py-2" data-i18n="nav_brunch">Brunch</a>
     <a href="about.html" class="text-base font-label font-medium text-on-surface py-2" data-i18n="nav_about">Notre Histoire</a>
@@ -99,7 +99,7 @@
 <div class="relative z-10 text-center px-4 max-w-4xl">
 <h1 class="font-headline text-5xl md:text-7xl text-primary leading-tight mb-6">La Carte des Boissons</h1>
 <p class="font-body text-lg md:text-xl text-primary/80 max-w-2xl mx-auto italic">
-                Une sélection artisanale de thés, cafés et créations givrées, préparée avec passion dans notre foyer moderne.
+                Cafés de spécialité, thés parfumés, jus pressés minute et créations glacées — le rendez-vous des gourmands, du matin jusqu'au soir.
             </p>
 </div>
 </header>
@@ -108,24 +108,24 @@
 <section class="grid grid-cols-1 md:grid-cols-12 gap-12 items-start">
 <div class="md:col-span-5 space-y-12">
 <div class="space-y-4">
-<span class="font-label uppercase tracking-widest text-secondary text-sm font-bold">Classiques</span>
-<h2 class="font-headline text-4xl text-primary">Boissons Chaudes</h2>
+<span class="font-label uppercase tracking-widest text-secondary text-sm font-bold">Nos classiques</span>
+<h2 class="font-headline text-4xl text-primary">Cafés Chauds</h2>
 </div>
 <div class="space-y-6">
 <div class="flex justify-between items-end border-b border-outline-variant/30 pb-3">
-<span class="font-body text-lg">Espresso</span>
+<span class="font-body text-lg">Espresso ristretto</span>
 <span class="font-bold text-secondary">25 DH</span>
 </div>
 <div class="flex justify-between items-end border-b border-outline-variant/30 pb-3">
-<span class="font-body text-lg">Double Espresso</span>
+<span class="font-body text-lg">Double Espresso corsé</span>
 <span class="font-bold text-secondary">35 DH</span>
 </div>
 <div class="flex justify-between items-end border-b border-outline-variant/30 pb-3">
-<span class="font-body text-lg">Américano</span>
+<span class="font-body text-lg">Americano long</span>
 <span class="font-bold text-secondary">35 DH</span>
 </div>
 <div class="flex justify-between items-end border-b border-outline-variant/30 pb-3">
-<span class="font-body text-lg">Café au Lait / Cappuccino</span>
+<span class="font-body text-lg">Café Crème / Cappuccino</span>
 <span class="font-bold text-secondary">40 DH</span>
 </div>
 <div class="flex justify-between items-end border-b border-outline-variant/30 pb-3">
@@ -133,7 +133,7 @@
 <span class="font-bold text-secondary">45 DH</span>
 </div>
 <div class="flex justify-between items-end border-b border-outline-variant/30 pb-3">
-<span class="font-body text-lg">V60 / Chemex / Aeropress</span>
+<span class="font-body text-lg">Slow Coffee — V60 / Chemex</span>
 <span class="font-bold text-secondary">55 DH</span>
 </div>
 </div>
@@ -141,24 +141,24 @@
 <div class="md:col-span-7 bg-surface-container-low p-12 rounded-xl editorial-shadow">
 <div class="space-y-8">
 <div class="space-y-2">
-<span class="font-label uppercase tracking-widest text-secondary text-sm font-bold">Infusion</span>
+<span class="font-label uppercase tracking-widest text-secondary text-sm font-bold">Douceur &amp; sérénité</span>
 <h2 class="font-headline text-4xl text-primary">Thés &amp; Infusions</h2>
 </div>
 <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-6">
 <div class="flex justify-between items-center bg-surface px-4 py-3 rounded-lg">
-<span class="font-body">Thé Vert / Noir</span>
+<span class="font-body">Thé vert chinois / Noir ceylan</span>
 <span class="font-bold text-secondary">35 DH</span>
 </div>
 <div class="flex justify-between items-center bg-surface px-4 py-3 rounded-lg">
-<span class="font-body">Thé Menthe Fraîche</span>
+<span class="font-body">Thé à la menthe fraîche</span>
 <span class="font-bold text-secondary">35 DH</span>
 </div>
 <div class="flex justify-between items-center bg-surface px-4 py-3 rounded-lg">
-<span class="font-body">Verveine / Camomille</span>
+<span class="font-body">Verveine citronnée / Camomille</span>
 <span class="font-bold text-secondary">35 DH</span>
 </div>
 <div class="flex justify-between items-center bg-surface px-4 py-3 rounded-lg">
-<span class="font-body">Infusion Maison</span>
+<span class="font-body">Infusion du jour — Maison</span>
 <span class="font-bold text-secondary">45 DH</span>
 </div>
 </div>
@@ -176,13 +176,13 @@
 </div>
 <div class="absolute -bottom-8 -right-8 w-48 h-48 bg-secondary rounded-lg flex flex-col items-center justify-center text-on-secondary p-4 rotate-3 editorial-shadow">
 <span class="material-symbols-outlined text-4xl mb-2">bakery_dining</span>
-<p class="text-center text-sm font-medium">Accompagnez vos boissons de nos pâtisseries</p>
+<p class="text-center text-sm font-medium">Accompagnez votre boisson d'une pâtisserie faite maison</p>
 </div>
 </div>
 <div class="order-1 lg:order-2 space-y-12">
 <div class="space-y-4">
-<span class="font-label uppercase tracking-widest text-secondary text-sm font-bold">Gourmandise</span>
-<h2 class="font-headline text-5xl text-primary leading-tight">Chocolat &amp; Frappuccino</h2>
+<span class="font-label uppercase tracking-widest text-secondary text-sm font-bold">Péché mignon</span>
+<h2 class="font-headline text-5xl text-primary leading-tight">Chocolats &amp; Frappuccinos</h2>
 </div>
 <div class="space-y-8">
 <div class="group">
@@ -190,28 +190,28 @@
 <h3 class="font-headline text-2xl group-hover:text-secondary transition-colors">Chocolat Chaud Belge</h3>
 <span class="font-bold text-xl">55 DH</span>
 </div>
-<p class="text-primary/60 font-body">Onctueux chocolat noir fondu et lait crémeux.</p>
+<p class="text-primary/60 font-body">Véritable chocolat noir fondu, lait entier mousseux et une pointe de cannelle.</p>
 </div>
 <div class="group">
 <div class="flex justify-between items-baseline mb-1">
-<h3 class="font-headline text-2xl group-hover:text-secondary transition-colors">Mocha Blanc / Noir</h3>
+<h3 class="font-headline text-2xl group-hover:text-secondary transition-colors">Mocha Blanc / Mocha Noir</h3>
 <span class="font-bold text-xl">60 DH</span>
 </div>
-<p class="text-primary/60 font-body">Alliance du café et du chocolat premium.</p>
+<p class="text-primary/60 font-body">Espresso double marié au chocolat artisanal, couronné de mousse veloutée.</p>
 </div>
 <div class="group">
 <div class="flex justify-between items-baseline mb-1">
 <h3 class="font-headline text-2xl group-hover:text-secondary transition-colors">Frappuccino Classique</h3>
 <span class="font-bold text-xl">65 DH</span>
 </div>
-<p class="text-primary/60 font-body">Caramel, Vanille ou Chocolat.</p>
+<p class="text-primary/60 font-body">Au choix : caramel beurre salé, vanille bourbon ou chocolat intense.</p>
 </div>
 <div class="group">
 <div class="flex justify-between items-baseline mb-1">
-<h3 class="font-headline text-2xl group-hover:text-secondary transition-colors">Cookie Cream Frappe</h3>
+<h3 class="font-headline text-2xl group-hover:text-secondary transition-colors">Cookie Cream Frappé</h3>
 <span class="font-bold text-xl">75 DH</span>
 </div>
-<p class="text-primary/60 font-body">Éclats de biscuits et crème fouettée maison.</p>
+<p class="text-primary/60 font-body">Éclats de cookies croustillants, glace vanille et crème fouettée maison.</p>
 </div>
 </div>
 </div>
@@ -219,7 +219,7 @@
 <!-- Jus, Smoothies & Refresh (Glassmorphism Section) -->
 <section class="bg-surface-container-low rounded-3xl p-10 md:p-16 space-y-16">
 <div class="text-center max-w-2xl mx-auto space-y-4">
-<h2 class="font-headline text-4xl text-primary">Fraîcheur &amp; Vitalité</h2>
+<h2 class="font-headline text-4xl text-primary">Jus Frais &amp; Smoothies</h2>
 <div class="h-1 w-24 bg-secondary mx-auto rounded-full"></div>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
@@ -231,19 +231,19 @@
 </div>
 <ul class="space-y-5">
 <li class="flex justify-between items-center group">
-<span class="group-hover:translate-x-2 transition-transform">Orange Pressée</span>
+<span class="group-hover:translate-x-2 transition-transform">Orange pressée minute</span>
 <span class="font-bold">40 DH</span>
 </li>
 <li class="flex justify-between items-center group">
-<span class="group-hover:translate-x-2 transition-transform">Citronnade Maison</span>
+<span class="group-hover:translate-x-2 transition-transform">Citronnade à la fleur d'oranger</span>
 <span class="font-bold">45 DH</span>
 </li>
 <li class="flex justify-between items-center group">
-<span class="group-hover:translate-x-2 transition-transform">Pomme ou Carotte</span>
+<span class="group-hover:translate-x-2 transition-transform">Jus pomme-gingembre / Carotte</span>
 <span class="font-bold">45 DH</span>
 </li>
 <li class="flex justify-between items-center group">
-<span class="group-hover:translate-x-2 transition-transform">Mix Énergie</span>
+<span class="group-hover:translate-x-2 transition-transform">Mix Énergie betterave-pomme-citron</span>
 <span class="font-bold">55 DH</span>
 </li>
 </ul>
@@ -256,19 +256,19 @@
 </div>
 <ul class="space-y-5">
 <li class="flex justify-between items-center group">
-<span class="group-hover:translate-x-2 transition-transform">Smoothie Fraise-Banane</span>
+<span class="group-hover:translate-x-2 transition-transform">Smoothie fraise-banane-miel</span>
 <span class="font-bold">60 DH</span>
 </li>
 <li class="flex justify-between items-center group">
-<span class="group-hover:translate-x-2 transition-transform">Smoothie Green Detox</span>
+<span class="group-hover:translate-x-2 transition-transform">Smoothie Green Détox épinard-pomme</span>
 <span class="font-bold">65 DH</span>
 </li>
 <li class="flex justify-between items-center group">
-<span class="group-hover:translate-x-2 transition-transform">Milkshake Vanille / Fraise</span>
+<span class="group-hover:translate-x-2 transition-transform">Milkshake vanille / fraise</span>
 <span class="font-bold">65 DH</span>
 </li>
 <li class="flex justify-between items-center group">
-<span class="group-hover:translate-x-2 transition-transform">Milkshake Pistache</span>
+<span class="group-hover:translate-x-2 transition-transform">Milkshake pistache-fleur d'oranger</span>
 <span class="font-bold">75 DH</span>
 </li>
 </ul>
@@ -277,23 +277,23 @@
 <div class="space-y-8">
 <div class="flex items-center space-x-4">
 <span class="material-symbols-outlined text-secondary bg-surface p-3 rounded-full">icecream</span>
-<h3 class="font-headline text-2xl">Froides &amp; Sodas</h3>
+<h3 class="font-headline text-2xl">Boissons Fraîches</h3>
 </div>
 <ul class="space-y-5">
 <li class="flex justify-between items-center group">
-<span class="group-hover:translate-x-2 transition-transform">Eau Minérale (50cl)</span>
+<span class="group-hover:translate-x-2 transition-transform">Eau minérale (50 cl)</span>
 <span class="font-bold">15 DH</span>
 </li>
 <li class="flex justify-between items-center group">
-<span class="group-hover:translate-x-2 transition-transform">Eau Gazeuse</span>
+<span class="group-hover:translate-x-2 transition-transform">Eau gazeuse</span>
 <span class="font-bold">25 DH</span>
 </li>
 <li class="flex justify-between items-center group">
-<span class="group-hover:translate-x-2 transition-transform">Soda (Coke, Sprite)</span>
+<span class="group-hover:translate-x-2 transition-transform">Soda au choix</span>
 <span class="font-bold">25 DH</span>
 </li>
 <li class="flex justify-between items-center group">
-<span class="group-hover:translate-x-2 transition-transform">Tea Iced (Maison)</span>
+<span class="group-hover:translate-x-2 transition-transform">Ice Tea maison pêche-menthe</span>
 <span class="font-bold">45 DH</span>
 </li>
 </ul>
@@ -304,8 +304,8 @@
 <section class="space-y-12">
 <div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
 <div class="space-y-4">
-<span class="font-label uppercase tracking-widest text-secondary text-sm font-bold">Signatures</span>
-<h2 class="font-headline text-4xl text-primary">Mojitos &amp; Ice Coffee</h2>
+<span class="font-label uppercase tracking-widest text-secondary text-sm font-bold">Nos signatures</span>
+<h2 class="font-headline text-4xl text-primary">Mojitos &amp; Lattés Glacés</h2>
 </div>
 <div class="flex space-x-2">
 <div class="w-12 h-12 rounded-full border border-outline-variant flex items-center justify-center text-primary/40">
@@ -324,7 +324,7 @@
 <img alt="Fresh Mojito with mint" class="w-full h-full object-cover" loading="lazy" data-alt="refreshing lime mojito with crushed ice and fresh mint sprigs in a tall glass, bright sunlight casting shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMFifbGV_rOPZIyv79zt-5Qpmq-dEsRq3SOZtJ8rXH6K1EmCrw3a10hCrhWEMIi3ec7T_Py63x2LUaOwxnxpDf_aC3YrFxQ3moXw-uuKXIb-MmQN4sp8PSC1olDx76x9Qvl0lhPLSDjUJG_Y6RjWFuX6TEFrDxpayzzincczqdsKSsdgY9a5Omp2Sjc_WrRA8LLt98i2d9GTwzj4aZ0uDW31SmDu_8todbeRLmh6F_itFSUiy9Vy6ZriUwApG9Bn6EhJtPOcg1oT5T"/>
 </div>
 <h4 class="font-headline text-2xl mb-2">Mojito Classique</h4>
-<p class="font-body text-primary/60 text-sm italic">Citron vert, menthe fraîche et soda.</p>
+<p class="font-body text-primary/60 text-sm italic">Citron vert pressé, menthe du jardin, glace pilée et soda pétillant — sans alcool.</p>
 </div>
 <div class="flex justify-between items-center mt-4">
 <span class="text-secondary font-bold text-2xl">55 DH</span>
@@ -337,7 +337,7 @@
 <img alt="Fruit Mojito" class="w-full h-full object-cover" loading="lazy" data-alt="vibrant red strawberry mojito with fresh fruit slices and ice cubes, top-down editorial lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGlAIVMXSsGzCvFbIpIduyBfaAgvMQgqg7-RixMYgUpsZDCPLzkONTPuGozSqyEkaL1b-PhjrXfu3IzIokKcX1OKPqlilqe5lxnUjam3IaycytTaIxn86VWjX2u4LzT8r7iVs_nzZcYdBPwHxlVo1AfIEN2WemoM7u1Ub48XwGNSZoaxtW-DFx_giHitaTpcGJIxx3LBsPMb4-qNoEaRnGTh_g5HB1xXRHQ4zwSXtQlIiqPBt1ABG3wOPkRDELDz561vf6UAelXGWt"/>
 </div>
 <h4 class="font-headline text-2xl mb-2">Mojito Fruits Rouges</h4>
-<p class="font-body text-primary/60 text-sm italic">Fraises, framboises et fraîcheur intense.</p>
+<p class="font-body text-primary/60 text-sm italic">Fraises et framboises écrasées, menthe, citron vert et glace pilée — rafraîchissant.</p>
 </div>
 <div class="flex justify-between items-center mt-4">
 <span class="text-secondary font-bold text-2xl">65 DH</span>
@@ -350,8 +350,8 @@
 <div class="h-40 rounded-lg mb-6 overflow-hidden">
 <img alt="Ice Latte" class="w-full h-full object-cover" loading="lazy" data-alt="layered iced latte showing milk and espresso gradients with floating ice cubes, minimalist white background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmSZFsMxwAClaWm34qP-090YroBwV7zNnaTEy2gYlTHSsO5cyvQDlARwwRxxpZ0YwUHTrpoWTHmum_GxtIkeLyYl7bkk8gGaYrPMEkM0ctCpMm2gsMNaLfPIKyXVLFQ_K3DhlSR80Zn-yelqUaM156YzJe7kJ2vtTQ8hFXU_BHSBlm3mgpvusTf0cR9ps_PYfzK569gmV5aPQtIsttn5GvRkx2KdikqgQRs1D7khnXuRu6a4LqhjI5dLYSVc9nJH4_UlgE35r0WdEQ"/>
 </div>
-<h4 class="font-headline text-2xl mb-2">Iced Latte</h4>
-<p class="font-body text-primary/60 text-sm italic">Double espresso sur lit de lait froid.</p>
+<h4 class="font-headline text-2xl mb-2">Latté Glacé</h4>
+<p class="font-body text-primary/60 text-sm italic">Double espresso versé sur lait froid et glaçons, doux et revigorant.</p>
 </div>
 <div class="flex justify-between items-center mt-4">
 <span class="text-secondary font-bold text-2xl">50 DH</span>
@@ -363,8 +363,8 @@
 <div class="h-40 rounded-lg mb-6 overflow-hidden">
 <img alt="Spanish Latte" class="w-full h-full object-cover" loading="lazy" data-alt="rich creamy spanish latte with a swirl of condensed milk and dark espresso, rustic wood surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDr_SXtOHHB35k17qu8X8IaaS7zPFkY_PJUjAKcN1OUX0fuaLSoswecbER56rDT7HvJuAtR3KegJMAsLIgKrQE4eNA5JcwjxNvuQCJcLih4bFouHFRuhgRMRavQI_fGHirGDUS-vYZhsqjxWWGeClW5twmwqc--q8GBKo9oMyFlMt6ysZVhwYqHiH0IRk-b8gPy-BLZZ1aGH3RlhA3SIE3bXW0TrjuBUISbYzVb_leMfTvhaBm044IYsBElGTzBAPcftlbZ1txEpQqj"/>
 </div>
-<h4 class="font-headline text-2xl mb-2">Spanish Latte</h4>
-<p class="font-body text-primary/60 text-sm italic">Le classique sucré au lait concentré.</p>
+<h4 class="font-headline text-2xl mb-2">Spanish Latté</h4>
+<p class="font-body text-primary/60 text-sm italic">Espresso onctueux au lait concentré sucré, servi sur glace — un classique irrésistible.</p>
 </div>
 <div class="flex justify-between items-center mt-4">
 <span class="text-secondary font-bold text-2xl">60 DH</span>
@@ -377,28 +377,28 @@
 <section class="grid grid-cols-1 md:grid-cols-2 gap-12 bg-primary text-on-primary rounded-3xl overflow-hidden shadow-2xl">
 <div class="p-12 md:p-20 space-y-10">
 <div class="space-y-4">
-<span class="font-label uppercase tracking-widest text-secondary-fixed text-sm font-bold">Équilibre</span>
-<h2 class="font-headline text-5xl leading-tight">Matcha &amp; Détox</h2>
+<span class="font-label uppercase tracking-widest text-secondary-fixed text-sm font-bold">Bien-être</span>
+<h2 class="font-headline text-5xl leading-tight">Matcha &amp; Spécialités</h2>
 </div>
 <div class="space-y-8">
 <div class="flex justify-between items-start border-b border-white/10 pb-6">
 <div class="space-y-1">
-<h4 class="text-2xl font-headline text-secondary-fixed">Matcha Latte</h4>
-<p class="text-white/60 font-body text-sm">Thé vert japonais cérémonial et lait végétal ou animal.</p>
+<h4 class="text-2xl font-headline text-secondary-fixed">Matcha Latté</h4>
+<p class="text-white/60 font-body text-sm">Thé vert matcha cérémonial fouetté avec votre choix de lait — végétal ou entier.</p>
 </div>
 <span class="font-bold text-xl">65 DH</span>
 </div>
 <div class="flex justify-between items-start border-b border-white/10 pb-6">
 <div class="space-y-1">
 <h4 class="text-2xl font-headline text-secondary-fixed">Iced Blue Matcha</h4>
-<p class="text-white/60 font-body text-sm">Aux fleurs de pois de papillon, rafraîchissant et floral.</p>
+<p class="text-white/60 font-body text-sm">Fleurs de pois de papillon, lait de coco et une touche de citron — aussi beau que bon.</p>
 </div>
 <span class="font-bold text-xl">70 DH</span>
 </div>
 <div class="flex justify-between items-start border-b border-white/10 pb-6">
 <div class="space-y-1">
 <h4 class="text-2xl font-headline text-secondary-fixed">Infusion Détox Maison</h4>
-<p class="text-white/60 font-body text-sm">Gingembre, curcuma, citron et miel bio.</p>
+<p class="text-white/60 font-body text-sm">Gingembre frais, curcuma, citron pressé et miel — notre remède de grand-mère.</p>
 </div>
 <span class="font-bold text-xl">55 DH</span>
 </div>
