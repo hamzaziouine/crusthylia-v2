@@ -1,11 +1,21 @@
 <!DOCTYPE html>
 
-<html class="light" lang="fr"><head>
+<html class="scroll-smooth" lang="fr"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Livraison à Marrakech | Crusthylia</title>
+<meta name="description" content="Livraison de viennoiseries, repas et pâtisseries à Marrakech par Crusthy'lia. Commandez via WhatsApp. Targa, Guéliz et environs."/>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🥐</text></svg>">
+<link rel="canonical" href="https://crusthylia.com/livraison">
+<meta property="og:title" content="Livraison à Marrakech | Crusthy'lia">
+<meta property="og:description" content="Livraison de viennoiseries, repas et pâtisseries à Marrakech par Crusthy'lia. Commandez via WhatsApp. Targa, Guéliz et environs.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Crusthy'lia">
+<meta property="og:locale" content="fr_MA">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Manrope:wght@300;400;600;800&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <script id="tailwind-config">
       tailwind.config = {
@@ -82,23 +92,35 @@
       }
     </style>
 </head>
-<body class="bg-background text-on-background font-sans selection:bg-secondary-fixed">
-<!-- TopNavBar -->
-<nav class="fixed top-0 w-full z-50 bg-[#fff8ef]/80 dark:bg-[#36180c]/80 backdrop-blur-md shadow-sm dark:shadow-none">
-<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
-<span class="text-2xl font-serif font-bold text-[#36180c] dark:text-[#fff8ef] tracking-tight">L'Atelier</span>
-<div class="hidden md:flex items-center space-gap-8 gap-x-8">
-<a class="text-[#36180c] dark:text-[#fff8ef] opacity-80 hover:text-[#246b44] transition-colors duration-300 font-sans Manrope text-sm tracking-wide" href="#">Menu</a>
-<a class="text-[#36180c] dark:text-[#fff8ef] opacity-80 hover:text-[#246b44] transition-colors duration-300 font-sans Manrope text-sm tracking-wide" href="#">Our Story</a>
-<a class="text-[#36180c] dark:text-[#fff8ef] opacity-80 hover:text-[#246b44] transition-colors duration-300 font-sans Manrope text-sm tracking-wide" href="#">Locations</a>
-<button class="bg-secondary text-on-secondary px-6 py-2 rounded-lg font-semibold hover:opacity-90 transition-all scale-95 active:opacity-80">Commander</button>
-</div>
-<div class="md:hidden">
-<span class="material-symbols-outlined text-primary cursor-pointer">menu</span>
-</div>
-</div>
+<body class="bg-background text-on-background font-body selection:bg-secondary-fixed">
+<a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[100] focus:bg-secondary focus:text-on-secondary focus:px-4 focus:py-2 focus:rounded-lg">Aller au contenu</a>
+<nav class="fixed top-0 w-full z-50 bg-[#fff8ef]/85 backdrop-blur-md border-b border-outline-variant/20" id="site-nav" role="navigation" aria-label="Navigation principale">
+  <div class="flex justify-between items-center w-full px-6 md:px-10 py-4 max-w-7xl mx-auto">
+    <a href="homepage.html" class="flex items-center gap-2" aria-label="Crusthy'lia — Accueil"><span class="font-headline text-2xl font-bold tracking-tight text-primary">Crusthy'lia</span></a>
+    <ul class="hidden md:flex items-center gap-8 list-none m-0 p-0" role="list">
+      <li><a href="menu.html" class="text-sm font-label font-medium text-on-surface hover:text-secondary transition-colors">Menu</a></li>
+      <li><a href="brunch.html" class="text-sm font-label font-medium text-on-surface hover:text-secondary transition-colors">Brunch</a></li>
+      <li><a href="about.html" class="text-sm font-label font-medium text-on-surface hover:text-secondary transition-colors">Notre Histoire</a></li>
+      <li><a href="blog/" class="text-sm font-label font-medium text-on-surface hover:text-secondary transition-colors">Blog</a></li>
+      <li><a href="contact.html" class="text-sm font-label font-medium text-on-surface hover:text-secondary transition-colors">Contact</a></li>
+    </ul>
+    <div class="flex items-center gap-4">
+      <a href="reservation.html" class="hidden md:inline-flex items-center gap-2 bg-secondary text-on-secondary px-5 py-2.5 rounded-lg text-sm font-label font-bold hover:opacity-90 active:scale-95 transition-all">Réserver</a>
+      <button class="md:hidden flex flex-col gap-1.5 p-1" id="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span class="w-6 h-0.5 bg-primary block transition-all"></span><span class="w-6 h-0.5 bg-primary block transition-all"></span><span class="w-4 h-0.5 bg-primary block transition-all"></span>
+      </button>
+    </div>
+  </div>
+  <div class="md:hidden hidden bg-[#fff8ef] border-t border-outline-variant/20 px-6 py-6 flex flex-col gap-4" id="mobile-menu">
+    <a href="menu.html" class="text-base font-label font-medium text-on-surface py-2">Menu</a>
+    <a href="brunch.html" class="text-base font-label font-medium text-on-surface py-2">Brunch</a>
+    <a href="about.html" class="text-base font-label font-medium text-on-surface py-2">Notre Histoire</a>
+    <a href="blog/" class="text-base font-label font-medium text-on-surface py-2">Blog</a>
+    <a href="contact.html" class="text-base font-label font-medium text-on-surface py-2">Contact</a>
+    <a href="reservation.html" class="mt-2 bg-secondary text-on-secondary px-5 py-3 rounded-lg text-center font-label font-bold">Réserver</a>
+  </div>
 </nav>
-<main class="pt-20">
+<main id="main" class="pt-20">
 <!-- Section 1: HERO -->
 <section class="relative min-h-[870px] flex items-center overflow-hidden">
 <div class="absolute inset-0 z-0">
@@ -135,7 +157,7 @@
 <p class="text-on-surface-variant">La façon la plus rapide et la plus simple de commander votre livraison</p>
 </div>
 </div>
-<a class="text-secondary font-bold flex items-center gap-2 group" href="#">
+<a class="text-secondary font-bold flex items-center gap-2 group" href="https://wa.me/212764745159">
                         Ouvrir WhatsApp 
                         <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
 </a>
@@ -369,10 +391,10 @@
 <h2 class="text-4xl font-serif font-bold mb-6">Prêt à savourer l'excellence ?</h2>
 <p class="text-xl mb-10 max-w-2xl mx-auto opacity-90">Inscrivez votre enfant à notre programme scolaire ou commandez dès maintenant votre prochain repas.</p>
 <div class="flex flex-col sm:flex-row justify-center gap-4">
-<a class="bg-secondary text-on-secondary px-8 py-4 rounded-xl font-bold text-lg hover:opacity-90 transition-all" href="#">
+<a class="bg-secondary text-on-secondary px-8 py-4 rounded-xl font-bold text-lg hover:opacity-90 transition-all" href="https://wa.me/212764745159">
                             Inscrivez votre enfant
                         </a>
-<a class="bg-surface-container-lowest text-primary px-8 py-4 rounded-xl font-bold text-lg hover:bg-white transition-all shadow-md" href="#">
+<a class="bg-surface-container-lowest text-primary px-8 py-4 rounded-xl font-bold text-lg hover:bg-white transition-all shadow-md" href="menu.html">
                             Voir le menu complet
                         </a>
 </div>
@@ -380,37 +402,47 @@
 </div>
 </section>
 </main>
-<!-- Footer -->
-<footer class="w-full mt-24 bg-[#fcf3df] dark:bg-[#1a0c06]">
-<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-12 py-16 max-w-7xl mx-auto font-sans Manrope text-sm tracking-wide text-[#36180c] dark:text-[#fff8ef]">
-<div class="col-span-1 md:col-span-1">
-<span class="text-xl font-serif italic text-[#36180c] dark:text-[#fff8ef]">L'Atelier Artisanal</span>
-<p class="mt-4 opacity-70">L'art de la boulangerie traditionnelle au cœur de Marrakech, Targa.</p>
-</div>
-<div>
-<h4 class="font-bold mb-6">Service Client</h4>
-<ul class="space-y-4">
-<li><a class="text-[#36180c]/70 dark:text-[#fff8ef]/70 hover:text-[#246b44] underline decoration-2 underline-offset-4 transition-all duration-200" href="#">Contact Us</a></li>
-<li><a class="text-[#36180c]/70 dark:text-[#fff8ef]/70 hover:text-[#246b44] underline decoration-2 underline-offset-4 transition-all duration-200" href="#">Shipping Info</a></li>
-</ul>
-</div>
-<div>
-<h4 class="font-bold mb-6">Entreprise</h4>
-<ul class="space-y-4">
-<li><a class="text-[#36180c]/70 dark:text-[#fff8ef]/70 hover:text-[#246b44] underline decoration-2 underline-offset-4 transition-all duration-200" href="#">Careers</a></li>
-<li><a class="text-[#36180c]/70 dark:text-[#fff8ef]/70 hover:text-[#246b44] underline decoration-2 underline-offset-4 transition-all duration-200" href="#">Privacy Policy</a></li>
-</ul>
-</div>
-<div>
-<h4 class="font-bold mb-6">Restez connecté</h4>
-<div class="flex gap-4">
-<span class="material-symbols-outlined cursor-pointer hover:text-secondary">social_leaderboard</span>
-<span class="material-symbols-outlined cursor-pointer hover:text-secondary">retweet</span>
-</div>
-</div>
-</div>
-<div class="border-t border-primary/5 py-8 text-center text-xs opacity-60">
-            © 2024 L'Atelier Artisanal. Fabriqué avec passion.
+<footer class="bg-primary text-on-primary" role="contentinfo">
+  <div class="max-w-7xl mx-auto px-6 md:px-10 pt-16 pb-8">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+      <div>
+        <span class="font-headline text-2xl font-bold text-white mb-5 block">Crusthy'lia</span>
+        <p class="text-white/60 font-body text-sm leading-relaxed mb-6">Votre escale artisanale à Targa, Marrakech. Boulangerie, pâtisserie, café et restaurant unis par la passion du goût.</p>
+        <div class="flex gap-4">
+          <a href="https://www.instagram.com/crusthylia/" target="_blank" rel="noopener noreferrer" class="text-white/60 hover:text-white transition-colors" aria-label="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+          <a href="https://wa.me/212764745159" target="_blank" rel="noopener noreferrer" class="text-white/60 hover:text-white transition-colors" aria-label="WhatsApp"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
         </div>
+      </div>
+      <div>
+        <h3 class="font-label uppercase tracking-widest text-xs font-bold text-white/40 mb-6">Navigation</h3>
+        <ul class="space-y-3 list-none p-0 m-0">
+          <li><a href="menu.html" class="text-white/60 hover:text-white transition-colors font-body text-sm">Menu</a></li>
+          <li><a href="brunch.html" class="text-white/60 hover:text-white transition-colors font-body text-sm">Brunch</a></li>
+          <li><a href="about.html" class="text-white/60 hover:text-white transition-colors font-body text-sm">Notre Histoire</a></li>
+          <li><a href="blog/" class="text-white/60 hover:text-white transition-colors font-body text-sm">Blog</a></li>
+          <li><a href="contact.html" class="text-white/60 hover:text-white transition-colors font-body text-sm">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-label uppercase tracking-widest text-xs font-bold text-white/40 mb-6">Nous trouver</h3>
+        <address class="not-italic font-body text-sm text-white/60 space-y-2">
+          <p>Galerie Marchande Targa, Marrakech 40000</p>
+          <p><a href="https://wa.me/212764745159" class="hover:text-white transition-colors">WhatsApp</a></p>
+          <p><a href="https://www.instagram.com/crusthylia/" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">@crusthylia</a></p>
+        </address>
+      </div>
+    </div>
+    <div class="border-t border-white/10 pt-6 flex flex-col md:flex-row justify-between items-center gap-3">
+      <p class="text-white/30 font-body text-xs">&copy; 2026 Crusthy'lia. Tous droits réservés.</p>
+      <p class="text-white/20 font-body text-xs">Artisanat &amp; passion, Marrakech.</p>
+    </div>
+  </div>
 </footer>
+<a href="https://wa.me/212764745159" class="fixed bottom-6 right-6 z-[1000] w-14 h-14 bg-[#25D366] rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Crusthy'lia"><svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+<script>
+  const toggle = document.getElementById('nav-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+  if (toggle && mobileMenu) { toggle.addEventListener('click', () => { const open = !mobileMenu.classList.contains('hidden'); mobileMenu.classList.toggle('hidden', open); toggle.setAttribute('aria-expanded', String(!open)); }); }
+  window.addEventListener('scroll', () => { document.getElementById('site-nav')?.classList.toggle('shadow-md', window.scrollY > 40); }, { passive: true });
+</script>
 </body></html>

@@ -1,76 +1,46 @@
 <!DOCTYPE html>
 
-<html class="light" lang="fr"><head>
+<html class="scroll-smooth" lang="fr"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>La Carte des Boissons | Crusthylia</title>
+<meta name="description" content="La carte des boissons de Crusthy'lia — cafés, thés, chocolats, jus frais et cocktails à Targa, Marrakech."/>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🥐</text></svg>">
+<link rel="canonical" href="https://crusthylia.com/menu">
+<meta property="og:title" content="La Carte des Boissons — Crusthy'lia Marrakech">
+<meta property="og:description" content="La carte des boissons de Crusthy'lia — cafés, thés, chocolats, jus frais et cocktails à Targa, Marrakech.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Crusthy'lia">
+<meta property="og:locale" content="fr_MA">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    colors: {
-                        "surface-bright": "#fff8ef",
-                        "secondary-fixed": "#aaf3c1",
-                        "on-tertiary-container": "#e280a8",
-                        "inverse-surface": "#343023",
-                        "on-surface-variant": "#51443f",
-                        "on-primary-fixed": "#301408",
-                        "on-secondary": "#ffffff",
-                        "outline": "#83746f",
-                        "surface-container-lowest": "#ffffff",
-                        "primary": "#36180c",
-                        "on-secondary-fixed": "#00210f",
-                        "tertiary-container": "#63183d",
-                        "surface-container-low": "#fcf3df",
-                        "background": "#fff8ef",
-                        "surface": "#fff8ef",
-                        "secondary": "#246b44",
-                        "on-background": "#1f1b0f",
-                        "surface-variant": "#eae2ce",
-                        "surface-dim": "#e2d9c6",
-                        "surface-container": "#f6edd9",
-                        "on-error-container": "#93000a",
-                        "inverse-primary": "#f0bba6",
-                        "inverse-on-surface": "#f9f0dc",
-                        "primary-fixed-dim": "#f0bba6",
-                        "error": "#ba1a1a",
-                        "on-primary-container": "#c49381",
-                        "tertiary-fixed": "#ffd9e4",
-                        "surface-container-highest": "#eae2ce",
-                        "tertiary": "#470027",
-                        "surface-tint": "#7d5544",
-                        "on-tertiary-fixed": "#3e0021",
-                        "outline-variant": "#d5c3bc",
-                        "on-error": "#ffffff",
-                        "primary-container": "#4f2d1f",
-                        "on-primary": "#ffffff",
-                        "error-container": "#ffdad6",
-                        "primary-fixed": "#ffdbce",
-                        "on-secondary-container": "#2b7149",
-                        "on-primary-fixed-variant": "#633e2f",
-                        "secondary-container": "#aaf3c1",
-                        "on-secondary-fixed-variant": "#00522e",
-                        "tertiary-fixed-dim": "#ffb0cd",
-                        "surface-container-high": "#f0e7d4",
-                        "on-tertiary": "#ffffff",
-                        "on-surface": "#1f1b0f",
-                        "on-tertiary-fixed-variant": "#792a4f",
-                        "secondary-fixed-dim": "#8fd6a6"
-                    },
-                    fontFamily: {
-                        "headline": ["Noto Serif"],
-                        "body": ["Manrope"],
-                        "label": ["Manrope"]
-                    },
-                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
-                },
-            },
-        }
-    </script>
+<script>
+  tailwind.config = { theme: { extend: {
+    colors: {
+      "primary": "#36180c", "primary-container": "#4f2d1f",
+      "secondary": "#246b44", "secondary-container": "#aaf3c1",
+      "tertiary": "#470027", "tertiary-container": "#63183d",
+      "surface": "#fff8ef", "surface-container-low": "#fcf3df",
+      "surface-container": "#f6edd9", "surface-container-high": "#f0e7d4",
+      "surface-container-highest": "#eae2ce", "surface-container-lowest": "#ffffff",
+      "on-surface": "#1f1b0f", "on-surface-variant": "#51443f",
+      "on-primary": "#ffffff", "on-secondary": "#ffffff",
+      "outline": "#83746f", "outline-variant": "#d5c3bc",
+      "background": "#fff8ef", "on-background": "#1f1b0f",
+      "inverse-surface": "#343023", "surface-dim": "#e2d9c6",
+      "surface-tint": "#7d5544", "secondary-fixed-dim": "#8fd6a6",
+      "on-primary-container": "#c49381", "on-secondary-container": "#2b7149",
+      "on-tertiary-container": "#e280a8", "primary-fixed-dim": "#f0bba6",
+      "secondary-fixed": "#aaf3c1", "on-tertiary": "#ffffff",
+      "tertiary-fixed": "#ffd9e4", "tertiary-fixed-dim": "#ffb0cd"
+    },
+    fontFamily: { "headline": ["Noto Serif"], "body": ["Manrope"], "label": ["Manrope"] },
+    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+  }}}
+</script>
 <style>
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
@@ -84,19 +54,42 @@
     </style>
 </head>
 <body class="bg-surface font-body text-primary selection:bg-secondary-fixed">
-<!-- Top Navigation Bar -->
-<nav class="fixed top-0 w-full z-50 bg-[#fff8ef]/80 backdrop-blur-md dark:bg-[#36180c]/80">
-<div class="flex justify-between items-center px-8 py-6 max-w-7xl mx-auto">
-<span class="text-2xl font-serif tracking-tight text-[#36180c] dark:text-[#fff8ef]">Crusthylia</span>
-<div class="hidden md:flex space-x-10">
-<a class="text-[#36180c] dark:text-[#fff8ef] opacity-80 hover:text-[#246b44] transition-colors duration-300 font-label" href="#">Menu</a>
-<a class="text-[#246b44] dark:text-[#246b44] font-bold border-b-2 border-[#246b44] pb-1 font-label" href="#">Bakery</a>
-<a class="text-[#36180c] dark:text-[#fff8ef] opacity-80 hover:text-[#246b44] transition-colors duration-300 font-label" href="#">Our Story</a>
-<a class="text-[#36180c] dark:text-[#fff8ef] opacity-80 hover:text-[#246b44] transition-colors duration-300 font-label" href="#">Reservations</a>
-</div>
-<button class="bg-secondary text-on-secondary px-6 py-2.5 rounded-lg font-medium tracking-wide hover:opacity-90 transition-all editorial-shadow">Order Online</button>
-</div>
+<!-- Skip Nav -->
+<a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[100] focus:bg-secondary focus:text-on-secondary focus:px-4 focus:py-2 focus:rounded-lg">Aller au contenu</a>
+
+<!-- Navigation -->
+<nav class="fixed top-0 w-full z-50 bg-[#fff8ef]/85 backdrop-blur-md border-b border-outline-variant/20" id="site-nav" role="navigation" aria-label="Navigation principale">
+  <div class="flex justify-between items-center w-full px-6 md:px-10 py-4 max-w-7xl mx-auto">
+    <a href="homepage.html" class="flex items-center gap-2" aria-label="Crusthy'lia — Accueil">
+      <span class="font-headline text-2xl font-bold tracking-tight text-primary">Crusthy'lia</span>
+    </a>
+    <ul class="hidden md:flex items-center gap-8 list-none m-0 p-0" role="list">
+      <li><a href="menu.html" class="text-sm font-label font-bold text-secondary border-b-2 border-secondary pb-0.5" aria-current="page" data-i18n="nav_menu">Menu</a></li>
+      <li><a href="brunch.html" class="text-sm font-label font-medium text-on-surface hover:text-secondary transition-colors" data-i18n="nav_brunch">Brunch</a></li>
+      <li><a href="about.html" class="text-sm font-label font-medium text-on-surface hover:text-secondary transition-colors" data-i18n="nav_about">Notre Histoire</a></li>
+      <li><a href="blog/" class="text-sm font-label font-medium text-on-surface hover:text-secondary transition-colors" data-i18n="nav_blog">Blog</a></li>
+      <li><a href="contact.html" class="text-sm font-label font-medium text-on-surface hover:text-secondary transition-colors" data-i18n="nav_contact">Contact</a></li>
+    </ul>
+    <div class="flex items-center gap-4">
+      <a href="reservation.html" class="hidden md:inline-flex items-center gap-2 bg-secondary text-on-secondary px-5 py-2.5 rounded-lg text-sm font-label font-bold hover:opacity-90 active:scale-95 transition-all" data-i18n="nav_reserve">Réserver</a>
+      <button class="md:hidden flex flex-col gap-1.5 p-1" id="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span class="w-6 h-0.5 bg-primary block transition-all"></span>
+        <span class="w-6 h-0.5 bg-primary block transition-all"></span>
+        <span class="w-4 h-0.5 bg-primary block transition-all"></span>
+      </button>
+    </div>
+  </div>
+  <!-- Mobile Menu -->
+  <div class="md:hidden hidden bg-[#fff8ef] border-t border-outline-variant/20 px-6 py-6 flex flex-col gap-4" id="mobile-menu">
+    <a href="menu.html" class="text-base font-label font-bold text-secondary py-2" aria-current="page" data-i18n="nav_menu">Menu</a>
+    <a href="brunch.html" class="text-base font-label font-medium text-on-surface py-2" data-i18n="nav_brunch">Brunch</a>
+    <a href="about.html" class="text-base font-label font-medium text-on-surface py-2" data-i18n="nav_about">Notre Histoire</a>
+    <a href="blog/" class="text-base font-label font-medium text-on-surface py-2" data-i18n="nav_blog">Blog</a>
+    <a href="contact.html" class="text-base font-label font-medium text-on-surface py-2" data-i18n="nav_contact">Contact</a>
+    <a href="reservation.html" class="mt-2 bg-secondary text-on-secondary px-5 py-3 rounded-lg text-center font-label font-bold" data-i18n="nav_reserve">Réserver</a>
+  </div>
 </nav>
+<main id="main">
 <!-- Hero Section -->
 <header class="relative h-[614px] flex items-center justify-center overflow-hidden pt-20">
 <div class="absolute inset-0 z-0">
@@ -170,7 +163,7 @@
 </div>
 </div>
 <div class="mt-8 rounded-lg overflow-hidden h-48">
-<img alt="Steaming cup of tea with dried flowers" class="w-full h-full object-cover" data-alt="close-up of a porcelain teacup with golden herbal infusion, dried chamomile flowers floating, and soft window light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBW_E2n9OM_ud2YIt3kLWlLIpGqKDSaMehcI_oDyn0sCtm9_Z5RPjrSQvAzbXVU8Ekn4QwKlWdINU4493aEXQoSL2oXWuUpYJtuP5vsdEk0Xz6sv5qUX3PV-jphPOHXGjWZGmRYwzgK8rw-ODDJNh0UEdIYgPTMVKx3M8WJtgIZy-nYu3LVwGGh_ClNkF60JnunPlZIsW600V3CX_DDg0Y-C3Juoeta9T567BK1GzBv5JC3DoMJZ8usrYMGg_jLeCshT1kJhrIxBwgR"/>
+<img alt="Steaming cup of tea with dried flowers" class="w-full h-full object-cover" loading="lazy" data-alt="close-up of a porcelain teacup with golden herbal infusion, dried chamomile flowers floating, and soft window light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBW_E2n9OM_ud2YIt3kLWlLIpGqKDSaMehcI_oDyn0sCtm9_Z5RPjrSQvAzbXVU8Ekn4QwKlWdINU4493aEXQoSL2oXWuUpYJtuP5vsdEk0Xz6sv5qUX3PV-jphPOHXGjWZGmRYwzgK8rw-ODDJNh0UEdIYgPTMVKx3M8WJtgIZy-nYu3LVwGGh_ClNkF60JnunPlZIsW600V3CX_DDg0Y-C3Juoeta9T567BK1GzBv5JC3DoMJZ8usrYMGg_jLeCshT1kJhrIxBwgR"/>
 </div>
 </div>
 </div>
@@ -179,7 +172,7 @@
 <section class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 <div class="order-2 lg:order-1 relative">
 <div class="aspect-[4/5] bg-surface-container-highest rounded-xl overflow-hidden shadow-2xl">
-<img alt="Chocolate drink with cream" class="w-full h-full object-cover" data-alt="tall glass of iced mocha with thick chocolate drizzle and a cloud of whipped cream on top, neutral studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-uoPCKzyqUfw0mzdzMKbZaTslKpq3qPNwCLfQP7OBbghtMG1UQzosdThbmTS9bg6KHmesmD45WsP5O5tHGEF91hltMTA9vpvdq9ag0Kyrkpclirbm36ybnmrQGJHNudPfABaaoIBDW7wgJYIKd6VAvKjgNNGDvYtce0mkR-FOFZaWst1P-uNLHCaM3s7p97oLGSf_NwBp6-v7AS0XdGyAsncXDJUmEQq7nfCjep0FPeuVXFPU4CrLtgleZRH9KksgHjxvE_hAqAFQ"/>
+<img alt="Chocolate drink with cream" class="w-full h-full object-cover" loading="lazy" data-alt="tall glass of iced mocha with thick chocolate drizzle and a cloud of whipped cream on top, neutral studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-uoPCKzyqUfw0mzdzMKbZaTslKpq3qPNwCLfQP7OBbghtMG1UQzosdThbmTS9bg6KHmesmD45WsP5O5tHGEF91hltMTA9vpvdq9ag0Kyrkpclirbm36ybnmrQGJHNudPfABaaoIBDW7wgJYIKd6VAvKjgNNGDvYtce0mkR-FOFZaWst1P-uNLHCaM3s7p97oLGSf_NwBp6-v7AS0XdGyAsncXDJUmEQq7nfCjep0FPeuVXFPU4CrLtgleZRH9KksgHjxvE_hAqAFQ"/>
 </div>
 <div class="absolute -bottom-8 -right-8 w-48 h-48 bg-secondary rounded-lg flex flex-col items-center justify-center text-on-secondary p-4 rotate-3 editorial-shadow">
 <span class="material-symbols-outlined text-4xl mb-2">bakery_dining</span>
@@ -325,10 +318,10 @@
 </div>
 <div class="flex space-x-8 overflow-x-auto no-scrollbar pb-8">
 <!-- Mojitos -->
-<div class="flex-shrink-0 w-[320px] bg-white rounded-xl p-6 editorial-shadow flex flex-col justify-between h-[400px]">
+<div class="flex-shrink-0 w-[320px] max-w-[85vw] md:max-w-none bg-white rounded-xl p-6 editorial-shadow flex flex-col justify-between h-[400px]">
 <div>
 <div class="h-40 rounded-lg mb-6 overflow-hidden">
-<img alt="Fresh Mojito with mint" class="w-full h-full object-cover" data-alt="refreshing lime mojito with crushed ice and fresh mint sprigs in a tall glass, bright sunlight casting shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMFifbGV_rOPZIyv79zt-5Qpmq-dEsRq3SOZtJ8rXH6K1EmCrw3a10hCrhWEMIi3ec7T_Py63x2LUaOwxnxpDf_aC3YrFxQ3moXw-uuKXIb-MmQN4sp8PSC1olDx76x9Qvl0lhPLSDjUJG_Y6RjWFuX6TEFrDxpayzzincczqdsKSsdgY9a5Omp2Sjc_WrRA8LLt98i2d9GTwzj4aZ0uDW31SmDu_8todbeRLmh6F_itFSUiy9Vy6ZriUwApG9Bn6EhJtPOcg1oT5T"/>
+<img alt="Fresh Mojito with mint" class="w-full h-full object-cover" loading="lazy" data-alt="refreshing lime mojito with crushed ice and fresh mint sprigs in a tall glass, bright sunlight casting shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMFifbGV_rOPZIyv79zt-5Qpmq-dEsRq3SOZtJ8rXH6K1EmCrw3a10hCrhWEMIi3ec7T_Py63x2LUaOwxnxpDf_aC3YrFxQ3moXw-uuKXIb-MmQN4sp8PSC1olDx76x9Qvl0lhPLSDjUJG_Y6RjWFuX6TEFrDxpayzzincczqdsKSsdgY9a5Omp2Sjc_WrRA8LLt98i2d9GTwzj4aZ0uDW31SmDu_8todbeRLmh6F_itFSUiy9Vy6ZriUwApG9Bn6EhJtPOcg1oT5T"/>
 </div>
 <h4 class="font-headline text-2xl mb-2">Mojito Classique</h4>
 <p class="font-body text-primary/60 text-sm italic">Citron vert, menthe fraîche et soda.</p>
@@ -338,10 +331,10 @@
 <button class="bg-surface-container-low p-2 rounded-full"><span class="material-symbols-outlined">add</span></button>
 </div>
 </div>
-<div class="flex-shrink-0 w-[320px] bg-white rounded-xl p-6 editorial-shadow flex flex-col justify-between h-[400px]">
+<div class="flex-shrink-0 w-[320px] max-w-[85vw] md:max-w-none bg-white rounded-xl p-6 editorial-shadow flex flex-col justify-between h-[400px]">
 <div>
 <div class="h-40 rounded-lg mb-6 overflow-hidden">
-<img alt="Fruit Mojito" class="w-full h-full object-cover" data-alt="vibrant red strawberry mojito with fresh fruit slices and ice cubes, top-down editorial lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGlAIVMXSsGzCvFbIpIduyBfaAgvMQgqg7-RixMYgUpsZDCPLzkONTPuGozSqyEkaL1b-PhjrXfu3IzIokKcX1OKPqlilqe5lxnUjam3IaycytTaIxn86VWjX2u4LzT8r7iVs_nzZcYdBPwHxlVo1AfIEN2WemoM7u1Ub48XwGNSZoaxtW-DFx_giHitaTpcGJIxx3LBsPMb4-qNoEaRnGTh_g5HB1xXRHQ4zwSXtQlIiqPBt1ABG3wOPkRDELDz561vf6UAelXGWt"/>
+<img alt="Fruit Mojito" class="w-full h-full object-cover" loading="lazy" data-alt="vibrant red strawberry mojito with fresh fruit slices and ice cubes, top-down editorial lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGlAIVMXSsGzCvFbIpIduyBfaAgvMQgqg7-RixMYgUpsZDCPLzkONTPuGozSqyEkaL1b-PhjrXfu3IzIokKcX1OKPqlilqe5lxnUjam3IaycytTaIxn86VWjX2u4LzT8r7iVs_nzZcYdBPwHxlVo1AfIEN2WemoM7u1Ub48XwGNSZoaxtW-DFx_giHitaTpcGJIxx3LBsPMb4-qNoEaRnGTh_g5HB1xXRHQ4zwSXtQlIiqPBt1ABG3wOPkRDELDz561vf6UAelXGWt"/>
 </div>
 <h4 class="font-headline text-2xl mb-2">Mojito Fruits Rouges</h4>
 <p class="font-body text-primary/60 text-sm italic">Fraises, framboises et fraîcheur intense.</p>
@@ -352,10 +345,10 @@
 </div>
 </div>
 <!-- Ice Coffee -->
-<div class="flex-shrink-0 w-[320px] bg-white rounded-xl p-6 editorial-shadow flex flex-col justify-between h-[400px]">
+<div class="flex-shrink-0 w-[320px] max-w-[85vw] md:max-w-none bg-white rounded-xl p-6 editorial-shadow flex flex-col justify-between h-[400px]">
 <div>
 <div class="h-40 rounded-lg mb-6 overflow-hidden">
-<img alt="Ice Latte" class="w-full h-full object-cover" data-alt="layered iced latte showing milk and espresso gradients with floating ice cubes, minimalist white background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmSZFsMxwAClaWm34qP-090YroBwV7zNnaTEy2gYlTHSsO5cyvQDlARwwRxxpZ0YwUHTrpoWTHmum_GxtIkeLyYl7bkk8gGaYrPMEkM0ctCpMm2gsMNaLfPIKyXVLFQ_K3DhlSR80Zn-yelqUaM156YzJe7kJ2vtTQ8hFXU_BHSBlm3mgpvusTf0cR9ps_PYfzK569gmV5aPQtIsttn5GvRkx2KdikqgQRs1D7khnXuRu6a4LqhjI5dLYSVc9nJH4_UlgE35r0WdEQ"/>
+<img alt="Ice Latte" class="w-full h-full object-cover" loading="lazy" data-alt="layered iced latte showing milk and espresso gradients with floating ice cubes, minimalist white background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmSZFsMxwAClaWm34qP-090YroBwV7zNnaTEy2gYlTHSsO5cyvQDlARwwRxxpZ0YwUHTrpoWTHmum_GxtIkeLyYl7bkk8gGaYrPMEkM0ctCpMm2gsMNaLfPIKyXVLFQ_K3DhlSR80Zn-yelqUaM156YzJe7kJ2vtTQ8hFXU_BHSBlm3mgpvusTf0cR9ps_PYfzK569gmV5aPQtIsttn5GvRkx2KdikqgQRs1D7khnXuRu6a4LqhjI5dLYSVc9nJH4_UlgE35r0WdEQ"/>
 </div>
 <h4 class="font-headline text-2xl mb-2">Iced Latte</h4>
 <p class="font-body text-primary/60 text-sm italic">Double espresso sur lit de lait froid.</p>
@@ -365,10 +358,10 @@
 <button class="bg-surface-container-low p-2 rounded-full"><span class="material-symbols-outlined">add</span></button>
 </div>
 </div>
-<div class="flex-shrink-0 w-[320px] bg-white rounded-xl p-6 editorial-shadow flex flex-col justify-between h-[400px]">
+<div class="flex-shrink-0 w-[320px] max-w-[85vw] md:max-w-none bg-white rounded-xl p-6 editorial-shadow flex flex-col justify-between h-[400px]">
 <div>
 <div class="h-40 rounded-lg mb-6 overflow-hidden">
-<img alt="Spanish Latte" class="w-full h-full object-cover" data-alt="rich creamy spanish latte with a swirl of condensed milk and dark espresso, rustic wood surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDr_SXtOHHB35k17qu8X8IaaS7zPFkY_PJUjAKcN1OUX0fuaLSoswecbER56rDT7HvJuAtR3KegJMAsLIgKrQE4eNA5JcwjxNvuQCJcLih4bFouHFRuhgRMRavQI_fGHirGDUS-vYZhsqjxWWGeClW5twmwqc--q8GBKo9oMyFlMt6ysZVhwYqHiH0IRk-b8gPy-BLZZ1aGH3RlhA3SIE3bXW0TrjuBUISbYzVb_leMfTvhaBm044IYsBElGTzBAPcftlbZ1txEpQqj"/>
+<img alt="Spanish Latte" class="w-full h-full object-cover" loading="lazy" data-alt="rich creamy spanish latte with a swirl of condensed milk and dark espresso, rustic wood surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDr_SXtOHHB35k17qu8X8IaaS7zPFkY_PJUjAKcN1OUX0fuaLSoswecbER56rDT7HvJuAtR3KegJMAsLIgKrQE4eNA5JcwjxNvuQCJcLih4bFouHFRuhgRMRavQI_fGHirGDUS-vYZhsqjxWWGeClW5twmwqc--q8GBKo9oMyFlMt6ysZVhwYqHiH0IRk-b8gPy-BLZZ1aGH3RlhA3SIE3bXW0TrjuBUISbYzVb_leMfTvhaBm044IYsBElGTzBAPcftlbZ1txEpQqj"/>
 </div>
 <h4 class="font-headline text-2xl mb-2">Spanish Latte</h4>
 <p class="font-body text-primary/60 text-sm italic">Le classique sucré au lait concentré.</p>
@@ -412,23 +405,73 @@
 </div>
 </div>
 <div class="relative h-full min-h-[400px]">
-<img alt="Matcha latte preparation" class="absolute inset-0 w-full h-full object-cover" data-alt="vibrant green matcha powder being whisked in a ceramic bowl with bamboo whisk, dramatic top lighting on dark background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSM0yC8VTqrEq1rRn5CEATitNuZKUFyGOOTWXBOBFnhotvE41I5J2HVq-diEkJK-hcQ43jVdg6Y6BIbgmDGo72GcIFa2o34rfbOJCRWj6BIL7kIE1ERLYuOxkW_IGlSoqWxG4iuOfC13XdqbpAzMK3y14AjhcmLLuvdzeFFNf-xPPC9xUoNxh0tuoDR_iB3YxY8wVXAmnAkCOTfdCSAyYaM1QExaiprj5HA6nWgZF1bcFs_d0B3rl5wyQHb7jhCZ9i589Eyu5zMI34"/>
+<img alt="Matcha latte preparation" class="absolute inset-0 w-full h-full object-cover" loading="lazy" data-alt="vibrant green matcha powder being whisked in a ceramic bowl with bamboo whisk, dramatic top lighting on dark background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSM0yC8VTqrEq1rRn5CEATitNuZKUFyGOOTWXBOBFnhotvE41I5J2HVq-diEkJK-hcQ43jVdg6Y6BIbgmDGo72GcIFa2o34rfbOJCRWj6BIL7kIE1ERLYuOxkW_IGlSoqWxG4iuOfC13XdqbpAzMK3y14AjhcmLLuvdzeFFNf-xPPC9xUoNxh0tuoDR_iB3YxY8wVXAmnAkCOTfdCSAyYaM1QExaiprj5HA6nWgZF1bcFs_d0B3rl5wyQHb7jhCZ9i589Eyu5zMI34"/>
 </div>
 </section>
 </main>
+</main>
+
 <!-- Footer -->
-<footer class="bg-[#fcf3df] dark:bg-[#1f0f08] w-full mt-24">
-<div class="flex flex-col md:flex-row justify-between items-center px-12 py-16 w-full max-w-7xl mx-auto">
-<div class="space-y-4 mb-8 md:mb-0">
-<span class="text-xl font-serif text-[#36180c] dark:text-[#fff8ef]">Crusthylia</span>
-<p class="text-[#36180c] dark:text-[#fff8ef] opacity-70 font-body">© 2024 Crusthylia Artisanal Hearth. Handcrafted with precision.</p>
-</div>
-<div class="flex flex-wrap justify-center gap-8">
-<a class="text-[#36180c] dark:text-[#fff8ef] opacity-70 hover:opacity-100 hover:text-[#246b44] transition-all font-label" href="#">Privacy Policy</a>
-<a class="text-[#36180c] dark:text-[#fff8ef] opacity-70 hover:opacity-100 hover:text-[#246b44] transition-all font-label" href="#">Terms of Service</a>
-<a class="text-[#36180c] dark:text-[#fff8ef] opacity-70 hover:opacity-100 hover:text-[#246b44] transition-all font-label" href="#">Sustainability</a>
-<a class="text-[#36180c] dark:text-[#fff8ef] opacity-70 hover:opacity-100 hover:text-[#246b44] transition-all font-label" href="#">Careers</a>
-</div>
-</div>
+<footer class="bg-primary text-on-primary" role="contentinfo">
+  <div class="max-w-7xl mx-auto px-6 md:px-10 pt-16 pb-8">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+      <div>
+        <span class="font-headline text-2xl font-bold text-white mb-5 block">Crusthy'lia</span>
+        <p class="text-white/60 font-body text-sm leading-relaxed mb-6" data-i18n="footer_tagline">Votre escale artisanale à Targa, Marrakech. Boulangerie, pâtisserie, café et restaurant unis par la passion du goût.</p>
+        <div class="flex gap-4">
+          <a href="https://www.instagram.com/crusthylia/" target="_blank" rel="noopener noreferrer" class="text-white/60 hover:text-white transition-colors" aria-label="Instagram">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </a>
+          <a href="https://wa.me/212764745159" target="_blank" rel="noopener noreferrer" class="text-white/60 hover:text-white transition-colors" aria-label="WhatsApp">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div>
+        <h3 class="font-label uppercase tracking-widest text-xs font-bold text-white/40 mb-6" data-i18n="footer_nav_title">Navigation</h3>
+        <ul class="space-y-3 list-none p-0 m-0">
+          <li><a href="menu.html" class="text-white/60 hover:text-white transition-colors font-body text-sm" data-i18n="nav_menu">Menu</a></li>
+          <li><a href="brunch.html" class="text-white/60 hover:text-white transition-colors font-body text-sm" data-i18n="nav_brunch">Brunch</a></li>
+          <li><a href="about.html" class="text-white/60 hover:text-white transition-colors font-body text-sm" data-i18n="nav_about">Notre Histoire</a></li>
+          <li><a href="blog/" class="text-white/60 hover:text-white transition-colors font-body text-sm" data-i18n="nav_blog">Blog</a></li>
+          <li><a href="contact.html" class="text-white/60 hover:text-white transition-colors font-body text-sm" data-i18n="nav_contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-label uppercase tracking-widest text-xs font-bold text-white/40 mb-6" data-i18n="footer_contact_title">Nous trouver</h3>
+        <address class="not-italic font-body text-sm text-white/60 space-y-2">
+          <p data-i18n="footer_address">Galerie Marchande Targa, Marrakech 40000</p>
+          <p><a href="https://wa.me/212764745159" class="hover:text-white transition-colors" data-i18n="footer_whatsapp">WhatsApp</a></p>
+          <p><a href="https://www.instagram.com/crusthylia/" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">@crusthylia</a></p>
+        </address>
+      </div>
+    </div>
+    <div class="border-t border-white/10 pt-6 flex flex-col md:flex-row justify-between items-center gap-3">
+      <p class="text-white/30 font-body text-xs" data-i18n="footer_copyright">&copy; 2026 Crusthy'lia. Tous droits réservés.</p>
+      <p class="text-white/20 font-body text-xs" data-i18n="footer_crafted">Artisanat &amp; passion, Marrakech.</p>
+    </div>
+  </div>
 </footer>
+
+<!-- WhatsApp Float -->
+<a href="https://wa.me/212764745159" class="fixed bottom-6 right-6 z-[1000] w-14 h-14 bg-[#25D366] rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform" target="_blank" rel="noopener noreferrer" aria-label="Contacter Crusthy'lia sur WhatsApp">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<script>
+  // Mobile nav toggle
+  const toggle = document.getElementById('nav-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+  if (toggle && mobileMenu) {
+    toggle.addEventListener('click', () => {
+      const open = !mobileMenu.classList.contains('hidden');
+      mobileMenu.classList.toggle('hidden', open);
+      toggle.setAttribute('aria-expanded', String(!open));
+    });
+  }
+  // Nav scroll shadow
+  window.addEventListener('scroll', () => {
+    document.getElementById('site-nav')?.classList.toggle('shadow-md', window.scrollY > 40);
+  }, { passive: true });
+</script>
 </body></html>

@@ -1,11 +1,20 @@
 <!DOCTYPE html>
 
-<html class="light" lang="fr"><head>
+<html class="scroll-smooth" lang="fr"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Galerie | Crusthylia</title>
+<meta name="description" content="Galerie photo de Crusthy'lia — notre boulangerie, pâtisseries et restaurant à Targa, Marrakech."/>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🥐</text></svg>">
+<link rel="canonical" href="https://crusthylia.com/galerie">
+<meta property="og:title" content="Galerie | Crusthy'lia Marrakech">
+<meta property="og:description" content="Galerie photo de Crusthy'lia — notre boulangerie, pâtisseries et restaurant à Targa, Marrakech.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Crusthy'lia">
+<meta property="og:locale" content="fr_MA">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <script id="tailwind-config">
@@ -91,23 +100,34 @@
     </style>
 </head>
 <body class="antialiased selection:bg-secondary/20">
-<!-- TopNavBar -->
-<nav class="fixed top-0 w-full z-50 bg-[#fff8ef]/80 dark:bg-[#36180c]/80 backdrop-blur-md">
-<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
-<div class="text-2xl font-serif font-bold text-[#36180c] dark:text-[#fff8ef]">Crusthylia</div>
-<div class="hidden md:flex items-center space-x-8">
-<a class="text-[#36180c] dark:text-[#fff8ef] opacity-80 hover:text-[#246b44] transition-colors duration-300" href="#">Menu</a>
-<a class="text-[#36180c] dark:text-[#fff8ef] opacity-80 hover:text-[#246b44] transition-colors duration-300" href="#">Bakery</a>
-<a class="text-[#36180c] dark:text-[#fff8ef] opacity-80 hover:text-[#246b44] transition-colors duration-300" href="#">Our Story</a>
-<a class="text-[#246b44] font-bold border-b-2 border-[#246b44] pb-1" href="#">Galerie</a>
-<a class="text-[#36180c] dark:text-[#fff8ef] opacity-80 hover:text-[#246b44] transition-colors duration-300" href="#">Reservations</a>
-</div>
-<button class="bg-secondary text-on-secondary px-6 py-2.5 rounded-lg font-bold active:scale-98 transition-transform shadow-sm">
-                Order Now
-            </button>
-</div>
+<a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[100] focus:bg-secondary focus:text-on-secondary focus:px-4 focus:py-2 focus:rounded-lg">Aller au contenu</a>
+<nav class="fixed top-0 w-full z-50 bg-[#fff8ef]/85 backdrop-blur-md border-b border-outline-variant/20" id="site-nav" role="navigation" aria-label="Navigation principale">
+  <div class="flex justify-between items-center w-full px-6 md:px-10 py-4 max-w-7xl mx-auto">
+    <a href="homepage.html" class="flex items-center gap-2" aria-label="Crusthy'lia — Accueil"><span class="font-headline text-2xl font-bold tracking-tight text-primary">Crusthy'lia</span></a>
+    <ul class="hidden md:flex items-center gap-8 list-none m-0 p-0" role="list">
+      <li><a href="menu.html" class="text-sm font-label font-medium text-on-surface hover:text-secondary transition-colors">Menu</a></li>
+      <li><a href="brunch.html" class="text-sm font-label font-medium text-on-surface hover:text-secondary transition-colors">Brunch</a></li>
+      <li><a href="about.html" class="text-sm font-label font-medium text-on-surface hover:text-secondary transition-colors">Notre Histoire</a></li>
+      <li><a href="blog/" class="text-sm font-label font-medium text-on-surface hover:text-secondary transition-colors">Blog</a></li>
+      <li><a href="contact.html" class="text-sm font-label font-medium text-on-surface hover:text-secondary transition-colors">Contact</a></li>
+    </ul>
+    <div class="flex items-center gap-4">
+      <a href="reservation.html" class="hidden md:inline-flex items-center gap-2 bg-secondary text-on-secondary px-5 py-2.5 rounded-lg text-sm font-label font-bold hover:opacity-90 active:scale-95 transition-all">Réserver</a>
+      <button class="md:hidden flex flex-col gap-1.5 p-1" id="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span class="w-6 h-0.5 bg-primary block transition-all"></span><span class="w-6 h-0.5 bg-primary block transition-all"></span><span class="w-4 h-0.5 bg-primary block transition-all"></span>
+      </button>
+    </div>
+  </div>
+  <div class="md:hidden hidden bg-[#fff8ef] border-t border-outline-variant/20 px-6 py-6 flex flex-col gap-4" id="mobile-menu">
+    <a href="menu.html" class="text-base font-label font-medium text-on-surface py-2">Menu</a>
+    <a href="brunch.html" class="text-base font-label font-medium text-on-surface py-2">Brunch</a>
+    <a href="about.html" class="text-base font-label font-medium text-on-surface py-2">Notre Histoire</a>
+    <a href="blog/" class="text-base font-label font-medium text-on-surface py-2">Blog</a>
+    <a href="contact.html" class="text-base font-label font-medium text-on-surface py-2">Contact</a>
+    <a href="reservation.html" class="mt-2 bg-secondary text-on-secondary px-5 py-3 rounded-lg text-center font-label font-bold">Réserver</a>
+  </div>
 </nav>
-<main>
+<main id="main">
 <!-- Hero Section -->
 <section class="pt-32 pb-20 px-8">
 <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
@@ -122,96 +142,81 @@
 </div>
 </div>
 </section>
-<!-- Category Filter Tabs -->
-<section class="sticky top-20 z-40 bg-background py-6 px-8">
-<div class="max-w-7xl mx-auto">
-<div class="flex items-center space-x-2 overflow-x-auto pb-4 no-scrollbar">
-<button class="bg-secondary text-on-secondary px-6 py-2 rounded-full font-label text-sm font-bold whitespace-nowrap">Tout</button>
-<button class="bg-surface-container-low text-primary px-6 py-2 rounded-full font-label text-sm hover:bg-surface-container-high transition-colors whitespace-nowrap">L'Espace</button>
-<button class="bg-surface-container-low text-primary px-6 py-2 rounded-full font-label text-sm hover:bg-surface-container-high transition-colors whitespace-nowrap">La Boulangerie</button>
-<button class="bg-surface-container-low text-primary px-6 py-2 rounded-full font-label text-sm hover:bg-surface-container-high transition-colors whitespace-nowrap">Le Brunch</button>
-<button class="bg-surface-container-low text-primary px-6 py-2 rounded-full font-label text-sm hover:bg-surface-container-high transition-colors whitespace-nowrap">La Cuisine</button>
-<button class="bg-surface-container-low text-primary px-6 py-2 rounded-full font-label text-sm hover:bg-surface-container-high transition-colors whitespace-nowrap">La Pâtisserie</button>
-<button class="bg-surface-container-low text-primary px-6 py-2 rounded-full font-label text-sm hover:bg-surface-container-high transition-colors whitespace-nowrap">Le Café</button>
-<button class="bg-surface-container-low text-primary px-6 py-2 rounded-full font-label text-sm hover:bg-surface-container-high transition-colors whitespace-nowrap">L'Équipe</button>
-</div>
-</div>
-</section>
 <!-- Masonry Photo Grid -->
 <section class="py-12 px-8">
 <div class="max-w-7xl mx-auto masonry-grid">
 <!-- Row 1 -->
 <div class="masonry-item group relative overflow-hidden rounded-lg shadow-sm hover:shadow-xl transition-all duration-500">
-<img alt="Bread" class="w-full h-auto" data-alt="Close-up of artisan sourdough bread loaves on a dark wooden table with scattered flour and natural morning light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBesXRsNU-zMRrQatCsMjUEMGAf0px3iNIZ_4IWNy1rfIvxFiGnS5FfNm4m1KQy5nX2RRArBSH-Y18AJgLS4HkHvc6u_UMKS4kk6dkICIiv2F2YVrFa_kmcr9Olj0ORGyRhYd86PRoRJzGHlBHWFpn7FYo8qqTDb4Hty9Mz1fXZyRbjcFWEqS4txcmMPr0aBk8b22lIVQklghjmxAk-T5Zdb2NcBcj2-_XzTZ7PkgPWKizs29hQB3VfS3zJOYihS7Kc0e5nHxCK_Bid"/>
+<img alt="Pain au levain artisanal Crusthy'lia, doré et croustillant" class="w-full h-auto" loading="lazy" data-alt="Close-up of artisan sourdough bread loaves on a dark wooden table with scattered flour and natural morning light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBesXRsNU-zMRrQatCsMjUEMGAf0px3iNIZ_4IWNy1rfIvxFiGnS5FfNm4m1KQy5nX2RRArBSH-Y18AJgLS4HkHvc6u_UMKS4kk6dkICIiv2F2YVrFa_kmcr9Olj0ORGyRhYd86PRoRJzGHlBHWFpn7FYo8qqTDb4Hty9Mz1fXZyRbjcFWEqS4txcmMPr0aBk8b22lIVQklghjmxAk-T5Zdb2NcBcj2-_XzTZ7PkgPWKizs29hQB3VfS3zJOYihS7Kc0e5nHxCK_Bid"/>
 <div class="absolute inset-0 bg-primary/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
 <span class="text-white font-label tracking-widest text-xs uppercase">La Boulangerie</span>
 </div>
 </div>
 <div class="masonry-item group relative overflow-hidden rounded-lg shadow-sm hover:shadow-xl transition-all duration-500">
-<img alt="Cafe" class="w-full h-auto" data-alt="Cozy interior of a modern coffee shop with high ceilings, minimalist furniture, and large windows with soft sunlight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbJokJVXv7s4w6LbXmVwpxOiGTwWDW-bjuPIi4lXS4fiqmIWBhVEl_5ZrmBGyuPyKTmdEULVv8eSie7Qbq6hW1b1sr75ObXMPTyNMviGHNI19Q_1hzkGzydbAMj9hq68fdABU0LlhgcDz_Svqk09RJVPsgdZCu748MzZaudIt9sRdwz6j7QRCXpGNNqNq51C9SircJx4RcFFbYQ3lyR78Dg6qsFpxtmeYK9Yv6utY9LccK7Uh5iV84Rc7LSBZgzYqA5nUY5-fEWHv7"/>
+<img alt="Intérieur chaleureux du café Crusthy'lia à Targa, Marrakech" class="w-full h-auto" loading="lazy" data-alt="Cozy interior of a modern coffee shop with high ceilings, minimalist furniture, and large windows with soft sunlight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbJokJVXv7s4w6LbXmVwpxOiGTwWDW-bjuPIi4lXS4fiqmIWBhVEl_5ZrmBGyuPyKTmdEULVv8eSie7Qbq6hW1b1sr75ObXMPTyNMviGHNI19Q_1hzkGzydbAMj9hq68fdABU0LlhgcDz_Svqk09RJVPsgdZCu748MzZaudIt9sRdwz6j7QRCXpGNNqNq51C9SircJx4RcFFbYQ3lyR78Dg6qsFpxtmeYK9Yv6utY9LccK7Uh5iV84Rc7LSBZgzYqA5nUY5-fEWHv7"/>
 <div class="absolute inset-0 bg-primary/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
 <span class="text-white font-label tracking-widest text-xs uppercase">L'Espace</span>
 </div>
 </div>
 <div class="masonry-item group relative overflow-hidden rounded-lg shadow-sm hover:shadow-xl transition-all duration-500">
-<img alt="Team" class="w-full h-auto" data-alt="Cheerful team of professional bakers in white aprons laughing while preparing dough in a sunlit kitchen." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYP2UoRr3IYxzNpa3AzTHemL28A81hWlZO7QMbM4K511TCneAwuSn9fwFnlS28jKuwd7gNtVaobO5z-0J7SekZlMgAZOBxTbwpQEdqnIIA3QCwYZ5dXo6BcG82moovR7GiG2g0fkXoKDyaSaSHbLfHb0xTuFLP1sCpDhCUtaEyI6XbZGSqh85csTr4FpRLW3XtAkHnpVQ9T0YFFv0rvmwP01pSNNyA5VJH6LTrfActtZoYVYwj3SIUGfjtQ-RqrWnBpqiIARi5E4PQ"/>
+<img alt="L'équipe de boulangers passionnés de Crusthy'lia en cuisine" class="w-full h-auto" loading="lazy" data-alt="Cheerful team of professional bakers in white aprons laughing while preparing dough in a sunlit kitchen." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYP2UoRr3IYxzNpa3AzTHemL28A81hWlZO7QMbM4K511TCneAwuSn9fwFnlS28jKuwd7gNtVaobO5z-0J7SekZlMgAZOBxTbwpQEdqnIIA3QCwYZ5dXo6BcG82moovR7GiG2g0fkXoKDyaSaSHbLfHb0xTuFLP1sCpDhCUtaEyI6XbZGSqh85csTr4FpRLW3XtAkHnpVQ9T0YFFv0rvmwP01pSNNyA5VJH6LTrfActtZoYVYwj3SIUGfjtQ-RqrWnBpqiIARi5E4PQ"/>
 <div class="absolute inset-0 bg-primary/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
 <span class="text-white font-label tracking-widest text-xs uppercase">L'Équipe</span>
 </div>
 </div>
 <!-- Row 2 -->
 <div class="masonry-item group relative overflow-hidden rounded-lg shadow-sm hover:shadow-xl transition-all duration-500">
-<img alt="Pastry" class="w-full h-auto" data-alt="Exquisite handmade fruit tarts with glossy berries and delicate pastry cream on a marble display shelf." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCvNSg9VN_GJxDAUHVy-FbqzUaiBG1vTr2156arqu_z7PybuY2gzgYURJftlgy8KMuK24olgQZOGMgUHU2s6PyyvSTX2kIL84jMdfUt6Bui--nsf1skhQ76x7Z_0tTmecJTfzT_xw_kX9ZQc1ByZLMPEvT_zSgTi8K_gcgel2fKUjxRBh5Ev8jW7kRYeEmr3zpVSrOVmFDW8uRq-0dXhrr8aLrYaH5-WPYfwdfRbFnf-fijwTv-kSyoJERIZBvVU-i3ASLACOrHvSLf"/>
+<img alt="Tartelettes aux fruits rouges de la pâtisserie Crusthy'lia" class="w-full h-auto" loading="lazy" data-alt="Exquisite handmade fruit tarts with glossy berries and delicate pastry cream on a marble display shelf." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCvNSg9VN_GJxDAUHVy-FbqzUaiBG1vTr2156arqu_z7PybuY2gzgYURJftlgy8KMuK24olgQZOGMgUHU2s6PyyvSTX2kIL84jMdfUt6Bui--nsf1skhQ76x7Z_0tTmecJTfzT_xw_kX9ZQc1ByZLMPEvT_zSgTi8K_gcgel2fKUjxRBh5Ev8jW7kRYeEmr3zpVSrOVmFDW8uRq-0dXhrr8aLrYaH5-WPYfwdfRbFnf-fijwTv-kSyoJERIZBvVU-i3ASLACOrHvSLf"/>
 <div class="absolute inset-0 bg-primary/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
 <span class="text-white font-label tracking-widest text-xs uppercase">La Pâtisserie</span>
 </div>
 </div>
 <div class="masonry-item group relative overflow-hidden rounded-lg shadow-sm hover:shadow-xl transition-all duration-500">
-<img alt="Coffee" class="w-full h-auto" data-alt="Perfectly poured latte art in a ceramic cup sitting on a rustic saucer with coffee beans around." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZIT62-W5ldwit_EF4Gfh4RO8yS2mDYU0kihCGxWfIrqGRRbGplUKI8c9ER4CpG--uFRkp4aAvQRNUybKVh8o8sNFWDehOBiPyzLWXhlYmwt7U7G9qLYztKt9VJg4vUWrR1AmctWW06wI9Mk3zSD-6WHKspKBiBJcep7ckqbm3d6IRF2LQjlZbXPpkrytzpTHglHNxmQjSHfNhb6RABxOFMok1y7OxOqwisnojIgIvt3FDOTKjYGnP9GR83Q9mEQjzmPL9l4gcnHMd"/>
+<img alt="Latte art sur café spécialité servi au café Crusthy'lia" class="w-full h-auto" loading="lazy" data-alt="Perfectly poured latte art in a ceramic cup sitting on a rustic saucer with coffee beans around." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZIT62-W5ldwit_EF4Gfh4RO8yS2mDYU0kihCGxWfIrqGRRbGplUKI8c9ER4CpG--uFRkp4aAvQRNUybKVh8o8sNFWDehOBiPyzLWXhlYmwt7U7G9qLYztKt9VJg4vUWrR1AmctWW06wI9Mk3zSD-6WHKspKBiBJcep7ckqbm3d6IRF2LQjlZbXPpkrytzpTHglHNxmQjSHfNhb6RABxOFMok1y7OxOqwisnojIgIvt3FDOTKjYGnP9GR83Q9mEQjzmPL9l4gcnHMd"/>
 <div class="absolute inset-0 bg-primary/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
 <span class="text-white font-label tracking-widest text-xs uppercase">Le Café</span>
 </div>
 </div>
 <div class="masonry-item group relative overflow-hidden rounded-lg shadow-sm hover:shadow-xl transition-all duration-500">
-<img alt="Brunch" class="w-full h-auto" data-alt="A vibrant brunch spread featuring avocado toast, poached eggs, fresh juice, and croissants on a sunlit table." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmwujCOq06dXLRlVMGD6931gFu9XKrFuoCXc0LPHwW-g4xvVHoOICyDRZn9U6f6FRfifLQO0cavktfy-YnpBJlBKP3jATRhKtY3A5Hu2oL3wjf5ujdlut5Rw3AZG16YFeMhH7gMQAHaF5EcdSgWPd3TRjGXBC08l4GaCiZ_Hwtgpw1LuU7OQxpQe5JqeaTccgXunUxw9Fg0sSgYs6ffOp0STTQytdS4-vY1B6ac_oSLbgH_A3bkGOaPoiKEwdOLvmu7bwJJ_DIVQ4x"/>
+<img alt="Table de brunch dominical chez Crusthy'lia avec viennoiseries et jus frais" class="w-full h-auto" loading="lazy" data-alt="A vibrant brunch spread featuring avocado toast, poached eggs, fresh juice, and croissants on a sunlit table." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmwujCOq06dXLRlVMGD6931gFu9XKrFuoCXc0LPHwW-g4xvVHoOICyDRZn9U6f6FRfifLQO0cavktfy-YnpBJlBKP3jATRhKtY3A5Hu2oL3wjf5ujdlut5Rw3AZG16YFeMhH7gMQAHaF5EcdSgWPd3TRjGXBC08l4GaCiZ_Hwtgpw1LuU7OQxpQe5JqeaTccgXunUxw9Fg0sSgYs6ffOp0STTQytdS4-vY1B6ac_oSLbgH_A3bkGOaPoiKEwdOLvmu7bwJJ_DIVQ4x"/>
 <div class="absolute inset-0 bg-primary/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
 <span class="text-white font-label tracking-widest text-xs uppercase">Le Brunch</span>
 </div>
 </div>
 <!-- Row 3 -->
 <div class="masonry-item group relative overflow-hidden rounded-lg shadow-sm hover:shadow-xl transition-all duration-500">
-<img alt="Cuisine" class="w-full h-auto" data-alt="Chef plating a gourmet dish with precision in a busy restaurant kitchen with warm, dramatic lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJHWwyJTl6x4DKJIANRqKcPaNiXnPkN9MewC-Ey8fLeIoKwnMW5J2qHkS2_4xxPj_vASLGgukwLrtckvvUgt1APWAHKAnDfNWulcSunNSdmH3U32glROAe18dJzGFeMMpzprr9YOPjnim3hRKIg3PQCKb8tDUOKmvo2LGbtnP7VOdUez55vw8wxYIHowrPBkAZzYzfx7NRms1a76-lZMyqLPTCk2VwGfD5q84J5dUXRlX8oN8oj2sMC8sMnietReA9jPqZoQUdOrjE"/>
+<img alt="Chef dressant une assiette gastronomique en cuisine chez Crusthy'lia" class="w-full h-auto" loading="lazy" data-alt="Chef plating a gourmet dish with precision in a busy restaurant kitchen with warm, dramatic lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJHWwyJTl6x4DKJIANRqKcPaNiXnPkN9MewC-Ey8fLeIoKwnMW5J2qHkS2_4xxPj_vASLGgukwLrtckvvUgt1APWAHKAnDfNWulcSunNSdmH3U32glROAe18dJzGFeMMpzprr9YOPjnim3hRKIg3PQCKb8tDUOKmvo2LGbtnP7VOdUez55vw8wxYIHowrPBkAZzYzfx7NRms1a76-lZMyqLPTCk2VwGfD5q84J5dUXRlX8oN8oj2sMC8sMnietReA9jPqZoQUdOrjE"/>
 <div class="absolute inset-0 bg-primary/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
 <span class="text-white font-label tracking-widest text-xs uppercase">La Cuisine</span>
 </div>
 </div>
 <div class="masonry-item group relative overflow-hidden rounded-lg shadow-sm hover:shadow-xl transition-all duration-500">
-<img alt="Bakery Details" class="w-full h-auto" data-alt="Close-up of golden brown croissants stacked in a basket with flaky texture visible under soft light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzmIhfRWKhjMkmzZ1EgSQmdYs_SlU1HpKiLZ1Kx5Iu2C9rB8snQYS5wu29fjvQle5ToBTFR_h-hsvM_EUtYseBbohvEyCJV83V7auIGCLQEhiej9r13t1J47OypGNmTjFghECU5fxhW4gaI2C3ymiANgBd546KvJRBCsUCFalfXx6TbV4khYk7WsmMthNRBD9g44Ah-Z8fQuhIRGRfd5TCIBOm5Rfijgb1RQPdtJwvb3EPg5oOEVF6u4vRLdCVDUW1N3VWQBVjrBIx"/>
+<img alt="Croissants feuilletés dorés en corbeille à la boulangerie Crusthy'lia" class="w-full h-auto" loading="lazy" data-alt="Close-up of golden brown croissants stacked in a basket with flaky texture visible under soft light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzmIhfRWKhjMkmzZ1EgSQmdYs_SlU1HpKiLZ1Kx5Iu2C9rB8snQYS5wu29fjvQle5ToBTFR_h-hsvM_EUtYseBbohvEyCJV83V7auIGCLQEhiej9r13t1J47OypGNmTjFghECU5fxhW4gaI2C3ymiANgBd546KvJRBCsUCFalfXx6TbV4khYk7WsmMthNRBD9g44Ah-Z8fQuhIRGRfd5TCIBOm5Rfijgb1RQPdtJwvb3EPg5oOEVF6u4vRLdCVDUW1N3VWQBVjrBIx"/>
 <div class="absolute inset-0 bg-primary/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
 <span class="text-white font-label tracking-widest text-xs uppercase">La Boulangerie</span>
 </div>
 </div>
 <div class="masonry-item group relative overflow-hidden rounded-lg shadow-sm hover:shadow-xl transition-all duration-500">
-<img alt="Atmosphere" class="w-full h-auto" data-alt="Close-up of a small table by a window with an open book, a cup of tea, and a croissant in a serene atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDM5tqA-QUfszlQuqTRf7Ypir0D9QiibRJHSU1bxHWVvmkbdUfQBAcHQZYAaDImw0b4LJvmYkZ-UkR0KPtMMva1HQZmQFOh7XxvM8YFQ8zkj9dWCYbsDmiFMhdQlzjoDRn6N3gON7Z051mVOx8Qm1Lavm12mKIDcU7eY3ez4S3NyxIYtQFLOjq2rNTFNo1TiyzfGJENDZ6PsocNjs5QKBwKkb3qwK0k-28t7pf0HE15oQuB8xA1wnOS1P9T8UBvjM5hTAZKN0YTTDoO"/>
+<img alt="Ambiance lecture et déjeuner léger à la fenêtre du café Crusthy'lia" class="w-full h-auto" loading="lazy" data-alt="Close-up of a small table by a window with an open book, a cup of tea, and a croissant in a serene atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDM5tqA-QUfszlQuqTRf7Ypir0D9QiibRJHSU1bxHWVvmkbdUfQBAcHQZYAaDImw0b4LJvmYkZ-UkR0KPtMMva1HQZmQFOh7XxvM8YFQ8zkj9dWCYbsDmiFMhdQlzjoDRn6N3gON7Z051mVOx8Qm1Lavm12mKIDcU7eY3ez4S3NyxIYtQFLOjq2rNTFNo1TiyzfGJENDZ6PsocNjs5QKBwKkb3qwK0k-28t7pf0HE15oQuB8xA1wnOS1P9T8UBvjM5hTAZKN0YTTDoO"/>
 <div class="absolute inset-0 bg-primary/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
 <span class="text-white font-label tracking-widest text-xs uppercase">L'Espace</span>
 </div>
 </div>
 <!-- Row 4 -->
 <div class="masonry-item group relative overflow-hidden rounded-lg shadow-sm hover:shadow-xl transition-all duration-500">
-<img alt="Chef" class="w-full h-auto" data-alt="Professional chef carefully dusting powdered sugar over a fresh pastry in a kitchen." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRG0sAhc0JxU0RSTG9-4alqiXZnZQd6ANxisAhoAPNe4bWApxBMNPsWb-iXnCQ46l5ErhAdxKas_gMkmnIWyUTqPPPstxrinjDoELqvl_XpS9UWMTgZkDn7LVCxNCp4B75z_dyWoHg37YQ2g6Vitnvw7xRmAzxZ9zKRQKIpI5WhNc9A9KeUJqxYLxC7bwaevqCwuXJCowsLbdbJzRGX57OfKc1V_Zj9f9w_JA52gfsjp0nYnTRVLNJjwoVio_YjOOyjQRpmKaHW8yE"/>
+<img alt="Chef pâtissier saupoudrant du sucre glace sur une création Crusthy'lia" class="w-full h-auto" loading="lazy" data-alt="Professional chef carefully dusting powdered sugar over a fresh pastry in a kitchen." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRG0sAhc0JxU0RSTG9-4alqiXZnZQd6ANxisAhoAPNe4bWApxBMNPsWb-iXnCQ46l5ErhAdxKas_gMkmnIWyUTqPPPstxrinjDoELqvl_XpS9UWMTgZkDn7LVCxNCp4B75z_dyWoHg37YQ2g6Vitnvw7xRmAzxZ9zKRQKIpI5WhNc9A9KeUJqxYLxC7bwaevqCwuXJCowsLbdbJzRGX57OfKc1V_Zj9f9w_JA52gfsjp0nYnTRVLNJjwoVio_YjOOyjQRpmKaHW8yE"/>
 <div class="absolute inset-0 bg-primary/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
 <span class="text-white font-label tracking-widest text-xs uppercase">L'Équipe</span>
 </div>
 </div>
 <div class="masonry-item group relative overflow-hidden rounded-lg shadow-sm hover:shadow-xl transition-all duration-500">
-<img alt="Cake" class="w-full h-auto" data-alt="Elegant multi-layered cake decorated with edible flowers and smooth cream frosting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAa5t-FV7kYQVSgE4bawvt_2c83T3POZNP_-oIVy6LNynwxK_7-t1S7PKqK9dDNkQ_pGYCAZLlN_DW_BCjAaAc-TqSw7Qx2nCRiu-AQxjjkKtd_ENIlCvBGJvFd8UAI3OqmLUA56RtRE79KekSVoz3OI6Eshm_jGhxRBI5lU6sol3pV6lArKSS8Q7UN4MnxoUxb0Dh9ratkDitDPH_vR8cype0K3scXz81QZj8hk-7A3Eug9UOP44cIS2zM-l84nVOlyvD-SOlOBprd"/>
+<img alt="Gâteau de fête à étages fleuri créé par la pâtisserie Crusthy'lia" class="w-full h-auto" loading="lazy" data-alt="Elegant multi-layered cake decorated with edible flowers and smooth cream frosting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAa5t-FV7kYQVSgE4bawvt_2c83T3POZNP_-oIVy6LNynwxK_7-t1S7PKqK9dDNkQ_pGYCAZLlN_DW_BCjAaAc-TqSw7Qx2nCRiu-AQxjjkKtd_ENIlCvBGJvFd8UAI3OqmLUA56RtRE79KekSVoz3OI6Eshm_jGhxRBI5lU6sol3pV6lArKSS8Q7UN4MnxoUxb0Dh9ratkDitDPH_vR8cype0K3scXz81QZj8hk-7A3Eug9UOP44cIS2zM-l84nVOlyvD-SOlOBprd"/>
 <div class="absolute inset-0 bg-primary/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
 <span class="text-white font-label tracking-widest text-xs uppercase">La Pâtisserie</span>
 </div>
 </div>
 <div class="masonry-item group relative overflow-hidden rounded-lg shadow-sm hover:shadow-xl transition-all duration-500">
-<img alt="Cafe Scene" class="w-full h-auto" data-alt="Customer enjoying a coffee while working on a laptop in a stylish, plant-filled cafe." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVX5GSmf4NxReZLiM9KBZIWCke0QgeaIuuTezneJde4xNqIFI8VzvxlSpOy9lobGmHN2VAbw-oQC3FmvvrwZ81vAUyvNVyUyD36LdVfH9NZ2sh56Dvh0Y-JecJMtoP3DFQHcEeo9fpebKJR3YRZee5af17OdQDrxoc7VTwyljLlykn54FiNG2NXGBH07WyjCrYwl-GwrCg-SASgQiGnVjrGsKjzG5BCAtC6ZWH6ElhYMe1twHt_MKpoGZoE5n_i22gYf1yeInfbiJA"/>
+<img alt="Ambiance de travail détendue dans le café Crusthy'lia à Marrakech" class="w-full h-auto" loading="lazy" data-alt="Customer enjoying a coffee while working on a laptop in a stylish, plant-filled cafe." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVX5GSmf4NxReZLiM9KBZIWCke0QgeaIuuTezneJde4xNqIFI8VzvxlSpOy9lobGmHN2VAbw-oQC3FmvvrwZ81vAUyvNVyUyD36LdVfH9NZ2sh56Dvh0Y-JecJMtoP3DFQHcEeo9fpebKJR3YRZee5af17OdQDrxoc7VTwyljLlykn54FiNG2NXGBH07WyjCrYwl-GwrCg-SASgQiGnVjrGsKjzG5BCAtC6ZWH6ElhYMe1twHt_MKpoGZoE5n_i22gYf1yeInfbiJA"/>
 <div class="absolute inset-0 bg-primary/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
 <span class="text-white font-label tracking-widest text-xs uppercase">Le Café</span>
 </div>
@@ -221,61 +226,60 @@
 <!-- CTA Band -->
 <section class="py-24 px-8 bg-surface-container-low">
 <div class="max-w-4xl mx-auto text-center space-y-10">
-<h2 class="text-4xl lg:text-5xl font-headline font-bold text-primary">Envie de vivre l'expérience?</h2>
+<h2 class="text-4xl lg:text-5xl font-headline font-bold text-primary">Envie de vivre l'expérience ?</h2>
 <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-<button class="w-full sm:w-auto bg-secondary text-on-secondary px-10 py-4 rounded-lg font-bold text-lg hover:brightness-110 active:scale-98 transition-all shadow-lg">
+<a href="reservation.html" class="w-full sm:w-auto bg-secondary text-on-secondary px-10 py-4 rounded-lg font-bold text-lg hover:brightness-110 active:scale-95 transition-all shadow-lg">
                         Réserver une table
-                    </button>
-<button class="w-full sm:w-auto border-2 border-primary/20 text-primary px-10 py-4 rounded-lg font-bold text-lg hover:bg-primary/5 active:scale-98 transition-all flex items-center justify-center gap-2">
+                    </a>
+<a href="https://wa.me/212764745159" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto border-2 border-primary/20 text-primary px-10 py-4 rounded-lg font-bold text-lg hover:bg-primary/5 active:scale-95 transition-all flex items-center justify-center gap-2">
 <span class="material-symbols-outlined text-xl">chat</span>
                         Commander sur WhatsApp
-                    </button>
+                    </a>
 </div>
 </div>
 </section>
 </main>
-<!-- Footer -->
-<footer class="w-full py-16 px-8 mt-24 bg-[#fcf3df] dark:bg-[#1f0b04]">
-<div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-7xl mx-auto">
-<div class="space-y-4">
-<div class="text-xl font-serif text-[#36180c] dark:text-[#fff8ef]">Crusthylia</div>
-<p class="text-primary/70 font-body text-sm leading-relaxed">
-                    Une expérience artisanale unique, où chaque produit raconte une histoire de passion et de savoir-faire.
-                </p>
-</div>
-<div>
-<h4 class="font-bold font-body text-[#36180c] dark:text-[#fff8ef] mb-6">Exploration</h4>
-<ul class="space-y-3 font-label text-sm tracking-widest opacity-70">
-<li><a class="hover:underline decoration-[#246b44] underline-offset-4 transition-all" href="#">Menu</a></li>
-<li><a class="hover:underline decoration-[#246b44] underline-offset-4 transition-all" href="#">Galerie</a></li>
-<li><a class="hover:underline decoration-[#246b44] underline-offset-4 transition-all" href="#">Notre Histoire</a></li>
-<li><a class="hover:underline decoration-[#246b44] underline-offset-4 transition-all" href="#">Ateliers</a></li>
-</ul>
-</div>
-<div>
-<h4 class="font-bold font-body text-[#36180c] dark:text-[#fff8ef] mb-6">Légal</h4>
-<ul class="space-y-3 font-label text-sm tracking-widest opacity-70">
-<li><a class="hover:underline decoration-[#246b44] underline-offset-4 transition-all" href="#">Privacy Policy</a></li>
-<li><a class="hover:underline decoration-[#246b44] underline-offset-4 transition-all" href="#">Terms of Service</a></li>
-<li><a class="hover:underline decoration-[#246b44] underline-offset-4 transition-all" href="#">Contact Us</a></li>
-<li><a class="hover:underline decoration-[#246b44] underline-offset-4 transition-all" href="#">Press Kit</a></li>
-</ul>
-</div>
-<div>
-<h4 class="font-bold font-body text-[#36180c] dark:text-[#fff8ef] mb-6">Newsletter</h4>
-<div class="space-y-4">
-<p class="text-sm font-body opacity-70">Rejoignez le cercle des gourmets.</p>
-<div class="relative">
-<input class="w-full bg-transparent border-b border-primary/20 focus:border-secondary outline-none py-2 text-sm font-body" placeholder="Votre email" type="email"/>
-<button class="absolute right-0 bottom-2 text-secondary">
-<span class="material-symbols-outlined">east</span>
-</button>
-</div>
-</div>
-</div>
-</div>
-<div class="max-w-7xl mx-auto mt-16 pt-8 border-t border-primary/5 text-center text-xs font-label tracking-widest opacity-50">
-            © 2024 Crusthylia Artisans. Crafted with heart.
+<footer class="bg-primary text-on-primary" role="contentinfo">
+  <div class="max-w-7xl mx-auto px-6 md:px-10 pt-16 pb-8">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+      <div>
+        <span class="font-headline text-2xl font-bold text-white mb-5 block">Crusthy'lia</span>
+        <p class="text-white/60 font-body text-sm leading-relaxed mb-6">Votre escale artisanale à Targa, Marrakech. Boulangerie, pâtisserie, café et restaurant unis par la passion du goût.</p>
+        <div class="flex gap-4">
+          <a href="https://www.instagram.com/crusthylia/" target="_blank" rel="noopener noreferrer" class="text-white/60 hover:text-white transition-colors" aria-label="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+          <a href="https://wa.me/212764745159" target="_blank" rel="noopener noreferrer" class="text-white/60 hover:text-white transition-colors" aria-label="WhatsApp"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
         </div>
+      </div>
+      <div>
+        <h3 class="font-label uppercase tracking-widest text-xs font-bold text-white/40 mb-6">Navigation</h3>
+        <ul class="space-y-3 list-none p-0 m-0">
+          <li><a href="menu.html" class="text-white/60 hover:text-white transition-colors font-body text-sm">Menu</a></li>
+          <li><a href="brunch.html" class="text-white/60 hover:text-white transition-colors font-body text-sm">Brunch</a></li>
+          <li><a href="about.html" class="text-white/60 hover:text-white transition-colors font-body text-sm">Notre Histoire</a></li>
+          <li><a href="blog/" class="text-white/60 hover:text-white transition-colors font-body text-sm">Blog</a></li>
+          <li><a href="contact.html" class="text-white/60 hover:text-white transition-colors font-body text-sm">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-label uppercase tracking-widest text-xs font-bold text-white/40 mb-6">Nous trouver</h3>
+        <address class="not-italic font-body text-sm text-white/60 space-y-2">
+          <p>Galerie Marchande Targa, Marrakech 40000</p>
+          <p><a href="https://wa.me/212764745159" class="hover:text-white transition-colors">WhatsApp</a></p>
+          <p><a href="https://www.instagram.com/crusthylia/" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">@crusthylia</a></p>
+        </address>
+      </div>
+    </div>
+    <div class="border-t border-white/10 pt-6 flex flex-col md:flex-row justify-between items-center gap-3">
+      <p class="text-white/30 font-body text-xs">&copy; 2026 Crusthy'lia. Tous droits réservés.</p>
+      <p class="text-white/20 font-body text-xs">Artisanat &amp; passion, Marrakech.</p>
+    </div>
+  </div>
 </footer>
+<a href="https://wa.me/212764745159" class="fixed bottom-6 right-6 z-[1000] w-14 h-14 bg-[#25D366] rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Crusthy'lia"><svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+<script>
+  const toggle = document.getElementById('nav-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+  if (toggle && mobileMenu) { toggle.addEventListener('click', () => { const open = !mobileMenu.classList.contains('hidden'); mobileMenu.classList.toggle('hidden', open); toggle.setAttribute('aria-expanded', String(!open)); }); }
+  window.addEventListener('scroll', () => { document.getElementById('site-nav')?.classList.toggle('shadow-md', window.scrollY > 40); }, { passive: true });
+</script>
 </body></html>
