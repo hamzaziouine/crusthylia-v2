@@ -13,8 +13,8 @@ const PAGES = [
   { name: 'Evenements', file: 'evenements.html' },
   { name: 'Galerie', file: 'galerie.html' },
   { name: 'FAQ', file: 'faq.html' },
-  { name: 'Blog Index', file: 'blog-index.html' },
-  { name: 'Blog Article', file: 'blog-article.html' },
+  { name: 'Blog Index', file: 'blog/index.html' },
+  { name: 'Blog Article', file: 'blog/meilleurs-brunchs-marrakech-2026.html' },
 ];
 
 // ============================================================
